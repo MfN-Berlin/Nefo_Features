@@ -58,6 +58,7 @@ function feature_calendar_events_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_event_date'
   $field_instances['node-event-field_event_date'] = array(
     'bundle' => 'event',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -70,6 +71,7 @@ function feature_calendar_events_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
         'weight' => 1,
@@ -101,10 +103,11 @@ function feature_calendar_events_field_default_field_instances() {
         'input_format' => 'm/d/Y - H:i:s',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_popup',
+      'type' => 'date_select',
       'weight' => -3,
     ),
   );

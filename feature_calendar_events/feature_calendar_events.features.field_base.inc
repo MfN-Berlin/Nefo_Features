@@ -52,6 +52,7 @@ function feature_calendar_events_field_default_field_bases() {
         'second' => 0,
         'year' => 'year',
       ),
+      'repeat' => 0,
       'timezone_db' => 'UTC',
       'todate' => 'required',
       'tz_handling' => 'site',

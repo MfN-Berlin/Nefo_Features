@@ -100,7 +100,7 @@ function feature_calendar_events_views_default_views() {
   );
   $handler->display->display_options['filters']['field_typ_tid']['expose']['reduce'] = TRUE;
   $handler->display->display_options['filters']['field_typ_tid']['is_grouped'] = TRUE;
-  $handler->display->display_options['filters']['field_typ_tid']['group_info']['label'] = 'typ (field_typ)';
+  $handler->display->display_options['filters']['field_typ_tid']['group_info']['label'] = 'Type of Event';
   $handler->display->display_options['filters']['field_typ_tid']['group_info']['identifier'] = 'field_typ_tid';
   $handler->display->display_options['filters']['field_typ_tid']['group_info']['widget'] = 'radios';
   $handler->display->display_options['filters']['field_typ_tid']['group_info']['group_items'] = array(
@@ -108,14 +108,14 @@ function feature_calendar_events_views_default_views() {
       'title' => 'Forschung',
       'operator' => 'or',
       'value' => array(
-        2 => '2',
+        1 => '1',
       ),
     ),
     2 => array(
       'title' => 'Politik',
       'operator' => 'or',
       'value' => array(
-        1 => '1',
+        2 => '2',
       ),
     ),
     3 => array(
