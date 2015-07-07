@@ -64,7 +64,7 @@ function feature_calendar_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_event_date']['delta_offset'] = '0';
-  /* Field: Content: typ */
+  /* Field: Content: Kategorie */
   $handler->display->display_options['fields']['field_typ']['id'] = 'field_typ';
   $handler->display->display_options['fields']['field_typ']['table'] = 'field_data_field_typ';
   $handler->display->display_options['fields']['field_typ']['field'] = 'field_typ';
@@ -79,7 +79,7 @@ function feature_calendar_events_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: typ (field_typ) */
+  /* Filter criterion: Content: Kategorie (field_typ) */
   $handler->display->display_options['filters']['field_typ_tid']['id'] = 'field_typ_tid';
   $handler->display->display_options['filters']['field_typ_tid']['table'] = 'field_data_field_typ';
   $handler->display->display_options['filters']['field_typ_tid']['field'] = 'field_typ_tid';

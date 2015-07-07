@@ -11,23 +11,23 @@ function feature_calendar_events_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'politik',
+    'name' => 'Politik',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => '4a4b075b-1276-4092-9456-44e9bccbef5b',
     'vocabulary_machine_name' => 'event_types',
   );
   $terms[] = array(
-    'name' => 'presse',
+    'name' => 'Presse',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => '55e2c902-3f62-45a6-b720-6e84feac2866',
     'vocabulary_machine_name' => 'event_types',
   );
   $terms[] = array(
-    'name' => 'forschung',
+    'name' => 'Forschung',
     'description' => '',
     'format' => 'filtered_html',
     'weight' => 0,
