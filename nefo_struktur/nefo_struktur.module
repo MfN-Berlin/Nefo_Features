@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Nefo Struktur feature.
+ */
+
+include_once 'nefo_struktur.features.inc';
