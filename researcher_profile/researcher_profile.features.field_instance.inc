@@ -10,40 +10,6 @@
 function researcher_profile_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'profile2-researcher-field_reseacher_www'
-  $field_instances['profile2-researcher-field_reseacher_www'] = array(
-    'bundle' => 'researcher',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_reseacher_www',
-    'label' => 'Website',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
-    ),
-  );
-
   // Exported field_instance: 'profile2-researcher-field_researcher_address'
   $field_instances['profile2-researcher-field_researcher_address'] = array(
     'bundle' => 'researcher',
@@ -111,6 +77,108 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'profile2-researcher-field_researcher_deficit'
+  $field_instances['profile2-researcher-field_researcher_deficit'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_deficit',
+    'label' => 'Defizit in der Biodiversitätspolitik',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 17,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-researcher-field_researcher_fascinated'
+  $field_instances['profile2-researcher-field_researcher_fascinated'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_fascinated',
+    'label' => 'Biodiversität fasziniert mich, ...',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-researcher-field_researcher_important'
+  $field_instances['profile2-researcher-field_researcher_important'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_important',
+    'label' => 'Biodiversität ist wichtig, ...',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 15,
+    ),
+  );
+
   // Exported field_instance: 'profile2-researcher-field_researcher_institution'
   $field_instances['profile2-researcher-field_researcher_institution'] = array(
     'bundle' => 'researcher',
@@ -141,6 +209,41 @@ function researcher_profile_field_default_field_instances() {
       ),
       'type' => 'options_select',
       'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-researcher-field_researcher_interdiscipline'
+  $field_instances['profile2-researcher-field_researcher_interdiscipline'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 15,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_interdiscipline',
+    'label' => 'Interdisziplinäre Vernetzung ist',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 16,
     ),
   );
 
@@ -428,12 +531,62 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'profile2-researcher-field_researcher_www'
+  $field_instances['profile2-researcher-field_researcher_www'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_www',
+    'label' => 'Website',
+    'required' => FALSE,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_label_use_field_label' => FALSE,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 13,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
+  t('Biodiversität fasziniert mich, ...');
+  t('Biodiversität ist wichtig, ...');
   t('Completed Projects');
   t('Current Projects');
+  t('Defizit in der Biodiversitätspolitik');
   t('Institution');
+  t('Interdisziplinäre Vernetzung ist');
   t('Linked In');
   t('Name');
   t('Picture');
