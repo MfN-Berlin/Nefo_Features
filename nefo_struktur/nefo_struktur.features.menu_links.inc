@@ -2079,29 +2079,6 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'en',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-top-menu_acronyms:node/51
-  $menu_links['menu-nefo-top-menu_acronyms:node/51'] = array(
-    'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'node/51',
-    'router_path' => 'node/%',
-    'link_title' => 'Acronyms',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Acronyms',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_acronyms:node/51',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -46,
-    'customized' => 1,
-    'language' => 'en',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: menu-nefo-top-menu_akronyme:node/26
   $menu_links['menu-nefo-top-menu_akronyme:node/26'] = array(
     'menu_name' => 'menu-nefo-top-menu',
@@ -2195,29 +2172,6 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-top-menu_glossary:node/53
-  $menu_links['menu-nefo-top-menu_glossary:node/53'] = array(
-    'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'node/53',
-    'router_path' => 'node/%',
-    'link_title' => 'Glossary',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Glossary',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_glossary:node/53',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'language' => 'en',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: menu-nefo-top-menu_kontakt:node/34
   $menu_links['menu-nefo-top-menu_kontakt:node/34'] = array(
     'menu_name' => 'menu-nefo-top-menu',
@@ -2269,7 +2223,6 @@ function nefo_struktur_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Abmelden');
   t('Access & Benefit Sharing');
-  t('Acronyms');
   t('Agrarpolitik');
   t('Akronyme');
   t('Aktiv als Autor');
@@ -2301,7 +2254,6 @@ function nefo_struktur_menu_default_menu_links() {
   t('Future Earth');
   t('GeoBon');
   t('Glossar');
-  t('Glossary');
   t('Historie');
   t('IPBES');
   t('IPBES News');
