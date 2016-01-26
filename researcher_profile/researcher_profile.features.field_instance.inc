@@ -10,35 +10,85 @@
 function researcher_profile_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_address'
-  $field_instances['profile2-researcher-field_researcher_address'] = array(
+  // Exported field_instance: 'profile2-researcher-field_reseacher_www'
+  $field_instances['profile2-researcher-field_reseacher_www'] = array(
     'bundle' => 'researcher',
-    'default_value' => array(),
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'With the address you can be featured in the researcher map.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'geofield',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_reseacher_www',
+    'label' => 'Website',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-researcher-field_researcher_address'
+  $field_instances['profile2-researcher-field_researcher_address'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
         'settings' => array(
-          'data' => 'full',
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'use_widget_handlers' => 1,
         ),
-        'type' => 'geofield_wkt',
-        'weight' => 10,
+        'type' => 'addressfield_default',
+        'weight' => 17,
       ),
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_researcher_address',
     'label' => 'Address',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'geofield',
-      'settings' => array(),
-      'type' => 'geofield_latlon',
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(),
+        'default_country' => 'DE',
+        'format_handlers' => array(
+          'address' => 'address',
+          'address-hide-postal-code' => 0,
+          'address-hide-street' => 0,
+          'address-hide-country' => 0,
+          'organisation' => 0,
+          'name-full' => 0,
+          'name-oneline' => 0,
+          'address-optional' => 0,
+        ),
+      ),
+      'type' => 'addressfield_standard',
       'weight' => 11,
     ),
   );
@@ -107,7 +157,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 17,
+      'weight' => 15,
     ),
   );
 
@@ -141,7 +191,55 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-researcher-field_researcher_geofield'
+  $field_instances['profile2-researcher-field_researcher_geofield'] = array(
+    'bundle' => 'researcher',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'geofield',
+        'settings' => array(
+          'data' => 'full',
+        ),
+        'type' => 'geofield_wkt',
+        'weight' => 18,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_geofield',
+    'label' => 'Geofield',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'geocoder',
+      'settings' => array(
+        'delta_handling' => 'default',
+        'geocoder_field' => 'field_researcher_address',
+        'geocoder_handler' => 'google',
+        'handler_settings' => array(
+          'google' => array(
+            'all_results' => 0,
+            'geometry_type' => 'point',
+            'reject_results' => array(
+              'APPROXIMATE' => 0,
+              'GEOMETRIC_CENTER' => 0,
+              'RANGE_INTERPOLATED' => 0,
+              'ROOFTOP' => 0,
+            ),
+          ),
+        ),
+      ),
+      'type' => 'geocoder',
+      'weight' => 12,
     ),
   );
 
@@ -175,40 +273,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-researcher-field_researcher_institution'
-  $field_instances['profile2-researcher-field_researcher_institution'] = array(
-    'bundle' => 'researcher',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'You institution you\'re associated with',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 11,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_researcher_institution',
-    'label' => 'Institution',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => '',
-      ),
-      'type' => 'options_select',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -243,7 +308,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 16,
+      'weight' => 14,
     ),
   );
 
@@ -311,7 +376,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
@@ -355,7 +420,7 @@ function researcher_profile_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -585,7 +650,7 @@ function researcher_profile_field_default_field_instances() {
   t('Completed Projects');
   t('Current Projects');
   t('Defizit in der Biodiversitätspolitik');
-  t('Institution');
+  t('Geofield');
   t('Interdisziplinäre Vernetzung ist');
   t('Linked In');
   t('Name');
@@ -595,8 +660,6 @@ function researcher_profile_field_default_field_instances() {
   t('Statements');
   t('Twitter');
   t('Website');
-  t('With the address you can be featured in the researcher map.');
-  t('You institution you\'re associated with');
 
   return $field_instances;
 }

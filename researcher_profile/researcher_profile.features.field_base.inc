@@ -10,6 +10,28 @@
 function researcher_profile_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_reseacher_www'
+  $field_bases['field_reseacher_www'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_reseacher_www',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_researcher_address'
   $field_bases['field_researcher_address'] = array(
     'active' => 1,
@@ -17,48 +39,14 @@ function researcher_profile_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_researcher_address',
-    'indexes' => array(
-      'bbox' => array(
-        0 => 'top',
-        1 => 'bottom',
-        2 => 'left',
-        3 => 'right',
-      ),
-      'bottom' => array(
-        0 => 'bottom',
-      ),
-      'centroid' => array(
-        0 => 'lat',
-        1 => 'lon',
-      ),
-      'geohash' => array(
-        0 => 'geohash',
-      ),
-      'lat' => array(
-        0 => 'lat',
-      ),
-      'left' => array(
-        0 => 'left',
-      ),
-      'lon' => array(
-        0 => 'lon',
-      ),
-      'right' => array(
-        0 => 'right',
-      ),
-      'top' => array(
-        0 => 'top',
-      ),
-    ),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'geofield',
+    'module' => 'addressfield',
     'settings' => array(
-      'backend' => 'default',
       'profile2_private' => 0,
-      'srid' => 4326,
     ),
     'translatable' => 0,
-    'type' => 'geofield',
+    'type' => 'addressfield',
   );
 
   // Exported field_base: 'field_researcher_completed'
@@ -127,6 +115,57 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_researcher_geofield'
+  $field_bases['field_researcher_geofield'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_researcher_geofield',
+    'indexes' => array(
+      'bbox' => array(
+        0 => 'top',
+        1 => 'bottom',
+        2 => 'left',
+        3 => 'right',
+      ),
+      'bottom' => array(
+        0 => 'bottom',
+      ),
+      'centroid' => array(
+        0 => 'lat',
+        1 => 'lon',
+      ),
+      'geohash' => array(
+        0 => 'geohash',
+      ),
+      'lat' => array(
+        0 => 'lat',
+      ),
+      'left' => array(
+        0 => 'left',
+      ),
+      'lon' => array(
+        0 => 'lon',
+      ),
+      'right' => array(
+        0 => 'right',
+      ),
+      'top' => array(
+        0 => 'top',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'geofield',
+    'settings' => array(
+      'backend' => 'default',
+      'profile2_private' => 0,
+      'srid' => 4326,
+    ),
+    'translatable' => 0,
+    'type' => 'geofield',
+  );
+
   // Exported field_base: 'field_researcher_important'
   $field_bases['field_researcher_important'] = array(
     'active' => 1,
@@ -147,33 +186,6 @@ function researcher_profile_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_researcher_institution'
-  $field_bases['field_researcher_institution'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_researcher_institution',
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'Berlin' => 'Berlin',
-        'Leipzig' => 'Leipzig',
-        'Brandenburg' => 'Brandenburg',
-      ),
-      'allowed_values_function' => '',
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_researcher_interdiscipline'

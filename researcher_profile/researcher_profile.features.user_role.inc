@@ -13,7 +13,7 @@ function researcher_profile_user_default_roles() {
   // Exported role: researcher.
   $roles['researcher'] = array(
     'name' => 'researcher',
-    'weight' => 3,
+    'weight' => 2,
   );
 
   return $roles;
