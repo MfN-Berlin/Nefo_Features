@@ -2560,40 +2560,6 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_reseacher_www'
-  $field_instances['profile2-researcher-field_reseacher_www'] = array(
-    'bundle' => 'researcher',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_reseacher_www',
-    'label' => 'Website',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Alt Text');
@@ -2629,7 +2595,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Typ');
   t('URL');
   t('Video Credit');
-  t('Website');
   t('Ziel-URL');
 
   return $field_instances;

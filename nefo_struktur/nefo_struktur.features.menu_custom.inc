@@ -18,6 +18,46 @@ function nefo_struktur_menu_default_menu_custom() {
     'language' => 'und',
     'i18n_mode' => 5,
   );
+  // Exported menu: menu-nefo-footer-menu-fifth.
+  $menus['menu-nefo-footer-menu-fifth'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fifth',
+    'title' => 'NeFo Footer Menu Fifth',
+    'description' => 'Menü für die Rubrik Schnittstellen.',
+    'language' => 'und',
+    'i18n_mode' => 5,
+  );
+  // Exported menu: menu-nefo-footer-menu-first.
+  $menus['menu-nefo-footer-menu-first'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-first',
+    'title' => 'NeFo Footer Menu First',
+    'description' => 'Menü für die Rubrik NeFo.',
+    'language' => 'und',
+    'i18n_mode' => 5,
+  );
+  // Exported menu: menu-nefo-footer-menu-fourth.
+  $menus['menu-nefo-footer-menu-fourth'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fourth',
+    'title' => 'NeFo Footer Menu Fourth',
+    'description' => 'Menü für die Rubrik Forschung.',
+    'language' => 'und',
+    'i18n_mode' => 5,
+  );
+  // Exported menu: menu-nefo-footer-menu-second.
+  $menus['menu-nefo-footer-menu-second'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'title' => 'NeFo Footer Menu Second',
+    'description' => 'Menü für die Rubrik Themen.',
+    'language' => 'und',
+    'i18n_mode' => 5,
+  );
+  // Exported menu: menu-nefo-footer-menu-third.
+  $menus['menu-nefo-footer-menu-third'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-third',
+    'title' => 'NeFo Footer Menu Third',
+    'description' => 'Menü für die Rubrik Politik.',
+    'language' => 'und',
+    'i18n_mode' => 5,
+  );
   // Exported menu: menu-nefo-login-menu.
   $menus['menu-nefo-login-menu'] = array(
     'menu_name' => 'menu-nefo-login-menu',
@@ -40,6 +80,16 @@ function nefo_struktur_menu_default_menu_custom() {
   t('Hauptmenü');
   t('Menü für Dauerrubriken.');
   t('Menü für Login / Logout.');
+  t('Menü für die Rubrik Forschung.');
+  t('Menü für die Rubrik NeFo.');
+  t('Menü für die Rubrik Politik.');
+  t('Menü für die Rubrik Schnittstellen.');
+  t('Menü für die Rubrik Themen.');
+  t('NeFo Footer Menu Fifth');
+  t('NeFo Footer Menu First');
+  t('NeFo Footer Menu Fourth');
+  t('NeFo Footer Menu Second');
+  t('NeFo Footer Menu Third');
   t('NeFo Login Menu');
   t('NeFo Top Menu');
 

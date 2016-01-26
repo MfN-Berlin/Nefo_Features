@@ -133,7 +133,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -438,7 +438,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -596,29 +596,54 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: main-menu_forschungsatlas:forschungsatlas
-  $menu_links['main-menu_forschungsatlas:forschungsatlas'] = array(
+  // Exported menu link: main-menu_forschungsakteure:node/15
+  $menu_links['main-menu_forschungsakteure:node/15'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'forschungsatlas',
-    'router_path' => 'forschungsatlas',
+    'link_path' => 'node/15',
+    'router_path' => 'node/%',
+    'link_title' => 'Forschungsakteure',
+    'options' => array(
+      'node_type' => 'page',
+      'attributes' => array(
+        'title' => 'Forschungsakteure',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_forschungsakteure:node/15',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_forschung:node/25',
+  );
+  // Exported menu link: main-menu_forschungsatlas:forschung/forschungsakteure/forschungsatlas
+  $menu_links['main-menu_forschungsatlas:forschung/forschungsakteure/forschungsatlas'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'forschung/forschungsakteure/forschungsatlas',
+    'router_path' => 'forschung/forschungsakteure/forschungsatlas',
     'link_title' => 'Forschungsatlas',
     'options' => array(
       'attributes' => array(
-        'title' => '',
+        'title' => 'Forschungsatlas',
       ),
       'alter' => TRUE,
-      'identifier' => 'main-menu_forschungsatlas:forschungsatlas',
+      'identifier' => 'main-menu_forschungsatlas:forschung/forschungsakteure/forschungsatlas',
     ),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => 0,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_forschung:node/25',
+    'parent_identifier' => 'main-menu_forschungsakteure:node/15',
   );
   // Exported menu link: main-menu_forschungsbedarf:node/29
   $menu_links['main-menu_forschungsbedarf:node/29'] = array(
@@ -798,6 +823,31 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_service-zu-ipbes:node/68',
   );
+  // Exported menu link: main-menu_institutionen:node/43
+  $menu_links['main-menu_institutionen:node/43'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/43',
+    'router_path' => 'node/%',
+    'link_title' => 'Institutionen',
+    'options' => array(
+      'node_type' => 'page',
+      'attributes' => array(
+        'title' => 'Institutionen',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_institutionen:node/43',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_forschungsakteure:node/15',
+  );
   // Exported menu link: main-menu_international:node/11
   $menu_links['main-menu_international:node/11'] = array(
     'menu_name' => 'main-menu',
@@ -844,7 +894,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1405,7 +1455,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1505,7 +1555,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1758,6 +1808,31 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_nefo-produkte:node/13',
   );
+  // Exported menu link: main-menu_themen:node/40
+  $menu_links['main-menu_themen:node/40'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/40',
+    'router_path' => 'node/%',
+    'link_title' => 'Themen',
+    'options' => array(
+      'node_type' => 'page',
+      'attributes' => array(
+        'title' => 'Unsere Themen',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_themen:node/40',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_forschungsakteure:node/15',
+  );
   // Exported menu link: main-menu_unsere-themen:node/44
   $menu_links['main-menu_unsere-themen:node/44'] = array(
     'menu_name' => 'main-menu',
@@ -1987,6 +2062,558 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_national:node/12',
   );
+  // Exported menu link: menu-nefo-footer-menu-fifth_beteiligung-an-ipbes:node/32
+  $menu_links['menu-nefo-footer-menu-fifth_beteiligung-an-ipbes:node/32'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fifth',
+    'link_path' => 'node/32',
+    'router_path' => 'node/%',
+    'link_title' => 'Beteiligung an IPBES',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Beteiligung an IPBES',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fifth_beteiligung-an-ipbes:node/32',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fifth_nefo-produkte:node/13
+  $menu_links['menu-nefo-footer-menu-fifth_nefo-produkte:node/13'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fifth',
+    'link_path' => 'node/13',
+    'router_path' => 'node/%',
+    'link_title' => 'NeFo Produkte',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'NeFo Produkte',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fifth_nefo-produkte:node/13',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fifth_schnittstellen-verstehen:node/7
+  $menu_links['menu-nefo-footer-menu-fifth_schnittstellen-verstehen:node/7'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fifth',
+    'link_path' => 'node/7',
+    'router_path' => 'node/%',
+    'link_title' => 'Schnittstellen verstehen',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Schnittstellen verstehen',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fifth_schnittstellen-verstehen:node/7',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-first_community-bezug:node/81
+  $menu_links['menu-nefo-footer-menu-first_community-bezug:node/81'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-first',
+    'link_path' => 'node/81',
+    'router_path' => 'node/%',
+    'link_title' => 'Community-Bezug',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Community-Bezug',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-first_community-bezug:node/81',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-first_was-wir-machen:node/80
+  $menu_links['menu-nefo-footer-menu-first_was-wir-machen:node/80'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-first',
+    'link_path' => 'node/80',
+    'router_path' => 'node/%',
+    'link_title' => 'Was wir machen',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Was wir machen',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-first_was-wir-machen:node/80',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-first_wer-wir-sind:node/48
+  $menu_links['menu-nefo-footer-menu-first_wer-wir-sind:node/48'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-first',
+    'link_path' => 'node/48',
+    'router_path' => 'node/%',
+    'link_title' => 'Wer wir sind',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Wer wir sind',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-first_wer-wir-sind:node/48',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fourth_ausschreibungen:node/6
+  $menu_links['menu-nefo-footer-menu-fourth_ausschreibungen:node/6'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fourth',
+    'link_path' => 'node/6',
+    'router_path' => 'node/%',
+    'link_title' => 'Ausschreibungen',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Ausschreibungen',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fourth_ausschreibungen:node/6',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fourth_daten-und-infrastrukturen:node/28
+  $menu_links['menu-nefo-footer-menu-fourth_daten-und-infrastrukturen:node/28'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fourth',
+    'link_path' => 'node/28',
+    'router_path' => 'node/%',
+    'link_title' => 'Daten und Infrastrukturen',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Daten und Infrastrukturen',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fourth_daten-und-infrastrukturen:node/28',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fourth_einbringen-in-die-forschung:node/1
+  $menu_links['menu-nefo-footer-menu-fourth_einbringen-in-die-forschung:node/1'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fourth',
+    'link_path' => 'node/1',
+    'router_path' => 'node/%',
+    'link_title' => 'Einbringen in die Forschung',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Einbringen in die Forschung',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fourth_einbringen-in-die-forschung:node/1',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fourth_internationales:node/8
+  $menu_links['menu-nefo-footer-menu-fourth_internationales:node/8'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fourth',
+    'link_path' => 'node/8',
+    'router_path' => 'node/%',
+    'link_title' => 'Internationales',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Internationales',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fourth_internationales:node/8',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -45,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fourth_netzwerke-und-vernetzung:node/37
+  $menu_links['menu-nefo-footer-menu-fourth_netzwerke-und-vernetzung:node/37'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fourth',
+    'link_path' => 'node/37',
+    'router_path' => 'node/%',
+    'link_title' => 'Netzwerke und Vernetzung',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Netzwerke und Vernetzung',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fourth_netzwerke-und-vernetzung:node/37',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fourth_projekte:node/27
+  $menu_links['menu-nefo-footer-menu-fourth_projekte:node/27'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fourth',
+    'link_path' => 'node/27',
+    'router_path' => 'node/%',
+    'link_title' => 'Projekte',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Projekte',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fourth_projekte:node/27',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_access--benefit-sharing:taxonomy/term/38
+  $menu_links['menu-nefo-footer-menu-second_access--benefit-sharing:taxonomy/term/38'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/38',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Access & Benefit Sharing',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Access & Benefit Sharing',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_access--benefit-sharing:taxonomy/term/38',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_bestubung:taxonomy/term/32
+  $menu_links['menu-nefo-footer-menu-second_bestubung:taxonomy/term/32'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/32',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Bestäubung',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Bestäubung',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_bestubung:taxonomy/term/32',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_biokonomie:taxonomy/term/35
+  $menu_links['menu-nefo-footer-menu-second_biokonomie:taxonomy/term/35'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/35',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Bioökonomie',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Bioökonomie',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_biokonomie:taxonomy/term/35',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_invasive-arten:taxonomy/term/37
+  $menu_links['menu-nefo-footer-menu-second_invasive-arten:taxonomy/term/37'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/37',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Invasive Arten',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Invasive Arten',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_invasive-arten:taxonomy/term/37',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -44,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_inwertsetzung:taxonomy/term/33
+  $menu_links['menu-nefo-footer-menu-second_inwertsetzung:taxonomy/term/33'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/33',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Inwertsetzung',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Inwertsetzung',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_inwertsetzung:taxonomy/term/33',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_klimawandel:taxonomy/term/39
+  $menu_links['menu-nefo-footer-menu-second_klimawandel:taxonomy/term/39'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/39',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Klimawandel',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Klimawandel',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_klimawandel:taxonomy/term/39',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_land-degradation:taxonomy/term/31
+  $menu_links['menu-nefo-footer-menu-second_land-degradation:taxonomy/term/31'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/31',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Land-Degradation',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Land-Degradation',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_land-degradation:taxonomy/term/31',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_monitoring:taxonomy/term/36
+  $menu_links['menu-nefo-footer-menu-second_monitoring:taxonomy/term/36'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/36',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Monitoring',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Monitoring',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_monitoring:taxonomy/term/36',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -45,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_pan-europisches-assessment:taxonomy/term/34
+  $menu_links['menu-nefo-footer-menu-second_pan-europisches-assessment:taxonomy/term/34'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/34',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Pan-europäisches Assessment',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Pan-europäisches Assessment',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_pan-europisches-assessment:taxonomy/term/34',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-third_europisch:node/49
+  $menu_links['menu-nefo-footer-menu-third_europisch:node/49'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-third',
+    'link_path' => 'node/49',
+    'router_path' => 'node/%',
+    'link_title' => 'Europäisch',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Europäisch',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-third_europisch:node/49',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-third_international:node/11
+  $menu_links['menu-nefo-footer-menu-third_international:node/11'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-third',
+    'link_path' => 'node/11',
+    'router_path' => 'node/%',
+    'link_title' => 'International',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'International',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-third_international:node/11',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-third_national:node/12
+  $menu_links['menu-nefo-footer-menu-third_national:node/12'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-third',
+    'link_path' => 'node/12',
+    'router_path' => 'node/%',
+    'link_title' => 'National',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'National',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-third_national:node/12',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
   // Exported menu link: menu-nefo-login-menu_abmelden:user/logout
   $menu_links['menu-nefo-login-menu_abmelden:user/logout'] = array(
     'menu_name' => 'menu-nefo-login-menu',
@@ -2102,6 +2729,29 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
+  // Exported menu link: menu-nefo-top-menu_ber-biodiversitt:node/42
+  $menu_links['menu-nefo-top-menu_ber-biodiversitt:node/42'] = array(
+    'menu_name' => 'menu-nefo-top-menu',
+    'link_path' => 'node/42',
+    'router_path' => 'node/%',
+    'link_title' => 'Über Biodiversität',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Über Biodiversität',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-top-menu_ber-biodiversitt:node/42',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
   // Exported menu link: menu-nefo-top-menu_contact:node/54
   $menu_links['menu-nefo-top-menu_contact:node/54'] = array(
     'menu_name' => 'menu-nefo-top-menu',
@@ -2172,6 +2822,29 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
+  // Exported menu link: menu-nefo-top-menu_impressum:node/9
+  $menu_links['menu-nefo-top-menu_impressum:node/9'] = array(
+    'menu_name' => 'menu-nefo-top-menu',
+    'link_path' => 'node/9',
+    'router_path' => 'node/%',
+    'link_title' => 'Impressum',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Impressum',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-top-menu_impressum:node/9',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
   // Exported menu link: menu-nefo-top-menu_kontakt:node/34
   $menu_links['menu-nefo-top-menu_kontakt:node/34'] = array(
     'menu_name' => 'menu-nefo-top-menu',
@@ -2193,6 +2866,29 @@ function nefo_struktur_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
     'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-top-menu_legal:node/39
+  $menu_links['menu-nefo-top-menu_legal:node/39'] = array(
+    'menu_name' => 'menu-nefo-top-menu',
+    'link_path' => 'node/39',
+    'router_path' => 'node/%',
+    'link_title' => 'Legal',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Legal',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-top-menu_legal:node/39',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -45,
+    'customized' => 1,
+    'language' => 'en',
     'menu_links_customized' => 1,
   );
   // Exported menu link: menu-nefo-top-menu_presse:presse
@@ -2233,6 +2929,7 @@ function nefo_struktur_menu_default_menu_links() {
   t('Beobachter in Plenen');
   t('Berichte');
   t('Bestäubung');
+  t('Beteiligung an IPBES');
   t('Biodiversitätsmonitoring');
   t('Bioökonomie');
   t('CBD');
@@ -2248,6 +2945,7 @@ function nefo_struktur_menu_default_menu_links() {
   t('Europäisch');
   t('Faktenblätter');
   t('Forschung');
+  t('Forschungsakteure');
   t('Forschungsatlas');
   t('Forschungsbedarf');
   t('Forschungsblogs');
@@ -2257,6 +2955,8 @@ function nefo_struktur_menu_default_menu_links() {
   t('Historie');
   t('IPBES');
   t('IPBES News');
+  t('Impressum');
+  t('Institutionen');
   t('International');
   t('Internationales');
   t('Interviews');
@@ -2268,6 +2968,7 @@ function nefo_struktur_menu_default_menu_links() {
   t('Konsultationen');
   t('Kontakt');
   t('Land-Degradation');
+  t('Legal');
   t('Literatur über IPBES');
   t('Literaturtipps');
   t('Login');
@@ -2278,6 +2979,7 @@ function nefo_struktur_menu_default_menu_links() {
   t('Nationale Biodiversitätsstrategie');
   t('Naturschutzgesetze EU');
   t('NeFo');
+  t('NeFo Produkte');
   t('NeFo-Produkte');
   t('Netzwerke und Vernetzung');
   t('News & Events');
@@ -2295,6 +2997,7 @@ function nefo_struktur_menu_default_menu_links() {
   t('Startseite');
   t('Stellungnahmen');
   t('Studien');
+  t('Themen');
   t('Unsere Themen');
   t('Was sind Schnittstellen?');
   t('Was wir machen');
@@ -2305,6 +3008,7 @@ function nefo_struktur_menu_default_menu_links() {
   t('Zahlen und Fakten');
   t('gti-Kontaktstelle');
   t('weitere Konventionen');
+  t('Über Biodiversität');
   t('Über IPBES');
 
   return $menu_links;
