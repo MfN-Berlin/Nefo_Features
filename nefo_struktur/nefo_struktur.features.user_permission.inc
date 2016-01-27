@@ -800,6 +800,17 @@ function nefo_struktur_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create nefo_slideshow content'.
+  $permissions['create nefo_slideshow content'] = array(
+    'name' => 'create nefo_slideshow content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
@@ -1024,6 +1035,17 @@ function nefo_struktur_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any nefo_slideshow content'.
+  $permissions['delete any nefo_slideshow content'] = array(
+    'name' => 'delete any nefo_slideshow content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
@@ -1231,6 +1253,17 @@ function nefo_struktur_user_default_permissions() {
   // Exported permission: 'delete own nefo_slide_report content'.
   $permissions['delete own nefo_slide_report content'] = array(
     'name' => 'delete own nefo_slide_report content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own nefo_slideshow content'.
+  $permissions['delete own nefo_slideshow content'] = array(
+    'name' => 'delete own nefo_slideshow content',
     'roles' => array(
       'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
@@ -1620,6 +1653,17 @@ function nefo_struktur_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any nefo_slideshow content'.
+  $permissions['edit any nefo_slideshow content'] = array(
+    'name' => 'edit any nefo_slideshow content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
@@ -1859,6 +1903,17 @@ function nefo_struktur_user_default_permissions() {
   // Exported permission: 'edit own nefo_slide_report content'.
   $permissions['edit own nefo_slide_report content'] = array(
     'name' => 'edit own nefo_slide_report content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own nefo_slideshow content'.
+  $permissions['edit own nefo_slideshow content'] = array(
+    'name' => 'edit own nefo_slideshow content',
     'roles' => array(
       'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',

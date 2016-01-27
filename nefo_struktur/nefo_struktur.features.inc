@@ -94,6 +94,21 @@ function nefo_struktur_image_default_styles() {
     ),
   );
 
+  // Exported image style: image_style_nefo_main_slideshow.
+  $styles['image_style_nefo_main_slideshow'] = array(
+    'label' => 'Main Slideshow',
+    'effects' => array(
+      6 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 802,
+          'height' => 386,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 
@@ -200,6 +215,14 @@ function nefo_struktur_node_info() {
     ),
     'nefo_slide_report' => array(
       'name' => t('Präsentationsfolie Bericht'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'nefo_slideshow' => array(
+      'name' => t('Slideshow Eintrag'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
