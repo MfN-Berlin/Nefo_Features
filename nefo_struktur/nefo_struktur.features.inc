@@ -54,8 +54,8 @@ function nefo_struktur_image_default_styles() {
       1 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 432,
-          'height' => 242,
+          'width' => 430,
+          'height' => 240,
         ),
         'weight' => 1,
       ),
@@ -101,8 +101,8 @@ function nefo_struktur_image_default_styles() {
       6 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 802,
-          'height' => 386,
+          'width' => 800,
+          'height' => 380,
         ),
         'weight' => 1,
       ),

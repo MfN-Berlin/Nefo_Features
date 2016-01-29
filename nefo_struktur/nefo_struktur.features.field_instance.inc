@@ -1078,7 +1078,7 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_product_interview-field_nefo_interview_img'] = array(
     'bundle' => 'nefo_product_interview',
     'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 432x242 Pixel',
+    'description' => 'Minimale Bildauflösung: 430x240 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1101,7 +1101,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '432x242',
+      'min_resolution' => '430x240',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1160,13 +1160,13 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'date',
       'settings' => array(
-        'increment' => 15,
+        'increment' => 30,
         'input_format' => 'Y-m-d H:i:s',
         'input_format_custom' => '',
         'label_position' => 'above',
         'no_fieldset' => 0,
         'text_parts' => array(),
-        'year_range' => '-3:+3',
+        'year_range' => '-7:+1',
       ),
       'type' => 'date_select',
       'weight' => 3,
@@ -1345,7 +1345,7 @@ function nefo_struktur_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -2746,6 +2746,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Maximal 90 Zeichen.');
   t('Mehrfachauswahl möglich.');
   t('Minimale Bildauflösung: 360x200 Pixel');
+  t('Minimale Bildauflösung: 430x240 Pixel');
   t('Minimale Bildauflösung: 432x242 Pixel');
   t('Minimale Bildauflösung: 802x386 Pixel');
   t('Minimale Breite: 120 Pixel');
