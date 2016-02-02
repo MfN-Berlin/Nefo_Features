@@ -499,7 +499,7 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_news-field_nefo_news_img'] = array(
     'bundle' => 'nefo_news',
     'deleted' => 0,
-    'description' => 'Minimale Breite: 120 Pixel',
+    'description' => 'Minimale Bildauflösung: 360x200 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -528,7 +528,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '360x200',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -590,7 +590,7 @@ function nefo_struktur_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -664,7 +664,7 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_product_article-field_nefo_article_img'] = array(
     'bundle' => 'nefo_product_article',
     'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 432x242 Pixel',
+    'description' => 'Minimale Bildauflösung: 430x240 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -693,7 +693,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '432x242',
+      'min_resolution' => '430x240',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2749,7 +2749,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Minimale Bildauflösung: 430x240 Pixel');
   t('Minimale Bildauflösung: 432x242 Pixel');
   t('Minimale Bildauflösung: 802x386 Pixel');
-  t('Minimale Breite: 120 Pixel');
   t('Monat');
   t('Name the person who owns the picture.');
   t('Name the person who owns the video.');
