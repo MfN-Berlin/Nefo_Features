@@ -62,56 +62,30 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_europisch:node/49',
   );
-  // Exported menu link: main-menu_aktiv-als-autor:node/71
-  $menu_links['main-menu_aktiv-als-autor:node/71'] = array(
+  // Exported menu link: main-menu_aktuelle-aufrufe-zur-beteiligung-im-ipbes--prozess:node/75
+  $menu_links['main-menu_aktuelle-aufrufe-zur-beteiligung-im-ipbes--prozess:node/75'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/71',
+    'link_path' => 'node/75',
     'router_path' => 'node/%',
-    'link_title' => 'Aktiv als Autor',
+    'link_title' => 'Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess',
     'options' => array(
       'node_type' => 'page',
       'attributes' => array(
-        'title' => 'Aktiv als Autor',
+        'title' => 'Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess',
       ),
       'alter' => TRUE,
-      'identifier' => 'main-menu_aktiv-als-autor:node/71',
+      'identifier' => 'main-menu_aktuelle-aufrufe-zur-beteiligung-im-ipbes--prozess:node/75',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_aktiv-werden:node/18',
-  );
-  // Exported menu link: main-menu_aktiv-werden:node/18
-  $menu_links['main-menu_aktiv-werden:node/18'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/18',
-    'router_path' => 'node/%',
-    'link_title' => 'Aktiv werden',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'Aktiv werden in IPBES',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_aktiv-werden:node/18',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_ipbes:node/32',
+    'parent_identifier' => 'main-menu_bei-ipbes-aktiv-werden:node/71',
   );
   // Exported menu link: main-menu_ausschreibungen:node/6
   $menu_links['main-menu_ausschreibungen:node/6'] = array(
@@ -139,30 +113,30 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_forschung:node/25',
   );
-  // Exported menu link: main-menu_beobachter-in-plenen:node/74
-  $menu_links['main-menu_beobachter-in-plenen:node/74'] = array(
+  // Exported menu link: main-menu_bei-ipbes-aktiv-werden:node/71
+  $menu_links['main-menu_bei-ipbes-aktiv-werden:node/71'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/74',
+    'link_path' => 'node/71',
     'router_path' => 'node/%',
-    'link_title' => 'Beobachter in Plenen',
+    'link_title' => 'Bei IPBES aktiv werden',
     'options' => array(
       'node_type' => 'page',
       'attributes' => array(
-        'title' => 'Beobachter in Plenen',
+        'title' => 'Bei IPBES aktiv werden',
       ),
       'alter' => TRUE,
-      'identifier' => 'main-menu_beobachter-in-plenen:node/74',
+      'identifier' => 'main-menu_bei-ipbes-aktiv-werden:node/71',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -49,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_aktiv-werden:node/18',
+    'parent_identifier' => 'main-menu_ipbes:node/32',
   );
   // Exported menu link: main-menu_ber-ipbes:node/38
   $menu_links['main-menu_ber-ipbes:node/38'] = array(
@@ -173,7 +147,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'Über IPBES',
+        'title' => 'Über IPBES - Informationen zur Struktur und zum Conceptual Framework',
       ),
       'alter' => TRUE,
       'node_type' => 'page',
@@ -184,7 +158,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -206,9 +180,9 @@ function nefo_struktur_menu_default_menu_links() {
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -49,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -310,7 +284,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -325,7 +299,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'CBD',
+        'title' => 'Einleitungstext über die CBD, inkl. Verweise auf Cartagena-Protokoll und Nagoya-Protokoll.',
       ),
       'alter' => TRUE,
       'node_type' => 'page',
@@ -392,6 +366,31 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_nefo:node/33',
   );
+  // Exported menu link: main-menu_cop:node/61
+  $menu_links['main-menu_cop:node/61'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/61',
+    'router_path' => 'node/%',
+    'link_title' => 'COP',
+    'options' => array(
+      'node_type' => 'page',
+      'attributes' => array(
+        'title' => 'Einführung zu den CBD-Vertragsstaatenkonferenzen (COPs)',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_cop:node/61',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_cbd:node/50',
+  );
   // Exported menu link: main-menu_daten-beitragen:node/10
   $menu_links['main-menu_daten-beitragen:node/10'] = array(
     'menu_name' => 'main-menu',
@@ -444,31 +443,6 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_forschung:node/25',
   );
-  // Exported menu link: main-menu_deutsche-expertinnen-und-experten:node/72
-  $menu_links['main-menu_deutsche-expertinnen-und-experten:node/72'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/72',
-    'router_path' => 'node/%',
-    'link_title' => 'Deutsche Expertinnen und Experten',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Deutsche Expertinnen und Experten in IPBES',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_deutsche-expertinnen-und-experten:node/72',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_aktiv-werden:node/18',
-  );
   // Exported menu link: main-menu_deutsche-untersttzungsstruktur:node/4
   $menu_links['main-menu_deutsche-untersttzungsstruktur:node/4'] = array(
     'menu_name' => 'main-menu',
@@ -489,7 +463,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -565,7 +539,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -772,6 +746,30 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_internationales:node/8',
   );
+  // Exported menu link: main-menu_gesundheit:taxonomy/term/54
+  $menu_links['main-menu_gesundheit:taxonomy/term/54'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/54',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Gesundheit',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Gesundheit',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_gesundheit:taxonomy/term/54',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
   // Exported menu link: main-menu_gti-kontaktstelle:node/45
   $menu_links['main-menu_gti-kontaktstelle:node/45'] = array(
     'menu_name' => 'main-menu',
@@ -797,31 +795,6 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_daten-und-infrastrukturen:node/28',
-  );
-  // Exported menu link: main-menu_historie:node/69
-  $menu_links['main-menu_historie:node/69'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/69',
-    'router_path' => 'node/%',
-    'link_title' => 'Historie',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Historie',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_historie:node/69',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_service-zu-ipbes:node/68',
   );
   // Exported menu link: main-menu_institutionen:node/43
   $menu_links['main-menu_institutionen:node/43'] = array(
@@ -857,7 +830,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'International',
+        'title' => 'Einleitung für den Menüpunkt International mit Verweisen zur CBD, zu IPBES, zum Millenium Ecosystem Assessment und zur TEEB-Studie.',
       ),
       'node_type' => 'page',
       'alter' => TRUE,
@@ -976,6 +949,78 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-themen:node/44',
   );
+  // Exported menu link: main-menu_ipbes-arbeitsprogramm:node/213
+  $menu_links['main-menu_ipbes-arbeitsprogramm:node/213'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/213',
+    'router_path' => 'node/%',
+    'link_title' => 'IPBES Arbeitsprogramm',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+      'identifier' => 'main-menu_ipbes-arbeitsprogramm:node/213',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_ber-ipbes:node/38',
+  );
+  // Exported menu link: main-menu_ipbes-faq:node/286
+  $menu_links['main-menu_ipbes-faq:node/286'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/286',
+    'router_path' => 'node/%',
+    'link_title' => 'IPBES FAQ',
+    'options' => array(
+      'node_type' => 'page',
+      'attributes' => array(
+        'title' => 'NeFo FAQ zu IPBES',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_ipbes-faq:node/286',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_ber-ipbes:node/38',
+  );
+  // Exported menu link: main-menu_ipbes-historie:node/218
+  $menu_links['main-menu_ipbes-historie:node/218'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/218',
+    'router_path' => 'node/%',
+    'link_title' => 'IPBES Historie',
+    'options' => array(
+      'node_type' => 'page',
+      'attributes' => array(
+        'title' => 'Übersicht über den IPBES Entstehungsprozess sowie über alle Plenen.',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_ipbes-historie:node/218',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_ber-ipbes:node/38',
+  );
   // Exported menu link: main-menu_ipbes-news:taxonomy/term/41
   $menu_links['main-menu_ipbes-news:taxonomy/term/41'] = array(
     'menu_name' => 'main-menu',
@@ -992,13 +1037,39 @@ function nefo_struktur_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_ipbes:node/32',
+  );
+  // Exported menu link: main-menu_ipbes-nominierungsprozess:node/18
+  $menu_links['main-menu_ipbes-nominierungsprozess:node/18'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/18',
+    'router_path' => 'node/%',
+    'link_title' => 'IPBES Nominierungsprozess',
+    'options' => array(
+      'devel' => TRUE,
+      'attributes' => array(
+        'title' => 'IPBES Nominierungsprozess',
+      ),
+      'alter' => TRUE,
+      'node_type' => 'page',
+      'identifier' => 'main-menu_ipbes-nominierungsprozess:node/18',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_bei-ipbes-aktiv-werden:node/71',
   );
   // Exported menu link: main-menu_ipbes:node/17
   $menu_links['main-menu_ipbes:node/17'] = array(
@@ -1104,56 +1175,6 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_daten-und-infrastrukturen:node/28',
   );
-  // Exported menu link: main-menu_konferenzen:node/61
-  $menu_links['main-menu_konferenzen:node/61'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/61',
-    'router_path' => 'node/%',
-    'link_title' => 'Konferenzen',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Konferenzen',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_konferenzen:node/61',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_cbd:node/50',
-  );
-  // Exported menu link: main-menu_konsultationen:node/73
-  $menu_links['main-menu_konsultationen:node/73'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/73',
-    'router_path' => 'node/%',
-    'link_title' => 'Konsultationen',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Konsultationen',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_konsultationen:node/73',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_aktiv-werden:node/18',
-  );
   // Exported menu link: main-menu_land-degradation:taxonomy/term/31
   $menu_links['main-menu_land-degradation:taxonomy/term/31'] = array(
     'menu_name' => 'main-menu',
@@ -1254,6 +1275,28 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
+  // Exported menu link: main-menu_monitorings-indigener-und-lokaler-gemeinschaften-wichtig-bei-der-erhaltung-der-biologischen-vielfalt:node/353
+  $menu_links['main-menu_monitorings-indigener-und-lokaler-gemeinschaften-wichtig-bei-der-erhaltung-der-biologischen-vielfalt:node/353'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/353',
+    'router_path' => 'node/%',
+    'link_title' => 'Monitorings indigener und lokaler Gemeinschaften wichtig bei der Erhaltung der biologischen Vielfalt',
+    'options' => array(
+      'node_type' => 'article',
+      'alter' => TRUE,
+      'identifier' => 'main-menu_monitorings-indigener-und-lokaler-gemeinschaften-wichtig-bei-der-erhaltung-der-biologischen-vielfalt:node/353',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_ipbes-news:taxonomy/term/41',
   );
   // Exported menu link: main-menu_nachwuchswissenschaftler:node/3
   $menu_links['main-menu_nachwuchswissenschaftler:node/3'] = array(
@@ -1365,12 +1408,11 @@ function nefo_struktur_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Naturschutzgesetze EU',
     'options' => array(
-      'devel' => TRUE,
+      'node_type' => 'page',
       'attributes' => array(
-        'title' => 'Naturschutzgesetze EU',
+        'title' => 'Natura 2000',
       ),
       'alter' => TRUE,
-      'node_type' => 'page',
       'identifier' => 'main-menu_naturschutzgesetze-eu:node/30',
     ),
     'module' => 'menu',
@@ -1535,6 +1577,30 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
+  // Exported menu link: main-menu_politikwissenschaften:taxonomy/term/47
+  $menu_links['main-menu_politikwissenschaften:taxonomy/term/47'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/47',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Politikwissenschaften',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Politikwissenschaften',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_politikwissenschaften:taxonomy/term/47',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
   // Exported menu link: main-menu_projekte:node/27
   $menu_links['main-menu_projekte:node/27'] = array(
     'menu_name' => 'main-menu',
@@ -1681,7 +1747,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1706,36 +1772,11 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_ipbes:node/32',
-  );
-  // Exported menu link: main-menu_stakeholdervernetzung:node/75
-  $menu_links['main-menu_stakeholdervernetzung:node/75'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/75',
-    'router_path' => 'node/%',
-    'link_title' => 'Stakeholdervernetzung',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Stakeholdervernetzung',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_stakeholdervernetzung:node/75',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_aktiv-werden:node/18',
   );
   // Exported menu link: main-menu_startseite:<front>
   $menu_links['main-menu_startseite:<front>'] = array(
@@ -1778,7 +1819,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1802,7 +1843,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1960,6 +2001,28 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_international:node/11',
+  );
+  // Exported menu link: main-menu_weitere-strategien:node/362
+  $menu_links['main-menu_weitere-strategien:node/362'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/362',
+    'router_path' => 'node/%',
+    'link_title' => 'Weitere Strategien',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+      'identifier' => 'main-menu_weitere-strategien:node/362',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_national:node/12',
   );
   // Exported menu link: main-menu_welche-gibt-es:node/46
   $menu_links['main-menu_welche-gibt-es:node/46'] = array(
@@ -2356,7 +2419,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2403,6 +2466,29 @@ function nefo_struktur_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -46,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_gesundheit:taxonomy/term/54
+  $menu_links['menu-nefo-footer-menu-second_gesundheit:taxonomy/term/54'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/54',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Gesundheit',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Gesundheit',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_gesundheit:taxonomy/term/54',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -41,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2471,7 +2557,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -42,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2541,6 +2627,29 @@ function nefo_struktur_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -47,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_politikwissenschaften:taxonomy/term/47
+  $menu_links['menu-nefo-footer-menu-second_politikwissenschaften:taxonomy/term/47'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/47',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Politikwissenschaften',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Politikwissenschaften',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_politikwissenschaften:taxonomy/term/47',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -40,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2718,29 +2827,6 @@ function nefo_struktur_menu_default_menu_links() {
       ),
       'alter' => TRUE,
       'identifier' => 'menu-nefo-top-menu_akronyme:node/26',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: menu-nefo-top-menu_ber-biodiversitt:node/42
-  $menu_links['menu-nefo-top-menu_ber-biodiversitt:node/42'] = array(
-    'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'node/42',
-    'router_path' => 'node/%',
-    'link_title' => 'Über Biodiversität',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Über Biodiversität',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_ber-biodiversitt:node/42',
       'node_type' => 'page',
     ),
     'module' => 'menu',
@@ -2748,7 +2834,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2771,7 +2857,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'en',
     'menu_links_customized' => 1,
@@ -2812,13 +2898,14 @@ function nefo_struktur_menu_default_menu_links() {
       ),
       'alter' => TRUE,
       'identifier' => 'menu-nefo-top-menu_glossar:node/23',
+      'node_type' => 'page',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2835,6 +2922,7 @@ function nefo_struktur_menu_default_menu_links() {
       ),
       'alter' => TRUE,
       'identifier' => 'menu-nefo-top-menu_impressum:node/9',
+      'node_type' => 'page',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -2858,6 +2946,7 @@ function nefo_struktur_menu_default_menu_links() {
       ),
       'alter' => TRUE,
       'identifier' => 'menu-nefo-top-menu_kontakt:node/34',
+      'node_type' => 'page',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -2887,7 +2976,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'en',
     'menu_links_customized' => 1,
@@ -2922,24 +3011,23 @@ function nefo_struktur_menu_default_menu_links() {
   t('Access & Benefit Sharing');
   t('Agrarpolitik');
   t('Akronyme');
-  t('Aktiv als Autor');
-  t('Aktiv werden');
+  t('Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess');
   t('Anmelden');
   t('Ausschreibungen');
   t('BSPIN/ Nachwuchswissenschaftler');
-  t('Beobachter in Plenen');
+  t('Bei IPBES aktiv werden');
   t('Berichte');
   t('Bestäubung');
   t('Beteiligung an IPBES');
   t('Biodiversitätsmonitoring');
   t('Bioökonomie');
   t('CBD');
+  t('COP');
   t('Citizen Science');
   t('Community-Bezug');
   t('Contact');
   t('Daten beitragen');
   t('Daten und Infrastrukturen');
-  t('Deutsche Expertinnen und Experten');
   t('Deutsche Unterstützungsstruktur');
   t('Eigene Pressemitteilungen');
   t('Einbringen in die Forschung');
@@ -2952,10 +3040,14 @@ function nefo_struktur_menu_default_menu_links() {
   t('Forschungsblogs');
   t('Future Earth');
   t('GeoBon');
+  t('Gesundheit');
   t('Glossar');
-  t('Historie');
   t('IPBES');
+  t('IPBES Arbeitsprogramm');
+  t('IPBES FAQ');
+  t('IPBES Historie');
   t('IPBES News');
+  t('IPBES Nominierungsprozess');
   t('Impressum');
   t('Institutionen');
   t('International');
@@ -2965,8 +3057,6 @@ function nefo_struktur_menu_default_menu_links() {
   t('Inwertsetzung');
   t('Klimawandel');
   t('Kommentierte Verweisliste');
-  t('Konferenzen');
-  t('Konsultationen');
   t('Kontakt');
   t('Land-Degradation');
   t('Legal');
@@ -2975,6 +3065,7 @@ function nefo_struktur_menu_default_menu_links() {
   t('Login');
   t('Logout');
   t('Monitoring');
+  t('Monitorings indigener und lokaler Gemeinschaften wichtig bei der Erhaltung der biologischen Vielfalt');
   t('Nachwuchswissenschaftler');
   t('National');
   t('Nationale Biodiversitätsstrategie');
@@ -2986,6 +3077,7 @@ function nefo_struktur_menu_default_menu_links() {
   t('News & Events');
   t('Pan-europäisches Assessment');
   t('Politik');
+  t('Politikwissenschaften');
   t('Presse');
   t('Projekte');
   t('Rollen von Expertinnen und Experten');
@@ -2994,7 +3086,6 @@ function nefo_struktur_menu_default_menu_links() {
   t('Schnittstellen verstehen');
   t('Service zu IPBES');
   t('Stakeholder Engagement Strategy');
-  t('Stakeholdervernetzung');
   t('Startseite');
   t('Stellungnahmen');
   t('Studien');
@@ -3003,13 +3094,13 @@ function nefo_struktur_menu_default_menu_links() {
   t('Was sind Schnittstellen?');
   t('Was wir machen');
   t('Wegweiser');
+  t('Weitere Strategien');
   t('Welche gibt es?');
   t('Wer wir sind');
   t('Workshops');
   t('Zahlen und Fakten');
   t('gti-Kontaktstelle');
   t('weitere Konventionen');
-  t('Über Biodiversität');
   t('Über IPBES');
 
   return $menu_links;

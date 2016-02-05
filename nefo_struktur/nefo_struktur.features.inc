@@ -122,7 +122,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('Benutzen Sie <em>Artikel</em> für zeitkritische Inhalte wie Nachrichten, Pressemeldungen oder Blogeinträge.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_news' => array(
@@ -130,7 +130,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('Bio-Div und IPBES Nachrichten'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_article' => array(
@@ -138,7 +138,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('NeFo-Artikel'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_factsheet' => array(
@@ -146,7 +146,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('NeFo-Faktenblätter'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_interview' => array(
@@ -154,7 +154,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('NeFo-Interviews'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_literature_tip' => array(
@@ -162,7 +162,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('NeFo-Literaturtipps'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_opinion' => array(
@@ -170,7 +170,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('NeFo-Stellungnahmen'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_press_release' => array(
@@ -178,7 +178,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('NeFo-Pressemitteilungen'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_report' => array(
@@ -186,13 +186,21 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_study' => array(
       'name' => t('NeFo-Produkt Studie'),
       'base' => 'node_content',
       'description' => t('NeFo-Studien'),
+      'has_title' => '1',
+      'title_label' => t('Titel'),
+      'help' => '',
+    ),
+    'nefo_product_workshop' => array(
+      'name' => t('NeFo-Produkt Workshop'),
+      'base' => 'node_content',
+      'description' => t('NeFo-Workshops'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
@@ -202,7 +210,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_slide_opinion' => array(
@@ -210,7 +218,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_slide_report' => array(
@@ -218,7 +226,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_slideshow' => array(

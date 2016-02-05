@@ -329,6 +329,146 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-article-field_dateien'
+  $field_instances['node-article-field_dateien'] = array(
+    'bundle' => 'article',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file_entity',
+        'settings' => array(
+          'text' => 'Download [file:name]',
+        ),
+        'type' => 'file_download_link',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_dateien',
+    'label' => 'Dateien',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'txt pdf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 'document',
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-article-field_internal_link'
+  $field_instances['node-article-field_internal_link'] = array(
+    'bundle' => 'article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_internal_link',
+    'label' => 'weitere Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-article-field_schlagworte'
+  $field_instances['node-article-field_schlagworte'] = array(
+    'bundle' => 'article',
+    'default_value' => array(),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_schlagworte',
+    'label' => 'Schlagworte',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'apply_chosen' => 1,
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-blog-body'
   $field_instances['node-blog-body'] = array(
     'bundle' => 'blog',
@@ -520,7 +660,7 @@ function nefo_struktur_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_nefo_news_img',
     'label' => 'Bild',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -657,6 +797,47 @@ function nefo_struktur_field_default_field_instances() {
       ),
       'type' => 'text_textarea_with_summary',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-nefo_product_article-field_internal_link'
+  $field_instances['node-nefo_product_article-field_internal_link'] = array(
+    'bundle' => 'nefo_product_article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_internal_link',
+    'label' => 'weitere Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 6,
     ),
   );
 
@@ -1039,6 +1220,41 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-nefo_product_interview-field_internal_link'
+  $field_instances['node-nefo_product_interview-field_internal_link'] = array(
+    'bundle' => 'nefo_product_interview',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_internal_link',
+    'label' => 'weitere Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance:
   // 'node-nefo_product_interview-field_nefo_interview_category'
   $field_instances['node-nefo_product_interview-field_nefo_interview_category'] = array(
@@ -1093,7 +1309,7 @@ function nefo_struktur_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_nefo_interview_img',
     'label' => 'Bild',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -1553,6 +1769,48 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'node-nefo_product_press_release-field_internal_link'
+  $field_instances['node-nefo_product_press_release-field_internal_link'] = array(
+    'bundle' => 'nefo_product_press_release',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_internal_link',
+    'label' => 'weitere Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-nefo_product_press_release-field_nefo_press_release_img'
   $field_instances['node-nefo_product_press_release-field_nefo_press_release_img'] = array(
     'bundle' => 'nefo_product_press_release',
@@ -1709,7 +1967,7 @@ function nefo_struktur_field_default_field_instances() {
       ),
     ),
     'deleted' => 0,
-    'description' => '',
+    'description' => 'NeFo-Berichte',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1738,45 +1996,6 @@ function nefo_struktur_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'node-nefo_product_report-field_nefo_report_cat'
-  $field_instances['node-nefo_product_report-field_nefo_report_cat'] = array(
-    'bundle' => 'nefo_product_report',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'i18n_taxonomy',
-        'settings' => array(),
-        'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nefo_report_cat',
-    'label' => 'Kategorie',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => '',
-      ),
-      'type' => 'options_select',
-      'weight' => 1,
     ),
   );
 
@@ -2069,6 +2288,248 @@ function nefo_struktur_field_default_field_instances() {
       ),
       'type' => 'options_select',
       'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_workshop-field_nefo_description'
+  $field_instances['node-nefo_product_workshop-field_nefo_description'] = array(
+    'bundle' => 'nefo_product_workshop',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Maximal 500 Zeichen.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_description',
+    'label' => 'Beschreibung',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 500,
+        'maxlength_js_enforce' => 1,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 2,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_workshop-field_nefo_product_field_type'
+  $field_instances['node-nefo_product_workshop-field_nefo_product_field_type'] = array(
+    'bundle' => 'nefo_product_workshop',
+    'default_value' => array(
+      0 => array(
+        'value' => 'PDF-Datei',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_product_field_type',
+    'label' => 'Typ',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_workshop-field_nefo_taxonomy_tags'
+  $field_instances['node-nefo_product_workshop-field_nefo_taxonomy_tags'] = array(
+    'bundle' => 'nefo_product_workshop',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_taxonomy_tags',
+    'label' => 'Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_workshop-field_nefo_workshop_file'
+  $field_instances['node-nefo_product_workshop-field_nefo_workshop_file'] = array(
+    'bundle' => 'nefo_product_workshop',
+    'deleted' => 0,
+    'description' => 'PDF-Dokument',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_workshop_file',
+    'label' => 'Dokument',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'products/workshops',
+      'file_extensions' => 'pdf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 'document',
+          'image' => 0,
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_workshop-field_nefo_workshop_url'
+  $field_instances['node-nefo_product_workshop-field_nefo_workshop_url'] = array(
+    'bundle' => 'nefo_product_workshop',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_url',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_workshop_url',
+    'label' => 'URL',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 0,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 3,
     ),
   );
 
@@ -2726,6 +3187,47 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-page-field_internal_link'
+  $field_instances['node-page-field_internal_link'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_internal_link',
+    'label' => 'weitere Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Alt Text');
@@ -2736,6 +3238,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Bildunterschrift');
   t('Blog');
   t('Body');
+  t('Dateien');
   t('Dokument');
   t('Erklärender Text zum Bild.');
   t('Gehört zu');
@@ -2752,9 +3255,11 @@ function nefo_struktur_field_default_field_instances() {
   t('Monat');
   t('Name the person who owns the picture.');
   t('Name the person who owns the video.');
+  t('NeFo-Berichte');
   t('PDF-Dokument');
   t('PNG, GIF, JPG, JPEG oder ein Bild aus dem Internet.');
   t('Pressemitteilung');
+  t('Schlagworte');
   t('Stellungnahme');
   t('Studie');
   t('Themen');
@@ -2764,6 +3269,7 @@ function nefo_struktur_field_default_field_instances() {
   t('URL');
   t('Video Credit');
   t('Ziel-URL');
+  t('weitere Themen');
 
   return $field_instances;
 }

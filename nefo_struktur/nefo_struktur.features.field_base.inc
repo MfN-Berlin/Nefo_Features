@@ -54,6 +54,30 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_dateien'
+  $field_bases['field_dateien'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_dateien',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'file',
+    'settings' => array(
+      'display_default' => 0,
+      'display_field' => 0,
+      'profile2_private' => FALSE,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'file',
+  );
+
   // Exported field_base: 'field_file_image_alt_text'
   $field_bases['field_file_image_alt_text'] = array(
     'active' => 1,
@@ -157,6 +181,51 @@ function nefo_struktur_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_internal_link'
+  $field_bases['field_internal_link'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_internal_link',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'article' => 'article',
+          'blog' => 'blog',
+          'nefo_product_article' => 'nefo_product_article',
+          'nefo_product_factsheet' => 'nefo_product_factsheet',
+          'nefo_product_interview' => 'nefo_product_interview',
+          'nefo_product_opinion' => 'nefo_product_opinion',
+          'nefo_product_press_release' => 'nefo_product_press_release',
+          'nefo_product_report' => 'nefo_product_report',
+          'nefo_product_study' => 'nefo_product_study',
+          'page' => 'page',
+        ),
+      ),
+      'profile2_private' => FALSE,
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_nefo_article_img'
@@ -491,36 +560,10 @@ function nefo_struktur_field_default_field_bases() {
         'Link' => 'Link',
       ),
       'allowed_values_function' => '',
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_text',
-  );
-
-  // Exported field_base: 'field_nefo_report_cat'
-  $field_bases['field_nefo_report_cat'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_nefo_report_cat',
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'nefo_taxonomy_report',
-          'parent' => 0,
-        ),
-      ),
-      'options_list_callback' => 'i18n_taxonomy_allowed_values',
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_nefo_report_file'
@@ -940,6 +983,88 @@ function nefo_struktur_field_default_field_bases() {
       'allowed_values' => array(
         0 => array(
           'vocabulary' => 'nefo_taxonomy_tags',
+          'parent' => 0,
+        ),
+      ),
+      'options_list_callback' => 'i18n_taxonomy_allowed_values',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_nefo_workshop_file'
+  $field_bases['field_nefo_workshop_file'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nefo_workshop_file',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'file',
+    'settings' => array(
+      'display_default' => 0,
+      'display_field' => 0,
+      'profile2_private' => FALSE,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'file',
+  );
+
+  // Exported field_base: 'field_nefo_workshop_url'
+  $field_bases['field_nefo_workshop_url'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nefo_workshop_url',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'profile2_private' => FALSE,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_schlagworte'
+  $field_bases['field_schlagworte'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_schlagworte',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'nefo_schlagworte',
           'parent' => 0,
         ),
       ),

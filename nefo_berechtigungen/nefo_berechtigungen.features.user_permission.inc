@@ -78,6 +78,8 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'contextual',
@@ -639,6 +641,8 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['create article content'] = array(
     'name' => 'create article content',
     'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -776,6 +780,17 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create nefo_product_workshop content'.
+  $permissions['create nefo_product_workshop content'] = array(
+    'name' => 'create nefo_product_workshop content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create nefo_slide_factsheet content'.
   $permissions['create nefo_slide_factsheet content'] = array(
     'name' => 'create nefo_slide_factsheet content',
@@ -854,6 +869,8 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
     'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1011,6 +1028,17 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any nefo_product_workshop content'.
+  $permissions['delete any nefo_product_workshop content'] = array(
+    'name' => 'delete any nefo_product_workshop content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any nefo_slide_factsheet content'.
   $permissions['delete any nefo_slide_factsheet content'] = array(
     'name' => 'delete any nefo_slide_factsheet content',
@@ -1080,6 +1108,8 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
     'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1237,6 +1267,17 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own nefo_product_workshop content'.
+  $permissions['delete own nefo_product_workshop content'] = array(
+    'name' => 'delete own nefo_product_workshop content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own nefo_slide_factsheet content'.
   $permissions['delete own nefo_slide_factsheet content'] = array(
     'name' => 'delete own nefo_slide_factsheet content',
@@ -1320,6 +1361,13 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'delete terms in nefo_schlagworte'.
+  $permissions['delete terms in nefo_schlagworte'] = array(
+    'name' => 'delete terms in nefo_schlagworte',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in nefo_taxonomy_blogs'.
   $permissions['delete terms in nefo_taxonomy_blogs'] = array(
     'name' => 'delete terms in nefo_taxonomy_blogs',
@@ -1341,15 +1389,6 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'delete terms in nefo_taxonomy_news'.
   $permissions['delete terms in nefo_taxonomy_news'] = array(
     'name' => 'delete terms in nefo_taxonomy_news',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'delete terms in nefo_taxonomy_report'.
-  $permissions['delete terms in nefo_taxonomy_report'] = array(
-    'name' => 'delete terms in nefo_taxonomy_report',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -1462,6 +1501,8 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
     'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1628,6 +1669,17 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any nefo_product_workshop content'.
+  $permissions['edit any nefo_product_workshop content'] = array(
+    'name' => 'edit any nefo_product_workshop content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any nefo_slide_factsheet content'.
   $permissions['edit any nefo_slide_factsheet content'] = array(
     'name' => 'edit any nefo_slide_factsheet content',
@@ -1708,6 +1760,8 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
     'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1886,6 +1940,17 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own nefo_product_workshop content'.
+  $permissions['edit own nefo_product_workshop content'] = array(
+    'name' => 'edit own nefo_product_workshop content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own nefo_slide_factsheet content'.
   $permissions['edit own nefo_slide_factsheet content'] = array(
     'name' => 'edit own nefo_slide_factsheet content',
@@ -1972,6 +2037,15 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'edit terms in nefo_schlagworte'.
+  $permissions['edit terms in nefo_schlagworte'] = array(
+    'name' => 'edit terms in nefo_schlagworte',
+    'roles' => array(
+      'Author' => 'Author',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit terms in nefo_taxonomy_blogs'.
   $permissions['edit terms in nefo_taxonomy_blogs'] = array(
     'name' => 'edit terms in nefo_taxonomy_blogs',
@@ -1993,15 +2067,6 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'edit terms in nefo_taxonomy_news'.
   $permissions['edit terms in nefo_taxonomy_news'] = array(
     'name' => 'edit terms in nefo_taxonomy_news',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in nefo_taxonomy_report'.
-  $permissions['edit terms in nefo_taxonomy_report'] = array(
-    'name' => 'edit terms in nefo_taxonomy_report',
     'roles' => array(
       'administrator' => 'administrator',
     ),

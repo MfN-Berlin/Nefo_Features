@@ -11,27 +11,24 @@ function nefo_struktur_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Internationale Politikprozesse',
-    'description' => '',
-    'format' => 'full_html',
-    'weight' => 1,
-    'uuid' => '0cf04589-2196-4690-aa18-2361845c7c70',
+    'name' => 'COP',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '0b4a7d1c-8d7a-4477-b2e9-43df3c8e225d',
     'language' => 'und',
     'i18n_tsid' => 0,
-    'vocabulary_machine_name' => 'nefo_taxonomy_report',
-    'path' => array(
-      'pathauto' => 0,
-    ),
+    'vocabulary_machine_name' => 'nefo_schlagworte',
     'url_alias' => array(
       0 => array(
-        'alias' => 'schnittstellen/produkte/berichte/intprozesse',
+        'alias' => 'nefo-schlagworte/cop',
         'language' => 'und',
       ),
     ),
   );
   $terms[] = array(
-    'name' => 'Test Blog 2',
-    'description' => '<p>Test Blog 2. Test Blog 2. Test Blog 2.</p>',
+    'name' => 'IPBES-2 Antalya 2013',
+    'description' => '<p>2. Plenumstreffen von IPBES vom 9. bis 14. Dezember 2013 in Antalya, Türkei</p><p>IPBES-Blog-LogoIm türkischen Antalya traf sich vom 9.- 14. Dezember 2013 die Weltgemeinschaft zur zweiten Plenumssitzung der zwischenstaatlichen Wissenschafts-Politik-Plattform zu Biodiversität und Ökosystemleistungen.</p><p>Experten aus der deutschen Biodiversitätsforschung sowie das nefo logo text-Team waren vor Ort und berichteten von den aktuellen Entwicklungen.</p>',
     'format' => 'full_html',
     'weight' => 0,
     'uuid' => '11f2f93b-43be-4537-a0c7-b15bab03f4cc',
@@ -43,7 +40,7 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'blog/testblog2',
+        'alias' => 'blog/ipbes-2-antalya-2013',
         'language' => 'und',
       ),
     ),
@@ -68,6 +65,44 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Gesundheit',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '26a642f8-583f-469a-84a4-1c99b45e31e6',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_tags',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'themen/gesundheit',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'IPBES-3 Bonn 2015',
+    'description' => '<p>3. Vollversammlung von IPBES vom 12. bis 17. Januar 2015 in Bonn</p><p>IPBES-Blog-LogoDieses Jahr wieder in Deutschland kommen die Vertreter der inzwischen 126 Mitgliedstaaten zusammen, um über wesentliche Punkte wie die geplanten Inhalte der Berichte und Politikinstrumente abzustimmen. Experten aus dem nefo logo text-Team sind vor Ort und berichteten von den aktuellen Entwicklungen. Da das NeFo-Engagement in IPBES und das Interesse für unsere Arbeit über die Landesgrenzen hinaus geht, ist der Blog überwiegend in Englisch gehalten.</p><p>Verfolgen Sie die Konferenz auch auf Twitter unter dem Hashtag <a href="https://twitter.com/search?q=ipbes3&amp;src=typd">#ipbes3</a>!</p>',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '2bd96000-151f-4b48-8215-8203dab32802',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/ipbes-3-bonn-2015',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Pan-europäisches Assessments',
     'description' => '',
     'format' => 'full_html',
@@ -87,8 +122,24 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Test Blog 1',
-    'description' => '<p>Test Blog 1. Test Blog 1. Test Blog 1.</p>',
+    'name' => 'CBD',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '333dc78b-a88a-4e80-ba4b-17fb9fa0afc7',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/cbd',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'IPBES-1 Bonn 2013',
+    'description' => '<p>IPBES-1 vom 21.-26.01.2013 in Bonn</p><p>IPBES BlogIn Bonn traf sich die Weltgemeinschaft zur ersten Plenarsitzung der "Intergovernmental Platform on Biodiversity &amp; Ecosystem Services" (IPBES).</p><p>Experten aus der deutschen Biodiversitätsforschung sowie das nefo logo text-Team waren vor Ort und berichteten täglich von den aktuellen Entwicklungen.</p>',
     'format' => 'full_html',
     'weight' => 0,
     'uuid' => '3a1d4f3e-8101-44f1-83e8-a012ac65d673',
@@ -100,7 +151,26 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'blog/testblog1',
+        'alias' => 'blog/ipbes-1-bonn-2013',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => '1 IPBES Nairobi 2011 für 1. IPBES Gründungstreffen 2011',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '3a34f751-66cd-4431-a07f-94d3d95889ed',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/1-ipbes-nairobi-2011',
         'language' => 'und',
       ),
     ),
@@ -125,20 +195,55 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Workshops',
+    'name' => 'asdf',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '7067b803-6a8a-40ab-bfc6-e49884be5520',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/asdf',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'IPBES II Nairobi 2009',
     'description' => '',
     'format' => 'full_html',
     'weight' => 0,
-    'uuid' => '5417b933-3ab3-4805-82dc-355ad6274151',
+    'uuid' => '717f9f76-90e1-4fc2-b7a9-99fb9c9acc19',
     'language' => 'und',
     'i18n_tsid' => 0,
-    'vocabulary_machine_name' => 'nefo_taxonomy_report',
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
     'path' => array(
       'pathauto' => 0,
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'schnittstellen/produkte/berichte/workshops',
+        'alias' => 'blog/ipbes-II-nairobi-2009',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'IPBES I Putrajaya 2008',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '71fa9532-6073-4477-b9bf-481cdfd949d0',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/ipbes-I-putrajaya-2008',
         'language' => 'und',
       ),
     ),
@@ -201,6 +306,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'IPBES-4 Kuala Lumpur 2016',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'a72d3b1d-46d7-43c9-bc3c-47fbd1f43908',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/ipbes-4-kuala-lumpur-2016',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Klimawandel',
     'description' => '',
     'format' => 'full_html',
@@ -258,6 +382,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => '2 IPBES Panama City 2012 für 2. IPBES Gründungstreffen 2012',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'ca27288f-2152-4e4a-b253-4d1f0132b342',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/2-ipbes-panama-city-2012',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Invasive Arten',
     'description' => '',
     'format' => 'full_html',
@@ -296,6 +439,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Politikwissenschaften',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'd950a611-8ea3-48af-b9a9-c5e2e3d3583b',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_tags',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'themen/politikwissenschaften',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Land-Degradation',
     'description' => '',
     'format' => 'full_html',
@@ -310,6 +472,25 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'themen/land-degradation',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'IPBES III Busan 2010',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'f7c0de7c-2252-4d18-960e-158822e643a4',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/ipbes-III-busan-2010',
         'language' => 'und',
       ),
     ),
