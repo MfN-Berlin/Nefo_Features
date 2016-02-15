@@ -3016,6 +3016,7 @@ function nefo_struktur_views_default_views() {
     'nefo_product_press_release' => 'nefo_product_press_release',
     'nefo_product_opinion' => 'nefo_product_opinion',
     'nefo_product_study' => 'nefo_product_study',
+    'nefo_product_workshop' => 'nefo_product_workshop',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Content: Published */
