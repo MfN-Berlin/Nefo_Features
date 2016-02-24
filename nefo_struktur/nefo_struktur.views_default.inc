@@ -1396,7 +1396,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['relationships']['field_nefo_article_img_fid']['id'] = 'field_nefo_article_img_fid';
   $handler->display->display_options['relationships']['field_nefo_article_img_fid']['table'] = 'field_data_field_nefo_article_img';
   $handler->display->display_options['relationships']['field_nefo_article_img_fid']['field'] = 'field_nefo_article_img_fid';
-  $handler->display->display_options['relationships']['field_nefo_article_img_fid']['required'] = TRUE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -1692,7 +1691,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['id'] = 'field_nefo_interview_img_fid';
   $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['table'] = 'field_data_field_nefo_interview_img';
   $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['field'] = 'field_nefo_interview_img_fid';
-  $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['required'] = TRUE;
   /* Field: Content: Monat */
   $handler->display->display_options['fields']['field_nefo_interview_month']['id'] = 'field_nefo_interview_month';
   $handler->display->display_options['fields']['field_nefo_interview_month']['table'] = 'field_data_field_nefo_interview_month';
@@ -1918,7 +1916,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['id'] = 'field_nefo_interview_img_fid';
   $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['table'] = 'field_data_field_nefo_interview_img';
   $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['field'] = 'field_nefo_interview_img_fid';
-  $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['required'] = TRUE;
   /* Field: Content: Monat */
   $handler->display->display_options['fields']['field_nefo_interview_month']['id'] = 'field_nefo_interview_month';
   $handler->display->display_options['fields']['field_nefo_interview_month']['table'] = 'field_data_field_nefo_interview_month';
@@ -2288,7 +2285,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['table'] = 'field_data_field_nefo_news_img';
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['field'] = 'field_nefo_news_img_fid';
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['label'] = 'Bild von field_nefo_news_img';
-  $handler->display->display_options['relationships']['field_nefo_news_img_fid']['required'] = TRUE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -2479,7 +2475,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['id'] = 'field_nefo_news_img_fid';
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['table'] = 'field_data_field_nefo_news_img';
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['field'] = 'field_nefo_news_img_fid';
-  $handler->display->display_options['relationships']['field_nefo_news_img_fid']['required'] = TRUE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -2776,7 +2771,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['relationships']['field_nefo_press_release_img_fid']['id'] = 'field_nefo_press_release_img_fid';
   $handler->display->display_options['relationships']['field_nefo_press_release_img_fid']['table'] = 'field_data_field_nefo_press_release_img';
   $handler->display->display_options['relationships']['field_nefo_press_release_img_fid']['field'] = 'field_nefo_press_release_img_fid';
-  $handler->display->display_options['relationships']['field_nefo_press_release_img_fid']['required'] = TRUE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
