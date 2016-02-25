@@ -41,6 +41,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Content: Bild (field_nefo_article_img:fid) */
   $handler->display->display_options['relationships']['field_nefo_article_img_fid']['id'] = 'field_nefo_article_img_fid';
   $handler->display->display_options['relationships']['field_nefo_article_img_fid']['table'] = 'field_data_field_nefo_article_img';
@@ -73,8 +74,9 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_file_image_credit_text']['table'] = 'field_data_field_file_image_credit_text';
   $handler->display->display_options['fields']['field_file_image_credit_text']['field'] = 'field_file_image_credit_text';
   $handler->display->display_options['fields']['field_file_image_credit_text']['relationship'] = 'field_nefo_article_img_fid';
-  $handler->display->display_options['fields']['field_file_image_credit_text']['label'] = 'Foto';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['label'] = '';
   $handler->display->display_options['fields']['field_file_image_credit_text']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_file_image_credit_text']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_file_image_credit_text']['element_default_classes'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
@@ -117,6 +119,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<div class="nefo-view-block-article-img">[field_nefo_article_img]</div>
 <div class="nefo-view-block-article-img-credit">[field_file_image_credit_text]</div>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_2']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_2']['element_wrapper_class'] = 'nefo-view-block-article-col1';
   $handler->display->display_options['fields']['nothing_2']['element_default_classes'] = FALSE;
   /* Field: Wrapper Col2 */
@@ -125,13 +128,14 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Wrapper Col2';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
-  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="nefo-view-block-article-title">[title]</div>
-<div class="nefo-view-block-article-desc">[body]</div>
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<h3 class="nefo-view-block-article-title">[title]</h3>
+[body]
 <div class="nefo-view-block-article-nav">
 <span class="nefo-view-block-article-link">[view_node]</span>
 <span class="nefo-view-block-article-link-all">[nothing_1]</span>
 </div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'nefo-view-block-article-col2';
   $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
@@ -190,6 +194,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Content: Bild (field_nefo_press_release_img:fid) */
   $handler->display->display_options['relationships']['field_nefo_press_release_img_fid']['id'] = 'field_nefo_press_release_img_fid';
   $handler->display->display_options['relationships']['field_nefo_press_release_img_fid']['table'] = 'field_data_field_nefo_press_release_img';
@@ -266,6 +271,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<div class="nefo-view-block-press-release-img">[field_nefo_press_release_img]</div>
 <div class="nefo-view-block-press-release-img-credit">[field_file_image_credit_text]</div>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_2']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_2']['element_wrapper_class'] = 'nefo-view-block-interview-col1';
   $handler->display->display_options['fields']['nothing_2']['element_default_classes'] = FALSE;
   /* Field: Wrapper Col2 */
@@ -274,13 +280,14 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Wrapper Col2';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
-  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="nefo-view-block-press-release-title">[title]</div>
-<div class="nefo-view-block-press-release-desc">[body]</div>
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<h3 class="nefo-view-block-press-release-title">[title]</h3>
+[body]
 <div class="nefo-view-block-press-release-nav">
 <span class="nefo-view-block-press-release-link">[view_node]</span>
 <span class="nefo-view-block-press-release-link-all">[nothing_1]</span>
 </div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'nefo-view-block-interview-col2';
   $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
@@ -427,6 +434,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_nefo_slide_factsheet_refer_target_id_1']['id'] = 'field_nefo_slide_factsheet_refer_target_id_1';
   $handler->display->display_options['relationships']['field_nefo_slide_factsheet_refer_target_id_1']['table'] = 'field_data_field_nefo_slide_factsheet_refer';
@@ -515,9 +523,12 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Wrapper 1';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
   $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="nefo-view-block-factsheet-img">[view_node]</div>
+<div class="nefo-view-block-factsheet-text">
 <div class="nefo-view-block-factsheet-title">[view_node_1]</div>
-<div class="nefo-view-block-factsheet-desc">[view_node_2]</div>';
+<div class="nefo-view-block-factsheet-desc">[view_node_2]</div>
+</div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'nefo-view-block-factsheet-content';
   $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
   /* Field: Wrapper 2 */
@@ -587,6 +598,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Content: Bild (field_nefo_interview_img:fid) */
   $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['id'] = 'field_nefo_interview_img_fid';
   $handler->display->display_options['relationships']['field_nefo_interview_img_fid']['table'] = 'field_data_field_nefo_interview_img';
@@ -667,6 +679,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<div class="nefo-view-block-interview-img">[field_nefo_interview_img]</div>
 <div class="nefo-view-block-interview-img-credit">[field_file_image_credit_text]</div>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_2']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_2']['element_wrapper_class'] = 'nefo-view-block-interview-col1';
   $handler->display->display_options['fields']['nothing_2']['element_default_classes'] = FALSE;
   /* Field: Wrapper Col2 */
@@ -675,13 +688,14 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Wrapper Col2';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
-  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="nefo-view-block-interview-title">[title]</div>
-<div class="nefo-view-block-interview-desc">[body]</div>
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<h3 class="nefo-view-block-interview-title">[title]</h3>
+[body]
 <div class="nefo-view-block-interview-nav">
 <span class="nefo-view-block-interview-link">[view_node]</span>
 <span class="nefo-view-block-interview-link-all">[nothing_1]</span>
 </div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'nefo-view-block-interview-col2';
   $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
@@ -768,6 +782,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['view_node']['alter']['text'] = '[field_nefo_news_img]';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'nefo-view-block-news-img';
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   /* Field: Content: Body */
@@ -776,6 +791,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['body']['element_wrapper_class'] = 'nefo-view-block-news-desc';
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
@@ -920,6 +936,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Footer: Global: Unfiltered text */
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
@@ -934,6 +951,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'nefo-view-block-newsipbes-title';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Global: Custom text */
@@ -1004,6 +1022,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_nefo_slide_opinion_refer_target_id']['id'] = 'field_nefo_slide_opinion_refer_target_id';
   $handler->display->display_options['relationships']['field_nefo_slide_opinion_refer_target_id']['table'] = 'field_data_field_nefo_slide_opinion_refer';
@@ -1094,9 +1113,12 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Wrapper 1';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
   $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="nefo-view-block-opinion-img">[view_node]</div>
+<div class="nefo-view-block-opinion-text">
 <div class="nefo-view-block-opinion-title">[view_node_1]</div>
-<div class="nefo-view-block-opinion-desc">[view_node_2]</div>';
+<div class="nefo-view-block-opinion-desc">[view_node_2]</div>
+</div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'nefo-view-block-opinion-content';
   $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
   /* Field: Wrapper 2 */
@@ -1107,6 +1129,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['label'] = '';
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<span class="nefo-view-block-opinion-link-all">[nothing_1]</span>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_2']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_2']['element_wrapper_class'] = 'nefo-view-block-opinion-nav';
   $handler->display->display_options['fields']['nothing_2']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
@@ -1159,6 +1182,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_nefo_slide_report_refer_target_id']['id'] = 'field_nefo_slide_report_refer_target_id';
   $handler->display->display_options['relationships']['field_nefo_slide_report_refer_target_id']['table'] = 'field_data_field_nefo_slide_report_refer';
@@ -1247,9 +1271,12 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Wrapper 1';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
   $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="nefo-view-block-report-img">[view_node]</div>
+<div class="nefo-view-block-report-text">
 <div class="nefo-view-block-report-title">[view_node_1]</div>
-<div class="nefo-view-block-report-desc">[view_node_2]</div>';
+<div class="nefo-view-block-report-desc">[view_node_2]</div>
+</div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'nefo-view-block-report-content';
   $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
   /* Field: Wrapper 2 */
@@ -1313,6 +1340,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Footer: Global: Unfiltered text */
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
@@ -1327,6 +1355,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'nefo-view-block-study-title';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Alle Studien Link */
