@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Nefo Kalendar und Events feature.
+ */
+
+include_once 'nefo_calendar_events.features.inc';
