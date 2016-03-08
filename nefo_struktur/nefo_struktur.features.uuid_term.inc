@@ -211,44 +211,6 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'IPBES II Nairobi 2009',
-    'description' => '',
-    'format' => 'full_html',
-    'weight' => 0,
-    'uuid' => '717f9f76-90e1-4fc2-b7a9-99fb9c9acc19',
-    'language' => 'und',
-    'i18n_tsid' => 0,
-    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
-    'path' => array(
-      'pathauto' => 0,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'blog/ipbes-II-nairobi-2009',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'IPBES I Putrajaya 2008',
-    'description' => '',
-    'format' => 'full_html',
-    'weight' => 0,
-    'uuid' => '71fa9532-6073-4477-b9bf-481cdfd949d0',
-    'language' => 'und',
-    'i18n_tsid' => 0,
-    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
-    'path' => array(
-      'pathauto' => 0,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'blog/ipbes-I-putrajaya-2008',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
     'name' => 'Biodiversitätsforschende im Video-Interview',
     'description' => '',
     'format' => 'filtered_html',
@@ -306,6 +268,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'CBD SBSTTA 18 Montreal 2014',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '89d18180-5bc8-4ec5-9f50-b502e8f02216',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-sbstta-18-montreal-2014',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'IPBES-4 Kuala Lumpur 2016',
     'description' => '',
     'format' => 'full_html',
@@ -320,6 +301,25 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'blog/ipbes-4-kuala-lumpur-2016',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'CBD SBSTTA 19 Montreal 2015',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'bd3678bc-8005-4245-89d7-70ee3725cbd6',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-sbstta-19-montreal-2015',
         'language' => 'und',
       ),
     ),
@@ -420,6 +420,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'CBD COP 12 Pyeongchang 2014',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'd5991d8d-17ea-4461-aee5-3836d1073452',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-cop-12-pyeongchang-2014',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Bio-Div Nachrichten',
     'description' => '',
     'format' => 'full_html',
@@ -439,7 +458,7 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Politikwissenschaften',
+    'name' => 'Politik',
     'description' => '',
     'format' => 'full_html',
     'weight' => 0,
@@ -452,7 +471,7 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'themen/politikwissenschaften',
+        'alias' => 'themen/politik',
         'language' => 'und',
       ),
     ),
@@ -477,11 +496,11 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'IPBES III Busan 2010',
+    'name' => 'CBD SBSTTA 17 Montreal 2013',
     'description' => '',
     'format' => 'full_html',
     'weight' => 0,
-    'uuid' => 'f7c0de7c-2252-4d18-960e-158822e643a4',
+    'uuid' => 'dddd2877-ab75-46d8-a8fb-941a3d030fed',
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
@@ -490,7 +509,45 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'blog/ipbes-III-busan-2010',
+        'alias' => 'blog/cbd-sbstta-17-montreal-2013',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'CBD COP 10 Nagoya 2010',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'f24fd22f-85c7-4948-bc4e-1e1e3a1b046a',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-cop-10-nagoya-2010',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'CBD COP 11 Hyderabad 2012',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'f5e26ad3-9075-4c1b-a215-cf013215e4d4',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-cop-11-hyderabad-2012',
         'language' => 'und',
       ),
     ),

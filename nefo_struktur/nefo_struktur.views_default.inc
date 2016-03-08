@@ -272,7 +272,7 @@ function nefo_struktur_views_default_views() {
 <div class="nefo-view-block-press-release-img-credit">[field_file_image_credit_text]</div>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_2']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['nothing_2']['element_wrapper_class'] = 'nefo-view-block-interview-col1';
+  $handler->display->display_options['fields']['nothing_2']['element_wrapper_class'] = 'nefo-view-block-press-release-col1';
   $handler->display->display_options['fields']['nothing_2']['element_default_classes'] = FALSE;
   /* Field: Wrapper Col2 */
   $handler->display->display_options['fields']['nothing_3']['id'] = 'nothing_3';
@@ -288,7 +288,7 @@ function nefo_struktur_views_default_views() {
 </div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_3']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'nefo-view-block-interview-col2';
+  $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'nefo-view-block-press-release-col2';
   $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
