@@ -132,7 +132,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -158,7 +158,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -49,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -284,7 +284,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -299,7 +299,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'Einleitungstext über die CBD, inkl. Verweise auf Cartagena-Protokoll und Nagoya-Protokoll.',
+        'title' => 'Convention on Biological Diversity',
       ),
       'alter' => TRUE,
       'node_type' => 'page',
@@ -310,7 +310,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -335,7 +335,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -375,7 +375,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'node_type' => 'page',
       'attributes' => array(
-        'title' => 'Einführung zu den CBD-Vertragsstaatenkonferenzen (COPs)',
+        'title' => 'CBD-Vertragsstaatenkonferenzen (COPs)',
       ),
       'alter' => TRUE,
       'identifier' => 'main-menu_cop:node/61',
@@ -411,7 +411,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -50,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -463,7 +463,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -504,7 +504,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'Europäisch',
+        'title' => 'Einführung Europäische Umweltpolitik mit Verweisen zu FFH-Richtlinie, Vogelschutz-Richtlinie, Wasserrahmen-Richtlinie und EU Biodiversitätsstrategie',
       ),
       'node_type' => 'page',
       'alter' => TRUE,
@@ -639,7 +639,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -49,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -830,7 +830,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'Einleitung für den Menüpunkt International mit Verweisen zur CBD, zu IPBES, zum Millenium Ecosystem Assessment und zur TEEB-Studie.',
+        'title' => 'Einführung internationale Umweltpolitik mit Verweisen zu CBD, IPBES, Millenium Ecosystem Assessment und zur TEEB-Studie.',
       ),
       'node_type' => 'page',
       'alter' => TRUE,
@@ -1037,7 +1037,7 @@ function nefo_struktur_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
@@ -1070,32 +1070,6 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_bei-ipbes-aktiv-werden:node/71',
-  );
-  // Exported menu link: main-menu_ipbes:node/17
-  $menu_links['main-menu_ipbes:node/17'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/17',
-    'router_path' => 'node/%',
-    'link_title' => 'IPBES',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'IPBES',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_ipbes:node/17',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_international:node/11',
   );
   // Exported menu link: main-menu_ipbes:node/32
   $menu_links['main-menu_ipbes:node/32'] = array(
@@ -1276,79 +1250,6 @@ function nefo_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-themen:node/44',
   );
-  // Exported menu link: main-menu_monitorings-indigener-und-lokaler-gemeinschaften-wichtig-bei-der-erhaltung-der-biologischen-vielfalt:node/353
-  $menu_links['main-menu_monitorings-indigener-und-lokaler-gemeinschaften-wichtig-bei-der-erhaltung-der-biologischen-vielfalt:node/353'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/353',
-    'router_path' => 'node/%',
-    'link_title' => 'Monitorings indigener und lokaler Gemeinschaften wichtig bei der Erhaltung der biologischen Vielfalt',
-    'options' => array(
-      'node_type' => 'article',
-      'alter' => TRUE,
-      'identifier' => 'main-menu_monitorings-indigener-und-lokaler-gemeinschaften-wichtig-bei-der-erhaltung-der-biologischen-vielfalt:node/353',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_ipbes-news:taxonomy/term/41',
-  );
-  // Exported menu link: main-menu_nachwuchswissenschaftler:node/3
-  $menu_links['main-menu_nachwuchswissenschaftler:node/3'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/3',
-    'router_path' => 'node/%',
-    'link_title' => 'Nachwuchswissenschaftler',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'Nachwuchswissenschaftler',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_nachwuchswissenschaftler:node/3',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -42,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_einbringen-in-die-forschung:node/1',
-  );
-  // Exported menu link: main-menu_nachwuchswissenschaftler:node/77
-  $menu_links['main-menu_nachwuchswissenschaftler:node/77'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/77',
-    'router_path' => 'node/%',
-    'link_title' => 'Nachwuchswissenschaftler',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Nachwuchswissenschaftler',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_nachwuchswissenschaftler:node/77',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_netzwerke-und-vernetzung:node/37',
-  );
   // Exported menu link: main-menu_national:node/12
   $menu_links['main-menu_national:node/12'] = array(
     'menu_name' => 'main-menu',
@@ -1358,7 +1259,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'National',
+        'title' => 'Einführung nationale Umweltpolitik mit Verweisen zu nationaler Biodiversitätsstrategie und weiteren Strategien.',
       ),
       'node_type' => 'page',
       'alter' => TRUE,
@@ -1577,30 +1478,6 @@ function nefo_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: main-menu_politikwissenschaften:taxonomy/term/47
-  $menu_links['main-menu_politikwissenschaften:taxonomy/term/47'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/47',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Politikwissenschaften',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Politikwissenschaften',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_politikwissenschaften:taxonomy/term/47',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_unsere-themen:node/44',
-  );
   // Exported menu link: main-menu_projekte:node/27
   $menu_links['main-menu_projekte:node/27'] = array(
     'menu_name' => 'main-menu',
@@ -1661,7 +1538,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'node_type' => 'page',
       'attributes' => array(
-        'title' => 'SBSTTA',
+        'title' => 'Wissenschaftlicher Beirat der CBD - SBSTTA',
       ),
       'alter' => TRUE,
       'identifier' => 'main-menu_sbstta:node/62',
@@ -1712,7 +1589,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'Dir richtige Zusammenarbeit der Disziplinen',
+        'title' => 'Die richtige Zusammenarbeit der Disziplinen',
       ),
       'alter' => TRUE,
       'node_type' => 'page',
@@ -1747,7 +1624,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1772,7 +1649,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1985,7 +1862,7 @@ function nefo_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'weitere Konventionen',
+        'title' => 'Weitere Konventionen - IPCC und UNFCCC',
       ),
       'alter' => TRUE,
       'node_type' => 'page',
@@ -1996,7 +1873,7 @@ function nefo_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2012,6 +1889,9 @@ function nefo_struktur_menu_default_menu_links() {
       'node_type' => 'page',
       'alter' => TRUE,
       'identifier' => 'main-menu_weitere-strategien:node/362',
+      'attributes' => array(
+        'title' => 'Nationale Nachhaltigkeitsstrategie und Deutsche Anpassungsstrategie an den Klimawandel',
+      ),
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -2371,7 +2251,7 @@ function nefo_struktur_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -46,
     'customized' => 1,
@@ -2627,29 +2507,6 @@ function nefo_struktur_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -47,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: menu-nefo-footer-menu-second_politikwissenschaften:taxonomy/term/47
-  $menu_links['menu-nefo-footer-menu-second_politikwissenschaften:taxonomy/term/47'] = array(
-    'menu_name' => 'menu-nefo-footer-menu-second',
-    'link_path' => 'taxonomy/term/47',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Politikwissenschaften',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Politikwissenschaften',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-footer-menu-second_politikwissenschaften:taxonomy/term/47',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -40,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -3065,8 +2922,6 @@ function nefo_struktur_menu_default_menu_links() {
   t('Login');
   t('Logout');
   t('Monitoring');
-  t('Monitorings indigener und lokaler Gemeinschaften wichtig bei der Erhaltung der biologischen Vielfalt');
-  t('Nachwuchswissenschaftler');
   t('National');
   t('Nationale Biodiversitätsstrategie');
   t('Naturschutzgesetze EU');
@@ -3077,7 +2932,6 @@ function nefo_struktur_menu_default_menu_links() {
   t('News & Events');
   t('Pan-europäisches Assessment');
   t('Politik');
-  t('Politikwissenschaften');
   t('Presse');
   t('Projekte');
   t('Rollen von Expertinnen und Experten');
