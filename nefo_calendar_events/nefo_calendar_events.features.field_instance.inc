@@ -131,6 +131,54 @@ function nefo_calendar_events_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-nefo_event-field_nefo_event_location'.
+  $field_instances['node-nefo_event-field_nefo_event_location'] = array(
+    'bundle' => 'nefo_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_event_location',
+    'label' => 'Ort',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 34,
+    ),
+  );
+
   // Exported field_instance: 'node-nefo_event-field_nefo_event_type'.
   $field_instances['node-nefo_event-field_nefo_event_type'] = array(
     'bundle' => 'nefo_event',
@@ -180,6 +228,7 @@ function nefo_calendar_events_field_default_field_instances() {
   t('Beschreibung');
   t('Datum');
   t('Kategorie');
+  t('Ort');
 
   return $field_instances;
 }
