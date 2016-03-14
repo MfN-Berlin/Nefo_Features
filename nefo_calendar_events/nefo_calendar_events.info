@@ -1,7 +1,7 @@
 name = Nefo Kalender und Events
 core = 7.x
 package = nefo_features
-version = 7.x-1.0-beta1
+version = 7.x-1.0-beta2
 dependencies[] = calendar
 dependencies[] = ctools
 dependencies[] = date
@@ -9,7 +9,6 @@ dependencies[] = date_ical
 dependencies[] = date_views
 dependencies[] = features
 dependencies[] = i18n_taxonomy
-dependencies[] = node
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy

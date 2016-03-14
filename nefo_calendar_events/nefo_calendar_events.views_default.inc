@@ -25,7 +25,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['title'] = 'Aktuelle Termine';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'alle Termine';
-  $handler->display->display_options['link_display'] = 'page_1';
+  $handler->display->display_options['link_display'] = 'nefo_events_all';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -103,35 +103,21 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Kategorie (field_nefo_event_type) */
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['id'] = 'field_nefo_event_type_tid';
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['table'] = 'field_data_field_nefo_event_type';
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['field'] = 'field_nefo_event_type_tid';
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['value'] = array(
-    46 => '46',
-    44 => '44',
-    45 => '45',
+  /* Filter criterion: Date: Date (node) */
+  $handler->display->display_options['filters']['date_filter']['id'] = 'date_filter';
+  $handler->display->display_options['filters']['date_filter']['table'] = 'node';
+  $handler->display->display_options['filters']['date_filter']['field'] = 'date_filter';
+  $handler->display->display_options['filters']['date_filter']['operator'] = '>=';
+  $handler->display->display_options['filters']['date_filter']['default_date'] = 'today';
+  $handler->display->display_options['filters']['date_filter']['date_fields'] = array(
+    'field_data_field_nefo_event_date.field_nefo_event_date_value' => 'field_data_field_nefo_event_date.field_nefo_event_date_value',
   );
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['expose']['operator_id'] = 'field_nefo_event_type_tid_op';
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['expose']['label'] = 'Kategorie';
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['expose']['operator'] = 'field_nefo_event_type_tid_op';
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['expose']['identifier'] = 'field_nefo_event_type_tid';
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    5 => 0,
-    6 => 0,
-    4 => 0,
-    3 => 0,
-  );
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_nefo_event_type_tid']['vocabulary'] = 'event_types';
+  $handler->display->display_options['filters']['date_filter']['date_method'] = 'AND';
 
   /* Display: Upcoming */
-  $handler = $view->new_display('block', 'Upcoming', 'block_events_upcoming');
+  $handler = $view->new_display('block', 'Upcoming', 'event_up_ical');
   $handler->display->display_options['display_description'] = 'Upcoming events block';
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
@@ -168,7 +154,7 @@ function nefo_calendar_events_views_default_views() {
   );
 
   /* Display: Upcoming w/o ical */
-  $handler = $view->new_display('block', 'Upcoming w/o ical', 'block_1');
+  $handler = $view->new_display('block', 'Upcoming w/o ical', 'event_up');
   $handler->display->display_options['display_description'] = 'This upcoming block doesn\'t and an ical icon to the buttom';
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
@@ -226,12 +212,14 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['path'] = 'kalender/%/kalender.ics';
   $handler->display->display_options['displays'] = array(
-    'page_1' => 'page_1',
-    'block_events_upcoming' => 'block_events_upcoming',
+    'event_up_ical' => 'event_up_ical',
     'default' => 0,
+    'event_up' => 0,
+    'page_events_month' => 0,
     'page_2' => 0,
     'page_3' => 0,
     'page' => 0,
+    'nefo_events_all' => 0,
   );
 
   /* Display: Month */
@@ -420,6 +408,20 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['menu']['title'] = 'Year';
   $handler->display->display_options['menu']['weight'] = '4';
   $handler->display->display_options['menu']['context'] = 0;
+
+  /* Display: All Events */
+  $handler = $view->new_display('page', 'All Events', 'nefo_events_all');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['view_mode'] = 'full';
+  $handler->display->display_options['row_options']['links'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['path'] = 'events';
   $export['nefo_calendar'] = $view;
 
   return $export;
