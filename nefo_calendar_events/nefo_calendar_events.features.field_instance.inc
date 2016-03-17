@@ -10,7 +10,7 @@
 function nefo_calendar_events_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-nefo_event-field_nefo_event_date'.
+  // Exported field_instance: 'node-nefo_event-field_nefo_event_date'
   $field_instances['node-nefo_event-field_nefo_event_date'] = array(
     'bundle' => 'nefo_event',
     'deleted' => 0,
@@ -80,7 +80,7 @@ function nefo_calendar_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_event-field_nefo_event_desc'.
+  // Exported field_instance: 'node-nefo_event-field_nefo_event_desc'
   $field_instances['node-nefo_event-field_nefo_event_desc'] = array(
     'bundle' => 'nefo_event',
     'default_value' => NULL,
@@ -131,7 +131,7 @@ function nefo_calendar_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_event-field_nefo_event_location'.
+  // Exported field_instance: 'node-nefo_event-field_nefo_event_location'
   $field_instances['node-nefo_event-field_nefo_event_location'] = array(
     'bundle' => 'nefo_event',
     'default_value' => NULL,
@@ -179,7 +179,7 @@ function nefo_calendar_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_event-field_nefo_event_type'.
+  // Exported field_instance: 'node-nefo_event-field_nefo_event_type'
   $field_instances['node-nefo_event-field_nefo_event_type'] = array(
     'bundle' => 'nefo_event',
     'default_value' => NULL,
