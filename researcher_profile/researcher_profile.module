@@ -5,3 +5,13 @@
  */
 
 include_once 'researcher_profile.features.inc';
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function researcher_profile_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  if (is_array($form['freetext-search']) && isset($form['freetext-search']['#size'])) {
+    $form['freetext-search']['#size'] = 0;
+    $form['freetext-search']['#attributes']['placeholder'] = t('Suchen');
+  }
+}
