@@ -1,4 +1,5 @@
 name = Feature CKEditor
+description = CKEditor configuration.
 core = 7.x
 package = nefo_features
 dependencies[] = features

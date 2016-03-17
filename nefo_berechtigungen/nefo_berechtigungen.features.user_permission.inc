@@ -670,6 +670,17 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'create nefo_event content'.
+  $permissions['create nefo_event content'] = array(
+    'name' => 'create nefo_event content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create nefo_news content'.
   $permissions['create nefo_news content'] = array(
     'name' => 'create nefo_news content',
@@ -907,6 +918,17 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any nefo_event content'.
+  $permissions['delete any nefo_event content'] = array(
+    'name' => 'delete any nefo_event content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any nefo_news content'.
   $permissions['delete any nefo_news content'] = array(
     'name' => 'delete any nefo_news content',
@@ -1133,6 +1155,17 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own nefo_event content'.
+  $permissions['delete own nefo_event content'] = array(
+    'name' => 'delete own nefo_event content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own nefo_news content'.
@@ -1526,6 +1559,17 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'profile2',
   );
 
+  // Exported permission: 'edit any nefo_event content'.
+  $permissions['edit any nefo_event content'] = array(
+    'name' => 'edit any nefo_event content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any nefo_news content'.
   $permissions['edit any nefo_news content'] = array(
     'name' => 'edit any nefo_news content',
@@ -1784,6 +1828,17 @@ function nefo_berechtigungen_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'profile2',
+  );
+
+  // Exported permission: 'edit own nefo_event content'.
+  $permissions['edit own nefo_event content'] = array(
+    'name' => 'edit own nefo_event content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own nefo_news content'.

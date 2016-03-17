@@ -10,7 +10,7 @@
 function nefo_calendar_events_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_nefo_event_date'.
+  // Exported field_base: 'field_nefo_event_date'
   $field_bases['field_nefo_event_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -40,7 +40,7 @@ function nefo_calendar_events_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_nefo_event_desc'.
+  // Exported field_base: 'field_nefo_event_desc'
   $field_bases['field_nefo_event_desc'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -61,7 +61,7 @@ function nefo_calendar_events_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_nefo_event_location'.
+  // Exported field_base: 'field_nefo_event_location'
   $field_bases['field_nefo_event_location'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -83,7 +83,7 @@ function nefo_calendar_events_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_nefo_event_type'.
+  // Exported field_base: 'field_nefo_event_type'
   $field_bases['field_nefo_event_type'] = array(
     'active' => 1,
     'cardinality' => -1,
