@@ -2,6 +2,7 @@ name = Nefo Struktur
 description = Content types and Views
 core = 7.x
 package = nefo_features
+version = 7.x-1.0-beta1
 dependencies[] = conditional_fields
 dependencies[] = ctools
 dependencies[] = date

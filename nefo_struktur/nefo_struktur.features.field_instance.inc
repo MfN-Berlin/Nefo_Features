@@ -1204,7 +1204,7 @@ function nefo_struktur_field_default_field_instances() {
     'label' => 'Body',
     'required' => 1,
     'settings' => array(
-      'display_summary' => 0,
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1212,6 +1212,12 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_label_summary' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_summary' => '',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 20,
         'summary_rows' => 5,
       ),
@@ -1815,7 +1821,7 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_product_press_release-field_nefo_press_release_img'] = array(
     'bundle' => 'nefo_product_press_release',
     'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 432x242 Pixel',
+    'description' => 'Minimale Bildauflösung: 430x240 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1844,7 +1850,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '432x242',
+      'min_resolution' => '430x240',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3250,7 +3256,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Mehrfachauswahl möglich.');
   t('Minimale Bildauflösung: 360x200 Pixel');
   t('Minimale Bildauflösung: 430x240 Pixel');
-  t('Minimale Bildauflösung: 432x242 Pixel');
   t('Minimale Bildauflösung: 802x386 Pixel');
   t('Monat');
   t('Name the person who owns the picture.');
