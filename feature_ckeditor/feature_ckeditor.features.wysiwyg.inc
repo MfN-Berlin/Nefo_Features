@@ -110,7 +110,6 @@ function feature_ckeditor_wysiwyg_default_profiles() {
         ),
         'drupal' => array(
           'media' => 1,
-          'break' => 1,
         ),
       ),
       'toolbarLocation' => 'top',
@@ -123,7 +122,7 @@ function feature_ckeditor_wysiwyg_default_profiles() {
       'css_path' => '',
       'stylesSet' => '',
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
-      'advanced__active_tab' => 'edit-output',
+      'advanced__active_tab' => 'edit-basic',
       'forcePasteAsPlainText' => 0,
     ),
     'rdf_mapping' => array(),
