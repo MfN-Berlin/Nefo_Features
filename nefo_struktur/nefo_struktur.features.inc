@@ -136,7 +136,7 @@ function nefo_struktur_node_info() {
     'nefo_product_article' => array(
       'name' => t('NeFo-Produkt Artikel'),
       'base' => 'node_content',
-      'description' => t('NeFo-Artikel'),
+      'description' => t('NeFo-Artikel (Top-Menü: Presse)'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
@@ -176,7 +176,7 @@ function nefo_struktur_node_info() {
     'nefo_product_press_release' => array(
       'name' => t('NeFo-Produkt Pressemitteilung'),
       'base' => 'node_content',
-      'description' => t('NeFo-Pressemitteilungen'),
+      'description' => t('NeFo-Pressemitteilungen (Top-Menü: Presse / Eigene Pressemitteilungen)'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
