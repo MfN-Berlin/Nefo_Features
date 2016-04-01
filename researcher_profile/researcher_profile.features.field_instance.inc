@@ -10,7 +10,7 @@
 function researcher_profile_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'profile2-researcher-field_reseacher_www'.
+  // Exported field_instance: 'profile2-researcher-field_reseacher_www'
   $field_instances['profile2-researcher-field_reseacher_www'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -44,7 +44,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_address'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_address'
   $field_instances['profile2-researcher-field_researcher_address'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -93,7 +93,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_completed'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_completed'
   $field_instances['profile2-researcher-field_researcher_completed'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -127,7 +127,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_deficit'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_deficit'
   $field_instances['profile2-researcher-field_researcher_deficit'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -161,7 +161,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_fascinated'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_fascinated'
   $field_instances['profile2-researcher-field_researcher_fascinated'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -195,7 +195,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_geofield'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_geofield'
   $field_instances['profile2-researcher-field_researcher_geofield'] = array(
     'bundle' => 'researcher',
     'deleted' => 0,
@@ -243,7 +243,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_important'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_important'
   $field_instances['profile2-researcher-field_researcher_important'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -278,7 +278,7 @@ function researcher_profile_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-researcher-field_researcher_interdiscipline'.
+  // 'profile2-researcher-field_researcher_interdiscipline'
   $field_instances['profile2-researcher-field_researcher_interdiscipline'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -312,7 +312,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_linkedin'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_linkedin'
   $field_instances['profile2-researcher-field_researcher_linkedin'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -346,7 +346,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_name'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_name'
   $field_instances['profile2-researcher-field_researcher_name'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -380,7 +380,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_picture'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_picture'
   $field_instances['profile2-researcher-field_researcher_picture'] = array(
     'bundle' => 'researcher',
     'deleted' => 0,
@@ -424,7 +424,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_projects'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_projects'
   $field_instances['profile2-researcher-field_researcher_projects'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -459,7 +459,7 @@ function researcher_profile_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-researcher-field_researcher_publications'.
+  // 'profile2-researcher-field_researcher_publications'
   $field_instances['profile2-researcher-field_researcher_publications'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -494,7 +494,7 @@ function researcher_profile_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-researcher-field_researcher_research_gate'.
+  // 'profile2-researcher-field_researcher_research_gate'
   $field_instances['profile2-researcher-field_researcher_research_gate'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -528,7 +528,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_statements'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_statements'
   $field_instances['profile2-researcher-field_researcher_statements'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -562,7 +562,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_twitter'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_twitter'
   $field_instances['profile2-researcher-field_researcher_twitter'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,
@@ -596,7 +596,7 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-researcher-field_researcher_www'.
+  // Exported field_instance: 'profile2-researcher-field_researcher_www'
   $field_instances['profile2-researcher-field_researcher_www'] = array(
     'bundle' => 'researcher',
     'default_value' => NULL,

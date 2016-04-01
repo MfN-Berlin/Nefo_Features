@@ -38,18 +38,6 @@ function researcher_profile_context_default_contexts() {
           'region' => 'sidebar',
           'weight' => '-10',
         ),
-        'block-5' => array(
-          'module' => 'block',
-          'delta' => '5',
-          'region' => 'sidebar',
-          'weight' => '-9',
-        ),
-        'block-4' => array(
-          'module' => 'block',
-          'delta' => '4',
-          'region' => 'sidebar',
-          'weight' => '-8',
-        ),
       ),
       'layout' => 'researcher',
     ),

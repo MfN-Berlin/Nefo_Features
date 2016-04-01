@@ -10,7 +10,7 @@
 function researcher_profile_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_reseacher_www'.
+  // Exported field_base: 'field_reseacher_www'
   $field_bases['field_reseacher_www'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -32,7 +32,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_address'.
+  // Exported field_base: 'field_researcher_address'
   $field_bases['field_researcher_address'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -49,7 +49,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'field_researcher_completed'.
+  // Exported field_base: 'field_researcher_completed'
   $field_bases['field_researcher_completed'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -71,7 +71,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_deficit'.
+  // Exported field_base: 'field_researcher_deficit'
   $field_bases['field_researcher_deficit'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -93,7 +93,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_fascinated'.
+  // Exported field_base: 'field_researcher_fascinated'
   $field_bases['field_researcher_fascinated'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -115,7 +115,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_geofield'.
+  // Exported field_base: 'field_researcher_geofield'
   $field_bases['field_researcher_geofield'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -166,7 +166,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'geofield',
   );
 
-  // Exported field_base: 'field_researcher_important'.
+  // Exported field_base: 'field_researcher_important'
   $field_bases['field_researcher_important'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -188,7 +188,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_interdiscipline'.
+  // Exported field_base: 'field_researcher_interdiscipline'
   $field_bases['field_researcher_interdiscipline'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -210,7 +210,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_linkedin'.
+  // Exported field_base: 'field_researcher_linkedin'
   $field_bases['field_researcher_linkedin'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -232,7 +232,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_name'.
+  // Exported field_base: 'field_researcher_name'
   $field_bases['field_researcher_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -254,7 +254,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_picture'.
+  // Exported field_base: 'field_researcher_picture'
   $field_bases['field_researcher_picture'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -277,7 +277,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_researcher_projects'.
+  // Exported field_base: 'field_researcher_projects'
   $field_bases['field_researcher_projects'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -299,7 +299,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_publications'.
+  // Exported field_base: 'field_researcher_publications'
   $field_bases['field_researcher_publications'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -321,7 +321,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_research_gate'.
+  // Exported field_base: 'field_researcher_research_gate'
   $field_bases['field_researcher_research_gate'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -343,7 +343,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_statements'.
+  // Exported field_base: 'field_researcher_statements'
   $field_bases['field_researcher_statements'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -364,7 +364,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_researcher_twitter'.
+  // Exported field_base: 'field_researcher_twitter'
   $field_bases['field_researcher_twitter'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -386,7 +386,7 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_researcher_www'.
+  // Exported field_base: 'field_researcher_www'
   $field_bases['field_researcher_www'] = array(
     'active' => 1,
     'cardinality' => 1,
