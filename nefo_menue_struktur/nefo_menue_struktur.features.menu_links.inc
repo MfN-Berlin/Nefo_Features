@@ -2834,27 +2834,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'en',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-top-menu_ber-biodiversitt:node/42
-  $menu_links['menu-nefo-top-menu_ber-biodiversitt:node/42'] = array(
-    'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'node/42',
-    'router_path' => 'node/%',
-    'link_title' => 'Über Biodiversität',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_ber-biodiversitt:node/42',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: menu-nefo-top-menu_contact:node/54
   $menu_links['menu-nefo-top-menu_contact:node/54'] = array(
     'menu_name' => 'menu-nefo-top-menu',
@@ -3116,7 +3095,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Zahlen und Fakten');
   t('gti-Kontaktstelle');
   t('weitere Konventionen');
-  t('Über Biodiversität');
   t('Über IPBES');
 
   return $menu_links;
