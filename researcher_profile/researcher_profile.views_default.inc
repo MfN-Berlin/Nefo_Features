@@ -270,7 +270,7 @@ function researcher_profile_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['exposed_block'] = TRUE;
-  $handler->display->display_options['path'] = 'forscherprofile';
+  $handler->display->display_options['path'] = 'forschung/forscherprofile';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Forscherprofile';
   $handler->display->display_options['menu']['name'] = 'main-menu';
