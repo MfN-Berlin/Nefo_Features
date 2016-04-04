@@ -29,6 +29,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
+      'nefo_omega' => array(
+        'region' => 'nefo_footer_fifth',
+        'status' => 1,
+        'theme' => 'nefo_omega',
+        'weight' => 0,
+      ),
       'ofen' => array(
         'region' => 'footer_fifth',
         'status' => 1,
@@ -61,6 +67,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'nefo_omega' => array(
+        'region' => 'nefo_footer_first',
+        'status' => 1,
+        'theme' => 'nefo_omega',
         'weight' => 0,
       ),
       'ofen' => array(
@@ -97,6 +109,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
+      'nefo_omega' => array(
+        'region' => 'nefo_footer_fourth',
+        'status' => 1,
+        'theme' => 'nefo_omega',
+        'weight' => 0,
+      ),
       'ofen' => array(
         'region' => 'footer_fourth',
         'status' => 1,
@@ -129,6 +147,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'nefo_omega' => array(
+        'region' => 'nefo_footer_second',
+        'status' => 1,
+        'theme' => 'nefo_omega',
         'weight' => 0,
       ),
       'ofen' => array(
@@ -165,6 +189,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
+      'nefo_omega' => array(
+        'region' => 'nefo_footer_third',
+        'status' => 1,
+        'theme' => 'nefo_omega',
+        'weight' => 0,
+      ),
       'ofen' => array(
         'region' => 'footer_third',
         'status' => 1,
@@ -197,6 +227,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'nefo_omega' => array(
+        'region' => 'nefo_login',
+        'status' => 1,
+        'theme' => 'nefo_omega',
         'weight' => 0,
       ),
       'ofen' => array(
@@ -233,6 +269,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
+      'nefo_omega' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'nefo_omega',
+        'weight' => 0,
+      ),
       'ofen' => array(
         'region' => '',
         'status' => 0,
@@ -247,40 +289,6 @@ function nefo_menue_struktur_default_fe_block_settings() {
       ),
     ),
     'title' => '<none>',
-    'visibility' => 0,
-  );
-
-  $export['nefo-language_switch'] = array(
-    'cache' => 1,
-    'custom' => 0,
-    'delta' => 'language_switch',
-    'i18n_block_language' => array(),
-    'i18n_mode' => 0,
-    'module' => 'nefo',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'ofen' => array(
-        'region' => 'header',
-        'status' => 1,
-        'theme' => 'ofen',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
     'visibility' => 0,
   );
 
@@ -299,6 +307,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
+        'weight' => -6,
+      ),
+      'nefo_omega' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'nefo_omega',
         'weight' => -6,
       ),
       'ofen' => array(
@@ -335,6 +349,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
+      'nefo_omega' => array(
+        'region' => 'nefo_main_menu',
+        'status' => 1,
+        'theme' => 'nefo_omega',
+        'weight' => 0,
+      ),
       'ofen' => array(
         'region' => 'navigation',
         'status' => 1,
@@ -368,6 +388,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'status' => 0,
         'theme' => 'bartik',
         'weight' => 0,
+      ),
+      'nefo_omega' => array(
+        'region' => 'nefo_top_menu',
+        'status' => 1,
+        'theme' => 'nefo_omega',
+        'weight' => -14,
       ),
       'ofen' => array(
         'region' => 'header',
@@ -403,6 +429,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
+      'nefo_omega' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'nefo_omega',
+        'weight' => 0,
+      ),
       'ofen' => array(
         'region' => '',
         'status' => 0,
@@ -436,6 +468,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'status' => 1,
         'theme' => 'bartik',
         'weight' => -8,
+      ),
+      'nefo_omega' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'nefo_omega',
+        'weight' => -24,
       ),
       'ofen' => array(
         'region' => '',

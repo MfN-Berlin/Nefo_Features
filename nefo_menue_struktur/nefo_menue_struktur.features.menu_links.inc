@@ -443,31 +443,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_forschung:node/25',
   );
-  // Exported menu link: main-menu_deutsche-beteiligte-an-ipbes:node/438
-  $menu_links['main-menu_deutsche-beteiligte-an-ipbes:node/438'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/438',
-    'router_path' => 'node/%',
-    'link_title' => 'Deutsche Beteiligte an IPBES',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-      'attributes' => array(
-        'title' => 'Übersicht zu deutschen Beteiligten an IPBES',
-      ),
-      'identifier' => 'main-menu_deutsche-beteiligte-an-ipbes:node/438',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_bei-ipbes-aktiv-werden:node/71',
-  );
   // Exported menu link: main-menu_deutsche-untersttzungsstruktur:node/4
   $menu_links['main-menu_deutsche-untersttzungsstruktur:node/4'] = array(
     'menu_name' => 'main-menu',
@@ -661,7 +636,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -50,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -863,7 +838,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -49,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -996,6 +971,31 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
+  // Exported menu link: main-menu_ipbes--co:node/20
+  $menu_links['main-menu_ipbes--co:node/20'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/20',
+    'router_path' => 'node/%',
+    'link_title' => 'IPBES & Co.',
+    'options' => array(
+      'devel' => TRUE,
+      'attributes' => array(
+        'title' => 'Die richtige Zusammenarbeit der Disziplinen',
+      ),
+      'alter' => TRUE,
+      'node_type' => 'page',
+      'identifier' => 'main-menu_ipbes--co:node/20',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -47,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: main-menu_ipbes-arbeitsprogramm:node/213
   $menu_links['main-menu_ipbes-arbeitsprogramm:node/213'] = array(
@@ -1143,7 +1143,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_schnittstellen:node/20',
+    'parent_identifier' => 'main-menu_ipbes--co:node/20',
   );
   // Exported menu link: main-menu_klimawandel:taxonomy/term/39
   $menu_links['main-menu_klimawandel:taxonomy/term/39'] = array(
@@ -1445,7 +1445,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_schnittstellen:node/20',
+    'parent_identifier' => 'main-menu_ipbes--co:node/20',
   );
   // Exported menu link: main-menu_nefo:node/33
   $menu_links['main-menu_nefo:node/33'] = array(
@@ -1546,6 +1546,30 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
+  // Exported menu link: main-menu_personen:forschung/forschungsakteure/personen
+  $menu_links['main-menu_personen:forschung/forschungsakteure/personen'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'forschung/forschungsakteure/personen',
+    'router_path' => 'forschung/forschungsakteure/personen',
+    'link_title' => 'Personen',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Forscherprofile',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_personen:forschung/forschungsakteure/personen',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_forschungsakteure:node/15',
   );
   // Exported menu link: main-menu_politik:node/14
   $menu_links['main-menu_politik:node/14'] = array(
@@ -1696,32 +1720,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_schnittstellen:node/20',
-  );
-  // Exported menu link: main-menu_schnittstellen:node/20
-  $menu_links['main-menu_schnittstellen:node/20'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/20',
-    'router_path' => 'node/%',
-    'link_title' => 'Schnittstellen',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'Die richtige Zusammenarbeit der Disziplinen',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_schnittstellen:node/20',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_ipbes--co:node/20',
   );
   // Exported menu link: main-menu_stakeholder-engagement-strategy:node/66
   $menu_links['main-menu_stakeholder-engagement-strategy:node/66'] = array(
@@ -1838,7 +1837,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2834,27 +2833,25 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'en',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-top-menu_contact:node/54
-  $menu_links['menu-nefo-top-menu_contact:node/54'] = array(
+  // Exported menu link: menu-nefo-top-menu_ber-biodiversitt:node/42
+  $menu_links['menu-nefo-top-menu_ber-biodiversitt:node/42'] = array(
     'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'node/54',
+    'link_path' => 'node/42',
     'router_path' => 'node/%',
-    'link_title' => 'Contact',
+    'link_title' => 'Über Biodiversität',
     'options' => array(
-      'attributes' => array(
-        'title' => 'Contact',
-      ),
+      'node_type' => 'page',
       'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_contact:node/54',
+      'identifier' => 'menu-nefo-top-menu_ber-biodiversitt:node/42',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -49,
     'customized' => 1,
-    'language' => 'en',
+    'language' => 'de',
     'menu_links_customized' => 1,
   );
   // Exported menu link: menu-nefo-top-menu_eigene-pressemitteilungen:presse/pressemitteilungen
@@ -2953,29 +2950,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-top-menu_legal:node/39
-  $menu_links['menu-nefo-top-menu_legal:node/39'] = array(
-    'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'node/39',
-    'router_path' => 'node/%',
-    'link_title' => 'Legal',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Legal',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_legal:node/39',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -44,
-    'customized' => 1,
-    'language' => 'en',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: menu-nefo-top-menu_presse:presse
   $menu_links['menu-nefo-top-menu_presse:presse'] = array(
     'menu_name' => 'menu-nefo-top-menu',
@@ -3019,10 +2993,8 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('COP');
   t('Citizen Science');
   t('Community-Bezug');
-  t('Contact');
   t('Daten beitragen');
   t('Daten und Infrastrukturen');
-  t('Deutsche Beteiligte an IPBES');
   t('Deutsche Unterstützungsstruktur');
   t('Eigene Pressemitteilungen');
   t('Einbringen in die Forschung');
@@ -3039,6 +3011,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Gesundheit');
   t('Glossar');
   t('IPBES');
+  t('IPBES & Co.');
   t('IPBES Arbeitsprogramm');
   t('IPBES FAQ');
   t('IPBES Historie');
@@ -3055,7 +3028,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Kommentierte Verweisliste');
   t('Kontakt');
   t('Land-Degradation');
-  t('Legal');
   t('Literatur über IPBES');
   t('Literaturtipps');
   t('Login');
@@ -3072,12 +3044,12 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Netzwerke und Vernetzung');
   t('News & Events');
   t('Pan-europäisches Assessment');
+  t('Personen');
   t('Politik');
   t('Presse');
   t('Projekte');
   t('Rollen von Expertinnen und Experten');
   t('SBSTTA');
-  t('Schnittstellen');
   t('Schnittstellen verstehen');
   t('Stakeholder Engagement Strategy');
   t('Startseite');
@@ -3095,6 +3067,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Zahlen und Fakten');
   t('gti-Kontaktstelle');
   t('weitere Konventionen');
+  t('Über Biodiversität');
   t('Über IPBES');
 
   return $menu_links;
