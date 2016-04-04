@@ -138,7 +138,7 @@ function researcher_profile_views_default_views() {
     'field_researcher_linkedin' => 'field_researcher_linkedin',
   );
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Feld: Profile: Name */
+  /* Field: Profile: Name */
   $handler->display->display_options['fields']['field_researcher_name']['id'] = 'field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['table'] = 'field_data_field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['field'] = 'field_researcher_name';
@@ -146,7 +146,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_name']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_researcher_name']['element_label_type'] = '0';
   $handler->display->display_options['fields']['field_researcher_name']['element_label_colon'] = FALSE;
-  /* Feld: Profile: Picture */
+  /* Field: Profile: Picture */
   $handler->display->display_options['fields']['field_researcher_picture']['id'] = 'field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['table'] = 'field_data_field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['field'] = 'field_researcher_picture';
@@ -160,7 +160,7 @@ function researcher_profile_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Feld: Profile: Website */
+  /* Field: Profile: Website */
   $handler->display->display_options['fields']['field_researcher_www']['id'] = 'field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['table'] = 'field_data_field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['field'] = 'field_researcher_www';
@@ -169,7 +169,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_www']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_www']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_www']['click_sort_column'] = 'url';
-  /* Feld: Profile: Twitter */
+  /* Field: Profile: Twitter */
   $handler->display->display_options['fields']['field_researcher_twitter']['id'] = 'field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['table'] = 'field_data_field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['field'] = 'field_researcher_twitter';
@@ -177,7 +177,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_twitter']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_twitter']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_twitter']['element_label_colon'] = FALSE;
-  /* Feld: Profile: Linked In */
+  /* Field: Profile: Linked In */
   $handler->display->display_options['fields']['field_researcher_linkedin']['id'] = 'field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['table'] = 'field_data_field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['field'] = 'field_researcher_linkedin';
@@ -185,7 +185,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_linkedin']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_linkedin']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_linkedin']['element_label_colon'] = FALSE;
-  /* Feld: Left Wrapper */
+  /* Field: Left Wrapper */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -198,7 +198,7 @@ function researcher_profile_views_default_views() {
 <div class="field-researcher-linkedin">[field_researcher_twitter]</div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Feld: Profile: Biodiversität fasziniert mich, ... */
+  /* Field: Profile: Biodiversität fasziniert mich, ... */
   $handler->display->display_options['fields']['field_researcher_fascinated']['id'] = 'field_researcher_fascinated';
   $handler->display->display_options['fields']['field_researcher_fascinated']['table'] = 'field_data_field_researcher_fascinated';
   $handler->display->display_options['fields']['field_researcher_fascinated']['field'] = 'field_researcher_fascinated';
@@ -206,7 +206,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_fascinated']['element_label_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_fascinated']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_fascinated']['element_wrapper_type'] = 'div';
-  /* Feld: Profile: Biodiversität ist wichtig, ... */
+  /* Field: Profile: Biodiversität ist wichtig, ... */
   $handler->display->display_options['fields']['field_researcher_important']['id'] = 'field_researcher_important';
   $handler->display->display_options['fields']['field_researcher_important']['table'] = 'field_data_field_researcher_important';
   $handler->display->display_options['fields']['field_researcher_important']['field'] = 'field_researcher_important';
@@ -214,7 +214,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_important']['element_label_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_important']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_important']['element_wrapper_type'] = 'div';
-  /* Feld: Profile: Defizit in der Biodiversitätspolitik */
+  /* Field: Profile: Defizit in der Biodiversitätspolitik */
   $handler->display->display_options['fields']['field_researcher_deficit']['id'] = 'field_researcher_deficit';
   $handler->display->display_options['fields']['field_researcher_deficit']['table'] = 'field_data_field_researcher_deficit';
   $handler->display->display_options['fields']['field_researcher_deficit']['field'] = 'field_researcher_deficit';
@@ -222,20 +222,20 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_deficit']['element_label_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_deficit']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_deficit']['element_wrapper_type'] = 'div';
-  /* Sortierkriterien: Profile: Name (field_researcher_name) */
+  /* Sort criterion: Profile: Name (field_researcher_name) */
   $handler->display->display_options['sorts']['field_researcher_name_value']['id'] = 'field_researcher_name_value';
   $handler->display->display_options['sorts']['field_researcher_name_value']['table'] = 'field_data_field_researcher_name';
   $handler->display->display_options['sorts']['field_researcher_name_value']['field'] = 'field_researcher_name_value';
   $handler->display->display_options['sorts']['field_researcher_name_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_researcher_name_value']['expose']['label'] = 'Sortieren';
-  /* Filterkriterium: Profile: Type */
+  /* Filter criterion: Profile: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'researcher' => 'researcher',
   );
-  /* Filterkriterium: Global: Combine fields filter */
+  /* Filter criterion: Global: Combine fields filter */
   $handler->display->display_options['filters']['combine']['id'] = 'combine';
   $handler->display->display_options['filters']['combine']['table'] = 'views';
   $handler->display->display_options['filters']['combine']['field'] = 'combine';
@@ -270,10 +270,14 @@ function researcher_profile_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['exposed_block'] = TRUE;
-  $handler->display->display_options['path'] = 'forschung/forscherprofile';
+  $handler->display->display_options['path'] = 'forschung/forschungsakteure/personen';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Forscherprofile';
+  $handler->display->display_options['menu']['title'] = 'Personen';
+  $handler->display->display_options['menu']['description'] = 'Forscherprofile';
+  $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['view_researcher_profile'] = $view;
 
   return $export;
