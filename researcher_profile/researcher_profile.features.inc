@@ -24,6 +24,31 @@ function researcher_profile_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function researcher_profile_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: img_style_researcher.
+  $styles['img_style_researcher'] = array(
+    'label' => 'Forscherprofil',
+    'effects' => array(
+      7 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 180,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_default_profile2_type().
  */
 function researcher_profile_default_profile2_type() {

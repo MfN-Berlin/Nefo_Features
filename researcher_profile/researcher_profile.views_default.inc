@@ -157,32 +157,50 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_researcher_picture']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
-  /* Field: Profile: Website */
+  /* Field: Profile: Institution Website */
   $handler->display->display_options['fields']['field_researcher_www']['id'] = 'field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['table'] = 'field_data_field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['field'] = 'field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['label'] = '';
   $handler->display->display_options['fields']['field_researcher_www']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_www']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_www']['alter']['text'] = '<a href="[field_researcher_www-url]"><span class="fa fa-globe fa-lg"></span></a>';
+  $handler->display->display_options['fields']['field_researcher_www']['alter']['link_class'] = 'fa fa-globe';
   $handler->display->display_options['fields']['field_researcher_www']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_www']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_www']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_researcher_www']['type'] = 'link_url';
+  /* Field: Profile: Website */
+  $handler->display->display_options['fields']['field_reseacher_www']['id'] = 'field_reseacher_www';
+  $handler->display->display_options['fields']['field_reseacher_www']['table'] = 'field_data_field_reseacher_www';
+  $handler->display->display_options['fields']['field_reseacher_www']['field'] = 'field_reseacher_www';
+  $handler->display->display_options['fields']['field_reseacher_www']['label'] = '';
+  $handler->display->display_options['fields']['field_reseacher_www']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_reseacher_www']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_reseacher_www']['alter']['text'] = '<a href="[field_reseacher_www-value]"><span class="fa fa-globe fa-lg"></span></a>';
+  $handler->display->display_options['fields']['field_reseacher_www']['element_label_colon'] = FALSE;
   /* Field: Profile: Twitter */
   $handler->display->display_options['fields']['field_researcher_twitter']['id'] = 'field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['table'] = 'field_data_field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['field'] = 'field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['label'] = '';
   $handler->display->display_options['fields']['field_researcher_twitter']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_twitter']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_twitter']['alter']['text'] = '<a href="[field_researcher_twitter-value]"><span class="fa fa-twitter fa-lg"></span></a>';
   $handler->display->display_options['fields']['field_researcher_twitter']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_twitter']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_researcher_twitter']['hide_empty'] = TRUE;
   /* Field: Profile: Linked In */
   $handler->display->display_options['fields']['field_researcher_linkedin']['id'] = 'field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['table'] = 'field_data_field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['field'] = 'field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['label'] = '';
   $handler->display->display_options['fields']['field_researcher_linkedin']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_linkedin']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_linkedin']['alter']['text'] = '<a href="[field_researcher_linkedin-value]"><span class="fa fa-linkedin fa-lg"></span></a>';
   $handler->display->display_options['fields']['field_researcher_linkedin']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_linkedin']['element_label_colon'] = FALSE;
   /* Field: Left Wrapper */
@@ -194,8 +212,9 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="researcher-col1">
 <div class="field-researcher-picture">[field_researcher_picture]</div>
 <div class="field-researcher-www">[field_researcher_www]</div>
+<div class="field-researcher-www">[field_reseacher_www]</div>
 <div class="field-researcher-twitter">[field_researcher_twitter]</div>
-<div class="field-researcher-linkedin">[field_researcher_twitter]</div>
+<div class="field-researcher-linkedin">[field_researcher_linkedin]</div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Field: Profile: Biodiversität fasziniert mich, ... */
