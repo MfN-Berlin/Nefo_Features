@@ -93,6 +93,5 @@ function nefo_menue_struktur_menu_default_menu_custom() {
   t('NeFo Login Menu');
   t('NeFo Top Menu');
 
-
   return $menus;
 }

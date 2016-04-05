@@ -10,7 +10,7 @@
 function nefo_struktur_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
+  // Exported field_base: 'body'.
   $field_bases['body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -33,7 +33,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_dateien'
+  // Exported field_base: 'field_dateien'.
   $field_bases['field_dateien'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -57,7 +57,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_file_image_alt_text'
+  // Exported field_base: 'field_file_image_alt_text'.
   $field_bases['field_file_image_alt_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -78,7 +78,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_file_image_credit_text'
+  // Exported field_base: 'field_file_image_credit_text'.
   $field_bases['field_file_image_credit_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -99,7 +99,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_file_image_title_text'
+  // Exported field_base: 'field_file_image_title_text'.
   $field_bases['field_file_image_title_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -120,7 +120,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_file_video_credit_text'
+  // Exported field_base: 'field_file_video_credit_text'.
   $field_bases['field_file_video_credit_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -141,7 +141,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_image_caption_text'
+  // Exported field_base: 'field_image_caption_text'.
   $field_bases['field_image_caption_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -162,7 +162,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_internal_link'
+  // Exported field_base: 'field_internal_link'.
   $field_bases['field_internal_link'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -207,7 +207,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_nefo_article_img'
+  // Exported field_base: 'field_nefo_article_img'.
   $field_bases['field_nefo_article_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -230,7 +230,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_description'
+  // Exported field_base: 'field_nefo_description'.
   $field_bases['field_nefo_description'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -251,7 +251,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_nefo_factsheet'
+  // Exported field_base: 'field_nefo_factsheet'.
   $field_bases['field_nefo_factsheet'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -274,7 +274,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_nefo_factsheet_link'
+  // Exported field_base: 'field_nefo_factsheet_link'.
   $field_bases['field_nefo_factsheet_link'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -303,7 +303,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_nefo_interview_category'
+  // Exported field_base: 'field_nefo_interview_category'.
   $field_bases['field_nefo_interview_category'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -330,7 +330,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_nefo_interview_img'
+  // Exported field_base: 'field_nefo_interview_img'.
   $field_bases['field_nefo_interview_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -353,7 +353,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_interview_month'
+  // Exported field_base: 'field_nefo_interview_month'.
   $field_bases['field_nefo_interview_month'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -383,7 +383,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'date',
   );
 
-  // Exported field_base: 'field_nefo_literature_tip_img'
+  // Exported field_base: 'field_nefo_literature_tip_img'.
   $field_bases['field_nefo_literature_tip_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -405,7 +405,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_news_body'
+  // Exported field_base: 'field_nefo_news_body'.
   $field_bases['field_nefo_news_body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -424,7 +424,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_nefo_news_category'
+  // Exported field_base: 'field_nefo_news_category'.
   $field_bases['field_nefo_news_category'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -451,7 +451,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_nefo_news_img'
+  // Exported field_base: 'field_nefo_news_img'.
   $field_bases['field_nefo_news_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -474,7 +474,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_opinion'
+  // Exported field_base: 'field_nefo_opinion'.
   $field_bases['field_nefo_opinion'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -497,7 +497,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_nefo_press_release_img'
+  // Exported field_base: 'field_nefo_press_release_img'.
   $field_bases['field_nefo_press_release_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -520,7 +520,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_product_field_type'
+  // Exported field_base: 'field_nefo_product_field_type'.
   $field_bases['field_nefo_product_field_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -546,7 +546,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_nefo_report_file'
+  // Exported field_base: 'field_nefo_report_file'.
   $field_bases['field_nefo_report_file'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -569,7 +569,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_nefo_report_url'
+  // Exported field_base: 'field_nefo_report_url'.
   $field_bases['field_nefo_report_url'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -598,7 +598,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_nefo_slide_factsheet_img'
+  // Exported field_base: 'field_nefo_slide_factsheet_img'.
   $field_bases['field_nefo_slide_factsheet_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -620,7 +620,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_slide_factsheet_refer'
+  // Exported field_base: 'field_nefo_slide_factsheet_refer'.
   $field_bases['field_nefo_slide_factsheet_refer'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -655,7 +655,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_nefo_slide_opinion_img'
+  // Exported field_base: 'field_nefo_slide_opinion_img'.
   $field_bases['field_nefo_slide_opinion_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -677,7 +677,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_slide_opinion_refer'
+  // Exported field_base: 'field_nefo_slide_opinion_refer'.
   $field_bases['field_nefo_slide_opinion_refer'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -712,7 +712,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_nefo_slide_product_desc'
+  // Exported field_base: 'field_nefo_slide_product_desc'.
   $field_bases['field_nefo_slide_product_desc'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -733,7 +733,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_nefo_slide_report_img'
+  // Exported field_base: 'field_nefo_slide_report_img'.
   $field_bases['field_nefo_slide_report_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -755,7 +755,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_slide_report_refer'
+  // Exported field_base: 'field_nefo_slide_report_refer'.
   $field_bases['field_nefo_slide_report_refer'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -790,7 +790,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_nefo_slideshow_desc'
+  // Exported field_base: 'field_nefo_slideshow_desc'.
   $field_bases['field_nefo_slideshow_desc'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -811,7 +811,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_nefo_slideshow_img'
+  // Exported field_base: 'field_nefo_slideshow_img'.
   $field_bases['field_nefo_slideshow_img'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -834,7 +834,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_slideshow_target_url'
+  // Exported field_base: 'field_nefo_slideshow_target_url'.
   $field_bases['field_nefo_slideshow_target_url'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -864,7 +864,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_nefo_study'
+  // Exported field_base: 'field_nefo_study'.
   $field_bases['field_nefo_study'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -887,7 +887,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_nefo_target_url'
+  // Exported field_base: 'field_nefo_target_url'.
   $field_bases['field_nefo_target_url'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -917,7 +917,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_nefo_taxonomy_blogs'
+  // Exported field_base: 'field_nefo_taxonomy_blogs'.
   $field_bases['field_nefo_taxonomy_blogs'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -945,7 +945,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_nefo_taxonomy_tags'
+  // Exported field_base: 'field_nefo_taxonomy_tags'.
   $field_bases['field_nefo_taxonomy_tags'] = array(
     'active' => 1,
     'cardinality' => 5,
@@ -973,7 +973,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_nefo_workshop_file'
+  // Exported field_base: 'field_nefo_workshop_file'.
   $field_bases['field_nefo_workshop_file'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -997,7 +997,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_nefo_workshop_url'
+  // Exported field_base: 'field_nefo_workshop_url'.
   $field_bases['field_nefo_workshop_url'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1027,7 +1027,7 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_schlagworte'
+  // Exported field_base: 'field_schlagworte'.
   $field_bases['field_schlagworte'] = array(
     'active' => 1,
     'cardinality' => -1,

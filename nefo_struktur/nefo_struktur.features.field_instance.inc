@@ -10,7 +10,7 @@
 function nefo_struktur_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'file-image-field_file_image_alt_text'
+  // Exported field_instance: 'file-image-field_file_image_alt_text'.
   $field_instances['file-image-field_file_image_alt_text'] = array(
     'bundle' => 'image',
     'default_value' => NULL,
@@ -67,7 +67,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'file-image-field_file_image_credit_text'
+  // Exported field_instance: 'file-image-field_file_image_credit_text'.
   $field_instances['file-image-field_file_image_credit_text'] = array(
     'bundle' => 'image',
     'default_value' => NULL,
@@ -121,7 +121,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'file-image-field_file_image_title_text'
+  // Exported field_instance: 'file-image-field_file_image_title_text'.
   $field_instances['file-image-field_file_image_title_text'] = array(
     'bundle' => 'image',
     'default_value' => NULL,
@@ -178,7 +178,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'file-image-field_image_caption_text'
+  // Exported field_instance: 'file-image-field_image_caption_text'.
   $field_instances['file-image-field_image_caption_text'] = array(
     'bundle' => 'image',
     'default_value' => NULL,
@@ -232,7 +232,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'file-video-field_file_video_credit_text'
+  // Exported field_instance: 'file-video-field_file_video_credit_text'.
   $field_instances['file-video-field_file_video_credit_text'] = array(
     'bundle' => 'video',
     'default_value' => NULL,
@@ -285,7 +285,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-body'
+  // Exported field_instance: 'node-article-body'.
   $field_instances['node-article-body'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -329,7 +329,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_dateien'
+  // Exported field_instance: 'node-article-field_dateien'.
   $field_instances['node-article-field_dateien'] = array(
     'bundle' => 'article',
     'deleted' => 0,
@@ -388,7 +388,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_internal_link'
+  // Exported field_instance: 'node-article-field_internal_link'.
   $field_instances['node-article-field_internal_link'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
@@ -429,7 +429,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_schlagworte'
+  // Exported field_instance: 'node-article-field_schlagworte'.
   $field_instances['node-article-field_schlagworte'] = array(
     'bundle' => 'article',
     'default_value' => array(),
@@ -469,7 +469,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog-body'
+  // Exported field_instance: 'node-blog-body'.
   $field_instances['node-blog-body'] = array(
     'bundle' => 'blog',
     'default_value' => NULL,
@@ -514,7 +514,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog-field_nefo_taxonomy_blogs'
+  // Exported field_instance: 'node-blog-field_nefo_taxonomy_blogs'.
   $field_instances['node-blog-field_nefo_taxonomy_blogs'] = array(
     'bundle' => 'blog',
     'default_value' => NULL,
@@ -553,7 +553,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_news-body'
+  // Exported field_instance: 'node-nefo_news-body'.
   $field_instances['node-nefo_news-body'] = array(
     'bundle' => 'nefo_news',
     'default_value' => NULL,
@@ -595,7 +595,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_news-field_nefo_news_category'
+  // Exported field_instance: 'node-nefo_news-field_nefo_news_category'.
   $field_instances['node-nefo_news-field_nefo_news_category'] = array(
     'bundle' => 'nefo_news',
     'default_value' => NULL,
@@ -635,7 +635,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_news-field_nefo_news_img'
+  // Exported field_instance: 'node-nefo_news-field_nefo_news_img'.
   $field_instances['node-nefo_news-field_nefo_news_img'] = array(
     'bundle' => 'nefo_news',
     'deleted' => 0,
@@ -698,7 +698,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_news-field_nefo_target_url'
+  // Exported field_instance: 'node-nefo_news-field_nefo_target_url'.
   $field_instances['node-nefo_news-field_nefo_target_url'] = array(
     'bundle' => 'nefo_news',
     'default_value' => NULL,
@@ -755,7 +755,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_article-body'
+  // Exported field_instance: 'node-nefo_product_article-body'.
   $field_instances['node-nefo_product_article-body'] = array(
     'bundle' => 'nefo_product_article',
     'default_value' => NULL,
@@ -806,7 +806,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_article-field_internal_link'
+  // Exported field_instance: 'node-nefo_product_article-field_internal_link'.
   $field_instances['node-nefo_product_article-field_internal_link'] = array(
     'bundle' => 'nefo_product_article',
     'default_value' => NULL,
@@ -847,7 +847,8 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_article-field_nefo_article_img'
+  // Exported field_instance:
+  // 'node-nefo_product_article-field_nefo_article_img'.
   $field_instances['node-nefo_product_article-field_nefo_article_img'] = array(
     'bundle' => 'nefo_product_article',
     'deleted' => 0,
@@ -911,7 +912,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_article-field_nefo_taxonomy_tags'
+  // 'node-nefo_product_article-field_nefo_taxonomy_tags'.
   $field_instances['node-nefo_product_article-field_nefo_taxonomy_tags'] = array(
     'bundle' => 'nefo_product_article',
     'default_value' => NULL,
@@ -950,7 +951,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_factsheet-field_nefo_description'
+  // 'node-nefo_product_factsheet-field_nefo_description'.
   $field_instances['node-nefo_product_factsheet-field_nefo_description'] = array(
     'bundle' => 'nefo_product_factsheet',
     'default_value' => NULL,
@@ -994,7 +995,8 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_factsheet-field_nefo_factsheet'
+  // Exported field_instance:
+  // 'node-nefo_product_factsheet-field_nefo_factsheet'.
   $field_instances['node-nefo_product_factsheet-field_nefo_factsheet'] = array(
     'bundle' => 'nefo_product_factsheet',
     'deleted' => 0,
@@ -1052,7 +1054,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_factsheet-field_nefo_factsheet_link'
+  // 'node-nefo_product_factsheet-field_nefo_factsheet_link'.
   $field_instances['node-nefo_product_factsheet-field_nefo_factsheet_link'] = array(
     'bundle' => 'nefo_product_factsheet',
     'default_value' => NULL,
@@ -1110,7 +1112,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_factsheet-field_nefo_product_field_type'
+  // 'node-nefo_product_factsheet-field_nefo_product_field_type'.
   $field_instances['node-nefo_product_factsheet-field_nefo_product_field_type'] = array(
     'bundle' => 'nefo_product_factsheet',
     'default_value' => array(
@@ -1152,7 +1154,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_factsheet-field_nefo_taxonomy_tags'
+  // 'node-nefo_product_factsheet-field_nefo_taxonomy_tags'.
   $field_instances['node-nefo_product_factsheet-field_nefo_taxonomy_tags'] = array(
     'bundle' => 'nefo_product_factsheet',
     'default_value' => NULL,
@@ -1190,7 +1192,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_interview-body'
+  // Exported field_instance: 'node-nefo_product_interview-body'.
   $field_instances['node-nefo_product_interview-body'] = array(
     'bundle' => 'nefo_product_interview',
     'default_value' => NULL,
@@ -1232,7 +1234,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_interview-field_internal_link'
+  // Exported field_instance: 'node-nefo_product_interview-field_internal_link'.
   $field_instances['node-nefo_product_interview-field_internal_link'] = array(
     'bundle' => 'nefo_product_interview',
     'default_value' => NULL,
@@ -1268,7 +1270,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_interview-field_nefo_interview_category'
+  // 'node-nefo_product_interview-field_nefo_interview_category'.
   $field_instances['node-nefo_product_interview-field_nefo_interview_category'] = array(
     'bundle' => 'nefo_product_interview',
     'default_value' => NULL,
@@ -1302,7 +1304,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_interview-field_nefo_interview_img'
+  // 'node-nefo_product_interview-field_nefo_interview_img'.
   $field_instances['node-nefo_product_interview-field_nefo_interview_img'] = array(
     'bundle' => 'nefo_product_interview',
     'deleted' => 0,
@@ -1360,7 +1362,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_interview-field_nefo_interview_month'
+  // 'node-nefo_product_interview-field_nefo_interview_month'.
   $field_instances['node-nefo_product_interview-field_nefo_interview_month'] = array(
     'bundle' => 'nefo_product_interview',
     'deleted' => 0,
@@ -1402,7 +1404,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_interview-field_nefo_taxonomy_tags'
+  // 'node-nefo_product_interview-field_nefo_taxonomy_tags'.
   $field_instances['node-nefo_product_interview-field_nefo_taxonomy_tags'] = array(
     'bundle' => 'nefo_product_interview',
     'default_value' => NULL,
@@ -1435,7 +1437,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_literature_tip-field_nefo_description'
+  // 'node-nefo_product_literature_tip-field_nefo_description'.
   $field_instances['node-nefo_product_literature_tip-field_nefo_description'] = array(
     'bundle' => 'nefo_product_literature_tip',
     'default_value' => NULL,
@@ -1476,7 +1478,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_literature_tip-field_nefo_literature_tip_img'
+  // 'node-nefo_product_literature_tip-field_nefo_literature_tip_img'.
   $field_instances['node-nefo_product_literature_tip-field_nefo_literature_tip_img'] = array(
     'bundle' => 'nefo_product_literature_tip',
     'deleted' => 0,
@@ -1541,7 +1543,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_literature_tip-field_nefo_target_url'
+  // 'node-nefo_product_literature_tip-field_nefo_target_url'.
   $field_instances['node-nefo_product_literature_tip-field_nefo_target_url'] = array(
     'bundle' => 'nefo_product_literature_tip',
     'default_value' => NULL,
@@ -1598,7 +1600,8 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_opinion-field_nefo_description'
+  // Exported field_instance:
+  // 'node-nefo_product_opinion-field_nefo_description'.
   $field_instances['node-nefo_product_opinion-field_nefo_description'] = array(
     'bundle' => 'nefo_product_opinion',
     'default_value' => NULL,
@@ -1642,7 +1645,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_opinion-field_nefo_opinion'
+  // Exported field_instance: 'node-nefo_product_opinion-field_nefo_opinion'.
   $field_instances['node-nefo_product_opinion-field_nefo_opinion'] = array(
     'bundle' => 'nefo_product_opinion',
     'deleted' => 0,
@@ -1700,7 +1703,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_opinion-field_nefo_taxonomy_tags'
+  // 'node-nefo_product_opinion-field_nefo_taxonomy_tags'.
   $field_instances['node-nefo_product_opinion-field_nefo_taxonomy_tags'] = array(
     'bundle' => 'nefo_product_opinion',
     'default_value' => NULL,
@@ -1738,7 +1741,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_press_release-body'
+  // Exported field_instance: 'node-nefo_product_press_release-body'.
   $field_instances['node-nefo_product_press_release-body'] = array(
     'bundle' => 'nefo_product_press_release',
     'default_value' => NULL,
@@ -1787,7 +1790,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_press_release-field_internal_link'
+  // 'node-nefo_product_press_release-field_internal_link'.
   $field_instances['node-nefo_product_press_release-field_internal_link'] = array(
     'bundle' => 'nefo_product_press_release',
     'default_value' => NULL,
@@ -1829,7 +1832,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_press_release-field_nefo_press_release_img'
+  // 'node-nefo_product_press_release-field_nefo_press_release_img'.
   $field_instances['node-nefo_product_press_release-field_nefo_press_release_img'] = array(
     'bundle' => 'nefo_product_press_release',
     'deleted' => 0,
@@ -1893,7 +1896,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_press_release-field_nefo_taxonomy_tags'
+  // 'node-nefo_product_press_release-field_nefo_taxonomy_tags'.
   $field_instances['node-nefo_product_press_release-field_nefo_taxonomy_tags'] = array(
     'bundle' => 'nefo_product_press_release',
     'default_value' => NULL,
@@ -1931,7 +1934,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_report-field_nefo_description'
+  // Exported field_instance: 'node-nefo_product_report-field_nefo_description'.
   $field_instances['node-nefo_product_report-field_nefo_description'] = array(
     'bundle' => 'nefo_product_report',
     'default_value' => NULL,
@@ -1976,7 +1979,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_report-field_nefo_product_field_type'
+  // 'node-nefo_product_report-field_nefo_product_field_type'.
   $field_instances['node-nefo_product_report-field_nefo_product_field_type'] = array(
     'bundle' => 'nefo_product_report',
     'default_value' => array(
@@ -2017,7 +2020,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_report-field_nefo_report_file'
+  // Exported field_instance: 'node-nefo_product_report-field_nefo_report_file'.
   $field_instances['node-nefo_product_report-field_nefo_report_file'] = array(
     'bundle' => 'nefo_product_report',
     'deleted' => 0,
@@ -2074,7 +2077,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_report-field_nefo_report_url'
+  // Exported field_instance: 'node-nefo_product_report-field_nefo_report_url'.
   $field_instances['node-nefo_product_report-field_nefo_report_url'] = array(
     'bundle' => 'nefo_product_report',
     'default_value' => NULL,
@@ -2132,7 +2135,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_report-field_nefo_taxonomy_tags'
+  // 'node-nefo_product_report-field_nefo_taxonomy_tags'.
   $field_instances['node-nefo_product_report-field_nefo_taxonomy_tags'] = array(
     'bundle' => 'nefo_product_report',
     'default_value' => NULL,
@@ -2170,7 +2173,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_study-field_nefo_description'
+  // Exported field_instance: 'node-nefo_product_study-field_nefo_description'.
   $field_instances['node-nefo_product_study-field_nefo_description'] = array(
     'bundle' => 'nefo_product_study',
     'default_value' => NULL,
@@ -2214,7 +2217,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_study-field_nefo_study'
+  // Exported field_instance: 'node-nefo_product_study-field_nefo_study'.
   $field_instances['node-nefo_product_study-field_nefo_study'] = array(
     'bundle' => 'nefo_product_study',
     'deleted' => 0,
@@ -2271,7 +2274,8 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_product_study-field_nefo_taxonomy_tags'
+  // Exported field_instance:
+  // 'node-nefo_product_study-field_nefo_taxonomy_tags'.
   $field_instances['node-nefo_product_study-field_nefo_taxonomy_tags'] = array(
     'bundle' => 'nefo_product_study',
     'default_value' => NULL,
@@ -2310,7 +2314,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_workshop-field_nefo_description'
+  // 'node-nefo_product_workshop-field_nefo_description'.
   $field_instances['node-nefo_product_workshop-field_nefo_description'] = array(
     'bundle' => 'nefo_product_workshop',
     'default_value' => NULL,
@@ -2355,7 +2359,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_workshop-field_nefo_product_field_type'
+  // 'node-nefo_product_workshop-field_nefo_product_field_type'.
   $field_instances['node-nefo_product_workshop-field_nefo_product_field_type'] = array(
     'bundle' => 'nefo_product_workshop',
     'default_value' => array(
@@ -2397,7 +2401,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_workshop-field_nefo_taxonomy_tags'
+  // 'node-nefo_product_workshop-field_nefo_taxonomy_tags'.
   $field_instances['node-nefo_product_workshop-field_nefo_taxonomy_tags'] = array(
     'bundle' => 'nefo_product_workshop',
     'default_value' => NULL,
@@ -2436,7 +2440,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_workshop-field_nefo_workshop_file'
+  // 'node-nefo_product_workshop-field_nefo_workshop_file'.
   $field_instances['node-nefo_product_workshop-field_nefo_workshop_file'] = array(
     'bundle' => 'nefo_product_workshop',
     'deleted' => 0,
@@ -2494,7 +2498,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_workshop-field_nefo_workshop_url'
+  // 'node-nefo_product_workshop-field_nefo_workshop_url'.
   $field_instances['node-nefo_product_workshop-field_nefo_workshop_url'] = array(
     'bundle' => 'nefo_product_workshop',
     'default_value' => NULL,
@@ -2552,7 +2556,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_factsheet-field_nefo_slide_factsheet_img'
+  // 'node-nefo_slide_factsheet-field_nefo_slide_factsheet_img'.
   $field_instances['node-nefo_slide_factsheet-field_nefo_slide_factsheet_img'] = array(
     'bundle' => 'nefo_slide_factsheet',
     'deleted' => 0,
@@ -2617,7 +2621,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_factsheet-field_nefo_slide_factsheet_refer'
+  // 'node-nefo_slide_factsheet-field_nefo_slide_factsheet_refer'.
   $field_instances['node-nefo_slide_factsheet-field_nefo_slide_factsheet_refer'] = array(
     'bundle' => 'nefo_slide_factsheet',
     'default_value' => NULL,
@@ -2659,7 +2663,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_factsheet-field_nefo_slide_product_desc'
+  // 'node-nefo_slide_factsheet-field_nefo_slide_product_desc'.
   $field_instances['node-nefo_slide_factsheet-field_nefo_slide_product_desc'] = array(
     'bundle' => 'nefo_slide_factsheet',
     'default_value' => NULL,
@@ -2700,7 +2704,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_opinion-field_nefo_slide_opinion_img'
+  // 'node-nefo_slide_opinion-field_nefo_slide_opinion_img'.
   $field_instances['node-nefo_slide_opinion-field_nefo_slide_opinion_img'] = array(
     'bundle' => 'nefo_slide_opinion',
     'deleted' => 0,
@@ -2765,7 +2769,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_opinion-field_nefo_slide_opinion_refer'
+  // 'node-nefo_slide_opinion-field_nefo_slide_opinion_refer'.
   $field_instances['node-nefo_slide_opinion-field_nefo_slide_opinion_refer'] = array(
     'bundle' => 'nefo_slide_opinion',
     'default_value' => NULL,
@@ -2807,7 +2811,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_opinion-field_nefo_slide_product_desc'
+  // 'node-nefo_slide_opinion-field_nefo_slide_product_desc'.
   $field_instances['node-nefo_slide_opinion-field_nefo_slide_product_desc'] = array(
     'bundle' => 'nefo_slide_opinion',
     'default_value' => NULL,
@@ -2848,7 +2852,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_report-field_nefo_slide_product_desc'
+  // 'node-nefo_slide_report-field_nefo_slide_product_desc'.
   $field_instances['node-nefo_slide_report-field_nefo_slide_product_desc'] = array(
     'bundle' => 'nefo_slide_report',
     'default_value' => NULL,
@@ -2889,7 +2893,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_report-field_nefo_slide_report_img'
+  // 'node-nefo_slide_report-field_nefo_slide_report_img'.
   $field_instances['node-nefo_slide_report-field_nefo_slide_report_img'] = array(
     'bundle' => 'nefo_slide_report',
     'deleted' => 0,
@@ -2954,7 +2958,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slide_report-field_nefo_slide_report_refer'
+  // 'node-nefo_slide_report-field_nefo_slide_report_refer'.
   $field_instances['node-nefo_slide_report-field_nefo_slide_report_refer'] = array(
     'bundle' => 'nefo_slide_report',
     'default_value' => NULL,
@@ -2995,7 +2999,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_slideshow-field_nefo_slideshow_desc'
+  // Exported field_instance: 'node-nefo_slideshow-field_nefo_slideshow_desc'.
   $field_instances['node-nefo_slideshow-field_nefo_slideshow_desc'] = array(
     'bundle' => 'nefo_slideshow',
     'default_value' => NULL,
@@ -3039,7 +3043,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-nefo_slideshow-field_nefo_slideshow_img'
+  // Exported field_instance: 'node-nefo_slideshow-field_nefo_slideshow_img'.
   $field_instances['node-nefo_slideshow-field_nefo_slideshow_img'] = array(
     'bundle' => 'nefo_slideshow',
     'deleted' => 0,
@@ -3104,7 +3108,7 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_slideshow-field_nefo_slideshow_target_url'
+  // 'node-nefo_slideshow-field_nefo_slideshow_target_url'.
   $field_instances['node-nefo_slideshow-field_nefo_slideshow_target_url'] = array(
     'bundle' => 'nefo_slideshow',
     'default_value' => NULL,
@@ -3161,7 +3165,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-body'
+  // Exported field_instance: 'node-page-body'.
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -3205,7 +3209,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_internal_link'
+  // Exported field_instance: 'node-page-field_internal_link'.
   $field_instances['node-page-field_internal_link'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
