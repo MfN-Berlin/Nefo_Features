@@ -1596,30 +1596,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: main-menu_politik:taxonomy/term/47.
-  $menu_links['main-menu_politik:taxonomy/term/47'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/47',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Politik',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Politik',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_politik:taxonomy/term/47',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_unsere-themen:node/44',
-  );
   // Exported menu link: main-menu_projekte:node/27.
   $menu_links['main-menu_projekte:node/27'] = array(
     'menu_name' => 'main-menu',
@@ -1914,6 +1890,27 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_nefo:node/33',
+  );
+  // Exported menu link: main-menu_ber-biodiversitt:node/42.
+  $menu_links['main-menu_ber-biodiversitt:node/42'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/42',
+    'router_path' => 'node/%',
+    'link_title' => 'Über Biodiversität',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+      'identifier' => 'main-menu_ber-biodiversitt:node/42',),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2649,29 +2646,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-footer-menu-second_politik:taxonomy/term/47.
-  $menu_links['menu-nefo-footer-menu-second_politik:taxonomy/term/47'] = array(
-    'menu_name' => 'menu-nefo-footer-menu-second',
-    'link_path' => 'taxonomy/term/47',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Politik',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Politik',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-footer-menu-second_politik:taxonomy/term/47',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -40,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: menu-nefo-footer-menu-third_europisch:node/49.
   $menu_links['menu-nefo-footer-menu-third_europisch:node/49'] = array(
     'menu_name' => 'menu-nefo-footer-menu-third',
@@ -2831,27 +2805,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'weight' => 0,
     'customized' => 1,
     'language' => 'en',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: menu-nefo-top-menu_ber-biodiversitt:node/42.
-  $menu_links['menu-nefo-top-menu_ber-biodiversitt:node/42'] = array(
-    'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'node/42',
-    'router_path' => 'node/%',
-    'link_title' => 'Über Biodiversität',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_ber-biodiversitt:node/42',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'language' => 'de',
     'menu_links_customized' => 1,
   );
   // Exported menu link: menu-nefo-top-menu_eigene-pressemitteilungen:presse/pressemitteilungen.

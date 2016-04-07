@@ -268,8 +268,8 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'weight' => -6,
       ),
       'ofen' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'header',
+        'status' => 1,
         'theme' => 'ofen',
         'weight' => -6,
       ),
