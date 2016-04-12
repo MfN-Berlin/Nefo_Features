@@ -2253,6 +2253,7 @@ function nefo_berechtigungen_user_default_permissions() {
       'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
     ),
     'module' => 'search',
   );
