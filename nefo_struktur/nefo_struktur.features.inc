@@ -202,7 +202,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('NeFo-Workshops'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_slide_factsheet' => array(
@@ -234,7 +234,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'page' => array(
@@ -242,7 +242,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('Benutzen Sie <em>Einfache Seiten</em> für statischen Inhalt, wie z.B. eine „Über uns“ Seite.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
   );
