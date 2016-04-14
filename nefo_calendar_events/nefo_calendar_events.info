@@ -1,5 +1,5 @@
 name = NeFo Kalender und Events
-description = NeFo Calendar and Events module.
+description = NeFo Calendar and Events module
 core = 7.x
 package = nefo_features
 version = 7.x-1.0-beta3
