@@ -906,6 +906,9 @@ function nefo_struktur_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -982,6 +985,9 @@ function nefo_struktur_strongarm() {
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'ical' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -1099,6 +1105,9 @@ function nefo_struktur_strongarm() {
         'custom_settings' => FALSE,
       ),
       'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'ical' => array(
         'custom_settings' => FALSE,
       ),
     ),
