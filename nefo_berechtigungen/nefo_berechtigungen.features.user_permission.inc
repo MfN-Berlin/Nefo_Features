@@ -132,7 +132,6 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(
-      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'system',
@@ -2254,6 +2253,7 @@ function nefo_berechtigungen_user_default_permissions() {
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
   );
