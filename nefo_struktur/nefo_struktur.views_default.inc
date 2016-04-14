@@ -55,7 +55,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Bild */
   $handler->display->display_options['fields']['field_nefo_article_img']['id'] = 'field_nefo_article_img';
   $handler->display->display_options['fields']['field_nefo_article_img']['table'] = 'field_data_field_nefo_article_img';
@@ -67,7 +66,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_article_img']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_nefo_article_img']['settings'] = array(
     'image_style' => 'image_style_nefo_interview_slide',
-    'image_link' => '',
+    'image_link' => 'content',
   );
   /* Feld: Datei: Image Credit */
   $handler->display->display_options['fields']['field_file_image_credit_text']['id'] = 'field_file_image_credit_text';
@@ -208,7 +207,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Bild */
   $handler->display->display_options['fields']['field_nefo_press_release_img']['id'] = 'field_nefo_press_release_img';
   $handler->display->display_options['fields']['field_nefo_press_release_img']['table'] = 'field_data_field_nefo_press_release_img';
@@ -220,7 +218,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_press_release_img']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_nefo_press_release_img']['settings'] = array(
     'image_style' => 'image_style_nefo_interview_slide',
-    'image_link' => '',
+    'image_link' => 'content',
   );
   /* Feld: Datei: Image Credit */
   $handler->display->display_options['fields']['field_file_image_credit_text']['id'] = 'field_file_image_credit_text';
@@ -626,7 +624,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Bild */
   $handler->display->display_options['fields']['field_nefo_interview_img']['id'] = 'field_nefo_interview_img';
   $handler->display->display_options['fields']['field_nefo_interview_img']['table'] = 'field_data_field_nefo_interview_img';
@@ -638,7 +635,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_interview_img']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_nefo_interview_img']['settings'] = array(
     'image_style' => 'image_style_nefo_interview_slide',
-    'image_link' => '',
+    'image_link' => 'content',
   );
   /* Feld: Inhalt: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
@@ -778,7 +775,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'nefo-view-block-news-title';
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Bild */
   $handler->display->display_options['fields']['field_nefo_news_img']['id'] = 'field_nefo_news_img';
   $handler->display->display_options['fields']['field_nefo_news_img']['table'] = 'field_data_field_nefo_news_img';
