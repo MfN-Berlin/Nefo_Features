@@ -406,6 +406,7 @@ function researcher_profile_field_default_field_bases() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'profile2_private' => 0,
       'title' => 'optional',
       'title_maxlength' => 128,
       'title_value' => '',
