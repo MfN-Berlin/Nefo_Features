@@ -341,11 +341,22 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'owlcarousel';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Feld: Inhalt: Bild */
+  /* Field: Content: Ziel-URL */
+  $handler->display->display_options['fields']['field_nefo_slideshow_target_url_1']['id'] = 'field_nefo_slideshow_target_url_1';
+  $handler->display->display_options['fields']['field_nefo_slideshow_target_url_1']['table'] = 'field_data_field_nefo_slideshow_target_url';
+  $handler->display->display_options['fields']['field_nefo_slideshow_target_url_1']['field'] = 'field_nefo_slideshow_target_url';
+  $handler->display->display_options['fields']['field_nefo_slideshow_target_url_1']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_slideshow_target_url_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_slideshow_target_url_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_slideshow_target_url_1']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_nefo_slideshow_target_url_1']['type'] = 'link_absolute';
+  /* Field: Content: Bild */
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['id'] = 'field_nefo_slideshow_img';
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['table'] = 'field_data_field_nefo_slideshow_img';
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['field'] = 'field_nefo_slideshow_img';
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_slideshow_img']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_slideshow_img']['alter']['path'] = '[field_nefo_slideshow_target_url_1]';
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['settings'] = array(
