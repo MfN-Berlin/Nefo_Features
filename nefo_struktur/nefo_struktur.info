@@ -17,6 +17,7 @@ dependencies[] = link
 dependencies[] = list
 dependencies[] = media
 dependencies[] = nefo_blocks_builder
+dependencies[] = nefo_ga
 dependencies[] = options
 dependencies[] = owlcarousel_views
 dependencies[] = strongarm
