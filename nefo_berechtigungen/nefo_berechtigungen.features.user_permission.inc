@@ -838,6 +838,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
+      'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1086,6 +1087,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
+      'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1325,6 +1327,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
+      'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1727,6 +1730,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
+      'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1998,6 +2002,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
     'roles' => array(
+      'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2076,6 +2081,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['edit terms in nefo_taxonomy_tags'] = array(
     'name' => 'edit terms in nefo_taxonomy_tags',
     'roles' => array(
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
