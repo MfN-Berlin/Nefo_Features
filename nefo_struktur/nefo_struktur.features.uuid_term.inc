@@ -11,6 +11,25 @@ function nefo_struktur_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
+    'name' => 'CBD SBSTTA - 20 im April 2016 in Montreal, Kanada',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '0931bcae-de9c-4695-884e-ac41bc10f0c2',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-sbstta-20-montreal-2016',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'COP',
     'description' => NULL,
     'format' => NULL,
@@ -66,7 +85,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Gesundheit',
-    'description' => '<p>Biodiversität und Gesundheit umfasst ein riesiges Feld. Zum einen geht es um die positive Wirkung von Biodiversität auf die Gesundheit von Menschen. Dazu zählt beispielsweise Wildnis im urbanen Raum, die von Kindern genutzt werden kann, die Freude an ästhetischen Landschaften, aber auch die Nutzung von Pharmazeutika aus der Apotheke der Natur. Aber es kann auch Konflikte geben, wenn Parasiten oder Viren den menschlichen Körper befallen, wenn Krankheitsüberträger wie besteimmte Mücken sich ausbreiten oder, wie beispielswiese über den Verzehr von Bushmeat, Menschen von Infektionen befallen werden. Die Forschung befasst sich zunehmend mit dem komplexen Interaktionen zwischen einfachen Lebewesen wie beispielsweise Bakterien, die in der Evolution eine wichtige Rolle spielten und einen nicht unwesentlichen Teil der menschlichen Biomasse nicht nur im Darm ausmachen. Zunehmend wird auch von "Ecosystem Health" gesprochen, was aufgrund der normativen Setzungen jedoch nicht ganz einfach ist.</p>',
+    'description' => '<p>Biodiversität und Gesundheit umfasst ein riesiges Feld. Zum einen geht es um die positive Wirkung von Biodiversität auf die Gesundheit von Menschen. Dazu zählen beispielsweise Naturerlebnisräume, die von Kindern genutzt werden können, die Freude an ästhetischen Landschaften, oder auch die Nutzung von Pharmazeutika aus der Apotheke der Natur. Aber es kann auch Konflikte geben, wenn Parasiten oder Viren den menschlichen Körper befallen, wenn Krankheitsüberträger wie bestimmte Mücken sich ausbreiten oder, wie beispielswiese über den Verzehr von Wildfleisch, Menschen von Infektionen befallen werden. Die Forschung befasst sich zunehmend mit den komplexen Interaktionen zwischen einfachen Lebewesen wie beispielsweise Bakterien, die in der Evolution eine wichtige Rolle spielen und einen nicht unwesentlichen Teil der menschlichen Biomasse nicht nur im Darm ausmachen. Zunehmend wird auch von "Ecosystem Health" gesprochen, was aufgrund der normativen Setzungen jedoch nicht ganz einfach ist.</p>',
     'format' => 'full_html',
     'weight' => 5,
     'uuid' => '26a642f8-583f-469a-84a4-1c99b45e31e6',
@@ -177,7 +196,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Bestäubung',
-    'description' => '<p>Honigbienen und ihre wilden Verwandten, aber auch andere Insekten wie Hummeln, Käfer, Fliegen, Mücken und Schmetterlinge, spielen eine zentrale Rolle für die Bestäubung von Kultur- und Wildpflanzen und damit zum einen für die Erhaltung von Ökosystemen und zum anderen für die Sicherstellung unserer Ernährung. Ihr Rückgang und ihre Gefährdung stehen daher seit langem im Fokus der Öffentlichkeit, so auch in der Diskussion um die intensive Landwirtschaft und der damit verbundenen Nutzung verschiedener Pestizide. Dies war auch ein Grund, die Bestäuber zum ersten Schwerpunktthema in IPBES zu machen (IPBES-<a href="http://www.ipbes.net/work-programme/pollination" target="_blank">Deliverable 3(a)</a>). Der IPBES-Bericht zu Bestäubung und Bestäubern (<a href="http://www.ipbes.net/sites/default/files/downloads/SPM_Pollinators_unedited%20advance.pdf" target="_blank">Zusammenfassung für Entscheidungsträgerinnen und Entscheidungsträger, vorläufige Version</a> [pdf]) wurde im Februar 2016 verabschiedet. Das NeFo-Angebot widmet sich u.a. der Einordnung dieses Berichtes.</p>',
+    'description' => '<p>Honigbienen und ihre wilden Verwandten, aber auch andere Insekten wie Hummeln, Käfer, Fliegen, Mücken und Schmetterlinge, spielen eine zentrale Rolle für die Bestäubung von Kultur- und Wildpflanzen und damit zum einen für die Erhaltung von Ökosystemen und zum anderen für die Sicherstellung unserer Ernährung. Ihr Rückgang und ihre Gefährdung stehen daher seit langem im Fokus der Öffentlichkeit, so auch in der Diskussion um die intensive Landwirtschaft und der damit verbundenen Nutzung verschiedener Pestizide. Dies war auch ein Grund, die Bestäuber zum ersten Schwerpunktthema in IPBES zu machen (IPBES-<a href="http://www.ipbes.net/work-programme/pollination" target="_blank">Deliverable 3(a)</a>). Der IPBES-Bericht zu Bestäubung und Bestäubern (<a href="http://www.ipbes.net/sites/default/files/downloads/Pollination_Summary%20for%20policymakers_EN_.pdf" target="_blank">Zusammenfassung für Entscheidungsträgerinnen und Entscheidungsträger, vorläufige Version</a> [pdf]) wurde im Februar 2016 verabschiedet. Das NeFo-Angebot widmet sich u.a. der Einordnung dieses Berichtes.</p>',
     'format' => 'full_html',
     'weight' => 4,
     'uuid' => '521329ca-da45-4f18-9fdb-3269d68f80f9',
@@ -231,7 +250,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Monitoring',
-    'description' => '<p>Die Frage, wie Zustand und Trends von Arten, Biotopen und genetischer Vielfalt gut zu erfassen sind, ist ein Dauerthema des Naturschutzes – sowohl in der Praxis als auch in der Forschung. NeFo hatte hier in seiner Arbeit seit 2012 einen Schwerpunkt, der einen Überblick zur Thematik bietet. Bezüglich aktueller Entwicklungen <a href="http://nefo.biodiv.naturkundemuseum-berlin.de/de/kontakt" target="_self">sprechen sie uns bitte an</a>.</p>',
+    'description' => '<p>Die Frage, wie Zustände und Trends von Arten, Biotopen und genetischer Vielfalt gut zu erfassen sind, ist ein Dauerthema des Naturschutzes – sowohl in der Praxis als auch in der Forschung. NeFo hatte hier in seiner Arbeit seit 2012 einen Schwerpunkt, der einen Überblick zur Thematik bietet. Bezüglich aktueller Entwicklungen <a href="http://nefo.biodiv.naturkundemuseum-berlin.de/de/kontakt" target="_self">sprechen sie uns bitte an</a>.</p>',
     'format' => 'full_html',
     'weight' => 1,
     'uuid' => '83cf9aba-a2b6-4fb1-8790-34784ce8f45c',
@@ -326,7 +345,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Klimawandel',
-    'description' => '<p>Nach der Intensivierung der Landnutzung wurde der Klimawandel als wichtigste treibende Kraft zur Veränderung von Biodiversität und Ökosystemprozessen identifiziert. Nicht nur global steigende Temperaturen und veränderte Niederschlagsmuster, sondern auch Extremereignisse tragen beispielsweise zur Ausbreitung von Krankheitserregern oder zur Verschiebung von Vegetationszonen bei. Hier finden Sie eine dynamische Zusammenstellung der aktuellen Informationen.</p>',
+    'description' => '<p>Neben der Intensivierung der Landnutzung wurde der Klimawandel als wichtigste treibende Kraft der Veränderung von Biodiversität und Ökosystemprozessen identifiziert. Nicht nur global steigende Temperaturen und veränderte Niederschlagsmuster, sondern auch Extremereignisse tragen beispielsweise zur Ausbreitung von Krankheitserregern oder zur Verschiebung von Vegetationszonen bei. Hier finden Sie eine dynamische Zusammenstellung der aktuellen Informationen.</p>',
     'format' => 'full_html',
     'weight' => 7,
     'uuid' => 'bebb7153-48cb-4272-a298-05ca45b682dd',
@@ -402,7 +421,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Invasive Arten',
-    'description' => '<p>Invasive Arten, ob Pflanze, Pilz, Tier oder Mikroorganismus, sind einer der fünf Hauptursachen des Biodiversitätswandels. Invasive Arten können aber auch direkt Menschen gefährden, wie etwa die stark allergene Beifuß-Ambrosie, oder als Überträger von Krankheiten fungieren (siehe hierzu unten stehende Faktenblätter). Die Invasionsbiologie ist auch deshalb seit langem ein Thema der Biodiversitätsforschung, aber auch der Politik. So haben die EU-Staaten 2015 eine <a href="http://ec.europa.eu/environment/nature/invasivealien/index_en.htm" target="_blank">neue Direktive</a> verabschiedet, welche die bessere Vorsorge und den Umgang mit invasiven Arten regeln soll. Das Bundesamt für Naturschutz unterhält unter <a href="http://www.neobiota.de" target="_blank">www.neobiota.de</a> eine Überblicksseite zu invasiven Arten in Deutschland. Eine europäische Datenbank invasiver Arten findet sich auf den Seiten des <a href="http://www.daisie.ceh.ac.uk/" target="_blank">DAISIE Projektes</a>.</p><p>IPBES wird auch ein Assessment zum Thema erstellen (<a href="http://www.ipbes.net/work-programme/invasive-alien-species" target="_blank">IPBES-Deliverable 3(bii)</a>). Der Scoping Prozess hierfür ist abgeschlossen, das Assessment wird aber aufgrund von Finanzierungsproblemen frühestens 2017 gestartet.</p>',
+    'description' => '<p>Invasive Arten, ob Pflanze, Pilz, Tier oder Mikroorganismus, sind eine der Hauptursachen des Biodiversitätswandels. Invasive Arten können aber auch direkt Menschen gefährden, wie etwa die stark allergene Beifuß-Ambrosie, oder als Überträger von Krankheiten fungieren (siehe hierzu unten stehende Faktenblätter). Die Invasionsbiologie ist auch deshalb seit langem ein Thema der Biodiversitätsforschung, aber auch der Politik. So haben die EU-Staaten 2015 eine <a href="http://ec.europa.eu/environment/nature/invasivealien/index_en.htm" target="_blank">neue Direktive</a> verabschiedet, welche die bessere Vorsorge und den Umgang mit invasiven Arten regeln soll. Das Bundesamt für Naturschutz unterhält unter <a href="http://www.neobiota.de" target="_blank">www.neobiota.de</a> eine Überblicksseite zu invasiven Arten in Deutschland. Eine europäische Datenbank invasiver Arten findet sich auf den Seiten des <a href="http://www.daisie.ceh.ac.uk/" target="_blank">DAISIE Projektes</a>.</p><p>IPBES wird auch ein Assessment zum Thema erstellen (<a href="http://www.ipbes.net/work-programme/invasive-alien-species" target="_blank">IPBES-Deliverable 3(bii)</a>). Der Scoping Prozess hierfür ist abgeschlossen, das Assessment wird aber aufgrund von Finanzierungsproblemen frühestens 2017 gestartet.</p>',
     'format' => 'full_html',
     'weight' => 6,
     'uuid' => 'ce1d8b37-8145-4c62-bd5a-c381de58f4dd',
@@ -459,7 +478,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Land-Degradation',
-    'description' => '<p>Das Thema Land-Degradation ist seit langem ein Thema der internationalen Politik, etwa durch das Übereinkommen der UN zur Verhinderung der Wüstenbildung (<a href="http://www.unccd.int" target="_blank">UNCCD</a>) mit seinem Portal zum Wissensaustausch (<a href="http://www.unccd.int/en/programmes/Science/Knowledge-Management/Pages/Scientific-Knowledge-Brokering.aspx" target="_blank">Scientific Knowledge Brokerage SKBP)</a>. Die CBD hat das Thema u.a. mit ihrem Aichi-Ziel 14 zur Wiederherstellung von 20% degradierter Flächen bis 2020 aufgegriffen. Auch in der EU gibt es ein entsprechendes Ziel, das auch Agrarflächen umfasst und damit eine besondere Herausforderung bietet. IPBES greift das Thema daher in einem eigenen thematischen Assessment auf, das bis 2017 fertiggestellt sein soll (<a href="http://www.ipbes.net/work-programme/land-degradation-and-restoration" target="_blank">IPBES-Deliverable 3(bi)</a>).</p>',
+    'description' => '<p>Das Thema Land-Degradation ist seit langem ein Thema der internationalen Politik. Das wird beispielsweise durch das Übereinkommen der UN zur Verhinderung der Wüstenbildung (<a href="http://www.unccd.int" target="_blank">UNCCD</a>) mit seinem Portal zum Wissensaustausch (<a href="http://www.unccd.int/en/programmes/Science/Knowledge-Management/Pages/Scientific-Knowledge-Brokering.aspx" target="_blank">Scientific Knowledge Brokerage SKBP)</a> deutlich. Die CBD hat das Thema u.a. mit ihrem Aichi-Ziel 14 zur Wiederherstellung von 20% degradierter Flächen bis 2020 aufgegriffen. Auch in der EU gibt es ein entsprechendes Ziel, das auch Agrarflächen umfasst und damit eine besondere Herausforderung bietet. IPBES greift das Thema daher in einem eigenen thematischen Assessment auf, das bis 2017 fertiggestellt sein soll (<a href="http://www.ipbes.net/work-programme/land-degradation-and-restoration" target="_blank">IPBES-Deliverable 3(bi)</a>).</p>',
     'format' => 'full_html',
     'weight' => 2,
     'uuid' => 'ddcbbec8-4caf-4c2a-a46f-0980f4b90335',
@@ -535,7 +554,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Access & Benefit Sharing',
-    'description' => '<p>Zugang zu genetischen Ressourcen und gerechter Vorteilsausgleich (Access &amp; Benefit Sharing, <a href="/politik/international/cbd" target="_self">ABS</a>&nbsp;), sind ein Kernziel der <a href="http://nefo.biodiv.naturkundemuseum-berlin.de/nefo/de/politik/international/cbd" target="_self">Konvention zur Biologischen Vielfalt (CBD)</a>. Im Jahr 2010 verabschiedeten die Mitgliedsstaaten das entsprechende Nagoya-Protokoll, das für dieses Ziel einen konkreten Umsetzungsmechanismus vorschreibt. Mit diesem ABS-Mechanismus soll einerseits der Zugang zu den genetischen Ressourcen eines Landes geregelt werden, andererseits ein fairer Ausgleich gewährleistet werden, wenn aus diesen genetischen Ressourcen später Vorteile finanzieller oder nicht-finanzieller Art generiert werden (<a href="http://www.abs-initiative.info/fileadmin/media/Knowledge_Center/Multimedia/videos/Animated%20Video%20ABS%20Simply%20Explained/ABS%20Einfach%20erklaert%20-%20Deutsch.mp4" target="_blank">ABS-Erklärvideo der ABS-Initiative</a>). Die Umsetzung betrifft damit auch direkt die Biodiversitätsforschung. Mit der Umsetzung des Protokolls ist in Deutschland das Bundesamt für Naturschutz betraut (<a href="http://www.bfn.de/index_abs.html" target="_blank">ABS-Seiten</a> des BfN).</p>',
+    'description' => '<p>Zugang zu genetischen Ressourcen und gerechter Vorteilsausgleich (Access &amp; Benefit Sharing, <a href="/politik/international/cbd" target="_self">ABS</a>&nbsp;) ist ein Kernziel der <a href="http://nefo.biodiv.naturkundemuseum-berlin.de/nefo/de/politik/international/cbd" target="_self">Konvention zur Biologischen Vielfalt (CBD)</a>. Im Jahr 2010 verabschiedeten die Mitgliedsstaaten das Nagoya-Protokoll, das für dieses Ziel einen konkreten Umsetzungsmechanismus vorschreibt. Mit diesem ABS-Mechanismus soll einerseits der Zugang zu den genetischen Ressourcen eines Landes geregelt werden, andererseits ein fairer Ausgleich gewährleistet werden, wenn aus diesen genetischen Ressourcen später Vorteile finanzieller oder nicht-finanzieller Art generiert werden (<a href="http://www.abs-initiative.info/fileadmin/media/Knowledge_Center/Multimedia/videos/Animated%20Video%20ABS%20Simply%20Explained/ABS%20Einfach%20erklaert%20-%20Deutsch.mp4" target="_blank">ABS-Erklärvideo der ABS-Initiative</a>). Die Umsetzung betrifft damit auch direkt die Biodiversitätsforschung. Mit der Umsetzung des Protokolls ist in Deutschland das Bundesamt für Naturschutz betraut (<a href="http://www.bfn.de/index_abs.html" target="_blank">ABS-Seiten</a> des BfN).</p>',
     'format' => 'full_html',
     'weight' => 9,
     'uuid' => 'fa1dd97a-a64b-4034-9eba-ad3f535e1512',

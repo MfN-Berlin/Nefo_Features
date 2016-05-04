@@ -29,6 +29,12 @@ function nefo_struktur_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
+      'nefo_omega' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'nefo_omega',
+        'weight' => 0,
+      ),
       'ofen' => array(
         'region' => 'atlas',
         'status' => 1,
