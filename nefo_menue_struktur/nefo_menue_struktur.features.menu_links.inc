@@ -132,7 +132,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1446,6 +1446,31 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_nefo:node/33',
+  );
+  // Exported menu link: main-menu_nefo-sachstandsberichte:node/656.
+  $menu_links['main-menu_nefo-sachstandsberichte:node/656'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/656',
+    'router_path' => 'node/%',
+    'link_title' => 'NeFo-Sachstandsberichte',
+    'options' => array(
+      'node_type' => 'page',
+      'attributes' => array(
+        'title' => 'Berichte über den Sachstand zu IPBES nach den jeweiligen IPBES-Plenen',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_nefo-sachstandsberichte:node/656',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_ipbes:node/32',
   );
   // Exported menu link: main-menu_nefo:node/33.
   $menu_links['main-menu_nefo:node/33'] = array(
@@ -3069,6 +3094,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('NeFo Blogs');
   t('NeFo Produkte');
   t('NeFo-Produkte');
+  t('NeFo-Sachstandsberichte');
   t('Netzwerke und Vernetzung');
   t('News & Events');
   t('Pan European Stakeholder Consultation');

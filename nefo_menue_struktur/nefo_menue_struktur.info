@@ -87,6 +87,7 @@ features[menu_links][] = main-menu_nationale-biodiversittsstrategie:node/31
 features[menu_links][] = main-menu_naturschutzgesetze-eu:node/30
 features[menu_links][] = main-menu_nefo-blogs:node/425
 features[menu_links][] = main-menu_nefo-produkte:node/13
+features[menu_links][] = main-menu_nefo-sachstandsberichte:node/656
 features[menu_links][] = main-menu_nefo:node/33
 features[menu_links][] = main-menu_netzwerke-und-vernetzung:node/37
 features[menu_links][] = main-menu_news--events:news
