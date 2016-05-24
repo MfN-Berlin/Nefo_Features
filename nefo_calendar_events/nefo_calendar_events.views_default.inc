@@ -78,16 +78,19 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_location']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_event_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_location']['element_default_classes'] = FALSE;
-  /* Feld: Global: Benutzerdefinierter Text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="nefo-event--heading">
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['alter']['text'] = '<div class="nefo-event--heading">
 <span class="nefo-event--date">[field_nefo_event_date]</span>|<span class="nefo-event--location">[field_nefo_event_location]</span>
 </div>';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  $handler->display->display_options['fields']['view_node']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
