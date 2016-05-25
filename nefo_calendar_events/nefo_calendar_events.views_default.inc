@@ -52,6 +52,13 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'Es liegen keine zukünftigen Termine vor.';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_nefo_event_date']['id'] = 'field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['table'] = 'field_data_field_nefo_event_date';
@@ -75,21 +82,14 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_location']['table'] = 'field_data_field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['field'] = 'field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['label'] = '';
-  $handler->display->display_options['fields']['field_nefo_event_location']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_nefo_event_location']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_nefo_event_location']['element_default_classes'] = FALSE;
-  /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['view_node']['alter']['text'] = '<div class="nefo-event--heading">
+  $handler->display->display_options['fields']['field_nefo_event_location']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_event_location']['alter']['text'] = '<div class="nefo-event--heading">
 <span class="nefo-event--date">[field_nefo_event_date]</span>|<span class="nefo-event--location">[field_nefo_event_location]</span>
 </div>';
-  $handler->display->display_options['fields']['view_node']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_event_location']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_event_location']['alter']['path'] = 'node/[nid]';
+  $handler->display->display_options['fields']['field_nefo_event_location']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_event_location']['element_default_classes'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
