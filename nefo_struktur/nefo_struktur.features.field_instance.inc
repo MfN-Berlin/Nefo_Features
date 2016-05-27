@@ -413,7 +413,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_internal_link',
-    'label' => 'weitere Themen',
+    'label' => 'Weiteres zum Thema',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -831,7 +831,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_internal_link',
-    'label' => 'weitere Themen',
+    'label' => 'Weiteres zum Thema',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1253,7 +1253,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_internal_link',
-    'label' => 'weitere Themen',
+    'label' => 'Weiteres zum Thema',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1815,7 +1815,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_internal_link',
-    'label' => 'weitere Themen',
+    'label' => 'Weiteres zum Thema',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -3234,7 +3234,7 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_internal_link',
-    'label' => 'weitere Themen',
+    'label' => 'Weiteres zum Thema',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -3289,8 +3289,8 @@ function nefo_struktur_field_default_field_instances() {
   t('Typ');
   t('URL');
   t('Video Credit');
+  t('Weiteres zum Thema');
   t('Ziel-URL');
-  t('weitere Themen');
 
   return $field_instances;
 }
