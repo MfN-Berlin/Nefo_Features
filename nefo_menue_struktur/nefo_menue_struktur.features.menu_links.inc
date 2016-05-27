@@ -284,7 +284,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -463,7 +463,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -504,7 +504,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'Einführung Europäische Umweltpolitik mit Verweisen zu FFH-Richtlinie, Vogelschutz-Richtlinie, Wasserrahmen-Richtlinie und EU Biodiversitätsstrategie',
+        'title' => 'Informationen zu Naturschutzgesetzen und Agrarpolitik der EU',
       ),
       'node_type' => 'page',
       'alter' => TRUE,
@@ -1415,7 +1415,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -42,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1565,7 +1565,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1672,6 +1672,28 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_forschung:node/25',
   );
+  // Exported menu link: main-menu_publikationen-mit-nefo-beteiligung:node/734.
+  $menu_links['main-menu_publikationen-mit-nefo-beteiligung:node/734'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/734',
+    'router_path' => 'node/%',
+    'link_title' => 'Publikationen mit NeFo-Beteiligung',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+      'identifier' => 'main-menu_publikationen-mit-nefo-beteiligung:node/734',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -41,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+  );
   // Exported menu link: main-menu_rollen-von-expertinnen-und-experten:node/64.
   $menu_links['main-menu_rollen-von-expertinnen-und-experten:node/64'] = array(
     'menu_name' => 'main-menu',
@@ -1767,7 +1789,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1844,31 +1866,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_nefo-produkte:node/13',
   );
-  // Exported menu link: main-menu_themen:node/40.
-  $menu_links['main-menu_themen:node/40'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/40',
-    'router_path' => 'node/%',
-    'link_title' => 'Themen',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Unsere Themen',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_themen:node/40',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_forschungsakteure:node/15',
-  );
   // Exported menu link: main-menu_unsere-themen:node/44.
   $menu_links['main-menu_unsere-themen:node/44'] = array(
     'menu_name' => 'main-menu',
@@ -1893,6 +1890,28 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
+  );
+  // Exported menu link: main-menu_videos:node/735.
+  $menu_links['main-menu_videos:node/735'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/735',
+    'router_path' => 'node/%',
+    'link_title' => 'Videos',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+      'identifier' => 'main-menu_videos:node/735',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -43,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
   );
   // Exported menu link: main-menu_was-sind-schnittstellen:node/35.
   $menu_links['main-menu_was-sind-schnittstellen:node/35'] = array(
@@ -1964,7 +1983,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -42,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -3103,6 +3122,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Politik');
   t('Presse');
   t('Projekte');
+  t('Publikationen mit NeFo-Beteiligung');
   t('Rollen von Expertinnen und Experten');
   t('SBSTTA');
   t('Schnittstellen verstehen');
@@ -3110,8 +3130,8 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Startseite');
   t('Stellungnahmen');
   t('Studien');
-  t('Themen');
   t('Unsere Themen');
+  t('Videos');
   t('Was sind Schnittstellen?');
   t('Was wir machen');
   t('Weitere Informationen zu IPBES');
