@@ -579,7 +579,7 @@ function nefo_struktur_field_default_field_instances() {
     'label' => 'Body',
     'required' => 1,
     'settings' => array(
-      'display_summary' => 0,
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -587,6 +587,12 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_label_summary' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_summary' => '',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 20,
         'summary_rows' => 5,
       ),
@@ -703,7 +709,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_news',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Leer lassen für interne Verlinkung. Wenn nötig, die externe Ziel-URL in den Text (Body) einfügen.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -722,7 +728,7 @@ function nefo_struktur_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_nefo_target_url',
     'label' => 'Ziel-URL',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'absolute_url' => 0,
       'attributes' => array(
@@ -3266,6 +3272,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Gehört zu');
   t('Image Credit');
   t('Kategorie');
+  t('Leer lassen für interne Verlinkung. Wenn nötig, die externe Ziel-URL in den Text (Body) einfügen.');
   t('Maximal 300 Zeichen.');
   t('Maximal 500 Zeichen.');
   t('Maximal 90 Zeichen.');
