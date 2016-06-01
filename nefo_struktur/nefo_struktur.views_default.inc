@@ -984,7 +984,7 @@ function nefo_struktur_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'IPBES Nachrichten';
+  $handler->display->display_options['title'] = 'IPBES News';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'mehr';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -1027,7 +1027,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
   $handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'alle IPBES Nachrichten';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'alle IPBES News';
   $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'schnittstellen/ipbes/news';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
