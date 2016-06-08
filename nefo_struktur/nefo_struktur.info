@@ -582,6 +582,7 @@ features[variable][] = pathauto_taxonomy_term_nefo_taxonomy_interview_pattern
 features[variable][] = pathauto_taxonomy_term_nefo_taxonomy_news_pattern
 features[variable][] = pathauto_taxonomy_term_nefo_taxonomy_tags_pattern
 features[views_view][] = nefo_block_article
+features[views_view][] = nefo_block_literaturtipps
 features[views_view][] = nefo_block_press_release
 features[views_view][] = nefo_slider
 features[views_view][] = nefo_view_block_factsheet
