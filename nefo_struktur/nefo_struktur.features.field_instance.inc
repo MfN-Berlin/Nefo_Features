@@ -3053,7 +3053,7 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_slideshow-field_nefo_slideshow_img'] = array(
     'bundle' => 'nefo_slideshow',
     'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 802x386 Pixel',
+    'description' => 'Minimale Bildauflösung: 800x380 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3083,7 +3083,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '802x386',
+      'min_resolution' => '800x380',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3279,7 +3279,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Mehrfachauswahl möglich.');
   t('Minimale Bildauflösung: 360x200 Pixel');
   t('Minimale Bildauflösung: 430x240 Pixel');
-  t('Minimale Bildauflösung: 802x386 Pixel');
+  t('Minimale Bildauflösung: 800x380 Pixel');
   t('Monat');
   t('Name the person who owns the picture.');
   t('Name the person who owns the video.');
