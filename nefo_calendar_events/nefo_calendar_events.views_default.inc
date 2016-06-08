@@ -59,6 +59,17 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Global: Fieldset */
+  $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['table'] = 'views';
+  $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['label'] = 'Feldgruppe';
+  $handler->display->display_options['fields']['fieldset']['children'] = array(
+    0 => 'field_nefo_event_date',
+    1 => 'field_nefo_event_location',
+  );
+  $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
+  $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'nefo-event--heading';
   /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_nefo_event_date']['id'] = 'field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['table'] = 'field_data_field_nefo_event_date';
@@ -83,9 +94,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_location']['field'] = 'field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['label'] = '';
   $handler->display->display_options['fields']['field_nefo_event_location']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_nefo_event_location']['alter']['text'] = '<div class="nefo-event--heading">
-<span class="nefo-event--date">[field_nefo_event_date]</span>|<span class="nefo-event--location">[field_nefo_event_location]</span>
-</div>';
+  $handler->display->display_options['fields']['field_nefo_event_location']['alter']['text'] = '<span class="nefo-event--date">[field_nefo_event_date]</span>|<span class="nefo-event--location">[field_nefo_event_location]</span>';
   $handler->display->display_options['fields']['field_nefo_event_location']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_event_location']['alter']['path'] = 'node/[nid]';
   $handler->display->display_options['fields']['field_nefo_event_location']['element_label_colon'] = FALSE;
