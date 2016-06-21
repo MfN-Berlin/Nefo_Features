@@ -730,7 +730,7 @@ function nefo_struktur_field_default_field_instances() {
     'label' => 'Ziel-URL',
     'required' => 0,
     'settings' => array(
-      'absolute_url' => 0,
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => 'nefo-target-url',
         'configurable_class' => 0,
@@ -750,7 +750,7 @@ function nefo_struktur_field_default_field_instances() {
       'title_value' => 'mehr',
       'url' => 0,
       'user_register_form' => FALSE,
-      'validate_url' => 1,
+      'validate_url' => 0,
     ),
     'widget' => array(
       'active' => 0,
