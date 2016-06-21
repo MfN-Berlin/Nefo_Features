@@ -962,7 +962,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_product_factsheet',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Maximal 500 Zeichen.',
+    'description' => 'Maximal 700 Zeichen.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -990,7 +990,7 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 500,
+        'maxlength_js' => 700,
         'maxlength_js_enforce' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
@@ -1612,7 +1612,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_product_opinion',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Maximal 500 Zeichen.',
+    'description' => 'Maximal 700 Zeichen.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1640,7 +1640,7 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 500,
+        'maxlength_js' => 700,
         'maxlength_js_enforce' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
@@ -1945,7 +1945,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_product_report',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Maximal 500 Zeichen.',
+    'description' => 'Maximal 700 Zeichen.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1973,7 +1973,7 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 500,
+        'maxlength_js' => 700,
         'maxlength_js_enforce' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
@@ -2184,7 +2184,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_product_study',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Maximal 500 Zeichen.',
+    'description' => 'Maximal 700 Zeichen.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -2212,7 +2212,7 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 500,
+        'maxlength_js' => 700,
         'maxlength_js_enforce' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
@@ -2325,7 +2325,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_product_workshop',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Maximal 500 Zeichen.',
+    'description' => 'Maximal 700 Zeichen.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -2353,7 +2353,7 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 500,
+        'maxlength_js' => 700,
         'maxlength_js_enforce' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
@@ -3274,7 +3274,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Kategorie');
   t('Leer lassen für interne Verlinkung. Wenn nötig, die externe Ziel-URL in den Text (Body) einfügen.');
   t('Maximal 300 Zeichen.');
-  t('Maximal 500 Zeichen.');
+  t('Maximal 700 Zeichen.');
   t('Maximal 90 Zeichen.');
   t('Mehrfachauswahl möglich.');
   t('Minimale Bildauflösung: 360x200 Pixel');
