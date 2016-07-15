@@ -946,32 +946,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-themen:node/44',
   );
-  // Exported menu link: main-menu_inwertsetzung:taxonomy/term/33.
-  $menu_links['main-menu_inwertsetzung:taxonomy/term/33'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/33',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Inwertsetzung',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'Inwertsetzung',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_inwertsetzung:taxonomy/term/33',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_unsere-themen:node/44',
-  );
   // Exported menu link: main-menu_ipbes--co:node/20.
   $menu_links['main-menu_ipbes--co:node/20'] = array(
     'menu_name' => 'main-menu',
@@ -1197,20 +1171,46 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_daten-und-infrastrukturen:node/28',
   );
-  // Exported menu link: main-menu_land-degradation:taxonomy/term/31.
-  $menu_links['main-menu_land-degradation:taxonomy/term/31'] = array(
+  // Exported menu link: main-menu_kosystemleistungen:taxonomy/term/33.
+  $menu_links['main-menu_kosystemleistungen:taxonomy/term/33'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/31',
+    'link_path' => 'taxonomy/term/33',
     'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Land-Degradation',
+    'link_title' => 'Ökosystemleistungen',
     'options' => array(
       'devel' => TRUE,
       'attributes' => array(
-        'title' => 'Land-Degradation',
+        'title' => 'Ökosystemleistungen',
+      ),
+      'alter' => TRUE,
+      'node_type' => 'page',
+      'identifier' => 'main-menu_kosystemleistungen:taxonomy/term/33',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
+  // Exported menu link: main-menu_landnutzung:taxonomy/term/31.
+  $menu_links['main-menu_landnutzung:taxonomy/term/31'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/31',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Landnutzung',
+    'options' => array(
+      'devel' => TRUE,
+      'attributes' => array(
+        'title' => 'Landnutzung',
       ),
       'node_type' => 'page',
       'alter' => TRUE,
-      'identifier' => 'main-menu_land-degradation:taxonomy/term/31',
+      'identifier' => 'main-menu_landnutzung:taxonomy/term/31',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -1570,32 +1570,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'und',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_ipbes:node/32',
-  );
-  // Exported menu link: main-menu_pan-europisches-assessment:taxonomy/term/34.
-  $menu_links['main-menu_pan-europisches-assessment:taxonomy/term/34'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/34',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Pan-europäisches Assessment',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'Description of chutruswu.',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_pan-europisches-assessment:taxonomy/term/34',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_unsere-themen:node/44',
   );
   // Exported menu link: main-menu_personen:forschung/forschungsakteure/personen.
   $menu_links['main-menu_personen:forschung/forschungsakteure/personen'] = array(
@@ -2579,29 +2553,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-footer-menu-second_inwertsetzung:taxonomy/term/33.
-  $menu_links['menu-nefo-footer-menu-second_inwertsetzung:taxonomy/term/33'] = array(
-    'menu_name' => 'menu-nefo-footer-menu-second',
-    'link_path' => 'taxonomy/term/33',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Inwertsetzung',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Inwertsetzung',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-footer-menu-second_inwertsetzung:taxonomy/term/33',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: menu-nefo-footer-menu-second_klimawandel:taxonomy/term/39.
   $menu_links['menu-nefo-footer-menu-second_klimawandel:taxonomy/term/39'] = array(
     'menu_name' => 'menu-nefo-footer-menu-second',
@@ -2625,18 +2576,41 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-footer-menu-second_land-degradation:taxonomy/term/31.
-  $menu_links['menu-nefo-footer-menu-second_land-degradation:taxonomy/term/31'] = array(
+  // Exported menu link: menu-nefo-footer-menu-second_kosystemleistungen:taxonomy/term/33.
+  $menu_links['menu-nefo-footer-menu-second_kosystemleistungen:taxonomy/term/33'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-second',
+    'link_path' => 'taxonomy/term/33',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Ökosystemleistungen',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Ökosystemleistungen',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-second_kosystemleistungen:taxonomy/term/33',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-second_landnutzung:taxonomy/term/31.
+  $menu_links['menu-nefo-footer-menu-second_landnutzung:taxonomy/term/31'] = array(
     'menu_name' => 'menu-nefo-footer-menu-second',
     'link_path' => 'taxonomy/term/31',
     'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Land-Degradation',
+    'link_title' => 'Landnutzung',
     'options' => array(
       'attributes' => array(
-        'title' => 'Land-Degradation',
+        'title' => 'Landnutzung',
       ),
       'alter' => TRUE,
-      'identifier' => 'menu-nefo-footer-menu-second_land-degradation:taxonomy/term/31',
+      'identifier' => 'menu-nefo-footer-menu-second_landnutzung:taxonomy/term/31',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -2667,29 +2641,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -45,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: menu-nefo-footer-menu-second_pan-europisches-assessment:taxonomy/term/34.
-  $menu_links['menu-nefo-footer-menu-second_pan-europisches-assessment:taxonomy/term/34'] = array(
-    'menu_name' => 'menu-nefo-footer-menu-second',
-    'link_path' => 'taxonomy/term/34',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Pan-europäisches Assessment',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Pan-europäisches Assessment',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-footer-menu-second_pan-europisches-assessment:taxonomy/term/34',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -3094,11 +3045,10 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Internationales');
   t('Interviews');
   t('Invasive Arten');
-  t('Inwertsetzung');
   t('Klimawandel');
   t('Kommentierte Verweisliste');
   t('Kontakt');
-  t('Land-Degradation');
+  t('Landnutzung');
   t('Legal');
   t('Literatur über IPBES');
   t('Literaturtipps');
@@ -3117,7 +3067,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Netzwerke und Vernetzung');
   t('News & Events');
   t('Pan European Stakeholder Consultation');
-  t('Pan-europäisches Assessment');
   t('Personen');
   t('Politik');
   t('Presse');
@@ -3142,6 +3091,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Zahlen und Fakten');
   t('gti-Kontaktstelle');
   t('weitere Konventionen');
+  t('Ökosystemleistungen');
   t('Über Biodiversität');
   t('Über IPBES');
 
