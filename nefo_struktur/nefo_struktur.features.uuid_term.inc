@@ -65,7 +65,7 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Inwertsetzung',
+    'name' => 'Ökosystemleistungen',
     'description' => '<p>Seit dem Millennium Ecosystem Assessment 2005 gewinnt das Konzept der Ökosystemleistungen, d.h. der Leistungen der Ökosysteme, die dem Menschen nutzen, an zunehmender Bedeutung in der Forschung und in der Debatte um Umweltpolitikmaßnahmen. Dabei geht es auch um die kontroverse Frage, wie weit Bewertung von Natur vor allem in ökonomischer Hinsicht gehen kann. Bewertung, ob naturwissenschaftlich oder ökonomisch, ist vielfältig möglich und meist sinnvoll. Eine monetäre Bewertung stößt aber sowohl methodisch (nicht alles lässt sich ohne weiteres monetär erfassen und vergleichen) als auch moralisch an ihre Grenzen. In entsprechenden Untersuchungen zur ökonomischen Bedeutung der Biodiversität, etwa in der durch Deutschland maßgeblich initiierten TEEB-Studie (<a href="http://www.teebweb.org/" target="_blank">The Economics of Ecosystems and Biodversity</a>) oder der deutschen Studie <a href="http://www.naturkapital-teeb.de/" target="_blank">Naturkapital Deutschland – TEEB-DE</a>, wird dies entsprechend thematisiert. Auch <a href="http://nefo.biodiv.naturkundemuseum-berlin.de/nefo/de/schnittstellen/ipbes" target="_self">IPBES</a> hat die Bedeutung von Bewertung im weiteren Sinne erkannt (<a href="http://www.ipbes.net/work-programme/values" target="_blank">siehe IPBES-Deliverable 3 (d)</a>), hat <a href="http://www.ipbes.net/sites/default/files/downloads/IPBES-4-INF-13_EN.pdf" target="_blank">Leitlinien zum Thema Wert und Bewertung für die Durchführung von Assessments</a> [pdf] erstellen lassen und plant ein entsprechendes eigenständiges Assessment zum Thema.</p>',
     'format' => 'full_html',
     'weight' => 8,
@@ -78,7 +78,7 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'themen/inwertsetzung',
+        'alias' => 'themen/oekosystemleistungen',
         'language' => 'und',
       ),
     ),
@@ -117,25 +117,6 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'blog/ipbes-3-bonn-2015',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Pan-europäisches Assessment',
-    'description' => '<p>Das pan-europäische Assessment zu Biodiversität und Ökosystemleistungen in Europa und Zentralasien ist eines von vier parallelen regionalen Assessments von IPBES (andere: Amerikas, Afrika, Asien und Pazifik) (<a href="http://www.ipbes.net/work-programme/regional-and-subregional-assessments" target="_blank">IPBES-Deliverable 2(b)</a>). Im Sommer 2016 wird der erste Entwurf vorliegen, der dann von allen Expertinnen und Experten kommentiert werden kann. NeFo hat als Forum für die Pan-Europa-weite Vernetzung von IPBES-Stakeholdern und für ihr gemeinsames Diskutieren und Arbeiten die <a href="/ipbes-co/ipbes/pan-european-stakeholder-consultation" target="_self">Pan-European IPBES Stakeholder Consultation (PESC)</a>&nbsp; ins Leben gerufen.</p><div><div><p>&nbsp;</p></div></div>',
-    'format' => 'full_html',
-    'weight' => 0,
-    'uuid' => '2c6efaeb-fb3d-46a0-9c5f-3e69e04df0a5',
-    'language' => 'und',
-    'i18n_tsid' => 0,
-    'vocabulary_machine_name' => 'nefo_taxonomy_tags',
-    'path' => array(
-      'pathauto' => 0,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'themen/pan-europaeisches-assessment',
         'language' => 'und',
       ),
     ),
@@ -477,7 +458,7 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Land-Degradation',
+    'name' => 'Landnutzung',
     'description' => '<p>Das Thema Land-Degradation ist seit langem ein Thema der internationalen Politik. Das wird beispielsweise durch das Übereinkommen der UN zur Verhinderung der Wüstenbildung (<a href="http://www.unccd.int" target="_blank">UNCCD</a>) mit seinem Portal zum Wissensaustausch (<a href="http://www.unccd.int/en/programmes/Science/Knowledge-Management/Pages/Scientific-Knowledge-Brokering.aspx" target="_blank">Scientific Knowledge Brokerage SKBP)</a> deutlich. Die CBD hat das Thema u.a. mit ihrem Aichi-Ziel 14 zur Wiederherstellung von 20% degradierter Flächen bis 2020 aufgegriffen. Auch in der EU gibt es ein entsprechendes Ziel, das auch Agrarflächen umfasst und damit eine besondere Herausforderung bietet. IPBES greift das Thema daher in einem eigenen thematischen Assessment auf, das bis 2017 fertiggestellt sein soll (<a href="http://www.ipbes.net/work-programme/land-degradation-and-restoration" target="_blank">IPBES-Deliverable 3(bi)</a>).</p>',
     'format' => 'full_html',
     'weight' => 2,
@@ -490,7 +471,7 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'themen/land-degradation',
+        'alias' => 'themen/landnutzung',
         'language' => 'und',
       ),
     ),
