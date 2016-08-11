@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Shariff Social Sharing feature.
+ */
+
+include_once 'shariff_social_sharing.features.inc';
