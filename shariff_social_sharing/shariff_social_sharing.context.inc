@@ -24,6 +24,7 @@ function shariff_social_sharing_context_default_contexts() {
         'nefo_news' => 'nefo_news',
         'nefo_product_article' => 'nefo_product_article',
         'nefo_product_interview' => 'nefo_product_interview',
+        'nefo_product_press_release' => 'nefo_product_press_release',
       ),
       'options' => array(
         'node_form' => '1',
