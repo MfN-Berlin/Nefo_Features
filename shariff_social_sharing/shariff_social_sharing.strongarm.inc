@@ -160,7 +160,7 @@ function shariff_social_sharing_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'shariff_css';
-  $strongarm->value = 'complete';
+  $strongarm->value = 'min';
   $export['shariff_css'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -225,9 +225,8 @@ function shariff_social_sharing_strongarm() {
   $strongarm->name = 'shariff_services';
   $strongarm->value = array(
     'twitter' => 'twitter',
-    'facebook' => 'facebook',
-    'googleplus' => 'googleplus',
-    'mail' => 'mail',
+    'facebook' => 0,
+    'googleplus' => 0,
     'linkedin' => 0,
     'pinterest' => 0,
     'xing' => 0,
@@ -239,6 +238,7 @@ function shariff_social_sharing_strongarm() {
     'reddit' => 0,
     'stumbleupon' => 0,
     'threema' => 0,
+    'mail' => 0,
     'info' => 0,
   );
   $export['shariff_services'] = $strongarm;

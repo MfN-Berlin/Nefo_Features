@@ -1,6 +1,8 @@
 name = Shariff Social Sharing
+description = Shariff Social Media Buttons configuration
 core = 7.x
 package = nefo_features
+version = 7.x-1.0-beta1
 dependencies[] = blog
 dependencies[] = context
 dependencies[] = ctools
