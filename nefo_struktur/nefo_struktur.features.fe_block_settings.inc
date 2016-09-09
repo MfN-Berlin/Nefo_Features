@@ -20,7 +20,7 @@ function nefo_struktur_default_fe_block_settings() {
     'i18n_mode' => 0,
     'module' => 'nefo_blocks_builder',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -43,7 +43,7 @@ function nefo_struktur_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   return $export;
