@@ -458,6 +458,15 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'profile2',
   );
 
+  // Exported permission: 'administer scheduler'.
+  $permissions['administer scheduler'] = array(
+    'name' => 'administer scheduler',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'scheduler',
+  );
+
   // Exported permission: 'administer search'.
   $permissions['administer search'] = array(
     'name' => 'administer search',
@@ -2251,6 +2260,16 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'schedule publishing of nodes'.
+  $permissions['schedule publishing of nodes'] = array(
+    'name' => 'schedule publishing of nodes',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'scheduler',
+  );
+
   // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
@@ -2494,6 +2513,17 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'view scheduled content'.
+  $permissions['view scheduled content'] = array(
+    'name' => 'view scheduled content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'scheduler',
   );
 
   // Exported permission: 'view the administration theme'.

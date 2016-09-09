@@ -871,10 +871,13 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => 0,
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => 5,
+          'weight' => '6',
+        ),
+        'scheduler_settings' => array(
+          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -913,7 +916,10 @@ function nefo_struktur_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '4',
+          'weight' => '5',
+        ),
+        'scheduler_settings' => array(
+          'weight' => '3',
         ),
       ),
       'display' => array(),
@@ -1109,6 +1115,9 @@ function nefo_struktur_strongarm() {
         ),
         'path' => array(
           'weight' => '5',
+        ),
+        'scheduler_settings' => array(
+          'weight' => '3',
         ),
       ),
       'display' => array(),
@@ -3225,6 +3234,90 @@ function nefo_struktur_strongarm() {
   $strongarm->name = 'pathauto_taxonomy_term_nefo_taxonomy_tags_pattern';
   $strongarm->value = '';
   $export['pathauto_taxonomy_term_nefo_taxonomy_tags_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_date_format';
+  $strongarm->value = 'Y-m-d H:i';
+  $export['scheduler_date_format'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_date_popup_minute_increment';
+  $strongarm->value = '60';
+  $export['scheduler_date_popup_minute_increment'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_field_type';
+  $strongarm->value = 'date_popup';
+  $export['scheduler_field_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_nefo_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_nefo_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_nefo_product_article';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_nefo_product_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_nefo_product_press_release';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_nefo_product_press_release'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_touch_nefo_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_touch_nefo_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_touch_nefo_product_article';
+  $strongarm->value = 1;
+  $export['scheduler_publish_touch_nefo_product_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_touch_nefo_product_press_release';
+  $strongarm->value = 1;
+  $export['scheduler_publish_touch_nefo_product_press_release'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_use_vertical_tabs_nefo_news';
+  $strongarm->value = '1';
+  $export['scheduler_use_vertical_tabs_nefo_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_use_vertical_tabs_nefo_product_article';
+  $strongarm->value = '1';
+  $export['scheduler_use_vertical_tabs_nefo_product_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_use_vertical_tabs_nefo_product_press_release';
+  $strongarm->value = '1';
+  $export['scheduler_use_vertical_tabs_nefo_product_press_release'] = $strongarm;
 
   return $export;
 }
