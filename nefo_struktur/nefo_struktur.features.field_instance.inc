@@ -1427,7 +1427,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_product_interview',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Zum Beispiel: „Ein Kadaver von 30 Kilogramm bringt dem Boden so viel Stickstoff wie 100 Jahre herkömmliche Düngung“',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1466,7 +1466,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_product_interview',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Zum Beispiel: Prof.-Dr.-Dipl.-Ing. Karl-Theodor zu Guttenberg',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -3396,6 +3396,8 @@ function nefo_struktur_field_default_field_instances() {
   t('Video Credit');
   t('Weitere NeFo-Beiträge zum Thema');
   t('Ziel-URL');
+  t('Zum Beispiel: Prof.-Dr.-Dipl.-Ing. Karl-Theodor zu Guttenberg');
+  t('Zum Beispiel: „Ein Kadaver von 30 Kilogramm bringt dem Boden so viel Stickstoff wie 100 Jahre herkömmliche Düngung“');
 
   return $field_instances;
 }
