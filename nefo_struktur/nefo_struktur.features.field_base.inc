@@ -187,18 +187,7 @@ function nefo_struktur_field_default_field_bases() {
         'sort' => array(
           'type' => 'none',
         ),
-        'target_bundles' => array(
-          'article' => 'article',
-          'blog' => 'blog',
-          'nefo_product_article' => 'nefo_product_article',
-          'nefo_product_factsheet' => 'nefo_product_factsheet',
-          'nefo_product_interview' => 'nefo_product_interview',
-          'nefo_product_opinion' => 'nefo_product_opinion',
-          'nefo_product_press_release' => 'nefo_product_press_release',
-          'nefo_product_report' => 'nefo_product_report',
-          'nefo_product_study' => 'nefo_product_study',
-          'page' => 'page',
-        ),
+        'target_bundles' => array(),
       ),
       'profile2_private' => FALSE,
       'target_type' => 'node',
@@ -381,6 +370,49 @@ function nefo_struktur_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'date',
+  );
+
+  // Exported field_base: 'field_nefo_interview_thema'.
+  $field_bases['field_nefo_interview_thema'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nefo_interview_thema',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_nefo_interview_with'.
+  $field_bases['field_nefo_interview_with'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nefo_interview_with',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_nefo_literature_tip_img'.

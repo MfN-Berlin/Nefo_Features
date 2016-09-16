@@ -391,17 +391,14 @@ function nefo_struktur_field_default_field_instances() {
   // Exported field_instance: 'node-article-field_internal_link'.
   $field_instances['node-article-field_internal_link'] = array(
     'bundle' => 'article',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -420,11 +417,18 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'entityreference_view_widget',
       'settings' => array(
+        'allow_duplicates' => 0,
         'apply_chosen' => 1,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_node_composite_title|entityreference_view_widget_1',
+        'view_mode' => 'full',
       ),
-      'type' => 'options_select',
+      'type' => 'entityreference_view_widget',
       'weight' => 5,
     ),
   );
@@ -815,17 +819,14 @@ function nefo_struktur_field_default_field_instances() {
   // Exported field_instance: 'node-nefo_product_article-field_internal_link'.
   $field_instances['node-nefo_product_article-field_internal_link'] = array(
     'bundle' => 'nefo_product_article',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -844,11 +845,18 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'entityreference_view_widget',
       'settings' => array(
+        'allow_duplicates' => 0,
         'apply_chosen' => 1,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_node_composite_title|entityreference_view_widget_1',
+        'view_mode' => 'full',
       ),
-      'type' => 'options_select',
+      'type' => 'entityreference_view_widget',
       'weight' => 6,
     ),
   );
@@ -1210,7 +1218,7 @@ function nefo_struktur_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -1236,24 +1244,21 @@ function nefo_struktur_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
   // Exported field_instance: 'node-nefo_product_interview-field_internal_link'.
   $field_instances['node-nefo_product_interview-field_internal_link'] = array(
     'bundle' => 'nefo_product_interview',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
     ),
@@ -1266,11 +1271,18 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'entityreference_view_widget',
       'settings' => array(
+        'allow_duplicates' => 0,
         'apply_chosen' => 1,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_node_composite_title|entityreference_view_widget_1',
+        'view_mode' => 'full',
       ),
-      'type' => 'options_select',
+      'type' => 'entityreference_view_widget',
       'weight' => 9,
     ),
   );
@@ -1288,7 +1300,7 @@ function nefo_struktur_field_default_field_instances() {
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -1305,7 +1317,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
@@ -1323,7 +1335,7 @@ function nefo_struktur_field_default_field_instances() {
           'file_view_mode' => 'default',
         ),
         'type' => 'file_rendered',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -1363,7 +1375,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1378,7 +1390,7 @@ function nefo_struktur_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -1405,7 +1417,83 @@ function nefo_struktur_field_default_field_instances() {
         'year_range' => '-7:+1',
       ),
       'type' => 'date_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_interview-field_nefo_interview_thema'.
+  $field_instances['node-nefo_product_interview-field_nefo_interview_thema'] = array(
+    'bundle' => 'nefo_product_interview',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_interview_thema',
+    'label' => 'Thema (Zitat)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 2,
+      ),
+      'type' => 'text_textarea',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_interview-field_nefo_interview_with'.
+  $field_instances['node-nefo_product_interview-field_nefo_interview_with'] = array(
+    'bundle' => 'nefo_product_interview',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_interview_with',
+    'label' => 'Im NeFo-Interview',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 4,
     ),
   );
 
@@ -1421,7 +1509,7 @@ function nefo_struktur_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -1438,7 +1526,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -1799,17 +1887,14 @@ function nefo_struktur_field_default_field_instances() {
   // 'node-nefo_product_press_release-field_internal_link'.
   $field_instances['node-nefo_product_press_release-field_internal_link'] = array(
     'bundle' => 'nefo_product_press_release',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'teaser' => array(
@@ -1828,11 +1913,18 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'entityreference_view_widget',
       'settings' => array(
+        'allow_duplicates' => 0,
         'apply_chosen' => 1,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_node_composite_title|entityreference_view_widget_1',
+        'view_mode' => 'full',
       ),
-      'type' => 'options_select',
+      'type' => 'entityreference_view_widget',
       'weight' => 6,
     ),
   );
@@ -3218,17 +3310,14 @@ function nefo_struktur_field_default_field_instances() {
   // Exported field_instance: 'node-page-field_internal_link'.
   $field_instances['node-page-field_internal_link'] = array(
     'bundle' => 'page',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'teaser' => array(
@@ -3247,11 +3336,18 @@ function nefo_struktur_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'entityreference_view_widget',
       'settings' => array(
+        'allow_duplicates' => 0,
         'apply_chosen' => '',
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_node_composite_title|entityreference_view_widget_1',
+        'view_mode' => 'full',
       ),
-      'type' => 'options_select',
+      'type' => 'entityreference_view_widget',
       'weight' => 6,
     ),
   );
@@ -3270,6 +3366,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Dokument');
   t('Erklärender Text zum Bild.');
   t('Gehört zu');
+  t('Im NeFo-Interview');
   t('Image Credit');
   t('Kategorie');
   t('Leer lassen für interne Verlinkung. Wenn nötig, die externe Ziel-URL in den Text (Body) einfügen.');
@@ -3290,6 +3387,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Schlagworte');
   t('Stellungnahme');
   t('Studie');
+  t('Thema (Zitat)');
   t('Themen');
   t('Title Text');
   t('Title text is used in the tool tip when a user hovers their mouse over the image. Adding title text makes it easier to understand the context of an image and improves usability.');
