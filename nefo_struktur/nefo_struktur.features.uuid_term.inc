@@ -211,25 +211,6 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
-    'name' => 'Biodiversitätsforschende im Video-Interview',
-    'description' => '',
-    'format' => 'filtered_html',
-    'weight' => 1,
-    'uuid' => '8305d56c-c52c-44dd-8c4f-54bc8f3a8437',
-    'language' => 'und',
-    'i18n_tsid' => 0,
-    'vocabulary_machine_name' => 'nefo_taxonomy_interview',
-    'path' => array(
-      'pathauto' => 0,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'schnittstellen/produkte/interviews/videos',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
     'name' => 'Monitoring',
     'description' => '<p>Die Frage, wie Zustände und Trends von Arten, Biotopen und genetischer Vielfalt gut zu erfassen sind, ist ein Dauerthema des Naturschutzes – sowohl in der Praxis als auch in der Forschung. NeFo hatte hier in seiner Arbeit seit 2012 einen Schwerpunkt, der einen Überblick zur Thematik bietet. Bezüglich aktueller Entwicklungen <a href="http://nefo.biodiv.naturkundemuseum-berlin.de/de/kontakt" target="_self">sprechen sie uns bitte an</a>.</p>',
     'format' => 'full_html',
@@ -339,25 +320,6 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'themen/klimawandel',
-        'language' => 'und',
-      ),
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Experteninterviews',
-    'description' => '',
-    'format' => 'filtered_html',
-    'weight' => 0,
-    'uuid' => 'bee2ea4d-9779-4c49-b1d2-11f2a4dc5b39',
-    'language' => 'und',
-    'i18n_tsid' => 0,
-    'vocabulary_machine_name' => 'nefo_taxonomy_interview',
-    'path' => array(
-      'pathauto' => 0,
-    ),
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'schnittstellen/produkte/interviews/experten',
         'language' => 'und',
       ),
     ),

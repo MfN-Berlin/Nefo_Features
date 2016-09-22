@@ -1388,15 +1388,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'delete terms in nefo_taxonomy_interview'.
-  $permissions['delete terms in nefo_taxonomy_interview'] = array(
-    'name' => 'delete terms in nefo_taxonomy_interview',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'delete terms in nefo_taxonomy_news'.
   $permissions['delete terms in nefo_taxonomy_news'] = array(
     'name' => 'delete terms in nefo_taxonomy_news',
@@ -2062,15 +2053,6 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'edit terms in nefo_taxonomy_blogs'.
   $permissions['edit terms in nefo_taxonomy_blogs'] = array(
     'name' => 'edit terms in nefo_taxonomy_blogs',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in nefo_taxonomy_interview'.
-  $permissions['edit terms in nefo_taxonomy_interview'] = array(
-    'name' => 'edit terms in nefo_taxonomy_interview',
     'roles' => array(
       'administrator' => 'administrator',
     ),

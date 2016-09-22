@@ -1288,40 +1288,6 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_interview-field_nefo_interview_category'.
-  $field_instances['node-nefo_product_interview-field_nefo_interview_category'] = array(
-    'bundle' => 'nefo_product_interview',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'i18n_taxonomy',
-        'settings' => array(),
-        'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nefo_interview_category',
-    'label' => 'Kategorie',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => '',
-      ),
-      'type' => 'options_select',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-nefo_product_interview-field_nefo_interview_img'.
   $field_instances['node-nefo_product_interview-field_nefo_interview_img'] = array(
     'bundle' => 'nefo_product_interview',

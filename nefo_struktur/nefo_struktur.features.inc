@@ -32,6 +32,22 @@ function nefo_struktur_views_api($module = NULL, $api = NULL) {
 function nefo_struktur_image_default_styles() {
   $styles = array();
 
+  // Exported image style: image_style_nefo_big.
+  $styles['image_style_nefo_big'] = array(
+    'label' => 'Big (640x640)',
+    'effects' => array(
+      8 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 640,
+          'height' => 640,
+          'upscale' => 0,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: image_style_nefo_frontpage_block.
   $styles['image_style_nefo_frontpage_block'] = array(
     'label' => 'Frontpage Block',

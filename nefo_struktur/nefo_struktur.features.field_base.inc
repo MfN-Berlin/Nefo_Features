@@ -292,33 +292,6 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_nefo_interview_category'.
-  $field_bases['field_nefo_interview_category'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_nefo_interview_category',
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'nefo_taxonomy_interview',
-          'parent' => 0,
-        ),
-      ),
-      'options_list_callback' => 'i18n_taxonomy_allowed_values',
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
-
   // Exported field_base: 'field_nefo_interview_img'.
   $field_bases['field_nefo_interview_img'] = array(
     'active' => 1,
