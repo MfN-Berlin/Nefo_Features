@@ -14,7 +14,7 @@ function ofen_dependencies_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'fontawesome_use_cdn';
-  $strongarm->value = TRUE;
+  $strongarm->value = 0;
   $export['fontawesome_use_cdn'] = $strongarm;
 
   return $export;

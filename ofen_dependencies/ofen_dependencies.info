@@ -2,6 +2,7 @@ name = Ofen Dependencies
 description = Provides Dependencies for ofen and some setup code
 core = 7.x
 package = nefo_features
+version = 7.x-1.0-beta1
 dependencies[] = ctools
 dependencies[] = fontawesome
 dependencies[] = strongarm
