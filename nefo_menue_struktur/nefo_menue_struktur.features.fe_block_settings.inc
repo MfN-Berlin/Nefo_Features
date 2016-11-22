@@ -23,6 +23,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -57,6 +63,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -91,6 +103,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -125,6 +143,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -159,6 +183,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -193,6 +223,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => -45,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -203,7 +239,7 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'region' => 'header',
         'status' => 1,
         'theme' => 'ofen',
-        'weight' => -30,
+        'weight' => -45,
       ),
       'seven' => array(
         'region' => '',
@@ -227,6 +263,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => -42,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -234,10 +276,10 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'weight' => 0,
       ),
       'ofen' => array(
-        'region' => 'header',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'ofen',
-        'weight' => 0,
+        'weight' => -42,
       ),
       'seven' => array(
         'region' => '',
@@ -261,6 +303,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => -43,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -268,10 +316,10 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'weight' => -6,
       ),
       'ofen' => array(
-        'region' => 'header',
+        'region' => 'header_first',
         'status' => 1,
         'theme' => 'ofen',
-        'weight' => -28,
+        'weight' => -43,
       ),
       'seven' => array(
         'region' => 'dashboard_sidebar',
@@ -295,6 +343,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -302,8 +356,8 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'weight' => 0,
       ),
       'ofen' => array(
-        'region' => 'navigation',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'ofen',
         'weight' => 0,
       ),
@@ -329,6 +383,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => -27,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -336,8 +396,8 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'weight' => 0,
       ),
       'ofen' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'header_second',
+        'status' => 1,
         'theme' => 'ofen',
         'weight' => -27,
       ),
@@ -363,6 +423,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
@@ -370,8 +436,8 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'weight' => 0,
       ),
       'ofen' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'branding',
+        'status' => 1,
         'theme' => 'ofen',
         'weight' => 0,
       ),
@@ -397,6 +463,12 @@ function nefo_menue_struktur_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'adminimal',
+        'weight' => -24,
+      ),
       'bartik' => array(
         'region' => 'sidebar_first',
         'status' => 1,
