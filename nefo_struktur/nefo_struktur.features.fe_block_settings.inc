@@ -23,6 +23,12 @@ function nefo_struktur_default_fe_block_settings() {
     'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
+      'adminimal' => array(
+        'region' => 'hidden',
+        'status' => 1,
+        'theme' => 'adminimal',
+        'weight' => 0,
+      ),
       'bartik' => array(
         'region' => '',
         'status' => 0,
