@@ -1152,9 +1152,10 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Wrapper Col2';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
-  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<h3 class="nefo-view-block-interview-title">[title]</h3>
-<p class="nefo-view-block-interview-quotation">[field_nefo_interview_thema]</p>
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<h3 class="nefo-view-block-interview-title">[field_nefo_interview_thema]</h3>
 <p class="nefo-view-block-interview-with">Interview mit [field_nefo_interview_with]</p>
+<p class="nefo-view-block-interview-quotation">[title]</p>
+
 [body]
 <div class="nefo-view-block-interview-nav">
 <span class="nefo-view-block-interview-link">[view_node]</span>
@@ -2278,21 +2279,12 @@ function nefo_struktur_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Beitrag: Thema (Zitat) */
   $handler->display->display_options['fields']['field_nefo_interview_thema']['id'] = 'field_nefo_interview_thema';
   $handler->display->display_options['fields']['field_nefo_interview_thema']['table'] = 'field_data_field_nefo_interview_thema';
   $handler->display->display_options['fields']['field_nefo_interview_thema']['field'] = 'field_nefo_interview_thema';
   $handler->display->display_options['fields']['field_nefo_interview_thema']['label'] = '';
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['field_nefo_interview_thema']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_nefo_interview_thema']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_interview_thema']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_interview_thema']['hide_empty'] = TRUE;
@@ -2310,6 +2302,15 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_interview_with']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['type'] = 'text_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Beitrag: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
