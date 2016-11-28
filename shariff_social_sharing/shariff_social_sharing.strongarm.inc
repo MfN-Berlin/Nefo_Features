@@ -225,11 +225,12 @@ function shariff_social_sharing_strongarm() {
   $strongarm->name = 'shariff_services';
   $strongarm->value = array(
     'twitter' => 'twitter',
-    'facebook' => 0,
-    'googleplus' => 0,
-    'linkedin' => 0,
+    'facebook' => 'facebook',
+    'googleplus' => 'googleplus',
+    'linkedin' => 'linkedin',
+    'xing' => 'xing',
+    'mail' => 'mail',
     'pinterest' => 0,
-    'xing' => 0,
     'whatsapp' => 0,
     'addthis' => 0,
     'tumblr' => 0,
@@ -238,7 +239,6 @@ function shariff_social_sharing_strongarm() {
     'reddit' => 0,
     'stumbleupon' => 0,
     'threema' => 0,
-    'mail' => 0,
     'info' => 0,
   );
   $export['shariff_services'] = $strongarm;

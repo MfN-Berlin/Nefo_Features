@@ -19,12 +19,18 @@ function shariff_social_sharing_context_default_contexts() {
   $context->conditions = array(
     'node' => array(
       'values' => array(
+        'article' => 'article',
         'blog' => 'blog',
         'nefo_event' => 'nefo_event',
         'nefo_news' => 'nefo_news',
         'nefo_product_article' => 'nefo_product_article',
+        'nefo_product_factsheet' => 'nefo_product_factsheet',
         'nefo_product_interview' => 'nefo_product_interview',
+        'nefo_product_opinion' => 'nefo_product_opinion',
         'nefo_product_press_release' => 'nefo_product_press_release',
+        'nefo_product_report' => 'nefo_product_report',
+        'nefo_product_study' => 'nefo_product_study',
+        'nefo_product_workshop' => 'nefo_product_workshop',
       ),
       'options' => array(
         'node_form' => '1',
