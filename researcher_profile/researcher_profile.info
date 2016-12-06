@@ -15,6 +15,7 @@ dependencies[] = geofield
 dependencies[] = image
 dependencies[] = link
 dependencies[] = list
+dependencies[] = media
 dependencies[] = options
 dependencies[] = profile2
 dependencies[] = text

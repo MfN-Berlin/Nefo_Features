@@ -438,6 +438,7 @@ function researcher_profile_field_default_field_instances() {
   // Exported field_instance: 'profile2-researcher-field_researcher_picture'.
   $field_instances['profile2-researcher-field_researcher_picture'] = array(
     'bundle' => 'researcher',
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -469,12 +470,19 @@ function researcher_profile_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 1,
     ),
   );
