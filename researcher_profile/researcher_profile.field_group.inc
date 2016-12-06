@@ -23,10 +23,10 @@ function researcher_profile_field_group_info() {
     'label' => 'Contact Details',
     'weight' => '2',
     'children' => array(
-      0 => 'field_reseacher_www',
-      1 => 'field_researcher_linkedin',
-      2 => 'field_researcher_research_gate',
-      3 => 'field_researcher_twitter',
+      0 => 'field_researcher_linkedin',
+      1 => 'field_researcher_research_gate',
+      2 => 'field_researcher_twitter',
+      3 => 'field_researcher_personal_www',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -58,6 +58,7 @@ function researcher_profile_field_group_info() {
       0 => 'field_researcher_www',
       1 => 'field_researcher_address',
       2 => 'field_researcher_geofield',
+      3 => 'field_researcher_institutio_name',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

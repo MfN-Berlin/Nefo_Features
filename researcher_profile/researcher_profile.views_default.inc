@@ -170,7 +170,7 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
-  /* Feld: Profil: Institution Website */
+  /* Feld: Profil: Website */
   $handler->display->display_options['fields']['field_researcher_www']['id'] = 'field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['table'] = 'field_data_field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['field'] = 'field_researcher_www';
@@ -183,7 +183,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_www']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_www']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_researcher_www']['type'] = 'link_url';
-  /* Feld: Profil: Website */
+  /* Feld: Beschädigte/fehlende Behandlungsroutine */
   $handler->display->display_options['fields']['field_reseacher_www']['id'] = 'field_reseacher_www';
   $handler->display->display_options['fields']['field_reseacher_www']['table'] = 'field_data_field_reseacher_www';
   $handler->display->display_options['fields']['field_reseacher_www']['field'] = 'field_reseacher_www';

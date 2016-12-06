@@ -10,40 +10,6 @@
 function researcher_profile_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'profile2-researcher-field_reseacher_www'.
-  $field_instances['profile2-researcher-field_reseacher_www'] = array(
-    'bundle' => 'researcher',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_reseacher_www',
-    'label' => 'Website',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
-    ),
-  );
-
   // Exported field_instance: 'profile2-researcher-field_researcher_address'.
   $field_instances['profile2-researcher-field_researcher_address'] = array(
     'bundle' => 'researcher',
@@ -61,7 +27,7 @@ function researcher_profile_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 17,
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'profile2',
@@ -89,7 +55,7 @@ function researcher_profile_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 11,
+      'weight' => 28,
     ),
   );
 
@@ -139,7 +105,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 17,
       ),
     ),
     'entity_type' => 'profile2',
@@ -173,7 +139,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
     ),
     'entity_type' => 'profile2',
@@ -208,7 +174,7 @@ function researcher_profile_field_default_field_instances() {
           'data' => 'full',
         ),
         'type' => 'geofield_wkt',
-        'weight' => 18,
+        'weight' => 12,
       ),
     ),
     'entity_type' => 'profile2',
@@ -239,7 +205,7 @@ function researcher_profile_field_default_field_instances() {
         ),
       ),
       'type' => 'geocoder',
-      'weight' => 12,
+      'weight' => 29,
     ),
   );
 
@@ -255,7 +221,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 15,
       ),
     ),
     'entity_type' => 'profile2',
@@ -278,6 +244,43 @@ function researcher_profile_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'profile2-researcher-field_researcher_institutio_name'.
+  $field_instances['profile2-researcher-field_researcher_institutio_name'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_institutio_name',
+    'label' => 'Institution Name',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 26,
+    ),
+  );
+
+  // Exported field_instance:
   // 'profile2-researcher-field_researcher_interdiscipline'.
   $field_instances['profile2-researcher-field_researcher_interdiscipline'] = array(
     'bundle' => 'researcher',
@@ -290,7 +293,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 16,
       ),
     ),
     'entity_type' => 'profile2',
@@ -342,7 +345,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 8,
     ),
   );
 
@@ -377,6 +380,58 @@ function researcher_profile_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-researcher-field_researcher_personal_www'.
+  $field_instances['profile2-researcher-field_researcher_personal_www'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_personal_www',
+    'label' => 'Website',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 6,
     ),
   );
 
@@ -524,7 +579,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 7,
     ),
   );
 
@@ -592,7 +647,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 9,
     ),
   );
 
@@ -608,12 +663,12 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_researcher_www',
-    'label' => 'Institution Website',
+    'label' => 'Website',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -630,7 +685,7 @@ function researcher_profile_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'rel_remove' => 'default',
-      'title' => 'optional',
+      'title' => 'none',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
@@ -643,7 +698,7 @@ function researcher_profile_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 13,
+      'weight' => 27,
     ),
   );
 
@@ -656,7 +711,7 @@ function researcher_profile_field_default_field_instances() {
   t('Current Projects');
   t('Defizit in der Biodiversitätspolitik');
   t('Geofield');
-  t('Institution Website');
+  t('Institution Name');
   t('Interdisziplinäre Vernetzung ist');
   t('Linked In');
   t('Name');

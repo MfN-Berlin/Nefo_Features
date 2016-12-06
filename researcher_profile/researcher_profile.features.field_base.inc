@@ -10,28 +10,6 @@
 function researcher_profile_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_reseacher_www'.
-  $field_bases['field_reseacher_www'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_reseacher_www',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
   // Exported field_base: 'field_researcher_address'.
   $field_bases['field_researcher_address'] = array(
     'active' => 1,
@@ -188,6 +166,28 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_researcher_institutio_name'.
+  $field_bases['field_researcher_institutio_name'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_researcher_institutio_name',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_researcher_interdiscipline'.
   $field_bases['field_researcher_interdiscipline'] = array(
     'active' => 1,
@@ -252,6 +252,36 @@ function researcher_profile_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_researcher_personal_www'.
+  $field_bases['field_researcher_personal_www'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_researcher_personal_www',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'profile2_private' => 0,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
   );
 
   // Exported field_base: 'field_researcher_picture'.
@@ -406,6 +436,7 @@ function researcher_profile_field_default_field_bases() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'profile2_private' => 0,
       'title' => 'optional',
       'title_maxlength' => 128,
       'title_value' => '',
