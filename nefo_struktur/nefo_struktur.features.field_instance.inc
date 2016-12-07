@@ -518,46 +518,6 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-blog-field_blog_author'.
-  $field_instances['node-blog-field_blog_author'] = array(
-    'bundle' => 'blog',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(),
-        'type' => 'entityreference_entity_id',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(),
-        'type' => 'entityreference_entity_id',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_blog_author',
-    'label' => 'Author',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 1,
-      ),
-      'type' => 'options_select',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'node-blog-field_nefo_taxonomy_blogs'.
   $field_instances['node-blog-field_nefo_taxonomy_blogs'] = array(
     'bundle' => 'blog',
@@ -3363,7 +3323,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Alt Text');
   t('Alternative text is used by screen readers, search engines, and when the image cannot be loaded. By adding alt text you improve accessibility and search engine optimization.');
   t('Artikel');
-  t('Author');
   t('Beschreibung');
   t('Bild');
   t('Bildunterschrift');
