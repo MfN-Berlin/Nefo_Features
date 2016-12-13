@@ -211,6 +211,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'CBD COP 13 im Dezember 2016 in Cancún, Mexiko',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '76e67732-f7fa-49aa-8acf-742ffe8ee70c',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-cop-13-cancun-2016',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Monitoring',
     'description' => '<p>Die Frage, wie Zustände und Trends von Arten, Biotopen und genetischer Vielfalt gut zu erfassen sind, ist ein Dauerthema des Naturschutzes – sowohl in der Praxis als auch in der Forschung. NeFo hatte hier in seiner Arbeit seit 2012 einen Schwerpunkt, der einen Überblick zur Thematik bietet. Bezüglich aktueller Entwicklungen <a href="http://nefo.biodiv.naturkundemuseum-berlin.de/de/kontakt" target="_self">sprechen sie uns bitte an</a>.</p>',
     'format' => 'full_html',
