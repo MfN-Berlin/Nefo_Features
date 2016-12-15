@@ -26,6 +26,7 @@ function shariff_social_sharing_context_default_contexts() {
         'nefo_product_article' => 'nefo_product_article',
         'nefo_product_factsheet' => 'nefo_product_factsheet',
         'nefo_product_interview' => 'nefo_product_interview',
+        'nefo_product_literature_tip' => 'nefo_product_literature_tip',
         'nefo_product_opinion' => 'nefo_product_opinion',
         'nefo_product_press_release' => 'nefo_product_press_release',
         'nefo_product_report' => 'nefo_product_report',
@@ -33,7 +34,7 @@ function shariff_social_sharing_context_default_contexts() {
         'nefo_product_workshop' => 'nefo_product_workshop',
       ),
       'options' => array(
-        'node_form' => '1',
+        'node_form' => '0',
       ),
     ),
   );
