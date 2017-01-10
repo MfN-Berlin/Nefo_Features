@@ -315,36 +315,6 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_interview_month'.
-  $field_bases['field_nefo_interview_month'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_nefo_interview_month',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'date',
-    'settings' => array(
-      'cache_count' => 4,
-      'cache_enabled' => 0,
-      'granularity' => array(
-        'day' => 0,
-        'hour' => 0,
-        'minute' => 0,
-        'month' => 'month',
-        'second' => 0,
-        'year' => 'year',
-      ),
-      'profile2_private' => FALSE,
-      'timezone_db' => '',
-      'todate' => '',
-      'tz_handling' => 'none',
-    ),
-    'translatable' => 0,
-    'type' => 'date',
-  );
-
   // Exported field_base: 'field_nefo_interview_thema'.
   $field_bases['field_nefo_interview_thema'] = array(
     'active' => 1,

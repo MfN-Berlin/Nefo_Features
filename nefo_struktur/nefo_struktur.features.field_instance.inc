@@ -1348,48 +1348,6 @@ function nefo_struktur_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-nefo_product_interview-field_nefo_interview_month'.
-  $field_instances['node-nefo_product_interview-field_nefo_interview_month'] = array(
-    'bundle' => 'nefo_product_interview',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nefo_interview_month',
-    'label' => 'Monat',
-    'required' => 1,
-    'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'increment' => 30,
-        'input_format' => 'Y-m-d H:i:s',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'no_fieldset' => 0,
-        'text_parts' => array(),
-        'year_range' => '-7:+1',
-      ),
-      'type' => 'date_select',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
   // 'node-nefo_product_interview-field_nefo_interview_thema'.
   $field_instances['node-nefo_product_interview-field_nefo_interview_thema'] = array(
     'bundle' => 'nefo_product_interview',
@@ -3345,7 +3303,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Minimale Bildauflösung: 360x200 Pixel');
   t('Minimale Bildauflösung: 430x240 Pixel');
   t('Minimale Bildauflösung: 800x380 Pixel');
-  t('Monat');
   t('Name the person who owns the picture.');
   t('Name the person who owns the video.');
   t('NeFo-Berichte');
