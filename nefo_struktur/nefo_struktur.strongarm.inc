@@ -963,14 +963,20 @@ function nefo_struktur_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => 0,
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => 7,
+          'weight' => '7',
         ),
       ),
       'display' => array(),
@@ -1083,14 +1089,20 @@ function nefo_struktur_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => 0,
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => 5,
+          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -1167,14 +1179,20 @@ function nefo_struktur_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => 0,
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => 8,
+          'weight' => '7',
         ),
       ),
       'display' => array(),
@@ -1206,14 +1224,20 @@ function nefo_struktur_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => 0,
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => 5,
+          'weight' => '5',
         ),
       ),
       'display' => array(),

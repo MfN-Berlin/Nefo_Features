@@ -125,6 +125,22 @@ function nefo_struktur_image_default_styles() {
     ),
   );
 
+  // Exported image style: image_style_nefo_product_thumbnail.
+  $styles['image_style_nefo_product_thumbnail'] = array(
+    'label' => 'Product Thumbnail (150x*)',
+    'effects' => array(
+      9 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 150,
+          'height' => '',
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 
