@@ -397,6 +397,7 @@ features[variable][] = language_content_type_nefo_slide_opinion
 features[variable][] = language_content_type_nefo_slide_report
 features[variable][] = language_content_type_nefo_slideshow
 features[variable][] = language_content_type_page
+features[variable][] = maxlength_js_nefo_news
 features[variable][] = menu_options_article
 features[variable][] = menu_options_nefo_news
 features[variable][] = menu_options_nefo_product_article
