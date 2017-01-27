@@ -651,7 +651,7 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_news-field_nefo_news_img'] = array(
     'bundle' => 'nefo_news',
     'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 360x200 Pixel',
+    'description' => 'Minimale Bildauflösung: 480x270 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -680,7 +680,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '360x200',
+      'min_resolution' => '480x270',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -715,7 +715,7 @@ function nefo_struktur_field_default_field_instances() {
     'bundle' => 'nefo_news',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Leer lassen für interne Verlinkung. Wenn nötig, die externe Ziel-URL in den Text (Body) einfügen.',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -734,9 +734,9 @@ function nefo_struktur_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_nefo_target_url',
     'label' => 'Ziel-URL',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
-      'absolute_url' => 1,
+      'absolute_url' => 0,
       'attributes' => array(
         'class' => 'nefo-target-url',
         'configurable_class' => 0,
@@ -750,13 +750,13 @@ function nefo_struktur_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'rel_remove' => 'default',
-      'title' => 'value',
+      'title' => 'required',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => 'mehr',
       'url' => 0,
       'user_register_form' => FALSE,
-      'validate_url' => 0,
+      'validate_url' => 1,
     ),
     'widget' => array(
       'active' => 0,
@@ -1199,7 +1199,7 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 1577,
+      'default_image' => 1579,
       'file_directory' => 'products/factsheets',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1795,7 +1795,7 @@ function nefo_struktur_field_default_field_instances() {
     'description' => 'Minimale Bildauflösung: 150x225 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -1817,7 +1817,7 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 1578,
+      'default_image' => 1580,
       'file_directory' => 'products/opinions',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -2204,7 +2204,7 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 1576,
+      'default_image' => 1578,
       'file_directory' => 'products/reports',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -2443,7 +2443,7 @@ function nefo_struktur_field_default_field_instances() {
     'description' => 'Minimale Bildauflösung: 150x225 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -2465,7 +2465,7 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 1579,
+      'default_image' => 1581,
       'file_directory' => 'products/studies',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -3554,7 +3554,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Im NeFo-Interview');
   t('Image Credit');
   t('Kategorie');
-  t('Leer lassen für interne Verlinkung. Wenn nötig, die externe Ziel-URL in den Text (Body) einfügen.');
   t('Maximal 300 Zeichen.');
   t('Maximal 700 Zeichen.');
   t('Maximal 90 Zeichen.');
@@ -3562,6 +3561,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Minimale Bildauflösung: 150x225 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.');
   t('Minimale Bildauflösung: 360x200 Pixel');
   t('Minimale Bildauflösung: 430x240 Pixel');
+  t('Minimale Bildauflösung: 480x270 Pixel');
   t('Minimale Bildauflösung: 800x380 Pixel');
   t('Name the person who owns the picture.');
   t('Name the person who owns the video.');
