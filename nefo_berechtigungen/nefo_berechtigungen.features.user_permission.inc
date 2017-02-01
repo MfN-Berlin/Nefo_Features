@@ -343,15 +343,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'media_oembed',
   );
 
-  // Exported permission: 'administer media wysiwyg view mode'.
-  $permissions['administer media wysiwyg view mode'] = array(
-    'name' => 'administer media wysiwyg view mode',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'media_wysiwyg_view_mode',
-  );
-
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -799,31 +790,9 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create nefo_slide_factsheet content'.
-  $permissions['create nefo_slide_factsheet content'] = array(
-    'name' => 'create nefo_slide_factsheet content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create nefo_slide_opinion content'.
-  $permissions['create nefo_slide_opinion content'] = array(
-    'name' => 'create nefo_slide_opinion content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create nefo_slide_report content'.
-  $permissions['create nefo_slide_report content'] = array(
-    'name' => 'create nefo_slide_report content',
+  // Exported permission: 'create nefo_slide_products content'.
+  $permissions['create nefo_slide_products content'] = array(
+    'name' => 'create nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
@@ -1048,31 +1017,9 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any nefo_slide_factsheet content'.
-  $permissions['delete any nefo_slide_factsheet content'] = array(
-    'name' => 'delete any nefo_slide_factsheet content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any nefo_slide_opinion content'.
-  $permissions['delete any nefo_slide_opinion content'] = array(
-    'name' => 'delete any nefo_slide_opinion content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any nefo_slide_report content'.
-  $permissions['delete any nefo_slide_report content'] = array(
-    'name' => 'delete any nefo_slide_report content',
+  // Exported permission: 'delete any nefo_slide_products content'.
+  $permissions['delete any nefo_slide_products content'] = array(
+    'name' => 'delete any nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
@@ -1288,31 +1235,9 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own nefo_slide_factsheet content'.
-  $permissions['delete own nefo_slide_factsheet content'] = array(
-    'name' => 'delete own nefo_slide_factsheet content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own nefo_slide_opinion content'.
-  $permissions['delete own nefo_slide_opinion content'] = array(
-    'name' => 'delete own nefo_slide_opinion content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own nefo_slide_report content'.
-  $permissions['delete own nefo_slide_report content'] = array(
-    'name' => 'delete own nefo_slide_report content',
+  // Exported permission: 'delete own nefo_slide_products content'.
+  $permissions['delete own nefo_slide_products content'] = array(
+    'name' => 'delete own nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
@@ -1682,31 +1607,9 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any nefo_slide_factsheet content'.
-  $permissions['edit any nefo_slide_factsheet content'] = array(
-    'name' => 'edit any nefo_slide_factsheet content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any nefo_slide_opinion content'.
-  $permissions['edit any nefo_slide_opinion content'] = array(
-    'name' => 'edit any nefo_slide_opinion content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any nefo_slide_report content'.
-  $permissions['edit any nefo_slide_report content'] = array(
-    'name' => 'edit any nefo_slide_report content',
+  // Exported permission: 'edit any nefo_slide_products content'.
+  $permissions['edit any nefo_slide_products content'] = array(
+    'name' => 'edit any nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
@@ -1954,31 +1857,9 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own nefo_slide_factsheet content'.
-  $permissions['edit own nefo_slide_factsheet content'] = array(
-    'name' => 'edit own nefo_slide_factsheet content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own nefo_slide_opinion content'.
-  $permissions['edit own nefo_slide_opinion content'] = array(
-    'name' => 'edit own nefo_slide_opinion content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own nefo_slide_report content'.
-  $permissions['edit own nefo_slide_report content'] = array(
-    'name' => 'edit own nefo_slide_report content',
+  // Exported permission: 'edit own nefo_slide_products content'.
+  $permissions['edit own nefo_slide_products content'] = array(
+    'name' => 'edit own nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',

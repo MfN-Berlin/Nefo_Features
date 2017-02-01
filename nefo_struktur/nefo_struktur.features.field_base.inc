@@ -597,127 +597,13 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_nefo_slide_factsheet_img'.
-  $field_bases['field_nefo_slide_factsheet_img'] = array(
+  // Exported field_base: 'field_nefo_slide_product_descr'.
+  $field_bases['field_nefo_slide_product_descr'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_nefo_slide_factsheet_img',
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
-  );
-
-  // Exported field_base: 'field_nefo_slide_factsheet_refer'.
-  $field_bases['field_nefo_slide_factsheet_refer'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_nefo_slide_factsheet_refer',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'nefo_product_factsheet' => 'nefo_product_factsheet',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_nefo_slide_opinion_img'.
-  $field_bases['field_nefo_slide_opinion_img'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_nefo_slide_opinion_img',
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
-  );
-
-  // Exported field_base: 'field_nefo_slide_opinion_refer'.
-  $field_bases['field_nefo_slide_opinion_refer'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_nefo_slide_opinion_refer',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'nefo_product_opinion' => 'nefo_product_opinion',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_nefo_slide_product_desc'.
-  $field_bases['field_nefo_slide_product_desc'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_nefo_slide_product_desc',
+    'field_name' => 'field_nefo_slide_product_descr',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -727,18 +613,19 @@ function nefo_struktur_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 90,
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_nefo_slide_report_img'.
-  $field_bases['field_nefo_slide_report_img'] = array(
+  // Exported field_base: 'field_nefo_slide_product_img'.
+  $field_bases['field_nefo_slide_product_img'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_nefo_slide_report_img',
+    'field_name' => 'field_nefo_slide_product_img',
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -748,19 +635,20 @@ function nefo_struktur_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'profile2_private' => FALSE,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_nefo_slide_report_refer'.
-  $field_bases['field_nefo_slide_report_refer'] = array(
+  // Exported field_base: 'field_nefo_slide_product_refer'.
+  $field_bases['field_nefo_slide_product_refer'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_nefo_slide_report_refer',
+    'field_name' => 'field_nefo_slide_product_refer',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -779,10 +667,9 @@ function nefo_struktur_field_default_field_bases() {
         'sort' => array(
           'type' => 'none',
         ),
-        'target_bundles' => array(
-          'nefo_product_report' => 'nefo_product_report',
-        ),
+        'target_bundles' => array(),
       ),
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'translatable' => 0,
