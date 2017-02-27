@@ -68,4 +68,4 @@ features[profile2_type][] = researcher
 features[user_role][] = researcher
 features[views_view][] = view_researcher_profile
 features_exclude[dependencies][nefo_struktur] = nefo_struktur
-project path = sites/nefo.biodiv.naturkundemuseum-berlin.de/modules/custom/nefo_features
+project path = sites/all/modules/custom/nefo_features

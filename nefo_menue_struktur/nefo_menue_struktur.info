@@ -152,4 +152,4 @@ features[menu_links][] = menu-nefo-top-menu_impressum:node/9
 features[menu_links][] = menu-nefo-top-menu_kontakt:node/34
 features[menu_links][] = menu-nefo-top-menu_legal:node/580
 features[menu_links][] = menu-nefo-top-menu_presse:presse
-project path = sites/nefo.biodiv.naturkundemuseum-berlin.de/modules/custom/nefo_features
+project path = sites/all/modules/custom/nefo_features

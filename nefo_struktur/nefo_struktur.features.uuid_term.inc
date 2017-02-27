@@ -231,7 +231,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Monitoring',
-    'description' => '<p>Die Frage, wie Zustände und Trends von Arten, Biotopen und genetischer Vielfalt gut zu erfassen sind, ist ein Dauerthema des Naturschutzes – sowohl in der Praxis als auch in der Forschung. NeFo hatte hier in seiner Arbeit seit 2012 einen Schwerpunkt, der einen Überblick zur Thematik bietet. Bezüglich aktueller Entwicklungen <a href="http://nefo.biodiv.naturkundemuseum-berlin.de/de/kontakt" target="_self">sprechen sie uns bitte an</a>.</p>',
+    'description' => '<p>Die Frage, wie Zustände und Trends von Arten, Biotopen und genetischer Vielfalt gut zu erfassen sind, ist ein Dauerthema des Naturschutzes – sowohl in der Praxis als auch in der Forschung. NeFo hatte hier in seiner Arbeit seit 2012 einen Schwerpunkt, der einen Überblick zur Thematik bietet. Bezüglich aktueller Entwicklungen sprechen sie uns bitte an.</p>',
     'format' => 'full_html',
     'weight' => 1,
     'uuid' => '83cf9aba-a2b6-4fb1-8790-34784ce8f45c',

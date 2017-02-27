@@ -242,7 +242,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('Folie für die Dreier-Leiste "Aktuelle Produkte" auf der Startseite.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_slideshow' => array(

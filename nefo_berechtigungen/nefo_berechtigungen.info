@@ -280,4 +280,4 @@ features[user_permission][] = view the administration theme
 features[user_role][] = Author
 features[user_role][] = Site Administrator
 features[user_role][] = administrator
-project path = sites/nefo.biodiv.naturkundemuseum-berlin.de/modules/custom/nefo_features
+project path = sites/all/modules/custom/nefo_features

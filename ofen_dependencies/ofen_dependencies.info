@@ -9,4 +9,4 @@ dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[variable][] = fontawesome_use_cdn
-project path = sites/nefo.biodiv.naturkundemuseum-berlin.de/modules/custom/nefo_features
+project path = sites/all/modules/custom/nefo_features

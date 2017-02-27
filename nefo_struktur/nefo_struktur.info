@@ -581,4 +581,4 @@ features[views_view][] = nefo_view_list_workshop
 features_exclude[taxonomy][nefo_taxonomy_interview] = nefo_taxonomy_interview
 features_exclude[uuid_term][8305d56c-c52c-44dd-8c4f-54bc8f3a8437] = 8305d56c-c52c-44dd-8c4f-54bc8f3a8437
 features_exclude[uuid_term][bee2ea4d-9779-4c49-b1d2-11f2a4dc5b39] = bee2ea4d-9779-4c49-b1d2-11f2a4dc5b39
-project path = sites/nefo.biodiv.naturkundemuseum-berlin.de/modules/custom/nefo_features
+project path = sites/all/modules/custom/nefo_features

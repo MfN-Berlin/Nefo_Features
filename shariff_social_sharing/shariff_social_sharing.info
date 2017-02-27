@@ -43,4 +43,4 @@ features[variable][] = shariff_referrer_track
 features[variable][] = shariff_services
 features[variable][] = shariff_theme
 features[variable][] = shariff_twitter_via
-project path = sites/nefo.biodiv.naturkundemuseum-berlin.de/modules/custom/nefo_features
+project path = sites/all/modules/custom/nefo_features

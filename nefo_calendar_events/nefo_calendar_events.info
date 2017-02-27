@@ -63,4 +63,4 @@ features[variable][] = pathauto_node_nefo_event_pattern
 features[variable][] = pathauto_node_nefo_event_und_pattern
 features[variable][] = pathauto_taxonomy_term_event_types_pattern
 features[views_view][] = nefo_calendar
-project path = sites/nefo.biodiv.naturkundemuseum-berlin.de/modules/custom/nefo_features
+project path = sites/all/modules/custom/nefo_features
