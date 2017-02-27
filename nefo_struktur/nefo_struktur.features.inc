@@ -98,14 +98,22 @@ function nefo_struktur_image_default_styles() {
   $styles['image_style_nefo_literature_tip_thumbnail'] = array(
     'label' => 'Literature Tip Thumbnail',
     'effects' => array(
-      5 => array(
+      9 => array(
         'name' => 'image_scale',
         'data' => array(
           'width' => 150,
           'height' => '',
           'upscale' => 1,
         ),
-        'weight' => 1,
+        'weight' => -10,
+      ),
+      8 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 150,
+          'height' => 225,
+        ),
+        'weight' => -9,
       ),
     ),
   );
@@ -129,7 +137,7 @@ function nefo_struktur_image_default_styles() {
   $styles['image_style_nefo_product_thumbnail'] = array(
     'label' => 'Product Thumbnail (150x*)',
     'effects' => array(
-      9 => array(
+      10 => array(
         'name' => 'image_scale',
         'data' => array(
           'width' => 150,
@@ -137,6 +145,14 @@ function nefo_struktur_image_default_styles() {
           'upscale' => 1,
         ),
         'weight' => 1,
+      ),
+      11 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 150,
+          'height' => 225,
+        ),
+        'weight' => 2,
       ),
     ),
   );
