@@ -2161,6 +2161,29 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
+  // Exported menu link: menu-nefo-footer-menu-fifth_ipbes-news:http://biodiversity.de/de/schnittstellen/ipbes/news.
+  $menu_links['menu-nefo-footer-menu-fifth_ipbes-news:http://biodiversity.de/de/schnittstellen/ipbes/news'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fifth',
+    'link_path' => 'http://biodiversity.de/de/schnittstellen/ipbes/news',
+    'router_path' => '',
+    'link_title' => 'IPBES News',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fifth_ipbes-news:http://biodiversity.de/de/schnittstellen/ipbes/news',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
   // Exported menu link: menu-nefo-footer-menu-fifth_nefo-produkte:node/13.
   $menu_links['menu-nefo-footer-menu-fifth_nefo-produkte:node/13'] = array(
     'menu_name' => 'menu-nefo-footer-menu-fifth',
@@ -2226,6 +2249,29 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -48,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-first_nefo-produkte:http://biodiversity.de/de/schnittstellen/produkte.
+  $menu_links['menu-nefo-footer-menu-first_nefo-produkte:http://biodiversity.de/de/schnittstellen/produkte'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-first',
+    'link_path' => 'http://biodiversity.de/de/schnittstellen/produkte',
+    'router_path' => '',
+    'link_title' => 'NeFo-Produkte',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-first_nefo-produkte:http://biodiversity.de/de/schnittstellen/produkte',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2341,6 +2387,29 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -50,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-nefo-footer-menu-fourth_forschungsatlas:http://biodiversity.de/de/forschung/forschungsakteure/forschungsatlas.
+  $menu_links['menu-nefo-footer-menu-fourth_forschungsatlas:http://biodiversity.de/de/forschung/forschungsakteure/forschungsatlas'] = array(
+    'menu_name' => 'menu-nefo-footer-menu-fourth',
+    'link_path' => 'http://biodiversity.de/de/forschung/forschungsakteure/forschungsatlas',
+    'router_path' => '',
+    'link_title' => 'Forschungsatlas',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'menu-nefo-footer-menu-fourth_forschungsatlas:http://biodiversity.de/de/forschung/forschungsakteure/forschungsatlas',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
