@@ -29,6 +29,12 @@ function nefo_struktur_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_nefo_cover_photo' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -76,6 +82,13 @@ function nefo_struktur_field_default_field_instances() {
     'description' => 'Name the person who owns the picture.',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'media_nefo_cover_photo' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -141,6 +154,12 @@ function nefo_struktur_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_nefo_cover_photo' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'preview' => array(
         'label' => 'above',
         'settings' => array(),
@@ -188,6 +207,13 @@ function nefo_struktur_field_default_field_instances() {
     'description' => 'Erklärender Text zum Bild.',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'media_nefo_cover_photo' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -246,6 +272,12 @@ function nefo_struktur_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'media_nefo_cover_photo' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'preview' => array(
@@ -3177,7 +3209,7 @@ function nefo_struktur_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -3205,7 +3237,7 @@ function nefo_struktur_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -3220,7 +3252,7 @@ function nefo_struktur_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3250,7 +3282,70 @@ function nefo_struktur_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 6,
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-field_nefo_cover_photo'.
+  $field_instances['node-page-field_nefo_cover_photo'] = array(
+    'bundle' => 'page',
+    'deleted' => 0,
+    'description' => 'Minimale Bildauflösung: 800x450 Pixel',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'media_nefo_cover_photo',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_cover_photo',
+    'label' => 'Titelbild',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'pictures/covers',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '800x450',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
     ),
   );
 
@@ -3279,6 +3374,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Minimale Bildauflösung: 430x240 Pixel');
   t('Minimale Bildauflösung: 480x270 Pixel');
   t('Minimale Bildauflösung: 800x380 Pixel');
+  t('Minimale Bildauflösung: 800x450 Pixel');
   t('Name the person who owns the picture.');
   t('Name the person who owns the video.');
   t('NeFo-Berichte');
@@ -3290,6 +3386,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Studie');
   t('Thema (Zitat)');
   t('Themen');
+  t('Titelbild');
   t('Title Text');
   t('Title text is used in the tool tip when a user hovers their mouse over the image. Adding title text makes it easier to understand the context of an image and improves usability.');
   t('Typ');

@@ -11,6 +11,9 @@ function nefo_struktur_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
+  if ($module == "file_entity" && $api == "file_default_displays") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -44,6 +47,21 @@ function nefo_struktur_image_default_styles() {
           'upscale' => 0,
         ),
         'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: image_style_nefo_cover_photo.
+  $styles['image_style_nefo_cover_photo'] = array(
+    'label' => 'Cover Photo (800x450)',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 800,
+          'height' => 450,
+        ),
+        'weight' => 1,
       ),
     ),
   );

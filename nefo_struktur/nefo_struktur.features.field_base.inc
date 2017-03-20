@@ -219,6 +219,29 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
+  // Exported field_base: 'field_nefo_cover_photo'.
+  $field_bases['field_nefo_cover_photo'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nefo_cover_photo',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'profile2_private' => FALSE,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
   // Exported field_base: 'field_nefo_description'.
   $field_bases['field_nefo_description'] = array(
     'active' => 1,
