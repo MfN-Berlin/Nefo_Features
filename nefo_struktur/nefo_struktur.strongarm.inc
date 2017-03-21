@@ -1048,6 +1048,9 @@ function nefo_struktur_strongarm() {
       'ical' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

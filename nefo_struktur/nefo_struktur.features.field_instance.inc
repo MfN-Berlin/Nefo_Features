@@ -2085,13 +2085,13 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_product_press_release-field_nefo_press_release_img'] = array(
     'bundle' => 'nefo_product_press_release',
     'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 430x240 Pixel',
+    'description' => 'Minimale Bildauflösung: 800x450 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
         'module' => 'file_entity',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'file_view_mode' => 'media_nefo_cover_photo',
         ),
         'type' => 'file_rendered',
         'weight' => 0,
@@ -2114,7 +2114,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '430x240',
+      'min_resolution' => '800x450',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3434,7 +3434,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Maximal 90 Zeichen.');
   t('Mehrfachauswahl möglich.');
   t('Minimale Bildauflösung: 150x225 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.');
-  t('Minimale Bildauflösung: 430x240 Pixel');
   t('Minimale Bildauflösung: 480x270 Pixel');
   t('Minimale Bildauflösung: 800x380 Pixel');
   t('Minimale Bildauflösung: 800x450 Pixel');
