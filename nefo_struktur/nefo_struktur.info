@@ -89,6 +89,7 @@ features[field_instance][] = file-video-field_file_video_credit_text
 features[field_instance][] = node-article-body
 features[field_instance][] = node-article-field_dateien
 features[field_instance][] = node-article-field_internal_link
+features[field_instance][] = node-article-field_nefo_cover_photo
 features[field_instance][] = node-article-field_schlagworte
 features[field_instance][] = node-blog-body
 features[field_instance][] = node-blog-field_nefo_taxonomy_blogs

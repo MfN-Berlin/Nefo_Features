@@ -723,23 +723,26 @@ function nefo_struktur_strongarm() {
       'ical' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'language' => array(
-          'weight' => '1',
-        ),
-        'title' => array(
           'weight' => '0',
         ),
+        'title' => array(
+          'weight' => '1',
+        ),
         'path' => array(
-          'weight' => '3',
+          'weight' => '7',
         ),
       ),
       'display' => array(
         'language' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '4',
             'visible' => FALSE,
           ),
         ),
