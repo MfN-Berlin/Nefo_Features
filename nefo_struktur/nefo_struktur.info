@@ -92,6 +92,7 @@ features[field_instance][] = node-article-field_internal_link
 features[field_instance][] = node-article-field_nefo_cover_photo
 features[field_instance][] = node-article-field_schlagworte
 features[field_instance][] = node-blog-body
+features[field_instance][] = node-blog-field_nefo_cover_photo
 features[field_instance][] = node-blog-field_nefo_taxonomy_blogs
 features[field_instance][] = node-nefo_news-body
 features[field_instance][] = node-nefo_news-field_nefo_news_category
