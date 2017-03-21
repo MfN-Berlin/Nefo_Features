@@ -1454,13 +1454,13 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_product_interview-field_nefo_interview_img'] = array(
     'bundle' => 'nefo_product_interview',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Minimale Bildauflösung: 800x450 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
         'module' => 'file_entity',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'file_view_mode' => 'media_nefo_cover_photo',
         ),
         'type' => 'file_rendered',
         'weight' => 2,
@@ -1469,7 +1469,7 @@ function nefo_struktur_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_nefo_interview_img',
     'label' => 'Bild',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -1477,7 +1477,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '800x450',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
