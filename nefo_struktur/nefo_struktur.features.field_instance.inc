@@ -963,13 +963,13 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_product_article-field_nefo_article_img'] = array(
     'bundle' => 'nefo_product_article',
     'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 430x240 Pixel',
+    'description' => 'Minimale Bildauflösung: 800x450 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
         'module' => 'file_entity',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'file_view_mode' => 'media_nefo_cover_photo',
         ),
         'type' => 'file_rendered',
         'weight' => 0,
@@ -992,7 +992,7 @@ function nefo_struktur_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '430x240',
+      'min_resolution' => '800x450',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
