@@ -14,7 +14,7 @@ function nefo_struktur_file_default_displays() {
   $file_display->api_version = 1;
   $file_display->name = 'image__default__file_field_colorbox';
   $file_display->weight = 0;
-  $file_display->status = TRUE;
+  $file_display->status = FALSE;
   $file_display->settings = array(
     'colorbox_node_style' => 'large',
     'colorbox_node_style_first' => '',
