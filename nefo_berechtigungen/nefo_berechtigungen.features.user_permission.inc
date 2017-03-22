@@ -114,7 +114,7 @@ function nefo_berechtigungen_user_default_permissions() {
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
-    'module' => 'nefo',
+    'module' => 'forschungsatlas',
   );
 
   // Exported permission: 'access overlay'.
@@ -378,7 +378,7 @@ function nefo_berechtigungen_user_default_permissions() {
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
-    'module' => 'nefo',
+    'module' => 'forschungsatlas',
   );
 
   // Exported permission: 'administer nefo institutions'.
@@ -389,7 +389,7 @@ function nefo_berechtigungen_user_default_permissions() {
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
-    'module' => 'nefo',
+    'module' => 'forschungsatlas',
   );
 
   // Exported permission: 'administer nodes'.
