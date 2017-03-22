@@ -3044,22 +3044,15 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_slide_products-field_nefo_slide_product_img'] = array(
     'bundle' => 'nefo_slide_products',
     'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 480x270 Pixel',
+    'description' => 'Minimale Bildauflösung: 800x450 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'colorbox',
+        'module' => 'file_entity',
         'settings' => array(
-          'colorbox_caption' => 'auto',
-          'colorbox_caption_custom' => '',
-          'colorbox_gallery' => 'none',
-          'colorbox_gallery_custom' => '',
-          'colorbox_image_style' => '',
-          'colorbox_multivalue_index' => NULL,
-          'colorbox_node_style' => 'large',
-          'colorbox_node_style_first' => '',
+          'file_view_mode' => 'media_nefo_cover_photo',
         ),
-        'type' => 'colorbox',
+        'type' => 'file_rendered',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -3076,11 +3069,11 @@ function nefo_struktur_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
-      'file_directory' => '',
+      'file_directory' => 'products/currentproducts',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '480x270',
+      'min_resolution' => '800x450',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3497,7 +3490,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Maximal 90 Zeichen.');
   t('Mehrfachauswahl möglich.');
   t('Minimale Bildauflösung: 150x225 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.');
-  t('Minimale Bildauflösung: 480x270 Pixel');
   t('Minimale Bildauflösung: 800x380 Pixel');
   t('Minimale Bildauflösung: 800x450 Pixel');
   t('Name the person who owns the picture.');
