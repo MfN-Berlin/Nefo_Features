@@ -643,13 +643,13 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'link_title' => 'Events',
     'options' => array(
       'attributes' => array(
-        'title' => 'Calendar of upcoming events',
+        'title' => 'Events',
       ),
-      'identifier' => 'main-menu_events:events',
       'alter' => TRUE,
+      'identifier' => 'main-menu_events:events',
     ),
-    'module' => 'menu',
-    'hidden' => 1,
+    'module' => 'system',
+    'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
@@ -1681,27 +1681,27 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_forschung:node/25',
   );
-  // Exported menu link: main-menu_news--events:news.
-  $menu_links['main-menu_news--events:news'] = array(
+  // Exported menu link: main-menu_news:news.
+  $menu_links['main-menu_news:news'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'news',
     'router_path' => 'news',
-    'link_title' => 'News & Events',
+    'link_title' => 'News',
     'options' => array(
       'attributes' => array(
-        'title' => 'News & Events',
+        'title' => 'News',
       ),
       'alter' => TRUE,
-      'identifier' => 'main-menu_news--events:news',
+      'identifier' => 'main-menu_news:news',
     ),
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -42,
     'customized' => 1,
-    'language' => 'de',
+    'language' => 'und',
     'menu_links_customized' => 1,
   );
   // Exported menu link: main-menu_newsletter-archiv:node/945.
@@ -2310,7 +2310,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -3343,7 +3343,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('NeFo-Produkte');
   t('NeFo-Sachstandsberichte');
   t('Netzwerke und Vernetzung');
-  t('News & Events');
+  t('News');
   t('Newsletter-Archiv');
   t('Pan European Stakeholder Consultation');
   t('Personen');
