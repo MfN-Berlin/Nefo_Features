@@ -586,6 +586,7 @@ features[views_view][] = nefo_entityreference_products
 features[views_view][] = nefo_slider
 features[views_view][] = nefo_view_block_entityreference_composite_name
 features[views_view][] = nefo_view_block_interview
+features[views_view][] = nefo_view_block_interview_small
 features[views_view][] = nefo_view_block_news
 features[views_view][] = nefo_view_block_newsbiodiv
 features[views_view][] = nefo_view_block_newsipbes
