@@ -496,6 +496,22 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Agrobiodiversität',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'f193728b-f115-4247-bf00-c141d1aee2bf',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/agrobiodiversitat',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'CBD COP 10 Nagoya 2010',
     'description' => '',
     'format' => 'full_html',

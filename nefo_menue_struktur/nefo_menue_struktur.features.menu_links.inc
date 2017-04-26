@@ -635,29 +635,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_politik:node/14',
   );
-  // Exported menu link: main-menu_events:events.
-  $menu_links['main-menu_events:events'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'events',
-    'router_path' => 'events',
-    'link_title' => 'Events',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Events',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_events:events',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -41,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: main-menu_faktenbltter:schnittstellen/produkte/faktenblaetter.
   $menu_links['main-menu_faktenbltter:schnittstellen/produkte/faktenblaetter'] = array(
     'menu_name' => 'main-menu',
@@ -1681,29 +1658,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_forschung:node/25',
   );
-  // Exported menu link: main-menu_news:news.
-  $menu_links['main-menu_news:news'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'news',
-    'router_path' => 'news',
-    'link_title' => 'News',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'News',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_news:news',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -42,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: main-menu_newsletter-archiv:node/945.
   $menu_links['main-menu_newsletter-archiv:node/945'] = array(
     'menu_name' => 'main-menu',
@@ -2310,7 +2264,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -3297,7 +3251,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Eigene Pressemitteilungen');
   t('Einbringen in die Forschung');
   t('Europäisch');
-  t('Events');
   t('Faktenblätter');
   t('Forschung');
   t('Forschungsakteure');
@@ -3343,7 +3296,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('NeFo-Produkte');
   t('NeFo-Sachstandsberichte');
   t('Netzwerke und Vernetzung');
-  t('News');
   t('Newsletter-Archiv');
   t('Pan European Stakeholder Consultation');
   t('Personen');
