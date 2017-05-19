@@ -186,7 +186,7 @@ function nefo_struktur_node_info() {
     'article' => array(
       'name' => t('Artikel'),
       'base' => 'node_content',
-      'description' => t('Benutzen Sie <em>Artikel</em> für zeitkritische Inhalte wie Nachrichten, Pressemeldungen oder Blogeinträge.'),
+      'description' => t('Standard Drupal-Inhaltstyp'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
@@ -202,7 +202,7 @@ function nefo_struktur_node_info() {
     'nefo_product_article' => array(
       'name' => t('NeFo-Produkt Artikel'),
       'base' => 'node_content',
-      'description' => t('NeFo-Artikel (Top-Menü: Presse)'),
+      'description' => t('NeFo-Artikel'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
@@ -242,7 +242,7 @@ function nefo_struktur_node_info() {
     'nefo_product_press_release' => array(
       'name' => t('NeFo-Produkt Pressemitteilung'),
       'base' => 'node_content',
-      'description' => t('NeFo-Pressemitteilungen (Top-Menü: Presse / Eigene Pressemitteilungen)'),
+      'description' => t('NeFo-Pressemitteilungen (Top-Menü: Presse)'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
@@ -250,7 +250,7 @@ function nefo_struktur_node_info() {
     'nefo_product_report' => array(
       'name' => t('NeFo-Produkt Bericht'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('NeFo-Bericht'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
@@ -282,7 +282,7 @@ function nefo_struktur_node_info() {
     'nefo_slideshow' => array(
       'name' => t('Slideshow Eintrag'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Bild für Slider auf der Startseite'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',

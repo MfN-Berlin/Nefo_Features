@@ -28,7 +28,7 @@ function nefo_calendar_events_node_info() {
     'nefo_event' => array(
       'name' => t('Termin'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Event'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',

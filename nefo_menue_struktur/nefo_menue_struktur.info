@@ -34,6 +34,7 @@ features[menu_links][] = main-menu_access--benefit-sharing:taxonomy/term/38
 features[menu_links][] = main-menu_agrarpolitik:node/21
 features[menu_links][] = main-menu_aktuelle-aufrufe-zur-beteiligung-im-ipbes--prozess:node/75
 features[menu_links][] = main-menu_aktuelle-aufrufe:node/888
+features[menu_links][] = main-menu_artikel:schnittstellen/produkte/artikel
 features[menu_links][] = main-menu_ausschreibungen:node/6
 features[menu_links][] = main-menu_bei-ipbes-aktiv-werden:node/71
 features[menu_links][] = main-menu_ber-ipbes:node/38

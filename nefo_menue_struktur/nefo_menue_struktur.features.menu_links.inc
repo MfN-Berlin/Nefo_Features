@@ -110,6 +110,30 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_eklipse---mechanismus:node/890',
   );
+  // Exported menu link: main-menu_artikel:schnittstellen/produkte/artikel.
+  $menu_links['main-menu_artikel:schnittstellen/produkte/artikel'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'schnittstellen/produkte/artikel',
+    'router_path' => 'schnittstellen/produkte/artikel',
+    'link_title' => 'Artikel',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Artikel',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_artikel:schnittstellen/produkte/artikel',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+  );
   // Exported menu link: main-menu_ausschreibungen:node/6.
   $menu_links['main-menu_ausschreibungen:node/6'] = array(
     'menu_name' => 'main-menu',
@@ -205,7 +229,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -653,7 +677,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1027,7 +1051,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1401,7 +1425,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1550,7 +1574,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
+    'weight' => -41,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1674,7 +1698,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -39,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1796,7 +1820,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -41,
+    'weight' => -40,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1944,7 +1968,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -1968,7 +1992,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -2015,7 +2039,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -43,
+    'weight' => -42,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -3080,7 +3104,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   $menu_links['menu-nefo-top-menu_eigene-pressemitteilungen:presse/pressemitteilungen'] = array(
     'menu_name' => 'menu-nefo-top-menu',
     'link_path' => 'presse/pressemitteilungen',
-    'router_path' => 'presse/pressemitteilungen',
+    'router_path' => 'presse',
     'link_title' => 'Eigene Pressemitteilungen',
     'options' => array(
       'attributes' => array(
@@ -3228,6 +3252,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Aktuelle Aufrufe');
   t('Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess');
   t('Anmelden');
+  t('Artikel');
   t('Ausschreibungen');
   t('BSPIN/ Nachwuchswissenschaftler');
   t('Bei IPBES aktiv werden');
