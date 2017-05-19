@@ -2864,63 +2864,63 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_article_pattern';
-  $strongarm->value = 'presse/[node:title]';
+  $strongarm->value = 'aktikel/[node:title]';
   $export['pathauto_node_nefo_product_article_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_factsheet_pattern';
-  $strongarm->value = 'schnittstellen/produkte/faktenblaetter/[node:title]';
+  $strongarm->value = 'faktenblaetter/[node:title]';
   $export['pathauto_node_nefo_product_factsheet_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_interview_pattern';
-  $strongarm->value = '[node:field-nefo-interview-category:url:path]/[node:title]';
+  $strongarm->value = 'interviews/[node:title]';
   $export['pathauto_node_nefo_product_interview_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_literature_tip_pattern';
-  $strongarm->value = 'schnittstellen/produkte/literaturtipps/[node:title]';
+  $strongarm->value = 'literaturtipps/[node:title]';
   $export['pathauto_node_nefo_product_literature_tip_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_opinion_pattern';
-  $strongarm->value = 'schnittstellen/produkte/stellungnahmen/[node:title]';
+  $strongarm->value = 'stellungnahmen/[node:title]';
   $export['pathauto_node_nefo_product_opinion_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_press_release_pattern';
-  $strongarm->value = 'presse/pressemitteilungen/[node:title]';
+  $strongarm->value = 'presse/[node:title]';
   $export['pathauto_node_nefo_product_press_release_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_report_pattern';
-  $strongarm->value = 'schnittstellen/produkte/berichte/[node:title]';
+  $strongarm->value = 'berichte/[node:title]';
   $export['pathauto_node_nefo_product_report_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_study_pattern';
-  $strongarm->value = 'schnittstellen/produkte/studien/[node:title]';
+  $strongarm->value = 'studien/[node:title]';
   $export['pathauto_node_nefo_product_study_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_nefo_product_workshop_pattern';
-  $strongarm->value = 'schnittstellen/produkte/workshops/[node:title]';
+  $strongarm->value = 'workshops/[node:title]';
   $export['pathauto_node_nefo_product_workshop_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2929,6 +2929,13 @@ function nefo_struktur_strongarm() {
   $strongarm->name = 'pathauto_node_nefo_slideshow_pattern';
   $strongarm->value = '';
   $export['pathauto_node_nefo_slideshow_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_nefo_slide_products_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_nefo_slide_products_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

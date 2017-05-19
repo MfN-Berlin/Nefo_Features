@@ -557,6 +557,7 @@ features[variable][] = pathauto_node_nefo_product_press_release_pattern
 features[variable][] = pathauto_node_nefo_product_report_pattern
 features[variable][] = pathauto_node_nefo_product_study_pattern
 features[variable][] = pathauto_node_nefo_product_workshop_pattern
+features[variable][] = pathauto_node_nefo_slide_products_pattern
 features[variable][] = pathauto_node_nefo_slideshow_pattern
 features[variable][] = pathauto_node_page_de_pattern
 features[variable][] = pathauto_node_page_en_pattern
