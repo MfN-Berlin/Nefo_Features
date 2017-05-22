@@ -29,6 +29,12 @@ function nefo_struktur_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_nefo_clickable_image_link' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'media_nefo_cover_photo' => array(
         'label' => 'above',
         'settings' => array(),
@@ -87,6 +93,12 @@ function nefo_struktur_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'media_nefo_clickable_image_link' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'media_nefo_cover_photo' => array(
         'label' => 'hidden',
@@ -154,6 +166,12 @@ function nefo_struktur_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_nefo_clickable_image_link' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'media_nefo_cover_photo' => array(
         'label' => 'above',
         'settings' => array(),
@@ -212,6 +230,12 @@ function nefo_struktur_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'media_nefo_clickable_image_link' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'media_nefo_cover_photo' => array(
         'label' => 'hidden',
@@ -272,6 +296,12 @@ function nefo_struktur_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'media_nefo_clickable_image_link' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'media_nefo_cover_photo' => array(
