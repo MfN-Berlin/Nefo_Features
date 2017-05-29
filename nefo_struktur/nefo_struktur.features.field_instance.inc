@@ -922,7 +922,7 @@ function nefo_struktur_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_nefo_target_url',
     'label' => 'Ziel-URL',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'absolute_url' => 0,
       'attributes' => array(

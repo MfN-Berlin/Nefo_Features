@@ -2736,7 +2736,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_news_category']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['field_nefo_news_category']['element_wrapper_class'] = 'nefo-view-list-news-category';
   $handler->display->display_options['fields']['field_nefo_news_category']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_nefo_news_category']['empty'] = '<a href="/presse">Presse</a>';
+  $handler->display->display_options['fields']['field_nefo_news_category']['empty'] = '<a href="/presse">NeFo-Pressemitteilung</a>';
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
