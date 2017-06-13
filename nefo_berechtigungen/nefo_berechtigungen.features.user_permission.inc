@@ -508,6 +508,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -1300,7 +1301,10 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'delete terms in nefo_schlagworte'.
   $permissions['delete terms in nefo_schlagworte'] = array(
     'name' => 'delete terms in nefo_schlagworte',
-    'roles' => array(),
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -1927,6 +1931,8 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit terms in nefo_schlagworte',
     'roles' => array(
       'Author' => 'Author',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
