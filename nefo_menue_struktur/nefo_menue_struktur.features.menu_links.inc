@@ -10,32 +10,6 @@
 function nefo_menue_struktur_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_access--benefit-sharing:taxonomy/term/38.
-  $menu_links['main-menu_access--benefit-sharing:taxonomy/term/38'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'taxonomy/term/38',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Access & Benefit Sharing',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'Access & Benefit Sharing',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_access--benefit-sharing:taxonomy/term/38',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -43,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_unsere-themen:node/44',
-  );
   // Exported menu link: main-menu_agrarpolitik:node/21.
   $menu_links['main-menu_agrarpolitik:node/21'] = array(
     'menu_name' => 'main-menu',
@@ -306,7 +280,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -902,7 +876,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -42,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1077,7 +1051,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1298,7 +1272,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1431,6 +1405,30 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_nefo-produkte:node/13',
   );
+  // Exported menu link: main-menu_marine-biologie:taxonomy/term/74.
+  $menu_links['main-menu_marine-biologie:taxonomy/term/74'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/74',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Marine Biologie',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Marine Biologie',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_marine-biologie:taxonomy/term/74',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -39,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
   // Exported menu link: main-menu_monitoring:taxonomy/term/36.
   $menu_links['main-menu_monitoring:taxonomy/term/36'] = array(
     'menu_name' => 'main-menu',
@@ -1451,7 +1449,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1902,6 +1900,30 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_ipbes--co:node/20',
   );
+  // Exported menu link: main-menu_sdgs:taxonomy/term/71.
+  $menu_links['main-menu_sdgs:taxonomy/term/71'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/71',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'SDGs',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'SDGs',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_sdgs:taxonomy/term/71',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -44,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
   // Exported menu link: main-menu_stakeholder-engagement-strategy:node/66.
   $menu_links['main-menu_stakeholder-engagement-strategy:node/66'] = array(
     'menu_name' => 'main-menu',
@@ -1998,6 +2020,30 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_nefo-produkte:node/13',
   );
+  // Exported menu link: main-menu_synthetische-biologie:taxonomy/term/72.
+  $menu_links['main-menu_synthetische-biologie:taxonomy/term/72'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/72',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Synthetische Biologie',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Synthetische Biologie',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_synthetische-biologie:taxonomy/term/72',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -41,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
   // Exported menu link: main-menu_unsere-themen:node/44.
   $menu_links['main-menu_unsere-themen:node/44'] = array(
     'menu_name' => 'main-menu',
@@ -2022,6 +2068,30 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
+  );
+  // Exported menu link: main-menu_urbane-biodiversitt:taxonomy/term/73.
+  $menu_links['main-menu_urbane-biodiversitt:taxonomy/term/73'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'taxonomy/term/73',
+    'router_path' => 'taxonomy/term/%',
+    'link_title' => 'Urbane Biodiversität',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Urbane Biodiversität',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_urbane-biodiversitt:taxonomy/term/73',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -40,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_unsere-themen:node/44',
   );
   // Exported menu link: main-menu_videos:node/735.
   $menu_links['main-menu_videos:node/735'] = array(
@@ -2687,29 +2757,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-footer-menu-second_access--benefit-sharing:taxonomy/term/38.
-  $menu_links['menu-nefo-footer-menu-second_access--benefit-sharing:taxonomy/term/38'] = array(
-    'menu_name' => 'menu-nefo-footer-menu-second',
-    'link_path' => 'taxonomy/term/38',
-    'router_path' => 'taxonomy/term/%',
-    'link_title' => 'Access & Benefit Sharing',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Access & Benefit Sharing',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-footer-menu-second_access--benefit-sharing:taxonomy/term/38',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -43,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-  );
   // Exported menu link: menu-nefo-footer-menu-second_bestubung:taxonomy/term/32.
   $menu_links['menu-nefo-footer-menu-second_bestubung:taxonomy/term/32'] = array(
     'menu_name' => 'menu-nefo-footer-menu-second',
@@ -2751,7 +2798,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2774,7 +2821,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -41,
+    'weight' => -42,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2797,7 +2844,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2820,7 +2867,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -42,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -2889,7 +2936,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -3247,7 +3294,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Abmelden');
-  t('Access & Benefit Sharing');
   t('Agrarpolitik');
   t('Aktuelle Aufrufe');
   t('Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess');
@@ -3310,6 +3356,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Literaturtipps');
   t('Login');
   t('Logout');
+  t('Marine Biologie');
   t('Monitoring');
   t('Nachwuchswissenschaftler');
   t('National');
@@ -3330,12 +3377,15 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Publikationen mit NeFo-Beteiligung');
   t('Rollen von Expertinnen und Experten');
   t('SBSTTA');
+  t('SDGs');
   t('Schnittstellen verstehen');
   t('Stakeholder Engagement Strategy');
   t('Startseite');
   t('Stellungnahmen');
   t('Studien');
+  t('Synthetische Biologie');
   t('Unsere Themen');
+  t('Urbane Biodiversität');
   t('Videos');
   t('Was sind Schnittstellen?');
   t('Was wir machen');
