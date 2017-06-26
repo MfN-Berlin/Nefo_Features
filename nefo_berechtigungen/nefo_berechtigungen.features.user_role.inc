@@ -16,16 +16,22 @@ function nefo_berechtigungen_user_default_roles() {
     'weight' => 3,
   );
 
+  // Exported role: Editor.
+  $roles['Editor'] = array(
+    'name' => 'Editor',
+    'weight' => 4,
+  );
+
   // Exported role: Site Administrator.
   $roles['Site Administrator'] = array(
     'name' => 'Site Administrator',
-    'weight' => 4,
+    'weight' => 5,
   );
 
   // Exported role: administrator.
   $roles['administrator'] = array(
     'name' => 'administrator',
-    'weight' => 5,
+    'weight' => 6,
   );
 
   return $roles;

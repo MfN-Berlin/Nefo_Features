@@ -15,6 +15,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'access administration menu',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -26,6 +27,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -68,6 +70,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -79,6 +82,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'access contextual links',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -89,6 +93,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -100,6 +105,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'access media browser',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -122,10 +128,75 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'access overlay',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'overlay',
+  );
+
+  // Exported permission: 'access redhen'.
+  $permissions['access redhen'] = array(
+    'name' => 'access redhen',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen',
+  );
+
+  // Exported permission: 'access redhen contacts'.
+  $permissions['access redhen contacts'] = array(
+    'name' => 'access redhen contacts',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
+  );
+
+  // Exported permission: 'access redhen notes'.
+  $permissions['access redhen notes'] = array(
+    'name' => 'access redhen notes',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_note',
+  );
+
+  // Exported permission: 'access redhen org revisions'.
+  $permissions['access redhen org revisions'] = array(
+    'name' => 'access redhen org revisions',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
+  // Exported permission: 'access redhen orgs'.
+  $permissions['access redhen orgs'] = array(
+    'name' => 'access redhen orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
+  // Exported permission: 'access relations'.
+  $permissions['access relations'] = array(
+    'name' => 'access relations',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'relation',
   );
 
   // Exported permission: 'access site in maintenance mode'.
@@ -169,6 +240,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -197,6 +269,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -207,7 +280,6 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
     'roles' => array(
-      'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -227,6 +299,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['administer content translations'] = array(
     'name' => 'administer content translations',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -278,6 +351,16 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'field_group',
   );
 
+  // Exported permission: 'administer fields'.
+  $permissions['administer fields'] = array(
+    'name' => 'administer fields',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'field',
+  );
+
   // Exported permission: 'administer file types'.
   $permissions['administer file types'] = array(
     'name' => 'administer file types',
@@ -292,6 +375,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'administer files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -347,6 +431,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -375,6 +460,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['administer nefo configuration'] = array(
     'name' => 'administer nefo configuration',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -386,6 +472,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'administer nefo institutions',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -397,6 +484,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -447,6 +535,106 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'profile2',
+  );
+
+  // Exported permission: 'administer redhen'.
+  $permissions['administer redhen'] = array(
+    'name' => 'administer redhen',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen',
+  );
+
+  // Exported permission: 'administer redhen contacts'.
+  $permissions['administer redhen contacts'] = array(
+    'name' => 'administer redhen contacts',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
+  );
+
+  // Exported permission: 'administer redhen engagements'.
+  $permissions['administer redhen engagements'] = array(
+    'name' => 'administer redhen engagements',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_engagement',
+  );
+
+  // Exported permission: 'administer redhen notes'.
+  $permissions['administer redhen notes'] = array(
+    'name' => 'administer redhen notes',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_note',
+  );
+
+  // Exported permission: 'administer redhen orgs'.
+  $permissions['administer redhen orgs'] = array(
+    'name' => 'administer redhen orgs',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
+  // Exported permission: 'administer redhen_contact types'.
+  $permissions['administer redhen_contact types'] = array(
+    'name' => 'administer redhen_contact types',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
+  );
+
+  // Exported permission: 'administer redhen_org types'.
+  $permissions['administer redhen_org types'] = array(
+    'name' => 'administer redhen_org types',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
+  // Exported permission: 'administer relation roles'.
+  $permissions['administer relation roles'] = array(
+    'name' => 'administer relation roles',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_relation',
+  );
+
+  // Exported permission: 'administer relation types'.
+  $permissions['administer relation types'] = array(
+    'name' => 'administer relation types',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'relation',
+  );
+
+  // Exported permission: 'administer relations'.
+  $permissions['administer relations'] = array(
+    'name' => 'administer relations',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'relation',
   );
 
   // Exported permission: 'administer scheduler'.
@@ -565,6 +753,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['administer views'] = array(
     'name' => 'administer views',
     'roles' => array(
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'views',
@@ -583,6 +772,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['bypass file access'] = array(
     'name' => 'bypass file access',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -611,6 +801,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -622,6 +813,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -642,10 +834,22 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'create beh_rde orgs'.
+  $permissions['create beh_rde orgs'] = array(
+    'name' => 'create beh_rde orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
   );
 
   // Exported permission: 'create blog content'.
@@ -653,10 +857,22 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create blog content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'create fachgesellschaft_akademie orgs'.
+  $permissions['create fachgesellschaft_akademie orgs'] = array(
+    'name' => 'create fachgesellschaft_akademie orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
   );
 
   // Exported permission: 'create files'.
@@ -664,10 +880,44 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'create forschungsinstitution orgs'.
+  $permissions['create forschungsinstitution orgs'] = array(
+    'name' => 'create forschungsinstitution orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
+  // Exported permission: 'create forschungsnetzwerk orgs'.
+  $permissions['create forschungsnetzwerk orgs'] = array(
+    'name' => 'create forschungsnetzwerk orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
+  // Exported permission: 'create medien orgs'.
+  $permissions['create medien orgs'] = array(
+    'name' => 'create medien orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
   );
 
   // Exported permission: 'create nefo_event content'.
@@ -675,6 +925,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_event content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -686,6 +937,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_news content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -697,6 +949,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -708,6 +961,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_factsheet content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -719,6 +973,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_interview content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -730,6 +985,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_literature_tip content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -741,6 +997,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_opinion content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -752,6 +1009,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_press_release content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -763,6 +1021,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_report content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -774,6 +1033,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_study content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -785,6 +1045,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_product_workshop content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -796,6 +1057,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -807,6 +1069,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create nefo_slideshow content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -818,10 +1081,43 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'create partei orgs'.
+  $permissions['create partei orgs'] = array(
+    'name' => 'create partei orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
+  // Exported permission: 'create relations'.
+  $permissions['create relations'] = array(
+    'name' => 'create relations',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'relation',
+  );
+
+  // Exported permission: 'create unternehmen orgs'.
+  $permissions['create unternehmen orgs'] = array(
+    'name' => 'create unternehmen orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
   );
 
   // Exported permission: 'create url aliases'.
@@ -829,10 +1125,22 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'create url aliases',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: 'create verband_ngo orgs'.
+  $permissions['create verband_ngo orgs'] = array(
+    'name' => 'create verband_ngo orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
   );
 
   // Exported permission: 'customize shortcut links'.
@@ -849,6 +1157,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -869,6 +1178,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any blog content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -880,6 +1190,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any document files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -891,6 +1202,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any image files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -902,6 +1214,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_event content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -913,6 +1226,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_news content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -924,6 +1238,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -935,6 +1250,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_factsheet content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -946,6 +1262,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_interview content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -957,6 +1274,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_literature_tip content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -968,6 +1286,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_opinion content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -979,6 +1298,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_press_release content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -990,6 +1310,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_report content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1001,6 +1322,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_study content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1012,6 +1334,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_product_workshop content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1023,6 +1346,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1034,6 +1358,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any nefo_slideshow content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1045,6 +1370,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1056,6 +1382,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete any video files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1067,6 +1394,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1087,6 +1415,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own blog content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1098,6 +1427,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own document files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1109,6 +1439,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1120,6 +1451,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_event content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1131,6 +1463,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_news content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1142,6 +1475,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1153,6 +1487,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_factsheet content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1164,6 +1499,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_interview content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1175,6 +1511,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_literature_tip content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1186,6 +1523,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_opinion content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1197,6 +1535,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_press_release content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1208,6 +1547,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_report content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1219,6 +1559,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_study content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1230,6 +1571,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_product_workshop content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1241,6 +1583,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1252,6 +1595,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own nefo_slideshow content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1263,6 +1607,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own page content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1274,10 +1619,51 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'delete own video files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete redhen contact connections'.
+  $permissions['delete redhen contact connections'] = array(
+    'name' => 'delete redhen contact connections',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_relation',
+  );
+
+  // Exported permission: 'delete redhen contact revisions'.
+  $permissions['delete redhen contact revisions'] = array(
+    'name' => 'delete redhen contact revisions',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
+  );
+
+  // Exported permission: 'delete redhen org connections'.
+  $permissions['delete redhen org connections'] = array(
+    'name' => 'delete redhen org connections',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_relation',
+  );
+
+  // Exported permission: 'delete relations'.
+  $permissions['delete relations'] = array(
+    'name' => 'delete relations',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'relation',
   );
 
   // Exported permission: 'delete revisions'.
@@ -1302,6 +1688,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['delete terms in nefo_schlagworte'] = array(
     'name' => 'delete terms in nefo_schlagworte',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1335,6 +1722,15 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'delete terms in note_type'.
+  $permissions['delete terms in note_type'] = array(
+    'name' => 'delete terms in note_type',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -1358,6 +1754,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'download any document files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1369,6 +1766,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'download any image files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1380,6 +1778,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'download any video files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1400,6 +1799,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'download own document files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1411,6 +1811,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'download own image files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1422,6 +1823,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'download own video files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1433,6 +1835,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1453,6 +1856,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any blog content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1464,6 +1868,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any document files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1475,6 +1880,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any image files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1495,6 +1901,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_event content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1506,6 +1913,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_news content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1517,6 +1925,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1528,6 +1937,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_factsheet content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1539,6 +1949,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_interview content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1550,6 +1961,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_literature_tip content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1561,6 +1973,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_opinion content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1572,6 +1985,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_press_release content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1583,6 +1997,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_report content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1594,6 +2009,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_study content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1605,6 +2021,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_product_workshop content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1616,6 +2033,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1627,6 +2045,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any nefo_slideshow content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1638,6 +2057,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1649,6 +2069,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any researcher profile',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1660,6 +2081,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit any video files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1671,6 +2093,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1691,6 +2114,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own blog content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1701,7 +2125,6 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
     'roles' => array(
-      'Author' => 'Author',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1713,6 +2136,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own document files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1724,6 +2148,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own image files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1745,6 +2170,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_event content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1756,6 +2182,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_news content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1767,6 +2194,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_article content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1778,6 +2206,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_factsheet content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1789,6 +2218,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_interview content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1800,6 +2230,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_literature_tip content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1811,6 +2242,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_opinion content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1822,6 +2254,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_press_release content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1833,6 +2266,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_report content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1844,6 +2278,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_study content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1855,6 +2290,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_product_workshop content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1866,6 +2302,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1877,6 +2314,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own nefo_slideshow content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1888,10 +2326,22 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit own redhen contact'.
+  $permissions['edit own redhen contact'] = array(
+    'name' => 'edit own redhen contact',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
   );
 
   // Exported permission: 'edit own researcher profile'.
@@ -1899,6 +2349,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own researcher profile',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
       'researcher' => 'researcher',
@@ -1911,10 +2362,53 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit own video files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit redhen contact connections'.
+  $permissions['edit redhen contact connections'] = array(
+    'name' => 'edit redhen contact connections',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_relation',
+  );
+
+  // Exported permission: 'edit redhen contact revisions'.
+  $permissions['edit redhen contact revisions'] = array(
+    'name' => 'edit redhen contact revisions',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
+  );
+
+  // Exported permission: 'edit redhen org connections'.
+  $permissions['edit redhen org connections'] = array(
+    'name' => 'edit redhen org connections',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_relation',
+  );
+
+  // Exported permission: 'edit relations'.
+  $permissions['edit relations'] = array(
+    'name' => 'edit relations',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'relation',
   );
 
   // Exported permission: 'edit terms in event_types'.
@@ -1931,6 +2425,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'edit terms in nefo_schlagworte',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -1965,10 +2460,29 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'edit terms in note_type'.
+  $permissions['edit terms in note_type'] = array(
+    'name' => 'edit terms in note_type',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'export relation types'.
+  $permissions['export relation types'] = array(
+    'name' => 'export relation types',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'relation',
+  );
+
   // Exported permission: 'flush caches'.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2092,6 +2606,49 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'features',
   );
 
+  // Exported permission: 'manage redhen contacts'.
+  $permissions['manage redhen contacts'] = array(
+    'name' => 'manage redhen contacts',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
+  );
+
+  // Exported permission: 'manage redhen notes'.
+  $permissions['manage redhen notes'] = array(
+    'name' => 'manage redhen notes',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_note',
+  );
+
+  // Exported permission: 'manage redhen org revisions'.
+  $permissions['manage redhen org revisions'] = array(
+    'name' => 'manage redhen org revisions',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
+  // Exported permission: 'manage redhen orgs'.
+  $permissions['manage redhen orgs'] = array(
+    'name' => 'manage redhen orgs',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_org',
+  );
+
   // Exported permission: 'notify of path changes'.
   $permissions['notify of path changes'] = array(
     'name' => 'notify of path changes',
@@ -2133,6 +2690,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['schedule publishing of nodes'] = array(
     'name' => 'schedule publishing of nodes',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2194,6 +2752,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['translate content'] = array(
     'name' => 'translate content',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2204,6 +2763,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['translate interface'] = array(
     'name' => 'translate interface',
     'roles' => array(
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2224,6 +2784,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'use advanced search',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2244,10 +2805,20 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'use media wysiwyg',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'media_wysiwyg',
+  );
+
+  // Exported permission: 'use relation import'.
+  $permissions['use relation import'] = array(
+    'name' => 'use relation import',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'relation',
   );
 
   // Exported permission: 'use text format filtered_html'.
@@ -2266,6 +2837,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2277,6 +2849,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'view any main profile',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2316,6 +2889,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'view own files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2337,10 +2911,22 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'view own private files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'view own redhen contact'.
+  $permissions['view own redhen contact'] = array(
+    'name' => 'view own redhen contact',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
   );
 
   // Exported permission: 'view own researcher profile'.
@@ -2348,6 +2934,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'view own researcher profile',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
       'researcher' => 'researcher',
@@ -2360,6 +2947,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2371,10 +2959,43 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'view private files',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'view redhen contact connections'.
+  $permissions['view redhen contact connections'] = array(
+    'name' => 'view redhen contact connections',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_relation',
+  );
+
+  // Exported permission: 'view redhen contact revisions'.
+  $permissions['view redhen contact revisions'] = array(
+    'name' => 'view redhen contact revisions',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_contact',
+  );
+
+  // Exported permission: 'view redhen org connections'.
+  $permissions['view redhen org connections'] = array(
+    'name' => 'view redhen org connections',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'redhen_relation',
   );
 
   // Exported permission: 'view revisions'.
@@ -2391,6 +3012,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'view scheduled content',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
@@ -2402,6 +3024,7 @@ function nefo_berechtigungen_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'Author' => 'Author',
+      'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
