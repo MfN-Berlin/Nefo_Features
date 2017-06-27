@@ -2473,6 +2473,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['export relation types'] = array(
     'name' => 'export relation types',
     'roles' => array(
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'relation',
@@ -2816,6 +2817,7 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['use relation import'] = array(
     'name' => 'use relation import',
     'roles' => array(
+      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'relation',
