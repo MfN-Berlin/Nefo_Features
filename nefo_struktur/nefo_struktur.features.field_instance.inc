@@ -791,7 +791,7 @@ function nefo_struktur_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -894,7 +894,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -951,7 +951,45 @@ function nefo_struktur_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-nefo_news-field_nefo_taxonomy_tags'.
+  $field_instances['node-nefo_news-field_nefo_taxonomy_tags'] = array(
+    'bundle' => 'nefo_news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Mehrfachauswahl möglich.',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_taxonomy_tags',
+    'label' => 'Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 2,
     ),
   );
 

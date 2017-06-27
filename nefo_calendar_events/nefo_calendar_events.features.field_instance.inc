@@ -143,7 +143,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'ical' => array(
         'label' => 'above',
@@ -223,12 +223,59 @@ function nefo_calendar_events_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-nefo_event-field_nefo_taxonomy_tags'.
+  $field_instances['node-nefo_event-field_nefo_taxonomy_tags'] = array(
+    'bundle' => 'nefo_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Mehrfachauswahl möglich.',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'i18n_taxonomy',
+        'settings' => array(),
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_taxonomy_tags',
+    'label' => 'Unsere Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 36,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Beschreibung');
   t('Datum');
   t('Kategorie');
+  t('Mehrfachauswahl möglich.');
   t('Ort');
+  t('Unsere Themen');
 
   return $field_instances;
 }

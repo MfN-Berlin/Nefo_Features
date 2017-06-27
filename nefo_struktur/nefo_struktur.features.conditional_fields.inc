@@ -10,6 +10,123 @@
 function nefo_struktur_conditional_fields_default_fields() {
   $items = array();
 
+  $items["node:nefo_news:0"] = array(
+    'entity' => 'node',
+    'bundle' => 'nefo_news',
+    'dependent' => 'field_nefo_taxonomy_tags',
+    'dependee' => 'field_nefo_news_category',
+    'options' => array(
+      'state' => 'visible',
+      'condition' => 'value',
+      'grouping' => 'AND',
+      'effect' => 'show',
+      'effect_options' => array(),
+      'element_view' => array(
+        1 => 1,
+        2 => 2,
+        5 => 0,
+        3 => 0,
+        4 => 0,
+      ),
+      'element_view_per_role' => 0,
+      'element_view_roles' => array(
+        1 => array(
+          1 => 1,
+          2 => 2,
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        2 => array(
+          1 => 1,
+          2 => 2,
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        5 => array(
+          1 => 1,
+          2 => 2,
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        6 => array(
+          1 => 1,
+          2 => 2,
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        7 => array(
+          1 => 1,
+          2 => 2,
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        4 => array(
+          1 => 1,
+          2 => 2,
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        3 => array(
+          1 => 1,
+          2 => 2,
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+      ),
+      'element_edit' => array(
+        1 => 1,
+        3 => 0,
+      ),
+      'element_edit_per_role' => 0,
+      'element_edit_roles' => array(
+        1 => array(
+          1 => 1,
+          3 => 0,
+        ),
+        2 => array(
+          1 => 1,
+          3 => 0,
+        ),
+        5 => array(
+          1 => 1,
+          3 => 0,
+        ),
+        6 => array(
+          1 => 1,
+          3 => 0,
+        ),
+        7 => array(
+          1 => 1,
+          3 => 0,
+        ),
+        4 => array(
+          1 => 1,
+          3 => 0,
+        ),
+        3 => array(
+          1 => 1,
+          3 => 0,
+        ),
+      ),
+      'selector' => '',
+      'values_set' => 1,
+      'value_form' => 40,
+      'value' => array(
+        0 => array(
+          'tid' => 40,
+        ),
+      ),
+      'values' => array(),
+    ),
+  );
+
   $items["node:nefo_product_factsheet:0"] = array(
     'entity' => 'node',
     'bundle' => 'nefo_product_factsheet',
