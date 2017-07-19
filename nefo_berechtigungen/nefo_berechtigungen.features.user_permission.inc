@@ -256,6 +256,15 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'media_internet',
   );
 
+  // Exported permission: 'admin node search exlusions'.
+  $permissions['admin node search exlusions'] = array(
+    'name' => 'admin node search exlusions',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'search_config',
+  );
+
   // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
@@ -2698,6 +2707,47 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'scheduler',
   );
 
+  // Exported permission: 'search all content'.
+  $permissions['search all content'] = array(
+    'name' => 'search all content',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search all excluded entities'.
+  $permissions['search all excluded entities'] = array(
+    'name' => 'search all excluded entities',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search article content'.
+  $permissions['search article content'] = array(
+    'name' => 'search article content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search blog content'.
+  $permissions['search blog content'] = array(
+    'name' => 'search blog content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
   // Exported permission: 'search content'.
   $permissions['search content'] = array(
     'name' => 'search content',
@@ -2709,6 +2759,162 @@ function nefo_berechtigungen_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: 'search nefo_event content'.
+  $permissions['search nefo_event content'] = array(
+    'name' => 'search nefo_event content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_news content'.
+  $permissions['search nefo_news content'] = array(
+    'name' => 'search nefo_news content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_article content'.
+  $permissions['search nefo_product_article content'] = array(
+    'name' => 'search nefo_product_article content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_factsheet content'.
+  $permissions['search nefo_product_factsheet content'] = array(
+    'name' => 'search nefo_product_factsheet content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_interview content'.
+  $permissions['search nefo_product_interview content'] = array(
+    'name' => 'search nefo_product_interview content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_literature_tip content'.
+  $permissions['search nefo_product_literature_tip content'] = array(
+    'name' => 'search nefo_product_literature_tip content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_opinion content'.
+  $permissions['search nefo_product_opinion content'] = array(
+    'name' => 'search nefo_product_opinion content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_press_release content'.
+  $permissions['search nefo_product_press_release content'] = array(
+    'name' => 'search nefo_product_press_release content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_report content'.
+  $permissions['search nefo_product_report content'] = array(
+    'name' => 'search nefo_product_report content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_study content'.
+  $permissions['search nefo_product_study content'] = array(
+    'name' => 'search nefo_product_study content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_product_workshop content'.
+  $permissions['search nefo_product_workshop content'] = array(
+    'name' => 'search nefo_product_workshop content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_slide_products content'.
+  $permissions['search nefo_slide_products content'] = array(
+    'name' => 'search nefo_slide_products content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_slideshow content'.
+  $permissions['search nefo_slideshow content'] = array(
+    'name' => 'search nefo_slideshow content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search page content'.
+  $permissions['search page content'] = array(
+    'name' => 'search page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
   );
 
   // Exported permission: 'select account cancellation method'.
