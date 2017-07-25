@@ -20,6 +20,7 @@ dependencies[] = uuid
 dependencies[] = uuid_features
 dependencies[] = uuid_path
 dependencies[] = views
+dependencies[] = views_ef_fieldset
 dependencies[] = views_fieldsets
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0

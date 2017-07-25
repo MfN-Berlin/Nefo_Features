@@ -32,6 +32,7 @@ dependencies[] = text
 dependencies[] = uuid
 dependencies[] = uuid_features
 dependencies[] = views
+dependencies[] = views_ef_fieldset
 features[conditional_fields][] = node:nefo_news
 features[conditional_fields][] = node:nefo_product_factsheet
 features[conditional_fields][] = node:nefo_product_report
