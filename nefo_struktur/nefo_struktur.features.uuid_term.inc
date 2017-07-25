@@ -85,7 +85,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Marine Biologie',
-    'description' => '',
+    'description' => '<p style="text-align: justify;">Ein Großteil der Biodiversitätsforschung konzentriert sich auf die terrestrischen (an Land befindlichen) Ökosysteme und deren Arten. Dazu gehören auch die Binnengewässer. Trotzdem aber besteht die Erdoberfläche zu 2/3 aus Meeren - marinen Ökosystemen. Verschiedene deutsche Forschungsinstitute forschen in aller Welt an der marinen Biologie - aber auch Deutschland selbst hat mit der Ost- und der Nordsee zwei Meere direkt an seine Landfläche angrenzend. So dürfen und wollen wir die marine Biologie als Teil der deutschen Biodiversitätsforschung nicht vernachlässigen.</p>',
     'format' => 'full_html',
     'weight' => 11,
     'uuid' => '2115c9a6-4168-477f-ab0c-e9a12b3901d1',
@@ -104,7 +104,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'SDGs',
-    'description' => '',
+    'description' => '<p style="text-align: justify;">Die <a href="http://www.biodiversity.de/ziele-fuer-nachhaltige-entwicklung" target="_blank">Ziele für nachhaltige Entwicklung</a> (Sustainable Development Goals, SDGs) wurden 2015 von den Vereinten Nationen ausgerufen. Insgesamt 17 Ziele sollen für ein gesellschaftliches Gleichgewicht sorgen und die Welt für alle Menschen gleichermaßen nutzbar machen. So behandeln die Ziele 14 und 15 den Schutz und die nachhaltige Nutzung der biologischen Vielfalt in marinen und terrestrischen Ökosystemen.</p>',
     'format' => 'full_html',
     'weight' => 6,
     'uuid' => '235751a0-ba02-463e-a34d-66babb1d33d7',
@@ -326,7 +326,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Synthetische Biologie',
-    'description' => '',
+    'description' => '<p style="text-align: justify;">Synthetische Biologie handelt von der genetisch modifizierten Biologie. Durch technisch immer mehr innovative Methoden ist die Biologie zunehmend in der Lage, Gene zu modifizieren und damit Arten bspw. resistenter ggü. Schädlingen zu machen. Auch ein Wiederzurückholen von ausgestorbenen Arten könnte mithilfe der synthetischen Biologie möglich werden. So ist die synthetische Biologie in den letzten Jahren ein fester Bestandteil der Agenda der Biodiversitäts-Konvention CBD geworden, um die Anwendung der synthetischen Biologie (und das Aufstreben dieser neuen Fach-Disziplin) zu steuern und regulieren.</p>',
     'format' => 'full_html',
     'weight' => 9,
     'uuid' => '90abfbde-e61a-44ec-af06-3b8acd24f6a7',
@@ -364,7 +364,7 @@ function nefo_struktur_uuid_features_default_terms() {
   );
   $terms[] = array(
     'name' => 'Urbane Biodiversität',
-    'description' => '',
+    'description' => '<p style="text-align: justify;">Urbane Biodiversität bezeichnet die Vielfalt an Tier- und Pflanzenarten in Städten und Dörfern. Aufgrund zunehmender Urbanisierung und Landschaftszerschneidung müssen insbesondere Tiere immer häufiger den Weg in dörfliche und städtische (urbane) lebensräume auf sich nehmen auf der Suche nach Futter und Schutz. So ist die urbane Biodiversität in den letzten Jahren zu einer wichtigen Teildisziplin der Biodiversitätsforschung geworden. Nicht nur Wissenschaftler selbst, sondern auch Bürgerwissenschaftler (Citizen Scientists) sind zunehmend an der Forschung an urbaner Biodiversität beteiligt.</p>',
     'format' => 'full_html',
     'weight' => 10,
     'uuid' => 'a80fb8c0-4e9f-4426-b0d1-649477587442',
