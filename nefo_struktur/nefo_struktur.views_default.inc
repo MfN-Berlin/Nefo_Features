@@ -2718,7 +2718,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['delta_offset'] = '0';
   /* Feld: Inhalt: Full Body */
   $handler->display->display_options['fields']['body_1']['id'] = 'body_1';
@@ -3025,6 +3024,7 @@ function nefo_struktur_views_default_views() {
         'description' => '',
         'collapsible' => 0,
         'collapsed' => 0,
+        'collapsed_if_no_exposed_input' => 0,
       ),
       'container-2' => array(
         'weight' => '2',
@@ -3035,8 +3035,9 @@ function nefo_struktur_views_default_views() {
         'container_type' => 'fieldset',
         'title' => 'Kategorie',
         'description' => '',
-        'collapsible' => 1,
-        'collapsed' => 1,
+        'collapsible' => 0,
+        'collapsed' => 0,
+        'collapsed_if_no_exposed_input' => 0,
       ),
       'field_nefo_news_category_tid' => array(
         'weight' => '-11',
@@ -3056,6 +3057,7 @@ function nefo_struktur_views_default_views() {
         'description' => '',
         'collapsible' => 1,
         'collapsed' => 1,
+        'collapsed_if_no_exposed_input' => 0,
       ),
       'field_nefo_taxonomy_tags_tid' => array(
         'weight' => '-11',
@@ -3073,8 +3075,9 @@ function nefo_struktur_views_default_views() {
         'container_type' => 'fieldset',
         'title' => 'Textsuche',
         'description' => '',
-        'collapsible' => 1,
-        'collapsed' => 1,
+        'collapsible' => 0,
+        'collapsed' => 0,
+        'collapsed_if_no_exposed_input' => 0,
       ),
       'combine' => array(
         'weight' => '-11',
@@ -3094,6 +3097,7 @@ function nefo_struktur_views_default_views() {
         'description' => '',
         'collapsible' => 0,
         'collapsed' => 0,
+        'collapsed_if_no_exposed_input' => 0,
       ),
       'submit' => array(
         'weight' => '-11',
@@ -3120,6 +3124,7 @@ function nefo_struktur_views_default_views() {
         'description' => '',
         'collapsible' => 0,
         'collapsed' => 0,
+        'collapsed_if_no_exposed_input' => 0,
       ),
     ),
   );
