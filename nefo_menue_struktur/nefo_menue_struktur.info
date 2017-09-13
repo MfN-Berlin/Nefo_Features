@@ -114,7 +114,6 @@ features[menu_links][] = main-menu_studien:schnittstellen/produkte/studien
 features[menu_links][] = main-menu_synthetische-biologie:taxonomy/term/72
 features[menu_links][] = main-menu_unsere-themen:node/44
 features[menu_links][] = main-menu_urbane-biodiversitt:taxonomy/term/73
-features[menu_links][] = main-menu_videos:node/735
 features[menu_links][] = main-menu_was-sind-schnittstellen:node/35
 features[menu_links][] = main-menu_was-wir-machen:node/80
 features[menu_links][] = main-menu_weitere-informationen-zu-ipbes:node/68

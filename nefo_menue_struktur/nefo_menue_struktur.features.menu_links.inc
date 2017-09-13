@@ -1719,7 +1719,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 0,
     'weight' => -41,
     'customized' => 1,
@@ -2092,28 +2092,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-themen:node/44',
-  );
-  // Exported menu link: main-menu_videos:node/735.
-  $menu_links['main-menu_videos:node/735'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/735',
-    'router_path' => 'node/%',
-    'link_title' => 'Videos',
-    'options' => array(
-      'node_type' => 'page',
-      'alter' => TRUE,
-      'identifier' => 'main-menu_videos:node/735',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -42,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
   );
   // Exported menu link: main-menu_was-sind-schnittstellen:node/35.
   $menu_links['main-menu_was-sind-schnittstellen:node/35'] = array(
@@ -3386,7 +3364,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Synthetische Biologie');
   t('Unsere Themen');
   t('Urbane Biodiversität');
-  t('Videos');
   t('Was sind Schnittstellen?');
   t('Was wir machen');
   t('Weitere Informationen');
