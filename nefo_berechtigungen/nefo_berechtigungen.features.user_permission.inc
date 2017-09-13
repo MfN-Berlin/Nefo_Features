@@ -1085,6 +1085,18 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create nefo_video content'.
+  $permissions['create nefo_video content'] = array(
+    'name' => 'create nefo_video content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
@@ -1374,6 +1386,18 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any nefo_video content'.
+  $permissions['delete any nefo_video content'] = array(
+    'name' => 'delete any nefo_video content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
@@ -1602,6 +1626,18 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'delete own nefo_slideshow content'.
   $permissions['delete own nefo_slideshow content'] = array(
     'name' => 'delete own nefo_slideshow content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own nefo_video content'.
+  $permissions['delete own nefo_video content'] = array(
+    'name' => 'delete own nefo_video content',
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
@@ -2061,6 +2097,18 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any nefo_video content'.
+  $permissions['edit any nefo_video content'] = array(
+    'name' => 'edit any nefo_video content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
@@ -2321,6 +2369,18 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'edit own nefo_slideshow content'.
   $permissions['edit own nefo_slideshow content'] = array(
     'name' => 'edit own nefo_slideshow content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own nefo_video content'.
+  $permissions['edit own nefo_video content'] = array(
+    'name' => 'edit own nefo_video content',
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',

@@ -286,5 +286,59 @@ function nefo_struktur_file_default_displays() {
   );
   $export['image__media_nefo_cover_photo__media_oembed_thumbnail'] = $file_display;
 
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'video__preview__file_field_file_download_link';
+  $file_display->weight = -46;
+  $file_display->status = FALSE;
+  $file_display->settings = array(
+    'text' => 'Download [file:name]',
+  );
+  $export['video__preview__file_field_file_download_link'] = $file_display;
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'video__preview__file_field_file_table';
+  $file_display->weight = -50;
+  $file_display->status = FALSE;
+  $file_display->settings = '';
+  $export['video__preview__file_field_file_table'] = $file_display;
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'video__preview__file_field_file_url_plain';
+  $file_display->weight = -49;
+  $file_display->status = FALSE;
+  $file_display->settings = '';
+  $export['video__preview__file_field_file_url_plain'] = $file_display;
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'video__preview__file_field_file_video';
+  $file_display->weight = -48;
+  $file_display->status = FALSE;
+  $file_display->settings = array(
+    'controls' => 1,
+    'autoplay' => 0,
+    'loop' => 0,
+    'muted' => 0,
+    'width' => '',
+    'height' => '',
+    'preload' => '',
+    'multiple_file_behavior' => 'tags',
+  );
+  $export['video__preview__file_field_file_video'] = $file_display;
+
+  $file_display = new stdClass();
+  $file_display->api_version = 1;
+  $file_display->name = 'video__preview__media_oembed';
+  $file_display->weight = -47;
+  $file_display->status = FALSE;
+  $file_display->settings = array(
+    'width' => '640',
+    'height' => '360',
+  );
+  $export['video__preview__media_oembed'] = $file_display;
+
   return $export;
 }
