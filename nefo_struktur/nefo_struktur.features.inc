@@ -194,7 +194,7 @@ function nefo_struktur_node_info() {
     'nefo_news' => array(
       'name' => t('NeFo-News'),
       'base' => 'node_content',
-      'description' => t('Bio-Div und IPBES Nachrichten'),
+      'description' => t('Bio-Div- und IPBES-Nachrichten, NeFo-Pressemitteilungen'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
@@ -235,14 +235,6 @@ function nefo_struktur_node_info() {
       'name' => t('NeFo-Produkt Stellungnahme'),
       'base' => 'node_content',
       'description' => t('NeFo-Stellungnahmen'),
-      'has_title' => '1',
-      'title_label' => t('Titel'),
-      'help' => '',
-    ),
-    'nefo_product_press_release' => array(
-      'name' => t('NeFo-Produkt Pressemitteilung'),
-      'base' => 'node_content',
-      'description' => t('NeFo-Pressemitteilungen (Top-Menü: Presse)'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
@@ -292,7 +284,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('NeFo-Video'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'page' => array(

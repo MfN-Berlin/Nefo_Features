@@ -176,6 +176,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'NeFo-Pressemitteilung',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 2,
+    'uuid' => '3394a13c-24e3-4573-aaa6-0f00beff43d9',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_news',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'presse',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'IPBES-1 Bonn 2013',
     'description' => '<p>IPBES-1 vom 21.-26.01.2013 in Bonn</p><p>IPBES BlogIn Bonn traf sich die Weltgemeinschaft zur ersten Plenarsitzung der "Intergovernmental Platform on Biodiversity &amp; Ecosystem Services" (IPBES).</p><p>Experten aus der deutschen Biodiversitätsforschung sowie das nefo logo text-Team waren vor Ort und berichteten täglich von den aktuellen Entwicklungen.</p>',
     'format' => 'full_html',

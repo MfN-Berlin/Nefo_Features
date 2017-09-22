@@ -1013,18 +1013,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create nefo_product_press_release content'.
-  $permissions['create nefo_product_press_release content'] = array(
-    'name' => 'create nefo_product_press_release content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create nefo_product_report content'.
   $permissions['create nefo_product_report content'] = array(
     'name' => 'create nefo_product_report content',
@@ -1314,18 +1302,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any nefo_product_press_release content'.
-  $permissions['delete any nefo_product_press_release content'] = array(
-    'name' => 'delete any nefo_product_press_release content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any nefo_product_report content'.
   $permissions['delete any nefo_product_report content'] = array(
     'name' => 'delete any nefo_product_report content',
@@ -1554,18 +1530,6 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'delete own nefo_product_opinion content'.
   $permissions['delete own nefo_product_opinion content'] = array(
     'name' => 'delete own nefo_product_opinion content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own nefo_product_press_release content'.
-  $permissions['delete own nefo_product_press_release content'] = array(
-    'name' => 'delete own nefo_product_press_release content',
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
@@ -2025,18 +1989,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any nefo_product_press_release content'.
-  $permissions['edit any nefo_product_press_release content'] = array(
-    'name' => 'edit any nefo_product_press_release content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any nefo_product_report content'.
   $permissions['edit any nefo_product_report content'] = array(
     'name' => 'edit any nefo_product_report content',
@@ -2297,18 +2249,6 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'edit own nefo_product_opinion content'.
   $permissions['edit own nefo_product_opinion content'] = array(
     'name' => 'edit own nefo_product_opinion content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own nefo_product_press_release content'.
-  $permissions['edit own nefo_product_press_release content'] = array(
-    'name' => 'edit own nefo_product_press_release content',
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
@@ -2890,17 +2830,6 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'search nefo_product_opinion content'.
   $permissions['search nefo_product_opinion content'] = array(
     'name' => 'search nefo_product_opinion content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'search_config',
-  );
-
-  // Exported permission: 'search nefo_product_press_release content'.
-  $permissions['search nefo_product_press_release content'] = array(
-    'name' => 'search nefo_product_press_release content',
     'roles' => array(
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',

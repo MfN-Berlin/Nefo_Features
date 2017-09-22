@@ -794,6 +794,49 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-nefo_news-field_internal_link'.
+  $field_instances['node-nefo_news-field_internal_link'] = array(
+    'bundle' => 'nefo_news',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_internal_link',
+    'label' => 'Weitere NeFo-Beiträge zum Thema',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference_view_widget',
+      'settings' => array(
+        'allow_duplicates' => 0,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_node_composite_title|entityreference_view_widget_1',
+        'view_mode' => 'full',
+      ),
+      'type' => 'entityreference_view_widget',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-nefo_news-field_nefo_news_category'.
   $field_instances['node-nefo_news-field_nefo_news_category'] = array(
     'bundle' => 'nefo_news',
@@ -965,7 +1008,7 @@ function nefo_struktur_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2087,203 +2130,6 @@ function nefo_struktur_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nefo_taxonomy_tags',
-    'label' => 'Themen',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 1,
-      ),
-      'type' => 'options_select',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-nefo_product_press_release-body'.
-  $field_instances['node-nefo_product_press_release-body'] = array(
-    'bundle' => 'nefo_product_press_release',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Pressemitteilung',
-    'required' => 1,
-    'settings' => array(
-      'display_summary' => 1,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => '',
-        'maxlength_js_enforce' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'maxlength_js_label_summary' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'maxlength_js_summary' => 450,
-        'maxlength_js_truncate_html' => 0,
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-nefo_product_press_release-field_internal_link'.
-  $field_instances['node-nefo_product_press_release-field_internal_link'] = array(
-    'bundle' => 'nefo_product_press_release',
-    'default_value' => array(),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_internal_link',
-    'label' => 'Weitere NeFo-Beiträge zum Thema',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference_view_widget',
-      'settings' => array(
-        'allow_duplicates' => 0,
-        'apply_chosen' => 1,
-        'close_modal' => 1,
-        'pass_argument' => 1,
-        'pass_arguments' => '',
-        'rendered_entity' => 0,
-        'view' => 'nefo_entityreference_node_composite_title|entityreference_view_widget_1',
-        'view_mode' => 'full',
-      ),
-      'type' => 'entityreference_view_widget',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-nefo_product_press_release-field_nefo_press_release_img'.
-  $field_instances['node-nefo_product_press_release-field_nefo_press_release_img'] = array(
-    'bundle' => 'nefo_product_press_release',
-    'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 800x450 Pixel',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'file_entity',
-        'settings' => array(
-          'file_view_mode' => 'media_nefo_cover_photo',
-        ),
-        'type' => 'file_rendered',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nefo_press_release_img',
-    'label' => 'Bild',
-    'required' => 1,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => 'products/press',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '800x450',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'oembed' => 0,
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 'upload',
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-nefo_product_press_release-field_nefo_taxonomy_tags'.
-  $field_instances['node-nefo_product_press_release-field_nefo_taxonomy_tags'] = array(
-    'bundle' => 'nefo_product_press_release',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Mehrfachauswahl möglich.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 3,
@@ -3669,7 +3515,6 @@ function nefo_struktur_field_default_field_instances() {
   t('NeFo-Berichte');
   t('PDF-Dokument');
   t('PNG, GIF, JPG, JPEG oder ein Bild aus dem Internet.');
-  t('Pressemitteilung');
   t('Schlagworte');
   t('Stellungnahme');
   t('Studie');
