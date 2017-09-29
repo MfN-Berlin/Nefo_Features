@@ -185,20 +185,20 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_ipbes:node/32',
   );
-  // Exported menu link: main-menu_berichte:schnittstellen/produkte/berichte.
-  $menu_links['main-menu_berichte:schnittstellen/produkte/berichte'] = array(
+  // Exported menu link: main-menu_berichte:taxonomy/term/79.
+  $menu_links['main-menu_berichte:taxonomy/term/79'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'schnittstellen/produkte/berichte',
-    'router_path' => 'schnittstellen/produkte/berichte',
+    'link_path' => 'taxonomy/term/79',
+    'router_path' => 'taxonomy/term/%',
     'link_title' => 'Berichte',
     'options' => array(
       'attributes' => array(
         'title' => 'Berichte',
       ),
       'alter' => TRUE,
-      'identifier' => 'main-menu_berichte:schnittstellen/produkte/berichte',
+      'identifier' => 'main-menu_berichte:taxonomy/term/79',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -633,20 +633,20 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_politik:node/14',
   );
-  // Exported menu link: main-menu_faktenbltter:schnittstellen/produkte/faktenblaetter.
-  $menu_links['main-menu_faktenbltter:schnittstellen/produkte/faktenblaetter'] = array(
+  // Exported menu link: main-menu_faktenbltter:taxonomy/term/76.
+  $menu_links['main-menu_faktenbltter:taxonomy/term/76'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'schnittstellen/produkte/faktenblaetter',
-    'router_path' => 'schnittstellen/produkte/faktenblaetter',
+    'link_path' => 'taxonomy/term/76',
+    'router_path' => 'taxonomy/term/%',
     'link_title' => 'Faktenblätter',
     'options' => array(
       'attributes' => array(
         'title' => 'Faktenblätter',
       ),
       'alter' => TRUE,
-      'identifier' => 'main-menu_faktenbltter:schnittstellen/produkte/faktenblaetter',
+      'identifier' => 'main-menu_faktenbltter:taxonomy/term/76',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -1972,20 +1972,20 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'und',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: main-menu_stellungnahmen:schnittstellen/produkte/stellungnahmen.
-  $menu_links['main-menu_stellungnahmen:schnittstellen/produkte/stellungnahmen'] = array(
+  // Exported menu link: main-menu_stellungnahmen:taxonomy/term/77.
+  $menu_links['main-menu_stellungnahmen:taxonomy/term/77'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'schnittstellen/produkte/stellungnahmen',
-    'router_path' => 'schnittstellen/produkte/stellungnahmen',
+    'link_path' => 'taxonomy/term/77',
+    'router_path' => 'taxonomy/term/%',
     'link_title' => 'Stellungnahmen',
     'options' => array(
       'attributes' => array(
         'title' => 'Stellungnahmen',
       ),
       'alter' => TRUE,
-      'identifier' => 'main-menu_stellungnahmen:schnittstellen/produkte/stellungnahmen',
+      'identifier' => 'main-menu_stellungnahmen:taxonomy/term/77',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -1996,20 +1996,20 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_nefo-produkte:node/13',
   );
-  // Exported menu link: main-menu_studien:schnittstellen/produkte/studien.
-  $menu_links['main-menu_studien:schnittstellen/produkte/studien'] = array(
+  // Exported menu link: main-menu_studien:taxonomy/term/78.
+  $menu_links['main-menu_studien:taxonomy/term/78'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'schnittstellen/produkte/studien',
-    'router_path' => 'schnittstellen/produkte/studien',
+    'link_path' => 'taxonomy/term/78',
+    'router_path' => 'taxonomy/term/%',
     'link_title' => 'Studien',
     'options' => array(
       'attributes' => array(
         'title' => 'Studien',
       ),
       'alter' => TRUE,
-      'identifier' => 'main-menu_studien:schnittstellen/produkte/studien',
+      'identifier' => 'main-menu_studien:taxonomy/term/78',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -2092,6 +2092,31 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-themen:node/44',
+  );
+  // Exported menu link: main-menu_videos:videos.
+  $menu_links['main-menu_videos:videos'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'videos',
+    'router_path' => 'videos',
+    'link_title' => 'Videos',
+    'options' => array(
+      'node_type' => 'page',
+      'alter' => TRUE,
+      'identifier' => 'main-menu_videos:videos',
+      'attributes' => array(
+        'title' => 'NeFo-Videos',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -42,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
   );
   // Exported menu link: main-menu_was-sind-schnittstellen:node/35.
   $menu_links['main-menu_was-sind-schnittstellen:node/35'] = array(
@@ -3120,34 +3145,10 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'en',
     'menu_links_customized' => 1,
-  );
-  // Exported menu link: menu-nefo-top-menu_eigene-pressemitteilungen:presse/pressemitteilungen.
-  $menu_links['menu-nefo-top-menu_eigene-pressemitteilungen:presse/pressemitteilungen'] = array(
-    'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'presse/pressemitteilungen',
-    'router_path' => 'presse',
-    'link_title' => 'Eigene Pressemitteilungen',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Eigene Pressemitteilungen',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_eigene-pressemitteilungen:presse/pressemitteilungen',
-    ),
-    'module' => 'system',
-    'hidden' => 1,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'menu-nefo-top-menu_presse:presse',
   );
   // Exported menu link: menu-nefo-top-menu_glossar:node/23.
   $menu_links['menu-nefo-top-menu_glossar:node/23'] = array(
@@ -3192,7 +3193,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -3216,7 +3217,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -3240,25 +3241,25 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'en',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-top-menu_presse:presse.
-  $menu_links['menu-nefo-top-menu_presse:presse'] = array(
+  // Exported menu link: menu-nefo-top-menu_presse:taxonomy/term/75.
+  $menu_links['menu-nefo-top-menu_presse:taxonomy/term/75'] = array(
     'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'presse',
-    'router_path' => 'presse',
+    'link_path' => 'taxonomy/term/75',
+    'router_path' => 'taxonomy/term/%',
     'link_title' => 'Presse',
     'options' => array(
       'attributes' => array(
         'title' => 'Presse',
       ),
       'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_presse:presse',
+      'identifier' => 'menu-nefo-top-menu_presse:taxonomy/term/75',
     ),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -3297,7 +3298,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('EKLIPSE - Mechanismus');
   t('EU-Mechanismus');
   t('EU-Netzwerk von Netzwerken als Basis');
-  t('Eigene Pressemitteilungen');
   t('Einbringen in die Forschung');
   t('Europäisch');
   t('Faktenblätter');
@@ -3364,6 +3364,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Synthetische Biologie');
   t('Unsere Themen');
   t('Urbane Biodiversität');
+  t('Videos');
   t('Was sind Schnittstellen?');
   t('Was wir machen');
   t('Weitere Informationen');
