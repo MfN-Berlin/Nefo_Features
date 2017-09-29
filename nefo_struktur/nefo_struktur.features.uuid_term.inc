@@ -160,6 +160,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Faktenblätter',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '2c74feaa-87f1-4548-972d-b740650f7c2e',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_document',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'produkte/faktenblaetter',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'CBD',
     'description' => NULL,
     'format' => NULL,
@@ -228,6 +247,63 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'blog/1-ipbes-nairobi-2011',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Stellungnahmen',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '3f96f38e-c3bd-4fc6-bc2c-805951774c59',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_document',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'produkte/stellungnahmen',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Studien',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '4d2d31a3-45b7-4909-ae01-ddfce11b34c5',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_document',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'produkte/studien',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Berichte',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '4eea507a-9333-4562-ad86-f90478089ebe',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_document',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'produkte/berichte',
         'language' => 'und',
       ),
     ),

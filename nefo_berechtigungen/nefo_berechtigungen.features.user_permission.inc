@@ -965,6 +965,18 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create nefo_product_document content'.
+  $permissions['create nefo_product_document content'] = array(
+    'name' => 'create nefo_product_document content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create nefo_product_factsheet content'.
   $permissions['create nefo_product_factsheet content'] = array(
     'name' => 'create nefo_product_factsheet content',
@@ -1254,6 +1266,18 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any nefo_product_document content'.
+  $permissions['delete any nefo_product_document content'] = array(
+    'name' => 'delete any nefo_product_document content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any nefo_product_factsheet content'.
   $permissions['delete any nefo_product_factsheet content'] = array(
     'name' => 'delete any nefo_product_factsheet content',
@@ -1482,6 +1506,18 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'delete own nefo_product_article content'.
   $permissions['delete own nefo_product_article content'] = array(
     'name' => 'delete own nefo_product_article content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own nefo_product_document content'.
+  $permissions['delete own nefo_product_document content'] = array(
+    'name' => 'delete own nefo_product_document content',
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
@@ -1941,6 +1977,18 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any nefo_product_document content'.
+  $permissions['edit any nefo_product_document content'] = array(
+    'name' => 'edit any nefo_product_document content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any nefo_product_factsheet content'.
   $permissions['edit any nefo_product_factsheet content'] = array(
     'name' => 'edit any nefo_product_factsheet content',
@@ -2201,6 +2249,18 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'edit own nefo_product_article content'.
   $permissions['edit own nefo_product_article content'] = array(
     'name' => 'edit own nefo_product_article content',
+    'roles' => array(
+      'Author' => 'Author',
+      'Editor' => 'Editor',
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own nefo_product_document content'.
+  $permissions['edit own nefo_product_document content'] = array(
+    'name' => 'edit own nefo_product_document content',
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
