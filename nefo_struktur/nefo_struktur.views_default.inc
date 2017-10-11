@@ -3732,5 +3732,502 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['nefo_view_list_workshop'] = $view;
 
+  $view = new view();
+  $view->name = 'nefo_view_vote_results';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'NeFo-Abstimmungsergebnisse';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'NeFo-Abstimmungsergebnisse';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'mehr';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    4 => '4',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Anwenden';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Zurücksetzen';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortieren nach';
+  $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Aufsteigend';
+  $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Absteigend';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '20';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_label'] = 'Elemente pro Seite';
+  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all_label'] = '- Alle -';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« erste Seite';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ vorherige Seite';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'nächste Seite ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'value_1' => 'value_1',
+    'value_2' => 'value_2',
+    'value_5' => 'value_5',
+    'value' => 'value',
+    'value_3' => 'value_3',
+    'timestamp' => 'timestamp',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value_1' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value_2' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value_5' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value_3' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'timestamp' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Relationship: Stimmenanzahl */
+  $handler->display->display_options['relationships']['votingapi_cache_4']['id'] = 'votingapi_cache_4';
+  $handler->display->display_options['relationships']['votingapi_cache_4']['table'] = 'node';
+  $handler->display->display_options['relationships']['votingapi_cache_4']['field'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache_4']['ui_name'] = 'Stimmenanzahl';
+  $handler->display->display_options['relationships']['votingapi_cache_4']['label'] = 'Stimmenanzahl';
+  $handler->display->display_options['relationships']['votingapi_cache_4']['required'] = TRUE;
+  $handler->display->display_options['relationships']['votingapi_cache_4']['votingapi'] = array(
+    'value_type' => 'points',
+    'tag' => 'vote',
+    'function' => 'count',
+  );
+  /* Relationship: Positive Stimmen */
+  $handler->display->display_options['relationships']['votingapi_cache']['id'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache']['table'] = 'node';
+  $handler->display->display_options['relationships']['votingapi_cache']['field'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache']['ui_name'] = 'Positive Stimmen';
+  $handler->display->display_options['relationships']['votingapi_cache']['label'] = 'Positive Stimmen';
+  $handler->display->display_options['relationships']['votingapi_cache']['votingapi'] = array(
+    'value_type' => 'points',
+    'tag' => 'vote',
+    'function' => 'positives',
+  );
+  /* Relationship: Negative Stimmen */
+  $handler->display->display_options['relationships']['votingapi_cache_1']['id'] = 'votingapi_cache_1';
+  $handler->display->display_options['relationships']['votingapi_cache_1']['table'] = 'node';
+  $handler->display->display_options['relationships']['votingapi_cache_1']['field'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache_1']['ui_name'] = 'Negative Stimmen';
+  $handler->display->display_options['relationships']['votingapi_cache_1']['label'] = 'Negative Stimmen';
+  $handler->display->display_options['relationships']['votingapi_cache_1']['votingapi'] = array(
+    'value_type' => 'points',
+    'tag' => 'vote',
+    'function' => 'negatives',
+  );
+  /* Relationship: Gesamtwertung */
+  $handler->display->display_options['relationships']['votingapi_cache_5']['id'] = 'votingapi_cache_5';
+  $handler->display->display_options['relationships']['votingapi_cache_5']['table'] = 'node';
+  $handler->display->display_options['relationships']['votingapi_cache_5']['field'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache_5']['ui_name'] = 'Gesamtwertung';
+  $handler->display->display_options['relationships']['votingapi_cache_5']['label'] = 'Gesamtwertung';
+  $handler->display->display_options['relationships']['votingapi_cache_5']['votingapi'] = array(
+    'value_type' => 'points',
+    'tag' => 'vote',
+    'function' => 'sum',
+  );
+  /* Relationship: Durchschnittliche Bewertung */
+  $handler->display->display_options['relationships']['votingapi_cache_2']['id'] = 'votingapi_cache_2';
+  $handler->display->display_options['relationships']['votingapi_cache_2']['table'] = 'node';
+  $handler->display->display_options['relationships']['votingapi_cache_2']['field'] = 'votingapi_cache';
+  $handler->display->display_options['relationships']['votingapi_cache_2']['ui_name'] = 'Durchschnittliche Bewertung';
+  $handler->display->display_options['relationships']['votingapi_cache_2']['label'] = 'Durchschnittliche Bewertung';
+  $handler->display->display_options['relationships']['votingapi_cache_2']['votingapi'] = array(
+    'value_type' => 'points',
+    'tag' => 'vote',
+    'function' => 'average',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Titel';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value_1']['id'] = 'value_1';
+  $handler->display->display_options['fields']['value_1']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_1']['field'] = 'value';
+  $handler->display->display_options['fields']['value_1']['relationship'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_1']['label'] = 'Positive';
+  $handler->display->display_options['fields']['value_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_1']['precision'] = '0';
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value_2']['id'] = 'value_2';
+  $handler->display->display_options['fields']['value_2']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_2']['field'] = 'value';
+  $handler->display->display_options['fields']['value_2']['relationship'] = 'votingapi_cache_1';
+  $handler->display->display_options['fields']['value_2']['label'] = 'Negative';
+  $handler->display->display_options['fields']['value_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_2']['precision'] = '0';
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value_5']['id'] = 'value_5';
+  $handler->display->display_options['fields']['value_5']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_5']['field'] = 'value';
+  $handler->display->display_options['fields']['value_5']['relationship'] = 'votingapi_cache_5';
+  $handler->display->display_options['fields']['value_5']['label'] = 'Gesamt';
+  $handler->display->display_options['fields']['value_5']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_5']['precision'] = '0';
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value']['id'] = 'value';
+  $handler->display->display_options['fields']['value']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value']['field'] = 'value';
+  $handler->display->display_options['fields']['value']['relationship'] = 'votingapi_cache_4';
+  $handler->display->display_options['fields']['value']['label'] = 'Stimmenanzahl';
+  $handler->display->display_options['fields']['value']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value']['precision'] = '0';
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value_3']['id'] = 'value_3';
+  $handler->display->display_options['fields']['value_3']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_3']['field'] = 'value';
+  $handler->display->display_options['fields']['value_3']['relationship'] = 'votingapi_cache_2';
+  $handler->display->display_options['fields']['value_3']['label'] = 'Durchschnitt';
+  $handler->display->display_options['fields']['value_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_3']['precision'] = '0';
+  /* Field: Anteil (+) */
+  $handler->display->display_options['fields']['value_4']['id'] = 'value_4';
+  $handler->display->display_options['fields']['value_4']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_4']['field'] = 'value';
+  $handler->display->display_options['fields']['value_4']['relationship'] = 'votingapi_cache_4';
+  $handler->display->display_options['fields']['value_4']['ui_name'] = 'Anteil (+)';
+  $handler->display->display_options['fields']['value_4']['label'] = 'Anteil (+)';
+  $handler->display->display_options['fields']['value_4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_4']['precision'] = '0';
+  /* Field: Anteil (-) */
+  $handler->display->display_options['fields']['value_6']['id'] = 'value_6';
+  $handler->display->display_options['fields']['value_6']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_6']['field'] = 'value';
+  $handler->display->display_options['fields']['value_6']['relationship'] = 'votingapi_cache_4';
+  $handler->display->display_options['fields']['value_6']['ui_name'] = 'Anteil (-)';
+  $handler->display->display_options['fields']['value_6']['label'] = 'Anteil (-)';
+  $handler->display->display_options['fields']['value_6']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_6']['precision'] = '0';
+  /* Field: Vote results: Timestamp */
+  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['relationship'] = 'votingapi_cache_4';
+  $handler->display->display_options['fields']['timestamp']['label'] = 'Zeitstempel';
+  $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['timestamp']['date_format'] = 'short';
+  $handler->display->display_options['fields']['timestamp']['second_date_format'] = 'long';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Abstimmungsergebnisse';
+  $handler->display->display_options['defaults']['exposed_form'] = FALSE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Anwenden';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Zurücksetzen';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'Sortieren nach';
+  $handler->display->display_options['exposed_form']['options']['sort_asc_label'] = 'Aufsteigend';
+  $handler->display->display_options['exposed_form']['options']['sort_desc_label'] = 'Absteigend';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'value_1' => 'value_1',
+    'value_2' => 'value_2',
+    'value_5' => 'value_5',
+    'value' => 'value',
+    'value_3' => 'value_3',
+    'timestamp' => 'timestamp',
+  );
+  $handler->display->display_options['style_options']['default'] = 'timestamp';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value_1' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value_2' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value_5' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'value_3' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'timestamp' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'desc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['operator'] = 'allwords';
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Titel';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
+    4 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['views_ef_fieldset']['options'] = array(
+    'sort' => array(
+      'root' => array(
+        'weight' => '0',
+        'type' => 'container',
+        'id' => 'root',
+        'pid' => '',
+        'depth' => 0,
+        'container_type' => 'fieldset',
+        'title' => 'Filterkriterien',
+        'description' => '',
+        'collapsible' => 1,
+        'collapsed' => 1,
+        'collapsed_if_no_exposed_input' => 0,
+      ),
+      'title' => array(
+        'weight' => '-3',
+        'type' => 'filter',
+        'id' => 'title',
+        'pid' => 'root',
+        'depth' => 1,
+      ),
+      'submit' => array(
+        'weight' => '-2',
+        'type' => 'buttons',
+        'id' => 'submit',
+        'pid' => 'root',
+        'depth' => 1,
+      ),
+      'container-1' => array(
+        'weight' => '1',
+        'type' => 'container',
+        'id' => 'container-1',
+        'pid' => 'root',
+        'depth' => 1,
+        'container_type' => 'fieldset',
+        'title' => 'Container 1',
+        'description' => '',
+        'collapsible' => 0,
+        'collapsed' => 0,
+        'collapsed_if_no_exposed_input' => 0,
+      ),
+      'container-2' => array(
+        'weight' => '2',
+        'type' => 'container',
+        'id' => 'container-2',
+        'pid' => 'root',
+        'depth' => 1,
+        'container_type' => 'fieldset',
+        'title' => 'Container 2',
+        'description' => '',
+        'collapsible' => 0,
+        'collapsed' => 0,
+        'collapsed_if_no_exposed_input' => 0,
+      ),
+    ),
+  );
+  $handler->display->display_options['path'] = 'admin/content/votes';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'Titel';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value_1']['id'] = 'value_1';
+  $handler->display->display_options['fields']['value_1']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_1']['field'] = 'value';
+  $handler->display->display_options['fields']['value_1']['relationship'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_1']['label'] = 'Positive';
+  $handler->display->display_options['fields']['value_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_1']['precision'] = '0';
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value_2']['id'] = 'value_2';
+  $handler->display->display_options['fields']['value_2']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_2']['field'] = 'value';
+  $handler->display->display_options['fields']['value_2']['relationship'] = 'votingapi_cache_1';
+  $handler->display->display_options['fields']['value_2']['label'] = 'Negative';
+  $handler->display->display_options['fields']['value_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_2']['precision'] = '0';
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value_5']['id'] = 'value_5';
+  $handler->display->display_options['fields']['value_5']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_5']['field'] = 'value';
+  $handler->display->display_options['fields']['value_5']['relationship'] = 'votingapi_cache_5';
+  $handler->display->display_options['fields']['value_5']['label'] = 'Gesamt';
+  $handler->display->display_options['fields']['value_5']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_5']['precision'] = '0';
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value']['id'] = 'value';
+  $handler->display->display_options['fields']['value']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value']['field'] = 'value';
+  $handler->display->display_options['fields']['value']['relationship'] = 'votingapi_cache_4';
+  $handler->display->display_options['fields']['value']['label'] = 'Stimmenanzahl';
+  $handler->display->display_options['fields']['value']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value']['precision'] = '0';
+  /* Field: Vote results: Value */
+  $handler->display->display_options['fields']['value_3']['id'] = 'value_3';
+  $handler->display->display_options['fields']['value_3']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_3']['field'] = 'value';
+  $handler->display->display_options['fields']['value_3']['relationship'] = 'votingapi_cache_2';
+  $handler->display->display_options['fields']['value_3']['label'] = 'Durchschnitt';
+  $handler->display->display_options['fields']['value_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_3']['precision'] = '0';
+  /* Field: Anteil (+) */
+  $handler->display->display_options['fields']['value_4']['id'] = 'value_4';
+  $handler->display->display_options['fields']['value_4']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_4']['field'] = 'value';
+  $handler->display->display_options['fields']['value_4']['relationship'] = 'votingapi_cache_4';
+  $handler->display->display_options['fields']['value_4']['ui_name'] = 'Anteil (+)';
+  $handler->display->display_options['fields']['value_4']['label'] = 'Anteil (+)';
+  $handler->display->display_options['fields']['value_4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_4']['precision'] = '0';
+  /* Field: Anteil (-) */
+  $handler->display->display_options['fields']['value_6']['id'] = 'value_6';
+  $handler->display->display_options['fields']['value_6']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['value_6']['field'] = 'value';
+  $handler->display->display_options['fields']['value_6']['relationship'] = 'votingapi_cache_4';
+  $handler->display->display_options['fields']['value_6']['ui_name'] = 'Anteil (-)';
+  $handler->display->display_options['fields']['value_6']['label'] = 'Anteil (-)';
+  $handler->display->display_options['fields']['value_6']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['value_6']['precision'] = '0';
+  /* Field: Vote results: Timestamp */
+  $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['table'] = 'votingapi_cache';
+  $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
+  $handler->display->display_options['fields']['timestamp']['relationship'] = 'votingapi_cache_4';
+  $handler->display->display_options['fields']['timestamp']['label'] = 'Zeitstempel';
+  $handler->display->display_options['fields']['timestamp']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['timestamp']['date_format'] = 'short';
+  $handler->display->display_options['fields']['timestamp']['second_date_format'] = 'long';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['exception']['title'] = 'Alle';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $export['nefo_view_vote_results'] = $view;
+
   return $export;
 }

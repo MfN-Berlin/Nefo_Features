@@ -247,6 +247,16 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'access vote up/down statistics'.
+  $permissions['access vote up/down statistics'] = array(
+    'name' => 'access vote up/down statistics',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'vud',
+  );
+
   // Exported permission: 'add media from remote sources'.
   $permissions['add media from remote sources'] = array(
     'name' => 'add media from remote sources',
@@ -766,6 +776,33 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'views',
+  );
+
+  // Exported permission: 'administer vote up/down'.
+  $permissions['administer vote up/down'] = array(
+    'name' => 'administer vote up/down',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'vud',
+  );
+
+  // Exported permission: 'administer vote up/down on nodes'.
+  $permissions['administer vote up/down on nodes'] = array(
+    'name' => 'administer vote up/down on nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'vud_node',
+  );
+
+  // Exported permission: 'administer voting api'.
+  $permissions['administer voting api'] = array(
+    'name' => 'administer voting api',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'votingapi',
   );
 
   // Exported permission: 'block IP addresses'.
@@ -2507,6 +2544,15 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'features',
   );
 
+  // Exported permission: 'reset vote up/down votes'.
+  $permissions['reset vote up/down votes'] = array(
+    'name' => 'reset vote up/down votes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'vud',
+  );
+
   // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
@@ -2682,6 +2728,16 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'search_config',
   );
 
+  // Exported permission: 'see vote up/down node stats'.
+  $permissions['see vote up/down node stats'] = array(
+    'name' => 'see vote up/down node stats',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'vud_node',
+  );
+
   // Exported permission: 'select account cancellation method'.
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
@@ -2815,6 +2871,28 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
+  );
+
+  // Exported permission: 'use vote up/down'.
+  $permissions['use vote up/down'] = array(
+    'name' => 'use vote up/down',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'vud',
+  );
+
+  // Exported permission: 'use vote up/down on nodes'.
+  $permissions['use vote up/down on nodes'] = array(
+    'name' => 'use vote up/down on nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'vud_node',
   );
 
   // Exported permission: 'view any main profile'.
@@ -3002,6 +3080,16 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: 'view vote up/down count on nodes'.
+  $permissions['view vote up/down count on nodes'] = array(
+    'name' => 'view vote up/down count on nodes',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'vud_node',
   );
 
   return $permissions;

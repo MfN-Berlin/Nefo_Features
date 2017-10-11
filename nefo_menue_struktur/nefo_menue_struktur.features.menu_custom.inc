@@ -18,6 +18,14 @@ function nefo_menue_struktur_menu_default_menu_custom() {
     'language' => 'und',
     'i18n_mode' => 5,
   );
+  // Exported menu: management.
+  $menus['management'] = array(
+    'menu_name' => 'management',
+    'title' => 'Management',
+    'description' => 'Das <em>Management-Menü</em> enthält Links für administrative Aufgaben.',
+    'language' => 'und',
+    'i18n_mode' => 0,
+  );
   // Exported menu: menu-nefo-footer-menu-fifth.
   $menus['menu-nefo-footer-menu-fifth'] = array(
     'menu_name' => 'menu-nefo-footer-menu-fifth',
@@ -77,7 +85,9 @@ function nefo_menue_struktur_menu_default_menu_custom() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Das <em>Hauptmenü</em> wird oft benutzt, um die Hauptbereiche der Website anzuzeigen, häufig in einer Top-Navigationsleiste.');
+  t('Das <em>Management-Menü</em> enthält Links für administrative Aufgaben.');
   t('Hauptmenü');
+  t('Management');
   t('Menü für Dauerrubriken.');
   t('Menü für Login / Logout.');
   t('Menü für die Rubrik Forschung.');

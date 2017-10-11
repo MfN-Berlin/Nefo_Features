@@ -2748,5 +2748,82 @@ function nefo_struktur_strongarm() {
   $strongarm->value = '1';
   $export['scheduler_use_vertical_tabs_nefo_product_article'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'votingapi_anonymous_window';
+  $strongarm->value = '0';
+  $export['votingapi_anonymous_window'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'votingapi_calculation_schedule';
+  $strongarm->value = 'immediate';
+  $export['votingapi_calculation_schedule'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'votingapi_user_window';
+  $strongarm->value = '0';
+  $export['votingapi_user_window'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_reset';
+  $strongarm->value = '0';
+  $export['vud_node_reset'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_types';
+  $strongarm->value = array(
+    'article' => 'article',
+    'blog' => 'blog',
+    'page' => 'page',
+    'nefo_product_document' => 'nefo_product_document',
+    'nefo_news' => 'nefo_news',
+    'nefo_product_article' => 'nefo_product_article',
+    'nefo_product_interview' => 'nefo_product_interview',
+    'nefo_product_literature_tip' => 'nefo_product_literature_tip',
+    'nefo_video' => 'nefo_video',
+    'nefo_product_workshop' => 0,
+    'nefo_slide_products' => 0,
+    'nefo_slideshow' => 0,
+    'nefo_event' => 0,
+  );
+  $export['vud_node_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_votes';
+  $strongarm->value = '2';
+  $export['vud_node_votes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_widget';
+  $strongarm->value = 'thumbs';
+  $export['vud_node_widget'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_widget_show';
+  $strongarm->value = '2';
+  $export['vud_node_widget_show'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'vud_node_widget_vote_on_teaser';
+  $strongarm->value = 0;
+  $export['vud_node_widget_vote_on_teaser'] = $strongarm;
+
   return $export;
 }

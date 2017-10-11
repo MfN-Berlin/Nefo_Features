@@ -2391,6 +2391,50 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_national:node/12',
   );
+  // Exported menu link: management_abstimmungsergebnisse:admin/content/votes.
+  $menu_links['management_abstimmungsergebnisse:admin/content/votes'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/content/votes',
+    'router_path' => 'admin/content/votes',
+    'link_title' => 'Abstimmungsergebnisse',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Abstimmungsergebnisse',
+      ),
+      'identifier' => 'management_abstimmungsergebnisse:admin/content/votes',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: management_comments:admin/content/comment.
+  $menu_links['management_comments:admin/content/comment'] = array(
+    'menu_name' => 'management',
+    'link_path' => 'admin/content/comment',
+    'router_path' => 'admin/content/comment',
+    'link_title' => 'Comments',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'List and edit site comments and the comment approval queue.',
+      ),
+      'identifier' => 'management_comments:admin/content/comment',
+    ),
+    'module' => 'system',
+    'hidden' => 1,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+  );
   // Exported menu link: menu-nefo-footer-menu-fifth_beteiligung-an-ipbes:node/32.
   $menu_links['menu-nefo-footer-menu-fifth_beteiligung-an-ipbes:node/32'] = array(
     'menu_name' => 'menu-nefo-footer-menu-fifth',
@@ -3273,6 +3317,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Abmelden');
+  t('Abstimmungsergebnisse');
   t('Agrarpolitik');
   t('Aktuelle Aufrufe');
   t('Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess');
@@ -3289,6 +3334,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('CBD');
   t('COP');
   t('Citizen Science');
+  t('Comments');
   t('Community-Bezug');
   t('Contact');
   t('Daten beitragen');

@@ -212,7 +212,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('Neuer Inhaltstyp für Berichte, Faktenblätter, Stellungnahmen und Studien.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'nefo_product_interview' => array(
