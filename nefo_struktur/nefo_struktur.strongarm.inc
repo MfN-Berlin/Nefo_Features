@@ -2752,7 +2752,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'votingapi_anonymous_window';
-  $strongarm->value = '0';
+  $strongarm->value = '86400';
   $export['votingapi_anonymous_window'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2766,7 +2766,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'votingapi_user_window';
-  $strongarm->value = '0';
+  $strongarm->value = '86400';
   $export['votingapi_user_window'] = $strongarm;
 
   $strongarm = new stdClass();
