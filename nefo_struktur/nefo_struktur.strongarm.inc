@@ -814,10 +814,10 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '2',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '10',
         ),
       ),
       'display' => array(),

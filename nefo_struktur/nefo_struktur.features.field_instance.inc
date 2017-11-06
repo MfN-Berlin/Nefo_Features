@@ -1275,7 +1275,7 @@ function nefo_struktur_field_default_field_instances() {
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -1333,7 +1333,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -1375,7 +1375,7 @@ function nefo_struktur_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
@@ -1440,7 +1440,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -1498,7 +1498,72 @@ function nefo_struktur_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_document-field_nefo_slide_product_img'.
+  $field_instances['node-nefo_product_document-field_nefo_slide_product_img'] = array(
+    'bundle' => 'nefo_product_document',
+    'deleted' => 0,
+    'description' => 'Bild für die Titelseite. Minimale Bildauflösung: 800x450 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_slide_product_img',
+    'label' => 'Titelbild',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'products/currentproducts',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '800x450',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 12,
     ),
   );
 
@@ -1537,7 +1602,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -1576,7 +1641,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -2818,6 +2883,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Auf Youtube: Unter dem Video auf Teilen klicken und die URL aus dem angezeigten Feld kopieren. Beispiel: https://youtu.be/zV2S7T6G_sw');
   t('Beschreibung');
   t('Bild');
+  t('Bild für die Titelseite. Minimale Bildauflösung: 800x450 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.');
   t('Bildunterschrift');
   t('Blog');
   t('Body');
