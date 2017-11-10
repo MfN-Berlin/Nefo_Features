@@ -239,14 +239,6 @@ function nefo_struktur_node_info() {
       'title_label' => t('Titel'),
       'help' => '',
     ),
-    'nefo_slide_products' => array(
-      'name' => t('Präsentationsfolie Produkte'),
-      'base' => 'node_content',
-      'description' => t('Folie für die Dreier-Leiste "Aktuelle Produkte" auf der Startseite.'),
-      'has_title' => '1',
-      'title_label' => t('Titel'),
-      'help' => '',
-    ),
     'nefo_slideshow' => array(
       'name' => t('Slideshow Eintrag'),
       'base' => 'node_content',

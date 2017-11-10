@@ -2295,161 +2295,6 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'node-nefo_slide_products-field_nefo_slide_product_descr'.
-  $field_instances['node-nefo_slide_products-field_nefo_slide_product_descr'] = array(
-    'bundle' => 'nefo_slide_products',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Maximal 90 Zeichen.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nefo_slide_product_descr',
-    'label' => 'Beschreibung',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 1,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-nefo_slide_products-field_nefo_slide_product_img'.
-  $field_instances['node-nefo_slide_products-field_nefo_slide_product_img'] = array(
-    'bundle' => 'nefo_slide_products',
-    'deleted' => 0,
-    'description' => 'Minimale Bildauflösung: 800x450 Pixel',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'file_entity',
-        'settings' => array(
-          'file_view_mode' => 'media_nefo_cover_photo',
-        ),
-        'type' => 'file_rendered',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nefo_slide_product_img',
-    'label' => 'Bild',
-    'required' => 1,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => 'products/currentproducts',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '800x450',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'oembed' => 0,
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 'upload',
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-nefo_slide_products-field_nefo_slide_product_refer'.
-  $field_instances['node-nefo_slide_products-field_nefo_slide_product_refer'] = array(
-    'bundle' => 'nefo_slide_products',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'link' => 1,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_nefo_slide_product_refer',
-    'label' => 'Gehört zu',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference_view_widget',
-      'settings' => array(
-        'allow_duplicates' => 0,
-        'close_modal' => 1,
-        'pass_argument' => 1,
-        'pass_arguments' => '',
-        'rendered_entity' => 0,
-        'view' => 'nefo_entityreference_products|entityreference_products_view_widget',
-        'view_mode' => 'full',
-      ),
-      'type' => 'entityreference_view_widget',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'node-nefo_slideshow-field_nefo_slideshow_desc'.
   $field_instances['node-nefo_slideshow-field_nefo_slideshow_desc'] = array(
     'bundle' => 'nefo_slideshow',
@@ -2886,13 +2731,11 @@ function nefo_struktur_field_default_field_instances() {
   t('Dateien');
   t('Dokument');
   t('Erklärender Text zum Bild.');
-  t('Gehört zu');
   t('Im NeFo-Interview');
   t('Image Credit');
   t('Kategorie');
   t('Maximal 300 Zeichen.');
   t('Maximal 700 Zeichen.');
-  t('Maximal 90 Zeichen.');
   t('Mehrfachauswahl möglich.');
   t('Minimale Bildauflösung: 150x225 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.');
   t('Minimale Bildauflösung: 800x380 Pixel');

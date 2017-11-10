@@ -1050,18 +1050,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create nefo_slide_products content'.
-  $permissions['create nefo_slide_products content'] = array(
-    'name' => 'create nefo_slide_products content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create nefo_slideshow content'.
   $permissions['create nefo_slideshow content'] = array(
     'name' => 'create nefo_slideshow content',
@@ -1303,18 +1291,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any nefo_slide_products content'.
-  $permissions['delete any nefo_slide_products content'] = array(
-    'name' => 'delete any nefo_slide_products content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any nefo_slideshow content'.
   $permissions['delete any nefo_slideshow content'] = array(
     'name' => 'delete any nefo_slideshow content',
@@ -1495,18 +1471,6 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'delete own nefo_product_workshop content'.
   $permissions['delete own nefo_product_workshop content'] = array(
     'name' => 'delete own nefo_product_workshop content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own nefo_slide_products content'.
-  $permissions['delete own nefo_slide_products content'] = array(
-    'name' => 'delete own nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
@@ -1918,18 +1882,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any nefo_slide_products content'.
-  $permissions['edit any nefo_slide_products content'] = array(
-    'name' => 'edit any nefo_slide_products content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any nefo_slideshow content'.
   $permissions['edit any nefo_slideshow content'] = array(
     'name' => 'edit any nefo_slideshow content',
@@ -2142,18 +2094,6 @@ function nefo_berechtigungen_user_default_permissions() {
   // Exported permission: 'edit own nefo_product_workshop content'.
   $permissions['edit own nefo_product_workshop content'] = array(
     'name' => 'edit own nefo_product_workshop content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own nefo_slide_products content'.
-  $permissions['edit own nefo_slide_products content'] = array(
-    'name' => 'edit own nefo_slide_products content',
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
@@ -2689,18 +2629,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'search_config',
-  );
-
-  // Exported permission: 'search nefo_slide_products content'.
-  $permissions['search nefo_slide_products content'] = array(
-    'name' => 'search nefo_slide_products content',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
     ),
     'module' => 'search_config',
   );
