@@ -972,7 +972,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'nefo-view-small-block-interview';
+  $handler->display->display_options['style_options']['row_class'] = 'nefo-view-block-row';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -1062,15 +1062,11 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Wrapper Col';
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
-  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="nefo-view-small-block-interview-content">
-	<div class="nefo-view-block-interview-img">[field_nefo_interview_img]</div>
-	<div class="nefo-view-block-interview-img-credit">[field_file_image_credit_text]</div>
-	<p>[field_nefo_interview_thema]</p>
-	<div class="nefo-view-small-block-interview-link">[view_node]</div>
-</div>
-<div class="nefo-view-small-block-interview-nav">
-	<div class="nefo-view-block-interview-link-all">[nothing_1]</div>
-</div>';
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="nefo-view-block-image-thumbnail">[field_nefo_interview_img]</div>
+<div class="nefo-view-block-image-credit">[field_file_image_credit_text]</div>
+<p>[field_nefo_interview_thema]</p>
+<p>[view_node]</p>
+<div class="nefo-view-block-link-all">[nothing_1]</div>';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_3']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
