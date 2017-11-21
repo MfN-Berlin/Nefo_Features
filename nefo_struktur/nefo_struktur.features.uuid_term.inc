@@ -11,7 +11,7 @@ function nefo_struktur_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'CBD SBSTTA - 20 im April 2016 in Montreal, Kanada',
+    'name' => 'CBD SBSTTA-20 im April 2016 in Montreal, Kanada',
     'description' => '',
     'format' => 'full_html',
     'weight' => 0,
@@ -195,6 +195,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'UNEA-3 im Dezember 2017 in Nairobi, Kenia',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '33883cf6-c2af-4016-af51-8e5b3de452b8',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/unea-3-nairobi-2017',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'NeFo-Pressemitteilung',
     'description' => '',
     'format' => 'full_html',
@@ -285,6 +304,25 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'produkte/studien',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'CBD SBSTTA-21 im Dezember 2017 in Montreal, Kanada',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '4e014810-acea-4714-ba15-ef0718b53594',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-sbstta-21-montreal-2017',
         'language' => 'und',
       ),
     ),
