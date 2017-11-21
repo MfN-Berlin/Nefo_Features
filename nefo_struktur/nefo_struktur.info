@@ -49,6 +49,7 @@ features[fe_block_settings][] = nefo_blocks_builder-nefo_feature_map
 features[features_api][] = api:2
 features[field_base][] = body
 features[field_base][] = field_dateien
+features[field_base][] = field_file_document_description
 features[field_base][] = field_file_image_alt_text
 features[field_base][] = field_file_image_credit_text
 features[field_base][] = field_file_image_title_text
