@@ -3017,7 +3017,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['next'] = 'nächste Seite ›';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'nefo-view-list-row';
+  $handler->display->display_options['style_options']['row_class'] = 'nefo-view-article-teaser-list-row';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -3027,9 +3027,9 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
@@ -3038,6 +3038,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_video_link']['table'] = 'field_data_field_nefo_video_link';
   $handler->display->display_options['fields']['field_nefo_video_link']['field'] = 'field_nefo_video_link';
   $handler->display->display_options['fields']['field_nefo_video_link']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_video_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_video_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_video_link']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_video_link']['click_sort_column'] = 'fid';
@@ -3050,12 +3051,38 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Field: Wrapper */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['ui_name'] = 'Wrapper';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<article class="nefo-article-teaser-horizontal-layout">
+	<header class="nefo-article-teaser-header-container">
+		<h2 class="nefo-article-teaser-title-smaller">
+			[title]
+		</h2>
+	</header>
+	<div class="nefo-article-teaser-wrapper nefo-article-teaser-video-wrapper">
+		<div class="nefo-article-teaser-video-container">
+			[field_nefo_video_link]
+		</div>
+		<div class="nefo-article-teaser-content-container">
+			<div class="nefo-article-teaser-synopsis">
+				[body]
+			</div>
+		</div>
+	</div>
+</article>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
