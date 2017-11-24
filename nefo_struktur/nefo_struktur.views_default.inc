@@ -920,6 +920,18 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_file_image_credit_text']['element_class'] = 'nefo-view-block-interview-img-credit';
   $handler->display->display_options['fields']['field_file_image_credit_text']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_file_image_credit_text']['element_default_classes'] = FALSE;
+  /* Field: Beitrag: Im NeFo-Interview */
+  $handler->display->display_options['fields']['field_nefo_interview_with']['id'] = 'field_nefo_interview_with';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['table'] = 'field_data_field_nefo_interview_with';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['field'] = 'field_nefo_interview_with';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_interview_with']['alter']['text'] = 'Interview mit [field_nefo_interview_with]';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['element_class'] = 'nefo-view-block-interview-with';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_interview_with']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_interview_with']['hide_empty'] = TRUE;
   /* Field: Alle Interviews Link */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
