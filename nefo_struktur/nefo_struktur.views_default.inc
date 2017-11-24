@@ -2085,9 +2085,9 @@ function nefo_struktur_views_default_views() {
 		<p class="nefo-article-teaser-date">
 			[created]
 		</p>		
-		<h1 class="nefo-article-teaser-title-smaller">
+		<h2 class="nefo-article-teaser-title-smaller">
 			[title]
-		</h1>
+		</h2>
 	</header>
 	<div class="nefo-article-teaser-wrapper">
 		<figure class="nefo-article-teaser-image-container">
@@ -2520,9 +2520,9 @@ function nefo_struktur_views_default_views() {
 		<p class="nefo-article-teaser-date">
 			[created]
 		</p>		
-		<h1 class="nefo-article-teaser-title-smaller">
+		<h2 class="nefo-article-teaser-title-smaller">
 			[title]
-		</h1>
+		</h2>
 	</header>
 	<div class="nefo-article-teaser-wrapper">
 		<figure class="nefo-article-teaser-image-container">
