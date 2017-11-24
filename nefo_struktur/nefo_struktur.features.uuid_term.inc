@@ -366,6 +366,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'IPBES-6 im März 2018 in Medellín, Kolumbien',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => '5b339b2c-9d8b-4ef8-95ab-1f20a7e17f3d',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/ipbes-6-medellin-2018',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'asdf',
     'description' => NULL,
     'format' => NULL,
