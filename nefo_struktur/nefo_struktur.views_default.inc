@@ -1536,7 +1536,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['next'] = 'nächste Seite ›';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'nefo-view-list-interview-row';
+  $handler->display->display_options['style_options']['row_class'] = 'nefo-view-article-teaser-list-row';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -1549,10 +1549,11 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = 'Erstellt am';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['created']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['created']['alter']['text'] = 'Erstellt am [created]';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['created']['element_wrapper_class'] = 'nefo-view-list-interview-date';
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'nefo_date_type_din5008';
   $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
@@ -1561,7 +1562,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
@@ -1570,7 +1571,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_interview_thema']['table'] = 'field_data_field_nefo_interview_thema';
   $handler->display->display_options['fields']['field_nefo_interview_thema']['field'] = 'field_nefo_interview_thema';
   $handler->display->display_options['fields']['field_nefo_interview_thema']['label'] = '';
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['field_nefo_interview_thema']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_interview_thema']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_interview_thema']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_interview_thema']['hide_empty'] = TRUE;
@@ -1580,10 +1581,9 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_interview_with']['table'] = 'field_data_field_nefo_interview_with';
   $handler->display->display_options['fields']['field_nefo_interview_with']['field'] = 'field_nefo_interview_with';
   $handler->display->display_options['fields']['field_nefo_interview_with']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['alter']['text'] = 'Interview mit [field_nefo_interview_with]';
-  $handler->display->display_options['fields']['field_nefo_interview_with']['element_type'] = 'p';
-  $handler->display->display_options['fields']['field_nefo_interview_with']['element_class'] = 'nefo-view-list-interview-with';
   $handler->display->display_options['fields']['field_nefo_interview_with']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['hide_empty'] = TRUE;
@@ -1609,24 +1609,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Weiterlesen';
-  /* Field: Datei: Bildunterschrift */
-  $handler->display->display_options['fields']['field_image_caption_text']['id'] = 'field_image_caption_text';
-  $handler->display->display_options['fields']['field_image_caption_text']['table'] = 'field_data_field_image_caption_text';
-  $handler->display->display_options['fields']['field_image_caption_text']['field'] = 'field_image_caption_text';
-  $handler->display->display_options['fields']['field_image_caption_text']['relationship'] = 'field_nefo_interview_img_fid';
-  $handler->display->display_options['fields']['field_image_caption_text']['label'] = '';
-  $handler->display->display_options['fields']['field_image_caption_text']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_image_caption_text']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_image_caption_text']['element_default_classes'] = FALSE;
-  /* Field: Datei: Image Credit */
-  $handler->display->display_options['fields']['field_file_image_credit_text']['id'] = 'field_file_image_credit_text';
-  $handler->display->display_options['fields']['field_file_image_credit_text']['table'] = 'field_data_field_file_image_credit_text';
-  $handler->display->display_options['fields']['field_file_image_credit_text']['field'] = 'field_file_image_credit_text';
-  $handler->display->display_options['fields']['field_file_image_credit_text']['relationship'] = 'field_nefo_interview_img_fid';
-  $handler->display->display_options['fields']['field_file_image_credit_text']['label'] = '';
-  $handler->display->display_options['fields']['field_file_image_credit_text']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_file_image_credit_text']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_file_image_credit_text']['element_default_classes'] = FALSE;
   /* Field: Beitrag: Bild */
   $handler->display->display_options['fields']['field_nefo_interview_img']['id'] = 'field_nefo_interview_img';
   $handler->display->display_options['fields']['field_nefo_interview_img']['table'] = 'field_data_field_nefo_interview_img';
@@ -1638,7 +1620,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_interview_img']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_nefo_interview_img']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_nefo_interview_img']['settings'] = array(
-    'colorbox_node_style' => 'image_style_nefo_list_thumbnail',
+    'colorbox_node_style' => 'image_style_nefo_cover_photo',
     'colorbox_node_style_first' => '',
     'colorbox_image_style' => 'image_style_nefo_big',
     'colorbox_gallery' => 'none',
@@ -1646,21 +1628,67 @@ function nefo_struktur_views_default_views() {
     'colorbox_caption' => 'custom',
     'colorbox_caption_custom' => '[file:field-image-caption-text], [file:field-file-image-credit-text]',
   );
+  /* Field: Datei: Bildunterschrift */
+  $handler->display->display_options['fields']['field_image_caption_text']['id'] = 'field_image_caption_text';
+  $handler->display->display_options['fields']['field_image_caption_text']['table'] = 'field_data_field_image_caption_text';
+  $handler->display->display_options['fields']['field_image_caption_text']['field'] = 'field_image_caption_text';
+  $handler->display->display_options['fields']['field_image_caption_text']['relationship'] = 'field_nefo_interview_img_fid';
+  $handler->display->display_options['fields']['field_image_caption_text']['label'] = '';
+  $handler->display->display_options['fields']['field_image_caption_text']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_image_caption_text']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_image_caption_text']['alter']['text'] = '<p class="nefo-article-teaser-image-caption">[field_image_caption_text]	</p>';
+  $handler->display->display_options['fields']['field_image_caption_text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_caption_text']['element_default_classes'] = FALSE;
+  /* Field: Datei: Image Credit */
+  $handler->display->display_options['fields']['field_file_image_credit_text']['id'] = 'field_file_image_credit_text';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['table'] = 'field_data_field_file_image_credit_text';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['field'] = 'field_file_image_credit_text';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['relationship'] = 'field_nefo_interview_img_fid';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['label'] = '';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_file_image_credit_text']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_file_image_credit_text']['alter']['text'] = '<p class="nefo-article-teaser-image-credit">	[field_file_image_credit_text]</p>';
+  $handler->display->display_options['fields']['field_file_image_credit_text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_file_image_credit_text']['element_default_classes'] = FALSE;
   /* Field: Wrapper */
   $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
   $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_2']['ui_name'] = 'Wrapper';
   $handler->display->display_options['fields']['nothing_2']['label'] = '';
-  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<div class="nefo-view-list-interview-col2">
-<div class="nefo-view-list-interview-img">[field_nefo_interview_img]</div>
-<div class="nefo-view-list-interview-img-caption">[field_image_caption_text]</div>
-<div class="nefo-view-list-interview-img-credit">[field_file_image_credit_text]</div>
-</div>
-<div class="nefo-view-list-interview-col1">
-[body]
-<div class="nefo-view-list-interview-link">[view_node]</div>
-</div>';
+  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<article class="nefo-article-teaser-horizontal-layout">
+	<header class="nefo-article-teaser-header-container">
+		<p class="nefo-article-teaser-date">
+			[created]
+		</p>
+		<h3>
+			[title]
+		</h3>
+		<h2 class="nefo-article-teaser-title-bold">
+			[field_nefo_interview_thema]
+		</h2>
+		<p class="nefo-article-teaser-title-meta">
+			[field_nefo_interview_with]
+		</p>
+	</header>
+	<div class="nefo-article-teaser-wrapper">
+		<figure class="nefo-article-teaser-image-container">
+			[field_nefo_interview_img]
+			<div class="nefo-article-teaser-image-meta">
+				[field_image_caption_text]
+				[field_file_image_credit_text]
+			</div>
+		</figure>
+		<div class="nefo-article-teaser-content-container">
+			<div class="nefo-article-teaser-synopsis">
+				[body]
+			</div>
+			<p class="nefo-article-teaser-target-link">
+				[view_node]
+			</p>
+		</div>
+	</div>
+</article>';
   $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_2']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['nothing_2']['element_wrapper_class'] = 'nefo-view-list-interview-content';
