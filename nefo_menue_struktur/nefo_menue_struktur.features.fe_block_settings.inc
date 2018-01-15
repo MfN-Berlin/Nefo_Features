@@ -79,7 +79,7 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'region' => 'footer_first',
         'status' => 1,
         'theme' => 'ofen',
-        'weight' => 0,
+        'weight' => -56,
       ),
       'seven' => array(
         'region' => '',
@@ -236,10 +236,10 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'weight' => 0,
       ),
       'ofen' => array(
-        'region' => 'header',
+        'region' => 'footer_first',
         'status' => 1,
         'theme' => 'ofen',
-        'weight' => -45,
+        'weight' => -55,
       ),
       'seven' => array(
         'region' => '',
@@ -316,7 +316,7 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'weight' => -6,
       ),
       'ofen' => array(
-        'region' => 'header_first',
+        'region' => 'header',
         'status' => 1,
         'theme' => 'ofen',
         'weight' => -43,
@@ -439,7 +439,7 @@ function nefo_menue_struktur_default_fe_block_settings() {
         'region' => 'branding',
         'status' => 1,
         'theme' => 'ofen',
-        'weight' => 0,
+        'weight' => -54,
       ),
       'seven' => array(
         'region' => '',
