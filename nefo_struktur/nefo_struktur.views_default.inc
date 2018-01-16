@@ -339,6 +339,7 @@ function nefo_struktur_views_default_views() {
     'blog' => 'blog',
     'page' => 'page',
     'nefo_product_document' => 'nefo_product_document',
+    'nefo_news' => 'nefo_news',
     'nefo_product_article' => 'nefo_product_article',
     'nefo_product_interview' => 'nefo_product_interview',
   );
@@ -732,7 +733,8 @@ function nefo_struktur_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['css_class'] = 'nefo-view-block-further-topics';
+  $handler->display->display_options['title'] = 'Weitere NeFo-Beiträge zum Thema';
+  $handler->display->display_options['css_class'] = 'nefo-further-topics-block-content';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'mehr';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -747,22 +749,63 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'nefo-view-block-further-topics-row';
+  $handler->display->display_options['style_options']['row_class'] = 'nefo-further-topics-block-content-row';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = 'Weitere NeFo-Beiträge zum Thema:';
-  $handler->display->display_options['header']['area']['format'] = 'plain_text';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_internal_link_target_id']['id'] = 'field_internal_link_target_id';
   $handler->display->display_options['relationships']['field_internal_link_target_id']['table'] = 'field_data_field_internal_link';
   $handler->display->display_options['relationships']['field_internal_link_target_id']['field'] = 'field_internal_link_target_id';
   $handler->display->display_options['relationships']['field_internal_link_target_id']['required'] = TRUE;
+  /* Relationship: Begriff aus field_nefo_news_category */
+  $handler->display->display_options['relationships']['field_nefo_news_category_tid']['id'] = 'field_nefo_news_category_tid';
+  $handler->display->display_options['relationships']['field_nefo_news_category_tid']['table'] = 'field_data_field_nefo_news_category';
+  $handler->display->display_options['relationships']['field_nefo_news_category_tid']['field'] = 'field_nefo_news_category_tid';
+  $handler->display->display_options['relationships']['field_nefo_news_category_tid']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['relationships']['field_nefo_news_category_tid']['ui_name'] = 'Begriff aus field_nefo_news_category';
+  $handler->display->display_options['relationships']['field_nefo_news_category_tid']['label'] = 'Begriff aus field_nefo_news_category';
+  /* Relationship: Begriff aus field_nefo_taxonomy_document */
+  $handler->display->display_options['relationships']['field_nefo_taxonomy_document_tid']['id'] = 'field_nefo_taxonomy_document_tid';
+  $handler->display->display_options['relationships']['field_nefo_taxonomy_document_tid']['table'] = 'field_data_field_nefo_taxonomy_document';
+  $handler->display->display_options['relationships']['field_nefo_taxonomy_document_tid']['field'] = 'field_nefo_taxonomy_document_tid';
+  $handler->display->display_options['relationships']['field_nefo_taxonomy_document_tid']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['relationships']['field_nefo_taxonomy_document_tid']['ui_name'] = 'Begriff aus field_nefo_taxonomy_document';
+  $handler->display->display_options['relationships']['field_nefo_taxonomy_document_tid']['label'] = 'Begriff aus field_nefo_taxonomy_document';
+  /* Field:  Content Type Place Holder */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['type']['ui_name'] = ' Content Type Place Holder';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['type']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['type']['machine_name'] = TRUE;
+  /* Field: Document Category ID */
+  $handler->display->display_options['fields']['tid_1']['id'] = 'tid_1';
+  $handler->display->display_options['fields']['tid_1']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['tid_1']['field'] = 'tid';
+  $handler->display->display_options['fields']['tid_1']['relationship'] = 'field_nefo_taxonomy_document_tid';
+  $handler->display->display_options['fields']['tid_1']['ui_name'] = 'Document Category ID';
+  $handler->display->display_options['fields']['tid_1']['label'] = '';
+  $handler->display->display_options['fields']['tid_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['tid_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['tid_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['tid_1']['separator'] = '';
+  /* Field: News Category ID */
+  $handler->display->display_options['fields']['tid']['id'] = 'tid';
+  $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['tid']['field'] = 'tid';
+  $handler->display->display_options['fields']['tid']['relationship'] = 'field_nefo_news_category_tid';
+  $handler->display->display_options['fields']['tid']['ui_name'] = 'News Category ID';
+  $handler->display->display_options['fields']['tid']['label'] = '';
+  $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['tid']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['tid']['separator'] = '';
   /* Field: Beitrag: Weitere NeFo-Beiträge zum Thema */
   $handler->display->display_options['fields']['field_internal_link']['id'] = 'field_internal_link';
   $handler->display->display_options['fields']['field_internal_link']['table'] = 'field_data_field_internal_link';
@@ -772,18 +815,10 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_internal_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_internal_link']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_internal_link']['settings'] = array(
+    'bypass_access' => 0,
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_internal_link']['delta_offset'] = '0';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_internal_link_target_id';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
@@ -793,22 +828,119 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['path']['element_default_classes'] = FALSE;
-  /* Field: Beitrag: Thema (Zitat) */
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['id'] = 'field_nefo_interview_thema';
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['table'] = 'field_data_field_nefo_interview_thema';
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['field'] = 'field_nefo_interview_thema';
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['relationship'] = 'field_internal_link_target_id';
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['label'] = '';
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_nefo_interview_thema']['type'] = 'text_plain';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'Weiterlesen';
+  /* Field: Article, Blog and Page Image */
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['id'] = 'field_nefo_cover_photo';
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['table'] = 'field_data_field_nefo_cover_photo';
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['field'] = 'field_nefo_cover_photo';
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['ui_name'] = 'Article, Blog and Page Image';
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_nefo_cover_photo']['settings'] = array(
+    'image_style' => 'image_style_nefo_cover_photo',
+    'image_link' => '',
+  );
+  /* Field: NeFo-Dokument Image */
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['id'] = 'field_nefo_slide_product_img';
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['table'] = 'field_data_field_nefo_slide_product_img';
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['field'] = 'field_nefo_slide_product_img';
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['ui_name'] = 'NeFo-Dokument Image';
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_nefo_slide_product_img']['settings'] = array(
+    'image_style' => 'image_style_nefo_cover_photo',
+    'image_link' => '',
+  );
+  /* Field: NeFo-Artikel Image */
+  $handler->display->display_options['fields']['field_nefo_article_img']['id'] = 'field_nefo_article_img';
+  $handler->display->display_options['fields']['field_nefo_article_img']['table'] = 'field_data_field_nefo_article_img';
+  $handler->display->display_options['fields']['field_nefo_article_img']['field'] = 'field_nefo_article_img';
+  $handler->display->display_options['fields']['field_nefo_article_img']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['field_nefo_article_img']['ui_name'] = 'NeFo-Artikel Image';
+  $handler->display->display_options['fields']['field_nefo_article_img']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_article_img']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_article_img']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_article_img']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_article_img']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_nefo_article_img']['settings'] = array(
+    'image_style' => 'image_style_nefo_cover_photo',
+    'image_link' => '',
+  );
+  /* Field: Interview News */
+  $handler->display->display_options['fields']['field_nefo_interview_img']['id'] = 'field_nefo_interview_img';
+  $handler->display->display_options['fields']['field_nefo_interview_img']['table'] = 'field_data_field_nefo_interview_img';
+  $handler->display->display_options['fields']['field_nefo_interview_img']['field'] = 'field_nefo_interview_img';
+  $handler->display->display_options['fields']['field_nefo_interview_img']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['field_nefo_interview_img']['ui_name'] = 'Interview News';
+  $handler->display->display_options['fields']['field_nefo_interview_img']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_interview_img']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_interview_img']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_interview_img']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_interview_img']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_nefo_interview_img']['settings'] = array(
+    'image_style' => 'image_style_nefo_cover_photo',
+    'image_link' => '',
+  );
+  /* Field: News Image */
+  $handler->display->display_options['fields']['field_nefo_news_img']['id'] = 'field_nefo_news_img';
+  $handler->display->display_options['fields']['field_nefo_news_img']['table'] = 'field_data_field_nefo_news_img';
+  $handler->display->display_options['fields']['field_nefo_news_img']['field'] = 'field_nefo_news_img';
+  $handler->display->display_options['fields']['field_nefo_news_img']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['field_nefo_news_img']['ui_name'] = 'News Image';
+  $handler->display->display_options['fields']['field_nefo_news_img']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_news_img']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_news_img']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_news_img']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_news_img']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_nefo_news_img']['settings'] = array(
+    'image_style' => 'image_style_nefo_cover_photo',
+    'image_link' => '',
+  );
+  /* Field: NeFo-Dokument Beschreibung */
+  $handler->display->display_options['fields']['field_nefo_description']['id'] = 'field_nefo_description';
+  $handler->display->display_options['fields']['field_nefo_description']['table'] = 'field_data_field_nefo_description';
+  $handler->display->display_options['fields']['field_nefo_description']['field'] = 'field_nefo_description';
+  $handler->display->display_options['fields']['field_nefo_description']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['field_nefo_description']['ui_name'] = 'NeFo-Dokument Beschreibung';
+  $handler->display->display_options['fields']['field_nefo_description']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_description']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_nefo_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_nefo_description']['element_default_classes'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Beitrag: Im NeFo-Interview */
   $handler->display->display_options['fields']['field_nefo_interview_with']['id'] = 'field_nefo_interview_with';
   $handler->display->display_options['fields']['field_nefo_interview_with']['table'] = 'field_data_field_nefo_interview_with';
   $handler->display->display_options['fields']['field_nefo_interview_with']['field'] = 'field_nefo_interview_with';
   $handler->display->display_options['fields']['field_nefo_interview_with']['relationship'] = 'field_internal_link_target_id';
   $handler->display->display_options['fields']['field_nefo_interview_with']['label'] = '';
+  $handler->display->display_options['fields']['field_nefo_interview_with']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['alter']['text'] = '[field_nefo_interview_thema] - Interview mit [field_nefo_interview_with]';
   $handler->display->display_options['fields']['field_nefo_interview_with']['alter']['make_link'] = TRUE;
@@ -817,6 +949,64 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_interview_with']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_interview_with']['empty'] = '[title]';
   $handler->display->display_options['fields']['field_nefo_interview_with']['type'] = 'text_plain';
+  /* Field: Teaser */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['relationship'] = 'field_internal_link_target_id';
+  $handler->display->display_options['fields']['body']['ui_name'] = 'Teaser';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '400';
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Weiterlesen';
+  $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path]';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['html'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['body']['empty'] = '[field_nefo_description]';
+  $handler->display->display_options['fields']['body']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<article class="nefo-article-teaser-horizontal-layout">
+	<div class="nefo-article-teaser-wrapper">
+		<figure class="nefo-article-teaser-image-container">
+			<a href="[path]">
+				[field_nefo_cover_photo]
+				[field_nefo_slide_product_img]
+				[field_nefo_article_img]
+				[field_nefo_interview_img]
+				[field_nefo_news_img]
+			</a>
+		</figure>
+		<div class="nefo-article-teaser-content-container">
+			<h2 class="nefo-article-teaser-title-smaller">
+				<span class="nefo-page-title-icon">
+					|:|[type]|:|
+				</span>
+				<span class="nefo-page-title-text">
+					[title]
+				</span>
+			</h2>
+			<div class="nefo-article-teaser-synopsis">
+				[body]
+			</div>
+			<p class="nefo-article-teaser-target-link">
+				[view_node] 
+			</p>
+		</div>
+	</div>
+</article>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
@@ -836,7 +1026,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
 
   /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'entityreference_composite_title_block');
+  $handler = $view->new_display('block', 'Block', 'nefo_further_topics_block');
   $export['nefo_view_block_entityreference_composite_name'] = $view;
 
   $view = new view();
@@ -2022,7 +2212,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['id'] = 'field_nefo_news_img_fid';
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['table'] = 'field_data_field_nefo_news_img';
   $handler->display->display_options['relationships']['field_nefo_news_img_fid']['field'] = 'field_nefo_news_img_fid';
-  $handler->display->display_options['relationships']['field_nefo_news_img_fid']['label'] = 'Bild von field_nefo_news_img';
   /* Field: Beitrag: Themen */
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['id'] = 'field_nefo_taxonomy_tags';
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['table'] = 'field_data_field_nefo_taxonomy_tags';
