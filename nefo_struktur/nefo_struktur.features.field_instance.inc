@@ -2716,6 +2716,73 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'taxonomy_term-nefo_taxonomy_tags-field_nefo_cover_photo'.
+  $field_instances['taxonomy_term-nefo_taxonomy_tags-field_nefo_cover_photo'] = array(
+    'bundle' => 'nefo_taxonomy_tags',
+    'deleted' => 0,
+    'description' => 'Minimale Bildauflösung: 800x450 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'media_nefo_cover_photo',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'media_nefo_cover_photo',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_nefo_cover_photo',
+    'label' => 'Titelbild',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'pictures/themes',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '800x450',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Alt Text');
@@ -2740,6 +2807,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Minimale Bildauflösung: 150x225 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.');
   t('Minimale Bildauflösung: 800x380 Pixel');
   t('Minimale Bildauflösung: 800x450 Pixel');
+  t('Minimale Bildauflösung: 800x450 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.');
   t('Name the person who owns the picture.');
   t('Name the person who owns the video.');
   t('PDF-Dokument');

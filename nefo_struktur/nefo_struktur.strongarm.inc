@@ -1149,17 +1149,33 @@ function nefo_struktur_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'path' => array(
+          'weight' => '3',
+        ),
+        'name' => array(
+          'weight' => '0',
+        ),
+        'description' => array(
+          'weight' => '2',
+        ),
+      ),
       'display' => array(
         'description' => array(
           'default' => array(
-            'weight' => 0,
+            'weight' => '1',
             'visible' => TRUE,
           ),
           'full' => array(
-            'weight' => 0,
+            'weight' => '1',
             'visible' => TRUE,
           ),
         ),
