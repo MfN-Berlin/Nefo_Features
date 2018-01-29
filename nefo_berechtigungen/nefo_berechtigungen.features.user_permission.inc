@@ -2600,6 +2600,16 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'search_config',
   );
 
+  // Exported permission: 'search nefo_product_document content'.
+  $permissions['search nefo_product_document content'] = array(
+    'name' => 'search nefo_product_document content',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'search_config',
+  );
+
   // Exported permission: 'search nefo_product_interview content'.
   $permissions['search nefo_product_interview content'] = array(
     'name' => 'search nefo_product_interview content',
@@ -2641,6 +2651,16 @@ function nefo_berechtigungen_user_default_permissions() {
       'Editor' => 'Editor',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+    ),
+    'module' => 'search_config',
+  );
+
+  // Exported permission: 'search nefo_video content'.
+  $permissions['search nefo_video content'] = array(
+    'name' => 'search nefo_video content',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'search_config',
   );
