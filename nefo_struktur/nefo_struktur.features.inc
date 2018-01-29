@@ -255,6 +255,14 @@ function nefo_struktur_node_info() {
       'title_label' => t('Titel'),
       'help' => '',
     ),
+    'nefo_workshop' => array(
+      'name' => t('NeFo-Workshop'),
+      'base' => 'node_content',
+      'description' => t('Workshops und Fachgespräche'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'page' => array(
       'name' => t('Einfache Seite'),
       'base' => 'node_content',

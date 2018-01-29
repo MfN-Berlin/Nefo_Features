@@ -1074,6 +1074,13 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create nefo_workshop content'.
+  $permissions['create nefo_workshop content'] = array(
+    'name' => 'create nefo_workshop content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create page content'.
   $permissions['create page content'] = array(
     'name' => 'create page content',
@@ -1315,6 +1322,13 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any nefo_workshop content'.
+  $permissions['delete any nefo_workshop content'] = array(
+    'name' => 'delete any nefo_workshop content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
@@ -1501,6 +1515,13 @@ function nefo_berechtigungen_user_default_permissions() {
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own nefo_workshop content'.
+  $permissions['delete own nefo_workshop content'] = array(
+    'name' => 'delete own nefo_workshop content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -1906,6 +1927,13 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any nefo_workshop content'.
+  $permissions['edit any nefo_workshop content'] = array(
+    'name' => 'edit any nefo_workshop content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
@@ -2124,6 +2152,13 @@ function nefo_berechtigungen_user_default_permissions() {
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own nefo_workshop content'.
+  $permissions['edit own nefo_workshop content'] = array(
+    'name' => 'edit own nefo_workshop content',
+    'roles' => array(),
     'module' => 'node',
   );
 

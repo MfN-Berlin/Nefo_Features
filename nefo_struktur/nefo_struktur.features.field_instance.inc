@@ -1510,7 +1510,7 @@ function nefo_struktur_field_default_field_instances() {
     'description' => 'Bild für die Titelseite. Minimale Bildauflösung: 800x450 Pixel. Erlaubte Dateierweiterungen: PNG, GIF, JPG, JPEG.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 5,
@@ -1638,6 +1638,50 @@ function nefo_struktur_field_default_field_instances() {
       ),
       'type' => 'options_select',
       'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_document-field_workshop_reference'.
+  $field_instances['node-nefo_product_document-field_workshop_reference'] = array(
+    'bundle' => 'nefo_product_document',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_workshop_reference',
+    'label' => 'Workshops und Fachgespräche',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference_view_widget',
+      'settings' => array(
+        'allow_duplicates' => 0,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_workshop_tags|entityreference_workshop_tags',
+        'view_mode' => 'full',
+      ),
+      'type' => 'entityreference_view_widget',
+      'weight' => 10,
     ),
   );
 
@@ -2050,6 +2094,50 @@ function nefo_struktur_field_default_field_instances() {
       'settings' => array(),
       'type' => 'link_field',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-nefo_product_literature_tip-field_workshop_reference'.
+  $field_instances['node-nefo_product_literature_tip-field_workshop_reference'] = array(
+    'bundle' => 'nefo_product_literature_tip',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_workshop_reference',
+    'label' => 'Workshops und Fachgespräche',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference_view_widget',
+      'settings' => array(
+        'allow_duplicates' => 0,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_workshop_tags|entityreference_workshop_tags',
+        'view_mode' => 'full',
+      ),
+      'type' => 'entityreference_view_widget',
+      'weight' => 4,
     ),
   );
 
@@ -2564,6 +2652,208 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-nefo_workshop-body'.
+  $field_instances['node-nefo_workshop-body'] = array(
+    'bundle' => 'nefo_workshop',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-nefo_workshop-field_nefo_cover_photo'.
+  $field_instances['node-nefo_workshop-field_nefo_cover_photo'] = array(
+    'bundle' => 'nefo_workshop',
+    'deleted' => 0,
+    'description' => 'Minimale Bildauflösung: 800x450 Pixel',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'media_nefo_cover_photo',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_cover_photo',
+    'label' => 'Titelbild',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'pictures/covers',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '800x450',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-nefo_workshop-field_nefo_taxonomy_tags'.
+  $field_instances['node-nefo_workshop-field_nefo_taxonomy_tags'] = array(
+    'bundle' => 'nefo_workshop',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nefo_taxonomy_tags',
+    'label' => 'Themen',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-nefo_workshop-field_workshop_announcement'.
+  $field_instances['node-nefo_workshop-field_workshop_announcement'] = array(
+    'bundle' => 'nefo_workshop',
+    'deleted' => 0,
+    'description' => 'PDF-Dokument',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_workshop_announcement',
+    'label' => 'Ankündigung',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'products/workshops',
+      'file_extensions' => 'pdf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 'document',
+          'image' => 0,
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-page-body'.
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
@@ -2787,6 +3077,7 @@ function nefo_struktur_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Alt Text');
   t('Alternative text is used by screen readers, search engines, and when the image cannot be loaded. By adding alt text you improve accessibility and search engine optimization.');
+  t('Ankündigung');
   t('Artikel');
   t('Auf Youtube: Unter dem Video auf Teilen klicken und die URL aus dem angezeigten Feld kopieren. Beispiel: https://youtu.be/zV2S7T6G_sw');
   t('Beschreibung');
@@ -2823,6 +3114,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Video');
   t('Video Credit');
   t('Weitere NeFo-Beiträge zum Thema');
+  t('Workshops und Fachgespräche');
   t('Ziel-URL');
   t('Zum Beispiel: Prof.-Dr.-Dipl.-Ing. Karl-Theodor zu Guttenberg');
   t('Zum Beispiel: „Ein Kadaver von 30 Kilogramm bringt dem Boden so viel Stickstoff wie 100 Jahre herkömmliche Düngung“');

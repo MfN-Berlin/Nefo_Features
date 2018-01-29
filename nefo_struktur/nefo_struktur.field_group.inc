@@ -30,7 +30,8 @@ function nefo_struktur_field_group_info() {
       4 => 'field_nefo_product_link',
       5 => 'field_nefo_taxonomy_document',
       6 => 'field_nefo_taxonomy_tags',
-      7 => 'title',
+      7 => 'field_workshop_reference',
+      8 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
