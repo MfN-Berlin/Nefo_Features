@@ -341,6 +341,7 @@ features[user_permission][] = view the administration theme
 features[user_permission][] = view vote up/down count on nodes
 features[user_role][] = Author
 features[user_role][] = Editor
+features[user_role][] = NeFo Team Member
 features[user_role][] = Site Administrator
 features[user_role][] = administrator
 project path = sites/all/modules/custom/nefo_features

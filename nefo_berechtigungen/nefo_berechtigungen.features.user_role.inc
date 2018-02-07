@@ -13,25 +13,31 @@ function nefo_berechtigungen_user_default_roles() {
   // Exported role: Author.
   $roles['Author'] = array(
     'name' => 'Author',
-    'weight' => 3,
+    'weight' => 4,
   );
 
   // Exported role: Editor.
   $roles['Editor'] = array(
     'name' => 'Editor',
-    'weight' => 4,
+    'weight' => 5,
+  );
+
+  // Exported role: NeFo Team Member.
+  $roles['NeFo Team Member'] = array(
+    'name' => 'NeFo Team Member',
+    'weight' => 3,
   );
 
   // Exported role: Site Administrator.
   $roles['Site Administrator'] = array(
     'name' => 'Site Administrator',
-    'weight' => 5,
+    'weight' => 6,
   );
 
   // Exported role: administrator.
   $roles['administrator'] = array(
     'name' => 'administrator',
-    'weight' => 6,
+    'weight' => 7,
   );
 
   return $roles;
