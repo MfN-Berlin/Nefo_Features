@@ -71,6 +71,23 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_researcher_email'.
+  $field_bases['field_researcher_email'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_researcher_email',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'email',
+    'settings' => array(
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'email',
+  );
+
   // Exported field_base: 'field_researcher_fascinated'.
   $field_bases['field_researcher_fascinated'] = array(
     'active' => 1,
@@ -91,6 +108,27 @@ function researcher_profile_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_researcher_focus'.
+  $field_bases['field_researcher_focus'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_researcher_focus',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_researcher_geofield'.
@@ -254,6 +292,27 @@ function researcher_profile_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_researcher_nefo_topics'.
+  $field_bases['field_researcher_nefo_topics'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_researcher_nefo_topics',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_researcher_personal_www'.
   $field_bases['field_researcher_personal_www'] = array(
     'active' => 1,
@@ -282,6 +341,23 @@ function researcher_profile_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_researcher_phone'.
+  $field_bases['field_researcher_phone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_researcher_phone',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'telephone',
+    'settings' => array(
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'telephone',
   );
 
   // Exported field_base: 'field_researcher_picture'.
@@ -444,6 +520,28 @@ function researcher_profile_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_researcher_xing'.
+  $field_bases['field_researcher_xing'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_researcher_xing',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   return $field_bases;

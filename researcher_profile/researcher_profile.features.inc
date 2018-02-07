@@ -33,7 +33,7 @@ function researcher_profile_image_default_styles() {
   $styles['img_style_researcher'] = array(
     'label' => 'Forscherprofil',
     'effects' => array(
-      7 => array(
+      1 => array(
         'name' => 'image_scale',
         'data' => array(
           'width' => 180,

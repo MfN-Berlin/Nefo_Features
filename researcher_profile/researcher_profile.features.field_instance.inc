@@ -27,7 +27,7 @@ function researcher_profile_field_default_field_instances() {
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 11,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'profile2',
@@ -71,7 +71,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 20,
       ),
     ),
     'entity_type' => 'profile2',
@@ -89,7 +89,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 34,
     ),
   );
 
@@ -105,7 +105,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'profile2',
@@ -123,7 +123,40 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-researcher-field_researcher_email'.
+  $field_instances['profile2-researcher-field_researcher_email'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_email',
+    'label' => 'E-Mail',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 9,
     ),
   );
 
@@ -139,7 +172,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 14,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'profile2',
@@ -157,7 +190,45 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-researcher-field_researcher_focus'.
+  $field_instances['profile2-researcher-field_researcher_focus'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_focus',
+    'label' => 'Wissenschaftliche Schwerpunkte',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 30,
     ),
   );
 
@@ -168,13 +239,10 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'geofield',
-        'settings' => array(
-          'data' => 'full',
-        ),
-        'type' => 'geofield_wkt',
-        'weight' => 12,
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'profile2',
@@ -221,7 +289,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'profile2',
@@ -239,7 +307,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 8,
     ),
   );
 
@@ -252,16 +320,16 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_researcher_institutio_name',
-    'label' => 'Institution Name',
+    'label' => 'Name',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -293,7 +361,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'profile2',
@@ -311,7 +379,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 9,
     ),
   );
 
@@ -323,11 +391,11 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 12,
       ),
     ),
     'entity_type' => 'profile2',
@@ -345,7 +413,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 12,
     ),
   );
 
@@ -357,7 +425,7 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -384,6 +452,45 @@ function researcher_profile_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'profile2-researcher-field_researcher_nefo_topics'.
+  $field_instances['profile2-researcher-field_researcher_nefo_topics'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 17,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_nefo_topics',
+    'label' => 'Zuständigkeiten bei NeFo',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance:
   // 'profile2-researcher-field_researcher_personal_www'.
   $field_instances['profile2-researcher-field_researcher_personal_www'] = array(
     'bundle' => 'researcher',
@@ -392,11 +499,11 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 2,
+        'weight' => 10,
       ),
     ),
     'entity_type' => 'profile2',
@@ -431,7 +538,40 @@ function researcher_profile_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-researcher-field_researcher_phone'.
+  $field_instances['profile2-researcher-field_researcher_phone'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_phone',
+    'label' => 'Telefon',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'telephone',
+      'settings' => array(
+        'placeholder' => '',
+      ),
+      'type' => 'telephone_default',
+      'weight' => 8,
     ),
   );
 
@@ -443,11 +583,11 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'img_style_researcher',
         ),
         'type' => 'image',
         'weight' => 1,
@@ -499,7 +639,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 19,
       ),
     ),
     'entity_type' => 'profile2',
@@ -517,7 +657,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 33,
     ),
   );
 
@@ -534,7 +674,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 18,
       ),
     ),
     'entity_type' => 'profile2',
@@ -552,7 +692,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 32,
     ),
   );
 
@@ -565,11 +705,11 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'profile2',
@@ -587,7 +727,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 11,
     ),
   );
 
@@ -599,16 +739,16 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_researcher_statements',
-    'label' => 'Statements',
+    'label' => 'Statement',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -618,10 +758,14 @@ function researcher_profile_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 5,
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -633,11 +777,11 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 13,
       ),
     ),
     'entity_type' => 'profile2',
@@ -655,7 +799,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 13,
     ),
   );
 
@@ -667,11 +811,11 @@ function researcher_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 13,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'profile2',
@@ -710,6 +854,42 @@ function researcher_profile_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'profile2-researcher-field_researcher_xing'.
+  $field_instances['profile2-researcher-field_researcher_xing'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_xing',
+    'label' => 'Xing',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 14,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
@@ -718,17 +898,21 @@ function researcher_profile_field_default_field_instances() {
   t('Completed Projects');
   t('Current Projects');
   t('Defizit in der Biodiversitätspolitik');
+  t('E-Mail');
   t('Geofield');
-  t('Institution Name');
   t('Interdisziplinäre Vernetzung ist');
   t('Linked In');
   t('Name');
   t('Picture');
   t('Recent Publications');
   t('Research Gate');
-  t('Statements');
+  t('Statement');
+  t('Telefon');
   t('Twitter');
   t('Website');
+  t('Wissenschaftliche Schwerpunkte');
+  t('Xing');
+  t('Zuständigkeiten bei NeFo');
 
   return $field_instances;
 }
