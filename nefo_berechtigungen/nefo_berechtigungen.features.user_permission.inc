@@ -1835,15 +1835,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit any main profile'.
-  $permissions['edit any main profile'] = array(
-    'name' => 'edit any main profile',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'profile2',
-  );
-
   // Exported permission: 'edit any nefo_event content'.
   $permissions['edit any nefo_event content'] = array(
     'name' => 'edit any nefo_event content',
@@ -2064,16 +2055,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'researcher' => 'researcher',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit own main profile'.
-  $permissions['edit own main profile'] = array(
-    'name' => 'edit own main profile',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'profile2',
   );
 
   // Exported permission: 'edit own nefo_event content'.
@@ -2912,18 +2893,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'vud_node',
   );
 
-  // Exported permission: 'view any main profile'.
-  $permissions['view any main profile'] = array(
-    'name' => 'view any main profile',
-    'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'profile2',
-  );
-
   // Exported permission: 'view any researcher profile'.
   $permissions['view any researcher profile'] = array(
     'name' => 'view any researcher profile',
@@ -2964,16 +2933,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'researcher' => 'researcher',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'view own main profile'.
-  $permissions['view own main profile'] = array(
-    'name' => 'view own main profile',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'profile2',
   );
 
   // Exported permission: 'view own private files'.
