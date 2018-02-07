@@ -16,8 +16,10 @@ function nefo_berechtigungen_user_default_permissions() {
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
+      'NeFo Team Member' => 'NeFo Team Member',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+      'researcher' => 'researcher',
     ),
     'module' => 'admin_menu',
   );
@@ -28,8 +30,10 @@ function nefo_berechtigungen_user_default_permissions() {
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
+      'NeFo Team Member' => 'NeFo Team Member',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+      'researcher' => 'researcher',
     ),
     'module' => 'system',
   );
@@ -131,8 +135,10 @@ function nefo_berechtigungen_user_default_permissions() {
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
+      'NeFo Team Member' => 'NeFo Team Member',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+      'researcher' => 'researcher',
     ),
     'module' => 'overlay',
   );
@@ -3092,8 +3098,10 @@ function nefo_berechtigungen_user_default_permissions() {
     'roles' => array(
       'Author' => 'Author',
       'Editor' => 'Editor',
+      'NeFo Team Member' => 'NeFo Team Member',
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
+      'researcher' => 'researcher',
     ),
     'module' => 'system',
   );
