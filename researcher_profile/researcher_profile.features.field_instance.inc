@@ -580,7 +580,7 @@ function researcher_profile_field_default_field_instances() {
     'bundle' => 'researcher',
     'default_value' => array(),
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Minimale Bildauflösung: 240x240 Pixel',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -604,7 +604,7 @@ function researcher_profile_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '2MB',
       'max_resolution' => '',
-      'min_resolution' => '',
+      'min_resolution' => '240x240',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -613,14 +613,21 @@ function researcher_profile_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
+          'oembed' => 0,
           'public' => 'public',
         ),
         'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
           'image' => 'image',
+          'video' => 0,
         ),
-        'browser_plugins' => array(),
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 0,
+        ),
       ),
       'type' => 'media_generic',
       'weight' => 1,
@@ -902,6 +909,7 @@ function researcher_profile_field_default_field_instances() {
   t('Geofield');
   t('Interdisziplinäre Vernetzung ist');
   t('Linked In');
+  t('Minimale Bildauflösung: 240x240 Pixel');
   t('Name');
   t('Picture');
   t('Recent Publications');

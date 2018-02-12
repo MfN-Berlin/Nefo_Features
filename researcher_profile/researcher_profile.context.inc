@@ -22,12 +22,6 @@ function researcher_profile_context_default_contexts() {
         'forschung/forschungsakteure/personen' => 'forschung/forschungsakteure/personen',
       ),
     ),
-    'views' => array(
-      'values' => array(
-        'view_researcher_profile' => 'view_researcher_profile',
-        'view_researcher_profile:page' => 'view_researcher_profile:page',
-      ),
-    ),
   );
   $context->reactions = array(
     'block' => array(

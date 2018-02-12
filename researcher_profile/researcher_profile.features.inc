@@ -36,7 +36,7 @@ function researcher_profile_image_default_styles() {
       1 => array(
         'name' => 'image_scale',
         'data' => array(
-          'width' => 180,
+          'width' => 240,
           'height' => '',
           'upscale' => 0,
         ),
