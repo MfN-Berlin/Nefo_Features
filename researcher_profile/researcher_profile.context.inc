@@ -19,7 +19,7 @@ function researcher_profile_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'forscherprofile' => 'forscherprofile',
+        'forschung/forschungsakteure/personen' => 'forschung/forschungsakteure/personen',
       ),
     ),
     'views' => array(
@@ -42,7 +42,7 @@ function researcher_profile_context_default_contexts() {
       'layout' => 'researcher',
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
