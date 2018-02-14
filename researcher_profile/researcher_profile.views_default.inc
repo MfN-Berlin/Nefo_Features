@@ -219,6 +219,8 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_picture']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_picture']['alter']['path'] = 'nefo/wer-wir-sind/[pid]';
   $handler->display->display_options['fields']['field_researcher_picture']['alter']['link_class'] = 'colorbox-node';
+  $handler->display->display_options['fields']['field_researcher_picture']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_researcher_picture']['element_class'] = 'nefo-block-team-image';
   $handler->display->display_options['fields']['field_researcher_picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_picture']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_picture']['click_sort_column'] = 'fid';
