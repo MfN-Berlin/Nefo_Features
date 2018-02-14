@@ -84,6 +84,7 @@ features[field_instance][] = profile2-researcher-field_researcher_xing
 features[image][] = img_style_researcher
 features[profile2_type][] = researcher
 features[user_role][] = researcher
+features[views_view][] = nefo_block_team
 features[views_view][] = nefo_researcher_profile
 features[views_view][] = view_researcher_profile
 features_exclude[dependencies][nefo_struktur] = nefo_struktur

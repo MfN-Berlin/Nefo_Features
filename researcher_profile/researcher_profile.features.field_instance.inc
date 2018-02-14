@@ -89,7 +89,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 34,
+      'weight' => 35,
     ),
   );
 
@@ -388,31 +388,48 @@ function researcher_profile_field_default_field_instances() {
     'bundle' => 'researcher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'URL für Ihr persönliches LinkedIn-Profil ',
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'link_default',
         'weight' => 12,
       ),
     ),
     'entity_type' => 'profile2',
     'field_name' => 'field_researcher_linkedin',
-    'label' => 'Linked In',
+    'label' => 'LinkedIn',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
       'user_register_form' => FALSE,
+      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
       'weight' => 12,
     ),
   );
@@ -496,7 +513,7 @@ function researcher_profile_field_default_field_instances() {
     'bundle' => 'researcher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'URL für Ihre öffentliche Website',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -523,7 +540,7 @@ function researcher_profile_field_default_field_instances() {
       'display' => array(
         'url_cutoff' => 80,
       ),
-      'enable_tokens' => 1,
+      'enable_tokens' => 0,
       'rel_remove' => 'default',
       'title' => 'none',
       'title_label_use_field_label' => 0,
@@ -664,7 +681,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 33,
+      'weight' => 34,
     ),
   );
 
@@ -709,13 +726,13 @@ function researcher_profile_field_default_field_instances() {
     'bundle' => 'researcher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'URL für Ihr persönliches ResearchGate-Profil',
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'link_default',
         'weight' => 11,
       ),
     ),
@@ -724,16 +741,33 @@ function researcher_profile_field_default_field_instances() {
     'label' => 'Research Gate',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
       'user_register_form' => FALSE,
+      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
       'weight' => 11,
     ),
   );
@@ -781,13 +815,13 @@ function researcher_profile_field_default_field_instances() {
     'bundle' => 'researcher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'URL für Ihr persönliches Twitter-Profil ',
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'link_default',
         'weight' => 13,
       ),
     ),
@@ -796,16 +830,33 @@ function researcher_profile_field_default_field_instances() {
     'label' => 'Twitter',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
       'user_register_form' => FALSE,
+      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
       'weight' => 13,
     ),
   );
@@ -866,13 +917,13 @@ function researcher_profile_field_default_field_instances() {
     'bundle' => 'researcher',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'URL für Ihr persönliches Xing-Profil ',
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'text',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'link_default',
         'weight' => 14,
       ),
     ),
@@ -881,18 +932,33 @@ function researcher_profile_field_default_field_instances() {
     'label' => 'Xing',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
       'user_register_form' => FALSE,
+      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
       'weight' => 14,
     ),
   );
@@ -908,7 +974,7 @@ function researcher_profile_field_default_field_instances() {
   t('E-Mail');
   t('Geofield');
   t('Interdisziplinäre Vernetzung ist');
-  t('Linked In');
+  t('LinkedIn');
   t('Minimale Bildauflösung: 240x240 Pixel');
   t('Name');
   t('Picture');
@@ -917,6 +983,11 @@ function researcher_profile_field_default_field_instances() {
   t('Statement');
   t('Telefon');
   t('Twitter');
+  t('URL für Ihr persönliches LinkedIn-Profil ');
+  t('URL für Ihr persönliches ResearchGate-Profil');
+  t('URL für Ihr persönliches Twitter-Profil ');
+  t('URL für Ihr persönliches Xing-Profil ');
+  t('URL für Ihre öffentliche Website');
   t('Website');
   t('Wissenschaftliche Schwerpunkte');
   t('Xing');
