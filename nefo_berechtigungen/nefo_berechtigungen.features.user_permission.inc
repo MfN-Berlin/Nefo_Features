@@ -104,6 +104,16 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'dashboard',
   );
 
+  // Exported permission: 'access draggableviews'.
+  $permissions['access draggableviews'] = array(
+    'name' => 'access draggableviews',
+    'roles' => array(
+      'Site Administrator' => 'Site Administrator',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'draggableviews',
+  );
+
   // Exported permission: 'access media browser'.
   $permissions['access media browser'] = array(
     'name' => 'access media browser',

@@ -39,13 +39,13 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['style_options']['columns'] = '2';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: UserID */
+  /* Beziehung: UserID */
   $handler->display->display_options['relationships']['user']['id'] = 'user';
   $handler->display->display_options['relationships']['user']['table'] = 'profile';
   $handler->display->display_options['relationships']['user']['field'] = 'user';
   $handler->display->display_options['relationships']['user']['ui_name'] = 'UserID';
   $handler->display->display_options['relationships']['user']['required'] = TRUE;
-  /* Field: Profil: Profil ID */
+  /* Feld: Profil: Profil ID */
   $handler->display->display_options['fields']['pid']['id'] = 'pid';
   $handler->display->display_options['fields']['pid']['table'] = 'profile';
   $handler->display->display_options['fields']['pid']['field'] = 'pid';
@@ -53,7 +53,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['pid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['pid']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['pid']['separator'] = '';
-  /* Field: Name */
+  /* Feld: Name */
   $handler->display->display_options['fields']['field_researcher_name']['id'] = 'field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['table'] = 'field_data_field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['field'] = 'field_researcher_name';
@@ -62,7 +62,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_name']['element_type'] = 'h1';
   $handler->display->display_options['fields']['field_researcher_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_name']['element_default_classes'] = FALSE;
-  /* Field: Picture */
+  /* Feld: Picture */
   $handler->display->display_options['fields']['field_researcher_picture']['id'] = 'field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['table'] = 'field_data_field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['field'] = 'field_researcher_picture';
@@ -75,14 +75,14 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
-  /* Field: Contact Phone */
+  /* Feld: Contact Phone */
   $handler->display->display_options['fields']['field_researcher_phone']['id'] = 'field_researcher_phone';
   $handler->display->display_options['fields']['field_researcher_phone']['table'] = 'field_data_field_researcher_phone';
   $handler->display->display_options['fields']['field_researcher_phone']['field'] = 'field_researcher_phone';
   $handler->display->display_options['fields']['field_researcher_phone']['ui_name'] = 'Contact Phone';
   $handler->display->display_options['fields']['field_researcher_phone']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_phone']['hide_empty'] = TRUE;
-  /* Field: Contact Email */
+  /* Feld: Contact Email */
   $handler->display->display_options['fields']['field_researcher_email']['id'] = 'field_researcher_email';
   $handler->display->display_options['fields']['field_researcher_email']['table'] = 'field_data_field_researcher_email';
   $handler->display->display_options['fields']['field_researcher_email']['field'] = 'field_researcher_email';
@@ -90,7 +90,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_email']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_email']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_email']['type'] = 'email_plain';
-  /* Field: Contact Website */
+  /* Feld: Contact Website */
   $handler->display->display_options['fields']['field_researcher_personal_www']['id'] = 'field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['table'] = 'field_data_field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['field'] = 'field_researcher_personal_www';
@@ -98,58 +98,58 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_personal_www']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_personal_www']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_personal_www']['click_sort_column'] = 'url';
-  /* Field: Contact Research gate */
+  /* Feld: Contact Research gate */
   $handler->display->display_options['fields']['field_researcher_research_gate']['id'] = 'field_researcher_research_gate';
   $handler->display->display_options['fields']['field_researcher_research_gate']['table'] = 'field_data_field_researcher_research_gate';
   $handler->display->display_options['fields']['field_researcher_research_gate']['field'] = 'field_researcher_research_gate';
   $handler->display->display_options['fields']['field_researcher_research_gate']['ui_name'] = 'Contact Research gate';
   $handler->display->display_options['fields']['field_researcher_research_gate']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_research_gate']['hide_empty'] = TRUE;
-  /* Field: Contact LinkedIn */
+  /* Feld: Contact LinkedIn */
   $handler->display->display_options['fields']['field_researcher_linkedin']['id'] = 'field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['table'] = 'field_data_field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['field'] = 'field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['ui_name'] = 'Contact LinkedIn';
   $handler->display->display_options['fields']['field_researcher_linkedin']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_linkedin']['hide_empty'] = TRUE;
-  /* Field: Contact Twitter */
+  /* Feld: Contact Twitter */
   $handler->display->display_options['fields']['field_researcher_twitter']['id'] = 'field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['table'] = 'field_data_field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['field'] = 'field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['ui_name'] = 'Contact Twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_twitter']['hide_empty'] = TRUE;
-  /* Field: Contact Xing */
+  /* Feld: Contact Xing */
   $handler->display->display_options['fields']['field_researcher_xing']['id'] = 'field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['table'] = 'field_data_field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['field'] = 'field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['ui_name'] = 'Contact Xing';
   $handler->display->display_options['fields']['field_researcher_xing']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_xing']['hide_empty'] = TRUE;
-  /* Field: Research Focus */
+  /* Feld: Research Focus */
   $handler->display->display_options['fields']['field_researcher_focus']['id'] = 'field_researcher_focus';
   $handler->display->display_options['fields']['field_researcher_focus']['table'] = 'field_data_field_researcher_focus';
   $handler->display->display_options['fields']['field_researcher_focus']['field'] = 'field_researcher_focus';
   $handler->display->display_options['fields']['field_researcher_focus']['ui_name'] = 'Research Focus';
   $handler->display->display_options['fields']['field_researcher_focus']['hide_empty'] = TRUE;
-  /* Field: Research NeFo */
+  /* Feld: Research NeFo */
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['id'] = 'field_researcher_nefo_topics';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['table'] = 'field_data_field_researcher_nefo_topics';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['field'] = 'field_researcher_nefo_topics';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['ui_name'] = 'Research NeFo';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['hide_empty'] = TRUE;
-  /* Field: Institution Name */
+  /* Feld: Institution Name */
   $handler->display->display_options['fields']['field_researcher_institutio_name']['id'] = 'field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['table'] = 'field_data_field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['field'] = 'field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['ui_name'] = 'Institution Name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['hide_empty'] = TRUE;
-  /* Sort criterion: Draggableviews: Weight */
+  /* Sortierkriterien: DraggableViews: Gewichtung */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  /* Contextual filter: Profile ID */
+  /* Kontextfilter: Profile ID */
   $handler->display->display_options['arguments']['pid']['id'] = 'pid';
   $handler->display->display_options['arguments']['pid']['table'] = 'profile';
   $handler->display->display_options['arguments']['pid']['field'] = 'pid';
@@ -163,7 +163,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['arguments']['pid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['pid']['specify_validation'] = TRUE;
   $handler->display->display_options['arguments']['pid']['validate']['type'] = 'numeric';
-  /* Filter criterion: Profil: Type */
+  /* Filterkriterium: Profil: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -191,7 +191,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Profil: Profil ID */
+  /* Feld: Profil: Profil ID */
   $handler->display->display_options['fields']['pid']['id'] = 'pid';
   $handler->display->display_options['fields']['pid']['table'] = 'profile';
   $handler->display->display_options['fields']['pid']['field'] = 'pid';
@@ -200,7 +200,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['pid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['pid']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['pid']['separator'] = '';
-  /* Field: Institution Name */
+  /* Feld: Institution Name */
   $handler->display->display_options['fields']['field_researcher_institutio_name']['id'] = 'field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['table'] = 'field_data_field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['field'] = 'field_researcher_institutio_name';
@@ -210,7 +210,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_institutio_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_institutio_name']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_institutio_name']['hide_empty'] = TRUE;
-  /* Field: Picture */
+  /* Feld: Picture */
   $handler->display->display_options['fields']['field_researcher_picture']['id'] = 'field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['table'] = 'field_data_field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['field'] = 'field_researcher_picture';
@@ -228,7 +228,7 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
-  /* Field: Name */
+  /* Feld: Name */
   $handler->display->display_options['fields']['field_researcher_name']['id'] = 'field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['table'] = 'field_data_field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['field'] = 'field_researcher_name';
@@ -239,7 +239,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_name']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
+  /* Sortierkriterien: DraggableViews: Gewichtung */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
@@ -248,14 +248,14 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Profil: Type */
+  /* Filterkriterium: Profil: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'researcher' => 'researcher',
   );
-  /* Filter criterion: User: Roles */
+  /* Filterkriterium: Benutzer: Rollen */
   $handler->display->display_options['filters']['rid']['id'] = 'rid';
   $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
   $handler->display->display_options['filters']['rid']['field'] = 'rid';
@@ -266,6 +266,11 @@ function researcher_profile_views_default_views() {
 
   /* Display: Sort Team Page */
   $handler = $view->new_display('page', 'Sort Team Page', 'sortteam');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    4 => '4',
+  );
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
@@ -381,7 +386,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Profil: Profil ID */
+  /* Feld: Profil: Profil ID */
   $handler->display->display_options['fields']['pid']['id'] = 'pid';
   $handler->display->display_options['fields']['pid']['table'] = 'profile';
   $handler->display->display_options['fields']['pid']['field'] = 'pid';
@@ -390,7 +395,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['pid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['pid']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['pid']['separator'] = '';
-  /* Field: Draggableviews: Profil */
+  /* Feld: DraggableViews: Profil */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['table'] = 'profile';
   $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
@@ -399,7 +404,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
-  /* Field: Picture */
+  /* Feld: Picture */
   $handler->display->display_options['fields']['field_researcher_picture']['id'] = 'field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['table'] = 'field_data_field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['field'] = 'field_researcher_picture';
@@ -413,7 +418,7 @@ function researcher_profile_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
+  /* Sortierkriterien: DraggableViews: Gewichtung */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
@@ -422,14 +427,14 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Profil: Type */
+  /* Filterkriterium: Profil: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'researcher' => 'researcher',
   );
-  /* Filter criterion: User: Roles */
+  /* Filterkriterium: Benutzer: Rollen */
   $handler->display->display_options['filters']['rid']['id'] = 'rid';
   $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
   $handler->display->display_options['filters']['rid']['field'] = 'rid';
@@ -438,6 +443,13 @@ function researcher_profile_views_default_views() {
     8 => '8',
   );
   $handler->display->display_options['path'] = 'admin/content/sort/team';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Teamseite-Reihenfolge';
+  $handler->display->display_options['menu']['description'] = 'Sortieren der Reihenfolge der Bilder auf der NeFo-Teamseite';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'management';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
 
   /* Display: Team Profile */
   $handler = $view->new_display('page', 'Team Profile', 'teamprofile');
@@ -454,7 +466,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Profil: Profil ID */
+  /* Feld: Profil: Profil ID */
   $handler->display->display_options['fields']['pid']['id'] = 'pid';
   $handler->display->display_options['fields']['pid']['table'] = 'profile';
   $handler->display->display_options['fields']['pid']['field'] = 'pid';
@@ -463,7 +475,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['pid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['pid']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['pid']['separator'] = '';
-  /* Field: Name */
+  /* Feld: Name */
   $handler->display->display_options['fields']['field_researcher_name']['id'] = 'field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['table'] = 'field_data_field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['field'] = 'field_researcher_name';
@@ -474,7 +486,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_name']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_name']['type'] = 'text_plain';
-  /* Field: Picture */
+  /* Feld: Picture */
   $handler->display->display_options['fields']['field_researcher_picture']['id'] = 'field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['table'] = 'field_data_field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['field'] = 'field_researcher_picture';
@@ -488,7 +500,7 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
-  /* Field: Institution Name */
+  /* Feld: Institution Name */
   $handler->display->display_options['fields']['field_researcher_institutio_name']['id'] = 'field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['table'] = 'field_data_field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['field'] = 'field_researcher_institutio_name';
@@ -496,7 +508,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_institutio_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_institutio_name']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['hide_empty'] = TRUE;
-  /* Field: Contact Email */
+  /* Feld: Contact Email */
   $handler->display->display_options['fields']['field_researcher_email']['id'] = 'field_researcher_email';
   $handler->display->display_options['fields']['field_researcher_email']['table'] = 'field_data_field_researcher_email';
   $handler->display->display_options['fields']['field_researcher_email']['field'] = 'field_researcher_email';
@@ -512,7 +524,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_email']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_email']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_email']['type'] = 'email_plain';
-  /* Field: Contact Phone */
+  /* Feld: Contact Phone */
   $handler->display->display_options['fields']['field_researcher_phone']['id'] = 'field_researcher_phone';
   $handler->display->display_options['fields']['field_researcher_phone']['table'] = 'field_data_field_researcher_phone';
   $handler->display->display_options['fields']['field_researcher_phone']['field'] = 'field_researcher_phone';
@@ -527,7 +539,7 @@ function researcher_profile_views_default_views() {
 				</div>';
   $handler->display->display_options['fields']['field_researcher_phone']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_phone']['hide_empty'] = TRUE;
-  /* Field: Contact Website */
+  /* Feld: Contact Website */
   $handler->display->display_options['fields']['field_researcher_personal_www']['id'] = 'field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['table'] = 'field_data_field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['field'] = 'field_researcher_personal_www';
@@ -543,7 +555,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_personal_www']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_personal_www']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_personal_www']['click_sort_column'] = 'url';
-  /* Field: Contact Research gate */
+  /* Feld: Contact Research gate */
   $handler->display->display_options['fields']['field_researcher_research_gate']['id'] = 'field_researcher_research_gate';
   $handler->display->display_options['fields']['field_researcher_research_gate']['table'] = 'field_data_field_researcher_research_gate';
   $handler->display->display_options['fields']['field_researcher_research_gate']['field'] = 'field_researcher_research_gate';
@@ -557,7 +569,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_research_gate']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_research_gate']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_researcher_research_gate']['group_column'] = 'value';
-  /* Field: Contact LinkedIn */
+  /* Feld: Contact LinkedIn */
   $handler->display->display_options['fields']['field_researcher_linkedin']['id'] = 'field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['table'] = 'field_data_field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['field'] = 'field_researcher_linkedin';
@@ -572,7 +584,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_linkedin']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_linkedin']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_researcher_linkedin']['group_column'] = 'value';
-  /* Field: Contact Twitter */
+  /* Feld: Contact Twitter */
   $handler->display->display_options['fields']['field_researcher_twitter']['id'] = 'field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['table'] = 'field_data_field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['field'] = 'field_researcher_twitter';
@@ -586,7 +598,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_twitter']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_twitter']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_researcher_twitter']['group_column'] = 'value';
-  /* Field: Contact Xing */
+  /* Feld: Contact Xing */
   $handler->display->display_options['fields']['field_researcher_xing']['id'] = 'field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['table'] = 'field_data_field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['field'] = 'field_researcher_xing';
@@ -600,7 +612,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_xing']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_xing']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_researcher_xing']['group_column'] = 'value';
-  /* Field: Research Focus */
+  /* Feld: Research Focus */
   $handler->display->display_options['fields']['field_researcher_focus']['id'] = 'field_researcher_focus';
   $handler->display->display_options['fields']['field_researcher_focus']['table'] = 'field_data_field_researcher_focus';
   $handler->display->display_options['fields']['field_researcher_focus']['field'] = 'field_researcher_focus';
@@ -615,7 +627,7 @@ function researcher_profile_views_default_views() {
 				</div>';
   $handler->display->display_options['fields']['field_researcher_focus']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_focus']['hide_empty'] = TRUE;
-  /* Field: Research NeFo */
+  /* Feld: Research NeFo */
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['id'] = 'field_researcher_nefo_topics';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['table'] = 'field_data_field_researcher_nefo_topics';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['field'] = 'field_researcher_nefo_topics';
@@ -630,7 +642,7 @@ function researcher_profile_views_default_views() {
 				</div>	';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['hide_empty'] = TRUE;
-  /* Field: Wrapper */
+  /* Feld: Wrapper */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -670,7 +682,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Profile ID */
+  /* Kontextfilter: Profile ID */
   $handler->display->display_options['arguments']['pid']['id'] = 'pid';
   $handler->display->display_options['arguments']['pid']['table'] = 'profile';
   $handler->display->display_options['arguments']['pid']['field'] = 'pid';
@@ -685,14 +697,14 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['arguments']['pid']['validate']['type'] = 'numeric';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Profil: Type */
+  /* Filterkriterium: Profil: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'researcher' => 'researcher',
   );
-  /* Filter criterion: User: Roles */
+  /* Filterkriterium: Benutzer: Rollen */
   $handler->display->display_options['filters']['rid']['id'] = 'rid';
   $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
   $handler->display->display_options['filters']['rid']['field'] = 'rid';
@@ -734,7 +746,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Profil: Profil ID */
+  /* Feld: Profil: Profil ID */
   $handler->display->display_options['fields']['pid']['id'] = 'pid';
   $handler->display->display_options['fields']['pid']['table'] = 'profile';
   $handler->display->display_options['fields']['pid']['field'] = 'pid';
@@ -743,7 +755,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['pid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['pid']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['pid']['separator'] = '';
-  /* Field: Name */
+  /* Feld: Name */
   $handler->display->display_options['fields']['field_researcher_name']['id'] = 'field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['table'] = 'field_data_field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['field'] = 'field_researcher_name';
@@ -752,7 +764,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_name']['element_type'] = 'h1';
   $handler->display->display_options['fields']['field_researcher_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_name']['element_default_classes'] = FALSE;
-  /* Field: Picture */
+  /* Feld: Picture */
   $handler->display->display_options['fields']['field_researcher_picture']['id'] = 'field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['table'] = 'field_data_field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['field'] = 'field_researcher_picture';
@@ -765,7 +777,7 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
-  /* Field: Global: Fieldset */
+  /* Feld: Global: Feldgruppe */
   $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
@@ -782,14 +794,14 @@ function researcher_profile_views_default_views() {
   );
   $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'nefo-researcher-profile-contact-details-group';
   $handler->display->display_options['fields']['fieldset']['fieldset']['collapsible'] = 1;
-  /* Field: Contact Phone */
+  /* Feld: Contact Phone */
   $handler->display->display_options['fields']['field_researcher_phone']['id'] = 'field_researcher_phone';
   $handler->display->display_options['fields']['field_researcher_phone']['table'] = 'field_data_field_researcher_phone';
   $handler->display->display_options['fields']['field_researcher_phone']['field'] = 'field_researcher_phone';
   $handler->display->display_options['fields']['field_researcher_phone']['ui_name'] = 'Contact Phone';
   $handler->display->display_options['fields']['field_researcher_phone']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_phone']['hide_empty'] = TRUE;
-  /* Field: Contact Email */
+  /* Feld: Contact Email */
   $handler->display->display_options['fields']['field_researcher_email']['id'] = 'field_researcher_email';
   $handler->display->display_options['fields']['field_researcher_email']['table'] = 'field_data_field_researcher_email';
   $handler->display->display_options['fields']['field_researcher_email']['field'] = 'field_researcher_email';
@@ -797,7 +809,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_email']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_email']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_email']['type'] = 'email_plain';
-  /* Field: Contact Website */
+  /* Feld: Contact Website */
   $handler->display->display_options['fields']['field_researcher_personal_www']['id'] = 'field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['table'] = 'field_data_field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['field'] = 'field_researcher_personal_www';
@@ -805,7 +817,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_personal_www']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_personal_www']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_personal_www']['click_sort_column'] = 'url';
-  /* Field: Contact Research gate */
+  /* Feld: Contact Research gate */
   $handler->display->display_options['fields']['field_researcher_research_gate']['id'] = 'field_researcher_research_gate';
   $handler->display->display_options['fields']['field_researcher_research_gate']['table'] = 'field_data_field_researcher_research_gate';
   $handler->display->display_options['fields']['field_researcher_research_gate']['field'] = 'field_researcher_research_gate';
@@ -813,7 +825,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_research_gate']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_research_gate']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_research_gate']['click_sort_column'] = 'url';
-  /* Field: Contact LinkedIn */
+  /* Feld: Contact LinkedIn */
   $handler->display->display_options['fields']['field_researcher_linkedin']['id'] = 'field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['table'] = 'field_data_field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['field'] = 'field_researcher_linkedin';
@@ -821,7 +833,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_linkedin']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_linkedin']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_linkedin']['click_sort_column'] = 'url';
-  /* Field: Contact Twitter */
+  /* Feld: Contact Twitter */
   $handler->display->display_options['fields']['field_researcher_twitter']['id'] = 'field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['table'] = 'field_data_field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['field'] = 'field_researcher_twitter';
@@ -829,7 +841,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_twitter']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_twitter']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_twitter']['click_sort_column'] = 'url';
-  /* Field: Contact Xing */
+  /* Feld: Contact Xing */
   $handler->display->display_options['fields']['field_researcher_xing']['id'] = 'field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['table'] = 'field_data_field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['field'] = 'field_researcher_xing';
@@ -837,7 +849,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_xing']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_xing']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_xing']['click_sort_column'] = 'url';
-  /* Field: Global: Fieldset */
+  /* Feld: Global: Feldgruppe */
   $handler->display->display_options['fields']['fieldset_1']['id'] = 'fieldset_1';
   $handler->display->display_options['fields']['fieldset_1']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset_1']['field'] = 'fieldset';
@@ -852,19 +864,19 @@ function researcher_profile_views_default_views() {
   );
   $handler->display->display_options['fields']['fieldset_1']['fieldset']['classes'] = 'nefo-researcher-profile-research-topics-group';
   $handler->display->display_options['fields']['fieldset_1']['fieldset']['collapsible'] = 1;
-  /* Field: Research Focus */
+  /* Feld: Research Focus */
   $handler->display->display_options['fields']['field_researcher_focus']['id'] = 'field_researcher_focus';
   $handler->display->display_options['fields']['field_researcher_focus']['table'] = 'field_data_field_researcher_focus';
   $handler->display->display_options['fields']['field_researcher_focus']['field'] = 'field_researcher_focus';
   $handler->display->display_options['fields']['field_researcher_focus']['ui_name'] = 'Research Focus';
   $handler->display->display_options['fields']['field_researcher_focus']['hide_empty'] = TRUE;
-  /* Field: Research NeFo */
+  /* Feld: Research NeFo */
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['id'] = 'field_researcher_nefo_topics';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['table'] = 'field_data_field_researcher_nefo_topics';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['field'] = 'field_researcher_nefo_topics';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['ui_name'] = 'Research NeFo';
   $handler->display->display_options['fields']['field_researcher_nefo_topics']['hide_empty'] = TRUE;
-  /* Field: Research Recent Publications */
+  /* Feld: Research Recent Publications */
   $handler->display->display_options['fields']['field_researcher_publications']['id'] = 'field_researcher_publications';
   $handler->display->display_options['fields']['field_researcher_publications']['table'] = 'field_data_field_researcher_publications';
   $handler->display->display_options['fields']['field_researcher_publications']['field'] = 'field_researcher_publications';
@@ -873,7 +885,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_publications']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_publications']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_researcher_publications']['multi_type'] = 'ul';
-  /* Field: Research Current Projects */
+  /* Feld: Research Current Projects */
   $handler->display->display_options['fields']['field_researcher_projects']['id'] = 'field_researcher_projects';
   $handler->display->display_options['fields']['field_researcher_projects']['table'] = 'field_data_field_researcher_projects';
   $handler->display->display_options['fields']['field_researcher_projects']['field'] = 'field_researcher_projects';
@@ -882,7 +894,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_projects']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_projects']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_researcher_projects']['multi_type'] = 'ul';
-  /* Field: Research Completed Projects */
+  /* Feld: Research Completed Projects */
   $handler->display->display_options['fields']['field_researcher_completed']['id'] = 'field_researcher_completed';
   $handler->display->display_options['fields']['field_researcher_completed']['table'] = 'field_data_field_researcher_completed';
   $handler->display->display_options['fields']['field_researcher_completed']['field'] = 'field_researcher_completed';
@@ -891,7 +903,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_completed']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_completed']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_researcher_completed']['multi_type'] = 'ul';
-  /* Field: Global: Fieldset */
+  /* Feld: Global: Feldgruppe */
   $handler->display->display_options['fields']['fieldset_2']['id'] = 'fieldset_2';
   $handler->display->display_options['fields']['fieldset_2']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset_2']['field'] = 'fieldset';
@@ -904,14 +916,14 @@ function researcher_profile_views_default_views() {
   );
   $handler->display->display_options['fields']['fieldset_2']['fieldset']['classes'] = 'nefo-researcher-profile-institution-group';
   $handler->display->display_options['fields']['fieldset_2']['fieldset']['collapsible'] = 1;
-  /* Field: Institution Name */
+  /* Feld: Institution Name */
   $handler->display->display_options['fields']['field_researcher_institutio_name']['id'] = 'field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['table'] = 'field_data_field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['field'] = 'field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['ui_name'] = 'Institution Name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['hide_empty'] = TRUE;
-  /* Field: Institution Website */
+  /* Feld: Institution Website */
   $handler->display->display_options['fields']['field_researcher_www']['id'] = 'field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['table'] = 'field_data_field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['field'] = 'field_researcher_www';
@@ -920,7 +932,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_www']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_www']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_www']['click_sort_column'] = 'url';
-  /* Field: Institution Address */
+  /* Feld: Institution Address */
   $handler->display->display_options['fields']['field_researcher_address']['id'] = 'field_researcher_address';
   $handler->display->display_options['fields']['field_researcher_address']['table'] = 'field_data_field_researcher_address';
   $handler->display->display_options['fields']['field_researcher_address']['field'] = 'field_researcher_address';
@@ -935,7 +947,7 @@ function researcher_profile_views_default_views() {
       'address' => 'address',
     ),
   );
-  /* Field: Global: Fieldset */
+  /* Feld: Global: Feldgruppe */
   $handler->display->display_options['fields']['fieldset_3']['id'] = 'fieldset_3';
   $handler->display->display_options['fields']['fieldset_3']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset_3']['field'] = 'fieldset';
@@ -950,7 +962,7 @@ function researcher_profile_views_default_views() {
   );
   $handler->display->display_options['fields']['fieldset_3']['fieldset']['classes'] = 'nefo-researcher-profile-statements-group';
   $handler->display->display_options['fields']['fieldset_3']['fieldset']['collapsible'] = 1;
-  /* Field: Statements Statement */
+  /* Feld: Statements Statement */
   $handler->display->display_options['fields']['field_researcher_statements']['id'] = 'field_researcher_statements';
   $handler->display->display_options['fields']['field_researcher_statements']['table'] = 'field_data_field_researcher_statements';
   $handler->display->display_options['fields']['field_researcher_statements']['field'] = 'field_researcher_statements';
@@ -958,35 +970,35 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_statements']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_statements']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_researcher_statements']['multi_type'] = 'ul';
-  /* Field: Statements Fascinated */
+  /* Feld: Statements Fascinated */
   $handler->display->display_options['fields']['field_researcher_fascinated']['id'] = 'field_researcher_fascinated';
   $handler->display->display_options['fields']['field_researcher_fascinated']['table'] = 'field_data_field_researcher_fascinated';
   $handler->display->display_options['fields']['field_researcher_fascinated']['field'] = 'field_researcher_fascinated';
   $handler->display->display_options['fields']['field_researcher_fascinated']['ui_name'] = 'Statements Fascinated';
   $handler->display->display_options['fields']['field_researcher_fascinated']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_fascinated']['hide_empty'] = TRUE;
-  /* Field: Statements Important */
+  /* Feld: Statements Important */
   $handler->display->display_options['fields']['field_researcher_important']['id'] = 'field_researcher_important';
   $handler->display->display_options['fields']['field_researcher_important']['table'] = 'field_data_field_researcher_important';
   $handler->display->display_options['fields']['field_researcher_important']['field'] = 'field_researcher_important';
   $handler->display->display_options['fields']['field_researcher_important']['ui_name'] = 'Statements Important';
   $handler->display->display_options['fields']['field_researcher_important']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_important']['hide_empty'] = TRUE;
-  /* Field: Statements Interdiscipline */
+  /* Feld: Statements Interdiscipline */
   $handler->display->display_options['fields']['field_researcher_deficit']['id'] = 'field_researcher_deficit';
   $handler->display->display_options['fields']['field_researcher_deficit']['table'] = 'field_data_field_researcher_deficit';
   $handler->display->display_options['fields']['field_researcher_deficit']['field'] = 'field_researcher_deficit';
   $handler->display->display_options['fields']['field_researcher_deficit']['ui_name'] = 'Statements Interdiscipline';
   $handler->display->display_options['fields']['field_researcher_deficit']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_deficit']['hide_empty'] = TRUE;
-  /* Field: Statements Deficit */
+  /* Feld: Statements Deficit */
   $handler->display->display_options['fields']['field_researcher_interdiscipline']['id'] = 'field_researcher_interdiscipline';
   $handler->display->display_options['fields']['field_researcher_interdiscipline']['table'] = 'field_data_field_researcher_interdiscipline';
   $handler->display->display_options['fields']['field_researcher_interdiscipline']['field'] = 'field_researcher_interdiscipline';
   $handler->display->display_options['fields']['field_researcher_interdiscipline']['ui_name'] = 'Statements Deficit';
   $handler->display->display_options['fields']['field_researcher_interdiscipline']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_interdiscipline']['hide_empty'] = TRUE;
-  /* Contextual filter: Profile ID */
+  /* Kontextfilter: Profile ID */
   $handler->display->display_options['arguments']['pid']['id'] = 'pid';
   $handler->display->display_options['arguments']['pid']['table'] = 'profile';
   $handler->display->display_options['arguments']['pid']['field'] = 'pid';
@@ -1000,7 +1012,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['arguments']['pid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['pid']['specify_validation'] = TRUE;
   $handler->display->display_options['arguments']['pid']['validate']['type'] = 'numeric';
-  /* Filter criterion: Profil: Type */
+  /* Filterkriterium: Profil: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1103,7 +1115,7 @@ function researcher_profile_views_default_views() {
     'field_researcher_linkedin' => 'field_researcher_linkedin',
   );
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  /* Field: Profil: Profil ID */
+  /* Feld: Profil: Profil ID */
   $handler->display->display_options['fields']['pid']['id'] = 'pid';
   $handler->display->display_options['fields']['pid']['table'] = 'profile';
   $handler->display->display_options['fields']['pid']['field'] = 'pid';
@@ -1112,7 +1124,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['pid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['pid']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['pid']['separator'] = '';
-  /* Field: Profil: Name */
+  /* Feld: Profil: Name */
   $handler->display->display_options['fields']['field_researcher_name']['id'] = 'field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['table'] = 'field_data_field_researcher_name';
   $handler->display->display_options['fields']['field_researcher_name']['field'] = 'field_researcher_name';
@@ -1122,7 +1134,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_name']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_researcher_name']['element_label_type'] = '0';
   $handler->display->display_options['fields']['field_researcher_name']['element_label_colon'] = FALSE;
-  /* Field: Profil: Picture */
+  /* Feld: Profil: Picture */
   $handler->display->display_options['fields']['field_researcher_picture']['id'] = 'field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['table'] = 'field_data_field_researcher_picture';
   $handler->display->display_options['fields']['field_researcher_picture']['field'] = 'field_researcher_picture';
@@ -1138,7 +1150,7 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
-  /* Field: Profil: Website */
+  /* Feld: Profil: Website */
   $handler->display->display_options['fields']['field_researcher_www']['id'] = 'field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['table'] = 'field_data_field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['field'] = 'field_researcher_www';
@@ -1151,7 +1163,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_www']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_www']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_researcher_www']['type'] = 'link_url';
-  /* Field: Profil: Twitter */
+  /* Feld: Profil: Twitter */
   $handler->display->display_options['fields']['field_researcher_twitter']['id'] = 'field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['table'] = 'field_data_field_researcher_twitter';
   $handler->display->display_options['fields']['field_researcher_twitter']['field'] = 'field_researcher_twitter';
@@ -1163,7 +1175,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_twitter']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_twitter']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_twitter']['click_sort_column'] = 'url';
-  /* Field: Profil: LinkedIn */
+  /* Feld: Profil: LinkedIn */
   $handler->display->display_options['fields']['field_researcher_linkedin']['id'] = 'field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['table'] = 'field_data_field_researcher_linkedin';
   $handler->display->display_options['fields']['field_researcher_linkedin']['field'] = 'field_researcher_linkedin';
@@ -1174,7 +1186,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_linkedin']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_linkedin']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_linkedin']['click_sort_column'] = 'url';
-  /* Field: Profil: Xing */
+  /* Feld: Profil: Xing */
   $handler->display->display_options['fields']['field_researcher_xing']['id'] = 'field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['table'] = 'field_data_field_researcher_xing';
   $handler->display->display_options['fields']['field_researcher_xing']['field'] = 'field_researcher_xing';
@@ -1185,7 +1197,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_xing']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_xing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_xing']['click_sort_column'] = 'url';
-  /* Field: Left Wrapper */
+  /* Feld: Left Wrapper */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -1199,7 +1211,7 @@ function researcher_profile_views_default_views() {
 <div class="field-researcher-xing">[field_researcher_xing]</div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Profil: Biodiversität fasziniert mich, ... */
+  /* Feld: Profil: Biodiversität fasziniert mich, ... */
   $handler->display->display_options['fields']['field_researcher_fascinated']['id'] = 'field_researcher_fascinated';
   $handler->display->display_options['fields']['field_researcher_fascinated']['table'] = 'field_data_field_researcher_fascinated';
   $handler->display->display_options['fields']['field_researcher_fascinated']['field'] = 'field_researcher_fascinated';
@@ -1207,7 +1219,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_fascinated']['element_label_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_fascinated']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_fascinated']['element_wrapper_type'] = 'div';
-  /* Field: Profil: Biodiversität ist wichtig, ... */
+  /* Feld: Profil: Biodiversität ist wichtig, ... */
   $handler->display->display_options['fields']['field_researcher_important']['id'] = 'field_researcher_important';
   $handler->display->display_options['fields']['field_researcher_important']['table'] = 'field_data_field_researcher_important';
   $handler->display->display_options['fields']['field_researcher_important']['field'] = 'field_researcher_important';
@@ -1215,7 +1227,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_important']['element_label_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_important']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_important']['element_wrapper_type'] = 'div';
-  /* Field: Profil: Defizit in der Biodiversitätspolitik */
+  /* Feld: Profil: Defizit in der Biodiversitätspolitik */
   $handler->display->display_options['fields']['field_researcher_deficit']['id'] = 'field_researcher_deficit';
   $handler->display->display_options['fields']['field_researcher_deficit']['table'] = 'field_data_field_researcher_deficit';
   $handler->display->display_options['fields']['field_researcher_deficit']['field'] = 'field_researcher_deficit';
@@ -1223,20 +1235,20 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_deficit']['element_label_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_deficit']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_deficit']['element_wrapper_type'] = 'div';
-  /* Sort criterion: Profil: Name (field_researcher_name) */
+  /* Sortierkriterien: Profil: Name (field_researcher_name) */
   $handler->display->display_options['sorts']['field_researcher_name_value']['id'] = 'field_researcher_name_value';
   $handler->display->display_options['sorts']['field_researcher_name_value']['table'] = 'field_data_field_researcher_name';
   $handler->display->display_options['sorts']['field_researcher_name_value']['field'] = 'field_researcher_name_value';
   $handler->display->display_options['sorts']['field_researcher_name_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_researcher_name_value']['expose']['label'] = 'Sortieren';
-  /* Filter criterion: Profil: Type */
+  /* Filterkriterium: Profil: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'profile';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'researcher' => 'researcher',
   );
-  /* Filter criterion: Global: Combine fields filter */
+  /* Filterkriterium: Global: Feld-Filter kombinieren */
   $handler->display->display_options['filters']['combine']['id'] = 'combine';
   $handler->display->display_options['filters']['combine']['table'] = 'views';
   $handler->display->display_options['filters']['combine']['field'] = 'combine';
