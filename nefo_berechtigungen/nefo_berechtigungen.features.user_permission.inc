@@ -153,60 +153,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'overlay',
   );
 
-  // Exported permission: 'access redhen'.
-  $permissions['access redhen'] = array(
-    'name' => 'access redhen',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen',
-  );
-
-  // Exported permission: 'access redhen contacts'.
-  $permissions['access redhen contacts'] = array(
-    'name' => 'access redhen contacts',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
-  // Exported permission: 'access redhen notes'.
-  $permissions['access redhen notes'] = array(
-    'name' => 'access redhen notes',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_note',
-  );
-
-  // Exported permission: 'access redhen org revisions'.
-  $permissions['access redhen org revisions'] = array(
-    'name' => 'access redhen org revisions',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
-  // Exported permission: 'access redhen orgs'.
-  $permissions['access redhen orgs'] = array(
-    'name' => 'access redhen orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
   // Exported permission: 'access relations'.
   $permissions['access relations'] = array(
     'name' => 'access relations',
@@ -574,86 +520,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'profile2',
   );
 
-  // Exported permission: 'administer redhen'.
-  $permissions['administer redhen'] = array(
-    'name' => 'administer redhen',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen',
-  );
-
-  // Exported permission: 'administer redhen contacts'.
-  $permissions['administer redhen contacts'] = array(
-    'name' => 'administer redhen contacts',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
-  // Exported permission: 'administer redhen engagements'.
-  $permissions['administer redhen engagements'] = array(
-    'name' => 'administer redhen engagements',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_engagement',
-  );
-
-  // Exported permission: 'administer redhen notes'.
-  $permissions['administer redhen notes'] = array(
-    'name' => 'administer redhen notes',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_note',
-  );
-
-  // Exported permission: 'administer redhen orgs'.
-  $permissions['administer redhen orgs'] = array(
-    'name' => 'administer redhen orgs',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
-  // Exported permission: 'administer redhen_contact types'.
-  $permissions['administer redhen_contact types'] = array(
-    'name' => 'administer redhen_contact types',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
-  // Exported permission: 'administer redhen_org types'.
-  $permissions['administer redhen_org types'] = array(
-    'name' => 'administer redhen_org types',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
-  // Exported permission: 'administer relation roles'.
-  $permissions['administer relation roles'] = array(
-    'name' => 'administer relation roles',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_relation',
-  );
-
   // Exported permission: 'administer relation types'.
   $permissions['administer relation types'] = array(
     'name' => 'administer relation types',
@@ -905,17 +771,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create beh_rde orgs'.
-  $permissions['create beh_rde orgs'] = array(
-    'name' => 'create beh_rde orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
   // Exported permission: 'create blog content'.
   $permissions['create blog content'] = array(
     'name' => 'create blog content',
@@ -926,17 +781,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'create fachgesellschaft_akademie orgs'.
-  $permissions['create fachgesellschaft_akademie orgs'] = array(
-    'name' => 'create fachgesellschaft_akademie orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
   );
 
   // Exported permission: 'create files'.
@@ -951,39 +795,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'researcher' => 'researcher',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'create forschungsinstitution orgs'.
-  $permissions['create forschungsinstitution orgs'] = array(
-    'name' => 'create forschungsinstitution orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
-  // Exported permission: 'create forschungsnetzwerk orgs'.
-  $permissions['create forschungsnetzwerk orgs'] = array(
-    'name' => 'create forschungsnetzwerk orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
-  // Exported permission: 'create medien orgs'.
-  $permissions['create medien orgs'] = array(
-    'name' => 'create medien orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
   );
 
   // Exported permission: 'create nefo_event content'.
@@ -1118,17 +929,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create partei orgs'.
-  $permissions['create partei orgs'] = array(
-    'name' => 'create partei orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
   // Exported permission: 'create relations'.
   $permissions['create relations'] = array(
     'name' => 'create relations',
@@ -1137,17 +937,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'relation',
-  );
-
-  // Exported permission: 'create unternehmen orgs'.
-  $permissions['create unternehmen orgs'] = array(
-    'name' => 'create unternehmen orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
   );
 
   // Exported permission: 'create url aliases'.
@@ -1160,17 +949,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'path',
-  );
-
-  // Exported permission: 'create verband_ngo orgs'.
-  $permissions['create verband_ngo orgs'] = array(
-    'name' => 'create verband_ngo orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
   );
 
   // Exported permission: 'customize shortcut links'.
@@ -1588,36 +1366,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'researcher' => 'researcher',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete redhen contact connections'.
-  $permissions['delete redhen contact connections'] = array(
-    'name' => 'delete redhen contact connections',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_relation',
-  );
-
-  // Exported permission: 'delete redhen contact revisions'.
-  $permissions['delete redhen contact revisions'] = array(
-    'name' => 'delete redhen contact revisions',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
-  // Exported permission: 'delete redhen org connections'.
-  $permissions['delete redhen org connections'] = array(
-    'name' => 'delete redhen org connections',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_relation',
   );
 
   // Exported permission: 'delete relations'.
@@ -2219,17 +1967,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own redhen contact'.
-  $permissions['edit own redhen contact'] = array(
-    'name' => 'edit own redhen contact',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
   // Exported permission: 'edit own researcher profile'.
   $permissions['edit own researcher profile'] = array(
     'name' => 'edit own researcher profile',
@@ -2256,38 +1993,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'researcher' => 'researcher',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit redhen contact connections'.
-  $permissions['edit redhen contact connections'] = array(
-    'name' => 'edit redhen contact connections',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_relation',
-  );
-
-  // Exported permission: 'edit redhen contact revisions'.
-  $permissions['edit redhen contact revisions'] = array(
-    'name' => 'edit redhen contact revisions',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
-  // Exported permission: 'edit redhen org connections'.
-  $permissions['edit redhen org connections'] = array(
-    'name' => 'edit redhen org connections',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_relation',
   );
 
   // Exported permission: 'edit relations'.
@@ -2494,49 +2199,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: 'manage redhen contacts'.
-  $permissions['manage redhen contacts'] = array(
-    'name' => 'manage redhen contacts',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
-  // Exported permission: 'manage redhen notes'.
-  $permissions['manage redhen notes'] = array(
-    'name' => 'manage redhen notes',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_note',
-  );
-
-  // Exported permission: 'manage redhen org revisions'.
-  $permissions['manage redhen org revisions'] = array(
-    'name' => 'manage redhen org revisions',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
-  );
-
-  // Exported permission: 'manage redhen orgs'.
-  $permissions['manage redhen orgs'] = array(
-    'name' => 'manage redhen orgs',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_org',
   );
 
   // Exported permission: 'notify of path changes'.
@@ -2983,17 +2645,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'view own redhen contact'.
-  $permissions['view own redhen contact'] = array(
-    'name' => 'view own redhen contact',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
   // Exported permission: 'view own researcher profile'.
   $permissions['view own researcher profile'] = array(
     'name' => 'view own researcher profile',
@@ -3031,38 +2682,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'view redhen contact connections'.
-  $permissions['view redhen contact connections'] = array(
-    'name' => 'view redhen contact connections',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_relation',
-  );
-
-  // Exported permission: 'view redhen contact revisions'.
-  $permissions['view redhen contact revisions'] = array(
-    'name' => 'view redhen contact revisions',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_contact',
-  );
-
-  // Exported permission: 'view redhen org connections'.
-  $permissions['view redhen org connections'] = array(
-    'name' => 'view redhen org connections',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redhen_relation',
   );
 
   // Exported permission: 'view revisions'.
