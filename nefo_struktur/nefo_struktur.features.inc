@@ -260,7 +260,7 @@ function nefo_struktur_node_info() {
       'base' => 'node_content',
       'description' => t('Workshops und Fachgespräche'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Titel'),
       'help' => '',
     ),
     'page' => array(

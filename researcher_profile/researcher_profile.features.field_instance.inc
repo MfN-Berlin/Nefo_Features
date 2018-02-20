@@ -71,7 +71,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 26,
       ),
     ),
     'entity_type' => 'profile2',
@@ -124,6 +124,42 @@ function researcher_profile_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-researcher-field_researcher_degree'.
+  $field_instances['profile2-researcher-field_researcher_degree'] = array(
+    'bundle' => 'researcher',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_researcher_degree',
+    'label' => 'Ausbildungstitel',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -206,7 +242,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 22,
       ),
     ),
     'entity_type' => 'profile2',
@@ -242,7 +278,7 @@ function researcher_profile_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'profile2',
@@ -481,7 +517,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 23,
       ),
     ),
     'entity_type' => 'profile2',
@@ -503,7 +539,7 @@ function researcher_profile_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 31,
+      'weight' => 32,
     ),
   );
 
@@ -663,7 +699,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 25,
       ),
     ),
     'entity_type' => 'profile2',
@@ -698,7 +734,7 @@ function researcher_profile_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 24,
       ),
     ),
     'entity_type' => 'profile2',
@@ -716,7 +752,7 @@ function researcher_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 32,
+      'weight' => 33,
     ),
   );
 
@@ -966,6 +1002,7 @@ function researcher_profile_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
+  t('Ausbildungstitel');
   t('Biodiversität fasziniert mich, ...');
   t('Biodiversität ist wichtig, ...');
   t('Completed Projects');

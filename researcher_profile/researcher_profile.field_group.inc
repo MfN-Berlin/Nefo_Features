@@ -21,15 +21,15 @@ function researcher_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Kontaktdaten',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_researcher_personal_www',
       1 => 'field_researcher_email',
-      2 => 'field_researcher_phone',
-      3 => 'field_researcher_xing',
-      4 => 'field_researcher_twitter',
-      5 => 'field_researcher_linkedin',
-      6 => 'field_researcher_research_gate',
+      2 => 'field_researcher_linkedin',
+      3 => 'field_researcher_phone',
+      4 => 'field_researcher_research_gate',
+      5 => 'field_researcher_twitter',
+      6 => 'field_researcher_xing',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -55,15 +55,15 @@ function researcher_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Kontaktdaten',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_researcher_personal_www',
       1 => 'field_researcher_email',
-      2 => 'field_researcher_phone',
-      3 => 'field_researcher_xing',
-      4 => 'field_researcher_twitter',
-      5 => 'field_researcher_linkedin',
-      6 => 'field_researcher_research_gate',
+      2 => 'field_researcher_linkedin',
+      3 => 'field_researcher_phone',
+      4 => 'field_researcher_research_gate',
+      5 => 'field_researcher_twitter',
+      6 => 'field_researcher_xing',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -90,7 +90,7 @@ function researcher_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Institution',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_researcher_www',
       1 => 'field_researcher_address',
@@ -120,7 +120,7 @@ function researcher_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Institution',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_researcher_www',
       1 => 'field_researcher_address',
@@ -152,7 +152,7 @@ function researcher_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Statements',
-    'weight' => '9',
+    'weight' => '6',
     'children' => array(
       0 => 'field_researcher_statements',
       1 => 'field_researcher_deficit',
@@ -184,7 +184,7 @@ function researcher_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Statements',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_researcher_statements',
       1 => 'field_researcher_deficit',
@@ -217,7 +217,7 @@ function researcher_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Forschung',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_researcher_completed',
       1 => 'field_researcher_projects',
@@ -249,7 +249,7 @@ function researcher_profile_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Forschung',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_researcher_completed',
       1 => 'field_researcher_projects',

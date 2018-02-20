@@ -95,6 +95,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_personal_www']['table'] = 'field_data_field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['field'] = 'field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['ui_name'] = 'Contact Website';
+  $handler->display->display_options['fields']['field_researcher_personal_www']['label'] = 'Webseite';
   $handler->display->display_options['fields']['field_researcher_personal_www']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_personal_www']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_personal_www']['click_sort_column'] = 'url';
@@ -500,6 +501,15 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
+  /* Field: Ausbildungstitel */
+  $handler->display->display_options['fields']['field_researcher_degree']['id'] = 'field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['table'] = 'field_data_field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['field'] = 'field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['ui_name'] = 'Ausbildungstitel';
+  $handler->display->display_options['fields']['field_researcher_degree']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_degree']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_researcher_degree']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_degree']['type'] = 'text_plain';
   /* Field: Institution Name */
   $handler->display->display_options['fields']['field_researcher_institutio_name']['id'] = 'field_researcher_institutio_name';
   $handler->display->display_options['fields']['field_researcher_institutio_name']['table'] = 'field_data_field_researcher_institutio_name';
@@ -544,6 +554,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_personal_www']['table'] = 'field_data_field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['field'] = 'field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['ui_name'] = 'Contact Website';
+  $handler->display->display_options['fields']['field_researcher_personal_www']['label'] = 'Webseite';
   $handler->display->display_options['fields']['field_researcher_personal_www']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_personal_www']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_personal_www']['alter']['text'] = '				<div class="nefo-team-profile-nefo-website">
@@ -658,6 +669,7 @@ function researcher_profile_views_default_views() {
 		<figure class="nefo-team-profile-teaser-image-container">
 			[field_researcher_picture]
 			<div class="nefo-team-profile-teaser-image-meta">
+                                [field_researcher_degree]<br /><br />
 				[field_researcher_institutio_name]
 			</div>
 		</figure>
@@ -777,6 +789,15 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
+  /* Field: Ausbildungstitel */
+  $handler->display->display_options['fields']['field_researcher_degree']['id'] = 'field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['table'] = 'field_data_field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['field'] = 'field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['ui_name'] = 'Ausbildungstitel';
+  $handler->display->display_options['fields']['field_researcher_degree']['label'] = '';
+  $handler->display->display_options['fields']['field_researcher_degree']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_researcher_degree']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_researcher_degree']['type'] = 'text_plain';
   /* Field: Global: Fieldset */
   $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset']['table'] = 'views';
@@ -814,6 +835,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_personal_www']['table'] = 'field_data_field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['field'] = 'field_researcher_personal_www';
   $handler->display->display_options['fields']['field_researcher_personal_www']['ui_name'] = 'Contact Website';
+  $handler->display->display_options['fields']['field_researcher_personal_www']['label'] = 'Webseite';
   $handler->display->display_options['fields']['field_researcher_personal_www']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_personal_www']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_researcher_personal_www']['click_sort_column'] = 'url';
@@ -928,6 +950,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['field_researcher_www']['table'] = 'field_data_field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['field'] = 'field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['ui_name'] = 'Institution Website';
+  $handler->display->display_options['fields']['field_researcher_www']['label'] = 'Webseite';
   $handler->display->display_options['fields']['field_researcher_www']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_researcher_www']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_researcher_www']['hide_empty'] = TRUE;
@@ -1150,6 +1173,14 @@ function researcher_profile_views_default_views() {
     'image_style' => 'img_style_researcher',
     'image_link' => '',
   );
+  /* Field: Profil: Ausbildungstitel */
+  $handler->display->display_options['fields']['field_researcher_degree']['id'] = 'field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['table'] = 'field_data_field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['field'] = 'field_researcher_degree';
+  $handler->display->display_options['fields']['field_researcher_degree']['label'] = '';
+  $handler->display->display_options['fields']['field_researcher_degree']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_researcher_degree']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_researcher_degree']['element_label_colon'] = FALSE;
   /* Field: Profil: Website */
   $handler->display->display_options['fields']['field_researcher_www']['id'] = 'field_researcher_www';
   $handler->display->display_options['fields']['field_researcher_www']['table'] = 'field_data_field_researcher_www';
@@ -1205,6 +1236,7 @@ function researcher_profile_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="researcher-col1">
 <div class="field-researcher-picture">[field_researcher_picture]</div>
+<div class="field-researcher-degree">[field_researcher_degree]</div>
 <div class="field-researcher-www">[field_researcher_www]</div>
 <div class="field-researcher-twitter">[field_researcher_twitter]</div>
 <div class="field-researcher-linkedin">[field_researcher_linkedin]</div>
