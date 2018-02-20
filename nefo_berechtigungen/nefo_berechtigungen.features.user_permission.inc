@@ -153,16 +153,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'overlay',
   );
 
-  // Exported permission: 'access relations'.
-  $permissions['access relations'] = array(
-    'name' => 'access relations',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'relation',
-  );
-
   // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
@@ -518,26 +508,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'profile2',
-  );
-
-  // Exported permission: 'administer relation types'.
-  $permissions['administer relation types'] = array(
-    'name' => 'administer relation types',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'relation',
-  );
-
-  // Exported permission: 'administer relations'.
-  $permissions['administer relations'] = array(
-    'name' => 'administer relations',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'relation',
   );
 
   // Exported permission: 'administer scheduler'.
@@ -927,16 +897,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'create relations'.
-  $permissions['create relations'] = array(
-    'name' => 'create relations',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'relation',
   );
 
   // Exported permission: 'create url aliases'.
@@ -1366,16 +1326,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'researcher' => 'researcher',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete relations'.
-  $permissions['delete relations'] = array(
-    'name' => 'delete relations',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'relation',
   );
 
   // Exported permission: 'delete revisions'.
@@ -1995,16 +1945,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit relations'.
-  $permissions['edit relations'] = array(
-    'name' => 'edit relations',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'relation',
-  );
-
   // Exported permission: 'edit terms in event_types'.
   $permissions['edit terms in event_types'] = array(
     'name' => 'edit terms in event_types',
@@ -2061,16 +2001,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'export relation types'.
-  $permissions['export relation types'] = array(
-    'name' => 'export relation types',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'relation',
   );
 
   // Exported permission: 'flush caches'.
@@ -2533,16 +2463,6 @@ function nefo_berechtigungen_user_default_permissions() {
       'researcher' => 'researcher',
     ),
     'module' => 'media_wysiwyg',
-  );
-
-  // Exported permission: 'use relation import'.
-  $permissions['use relation import'] = array(
-    'name' => 'use relation import',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'relation',
   );
 
   // Exported permission: 'use text format filtered_html'.
