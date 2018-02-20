@@ -1384,15 +1384,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'delete terms in note_type'.
-  $permissions['delete terms in note_type'] = array(
-    'name' => 'delete terms in note_type',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -1990,15 +1981,6 @@ function nefo_berechtigungen_user_default_permissions() {
     'roles' => array(
       'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in note_type'.
-  $permissions['edit terms in note_type'] = array(
-    'name' => 'edit terms in note_type',
-    'roles' => array(
-      'Site Administrator' => 'Site Administrator',
     ),
     'module' => 'taxonomy',
   );
