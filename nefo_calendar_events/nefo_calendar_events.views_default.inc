@@ -47,31 +47,32 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['style_options']['theme_style'] = '1';
   $handler->display->display_options['style_options']['max_items'] = '0';
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
-  /* Verhalten, wenn keine Ergebnisse vorliegen: Global: Textbereich */
+  /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'Es liegen keine zukünftigen Termine vor.';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
-  /* Feld: Inhalt: Beitrags-ID */
+  /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Feld: Global: Feldgruppe */
+  /* Field: Global: Fieldset */
   $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['label'] = 'Feldgruppe';
   $handler->display->display_options['fields']['fieldset']['children'] = array(
     0 => 'field_nefo_event_date',
     1 => 'field_nefo_event_location',
   );
   $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
   $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'nefo-event--heading';
-  /* Feld: Node: Datum */
+  /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_nefo_event_date']['id'] = 'field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['table'] = 'field_data_field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['field'] = 'field_nefo_event_date';
@@ -89,7 +90,7 @@ function nefo_calendar_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_nefo_event_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_date']['delta_offset'] = '0';
-  /* Feld: Node: Ort */
+  /* Field: Content: Ort */
   $handler->display->display_options['fields']['field_nefo_event_location']['id'] = 'field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['table'] = 'field_data_field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['field'] = 'field_nefo_event_location';
@@ -100,7 +101,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_location']['alter']['path'] = 'node/[nid]';
   $handler->display->display_options['fields']['field_nefo_event_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_location']['element_default_classes'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -113,25 +114,25 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Sortierkriterien: Node: Datum -  Startdatum (field_nefo_event_date) */
+  /* Sort criterion: Content: Datum -  start date (field_nefo_event_date) */
   $handler->display->display_options['sorts']['field_nefo_event_date_value']['id'] = 'field_nefo_event_date_value';
   $handler->display->display_options['sorts']['field_nefo_event_date_value']['table'] = 'field_data_field_nefo_event_date';
   $handler->display->display_options['sorts']['field_nefo_event_date_value']['field'] = 'field_nefo_event_date_value';
-  /* Kontextfilter: Inhalt: Beitrags-ID */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
   $handler->display->display_options['arguments']['nid']['exception']['title'] = 'Alle';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  /* Filterkriterium: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterium: Datum: Datum (node) */
+  /* Filter criterion: Date: Date (node) */
   $handler->display->display_options['filters']['date_filter']['id'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['table'] = 'node';
   $handler->display->display_options['filters']['date_filter']['field'] = 'date_filter';
@@ -161,18 +162,27 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterium: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'nefo_event' => 'nefo_event',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterium: Datum: Datum (node) */
+  /* Filter criterion: Date: Date (node) */
   $handler->display->display_options['filters']['date_filter']['id'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['table'] = 'node';
   $handler->display->display_options['filters']['date_filter']['field'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['operator'] = '>=';
+  $handler->display->display_options['filters']['date_filter']['group'] = 1;
   $handler->display->display_options['filters']['date_filter']['default_date'] = 'now';
   $handler->display->display_options['filters']['date_filter']['add_delta'] = 'yes';
   $handler->display->display_options['filters']['date_filter']['date_fields'] = array(
@@ -197,24 +207,25 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Beitrags-ID */
+  /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Feld: Global: Feldgruppe */
+  /* Field: Global: Fieldset */
   $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['label'] = 'Feldgruppe';
   $handler->display->display_options['fields']['fieldset']['children'] = array(
     0 => 'field_nefo_event_date',
     1 => 'field_nefo_event_location',
   );
   $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
   $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'nefo-event--heading';
-  /* Feld: Node: Datum */
+  /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_nefo_event_date']['id'] = 'field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['table'] = 'field_data_field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['field'] = 'field_nefo_event_date';
@@ -232,7 +243,7 @@ function nefo_calendar_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_nefo_event_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_date']['delta_offset'] = '0';
-  /* Feld: Node: Ort */
+  /* Field: Content: Ort */
   $handler->display->display_options['fields']['field_nefo_event_location']['id'] = 'field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['table'] = 'field_data_field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['field'] = 'field_nefo_event_location';
@@ -243,7 +254,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_location']['alter']['path'] = 'node/[nid]';
   $handler->display->display_options['fields']['field_nefo_event_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_location']['element_default_classes'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -258,18 +269,27 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterium: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'nefo_event' => 'nefo_event',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
+  $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterium: Datum: Datum (node) */
+  /* Filter criterion: Date: Date (node) */
   $handler->display->display_options['filters']['date_filter']['id'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['table'] = 'node';
   $handler->display->display_options['filters']['date_filter']['field'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['operator'] = '>=';
+  $handler->display->display_options['filters']['date_filter']['group'] = 1;
   $handler->display->display_options['filters']['date_filter']['default_date'] = 'now';
   $handler->display->display_options['filters']['date_filter']['add_delta'] = 'yes';
   $handler->display->display_options['filters']['date_filter']['date_fields'] = array(
@@ -287,7 +307,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['row_options']['summary_field'] = 'default_title';
   $handler->display->display_options['row_options']['location_field'] = 'field_data_field_nefo_event_desc.field_nefo_event_desc';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontextfilter: Inhalt: Beitrags-ID */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -329,7 +349,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['row_options']['colors']['legend'] = 'type';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontextfilter: Datum: Datum (node) */
+  /* Contextual filter: Date: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
@@ -374,7 +394,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontextfilter: Datum: Datum (node) */
+  /* Contextual filter: Date: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
@@ -414,7 +434,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontextfilter: Datum: Datum (node) */
+  /* Contextual filter: Date: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
@@ -453,7 +473,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -462,7 +482,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Feld: Node: Datum */
+  /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_nefo_event_date']['id'] = 'field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['table'] = 'field_data_field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['field'] = 'field_nefo_event_date';
@@ -480,7 +500,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_date']['delta_offset'] = '0';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Kontextfilter: Datum: Datum (node) */
+  /* Contextual filter: Date: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
@@ -519,7 +539,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Datum - Month */
+  /* Field: Datum - Month */
   $handler->display->display_options['fields']['field_nefo_event_date_1']['id'] = 'field_nefo_event_date_1';
   $handler->display->display_options['fields']['field_nefo_event_date_1']['table'] = 'field_data_field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date_1']['field'] = 'field_nefo_event_date';
@@ -535,7 +555,7 @@ function nefo_calendar_events_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
-  /* Feld: Node: Datum */
+  /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_nefo_event_date']['id'] = 'field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['table'] = 'field_data_field_nefo_event_date';
   $handler->display->display_options['fields']['field_nefo_event_date']['field'] = 'field_nefo_event_date';
@@ -555,7 +575,7 @@ function nefo_calendar_events_views_default_views() {
   );
   $handler->display->display_options['fields']['field_nefo_event_date']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_date']['delta_offset'] = '0';
-  /* Feld: Node: Beschreibung */
+  /* Field: Content: Beschreibung */
   $handler->display->display_options['fields']['field_nefo_event_desc']['id'] = 'field_nefo_event_desc';
   $handler->display->display_options['fields']['field_nefo_event_desc']['table'] = 'field_data_field_nefo_event_desc';
   $handler->display->display_options['fields']['field_nefo_event_desc']['field'] = 'field_nefo_event_desc';
@@ -563,7 +583,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_desc']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_nefo_event_desc']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_desc']['element_default_classes'] = FALSE;
-  /* Feld: Node: Themen */
+  /* Field: Content: Themen */
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['id'] = 'field_nefo_taxonomy_tags';
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['table'] = 'field_data_field_nefo_taxonomy_tags';
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['field'] = 'field_nefo_taxonomy_tags';
@@ -573,10 +593,11 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_nefo_taxonomy_tags']['delta_offset'] = '0';
-  /* Feld: Global: Feldgruppe */
+  /* Field: Global: Fieldset */
   $handler->display->display_options['fields']['fieldset']['id'] = 'fieldset';
   $handler->display->display_options['fields']['fieldset']['table'] = 'views';
   $handler->display->display_options['fields']['fieldset']['field'] = 'fieldset';
+  $handler->display->display_options['fields']['fieldset']['label'] = 'Feldgruppe';
   $handler->display->display_options['fields']['fieldset']['children'] = array(
     0 => 'field_nefo_event_type',
     1 => 'title',
@@ -584,7 +605,7 @@ function nefo_calendar_events_views_default_views() {
   );
   $handler->display->display_options['fields']['fieldset']['fieldset']['type'] = 'div';
   $handler->display->display_options['fields']['fieldset']['fieldset']['classes'] = 'nefo-event--content';
-  /* Feld: Node: Kategorie */
+  /* Field: Content: Kategorie */
   $handler->display->display_options['fields']['field_nefo_event_type']['id'] = 'field_nefo_event_type';
   $handler->display->display_options['fields']['field_nefo_event_type']['table'] = 'field_data_field_nefo_event_type';
   $handler->display->display_options['fields']['field_nefo_event_type']['field'] = 'field_nefo_event_type';
@@ -595,7 +616,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_type']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_event_type']['type'] = 'i18n_taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_nefo_event_type']['delta_offset'] = '0';
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -608,7 +629,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Feld: Node: Ort */
+  /* Field: Content: Ort */
   $handler->display->display_options['fields']['field_nefo_event_location']['id'] = 'field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['table'] = 'field_data_field_nefo_event_location';
   $handler->display->display_options['fields']['field_nefo_event_location']['field'] = 'field_nefo_event_location';
@@ -623,14 +644,22 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_event_location']['element_default_classes'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filterkriterium: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'nefo_event' => 'nefo_event',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filterkriterium: Datum: Datum (node) */
+  /* Filter criterion: Date: Date (node) */
   $handler->display->display_options['filters']['date_filter']['id'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['table'] = 'node';
   $handler->display->display_options['filters']['date_filter']['field'] = 'date_filter';
@@ -641,7 +670,7 @@ function nefo_calendar_events_views_default_views() {
     'field_data_field_nefo_event_date.field_nefo_event_date_value' => 'field_data_field_nefo_event_date.field_nefo_event_date_value',
   );
   $handler->display->display_options['filters']['date_filter']['date_method'] = 'AND';
-  /* Filterkriterium: Datum: Datum (node) */
+  /* Filter criterion: Date: Date (node) */
   $handler->display->display_options['filters']['date_filter_1']['id'] = 'date_filter_1';
   $handler->display->display_options['filters']['date_filter_1']['table'] = 'node';
   $handler->display->display_options['filters']['date_filter_1']['field'] = 'date_filter';
@@ -665,7 +694,7 @@ function nefo_calendar_events_views_default_views() {
     'field_data_field_nefo_event_date.field_nefo_event_date_value' => 'field_data_field_nefo_event_date.field_nefo_event_date_value',
     'field_data_field_nefo_event_date.field_nefo_event_date_value2' => 'field_data_field_nefo_event_date.field_nefo_event_date_value2',
   );
-  /* Filterkriterium: Node: Themen (field_nefo_taxonomy_tags) */
+  /* Filter criterion: Content: Themen (field_nefo_taxonomy_tags) */
   $handler->display->display_options['filters']['field_nefo_taxonomy_tags_tid']['id'] = 'field_nefo_taxonomy_tags_tid';
   $handler->display->display_options['filters']['field_nefo_taxonomy_tags_tid']['table'] = 'field_data_field_nefo_taxonomy_tags';
   $handler->display->display_options['filters']['field_nefo_taxonomy_tags_tid']['field'] = 'field_nefo_taxonomy_tags_tid';
@@ -702,7 +731,7 @@ function nefo_calendar_events_views_default_views() {
   $handler->display->display_options['filters']['field_nefo_taxonomy_tags_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_nefo_taxonomy_tags_tid']['vocabulary'] = 'nefo_taxonomy_tags';
   $handler->display->display_options['filters']['field_nefo_taxonomy_tags_tid']['hierarchy'] = 1;
-  /* Filterkriterium: Global: Feld-Filter kombinieren */
+  /* Filter criterion: Global: Combine fields filter */
   $handler->display->display_options['filters']['combine']['id'] = 'combine';
   $handler->display->display_options['filters']['combine']['table'] = 'views';
   $handler->display->display_options['filters']['combine']['field'] = 'combine';
