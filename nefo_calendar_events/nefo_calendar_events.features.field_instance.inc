@@ -143,7 +143,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'ical' => array(
         'label' => 'above',
@@ -191,7 +191,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'ical' => array(
         'label' => 'above',
@@ -235,7 +235,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'ical' => array(
         'label' => 'above',
@@ -252,7 +252,7 @@ function nefo_calendar_events_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_nefo_taxonomy_tags',
-    'label' => 'Unsere Themen',
+    'label' => 'Themen',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -275,7 +275,7 @@ function nefo_calendar_events_field_default_field_instances() {
   t('Kategorie');
   t('Mehrfachauswahl möglich.');
   t('Ort');
-  t('Unsere Themen');
+  t('Themen');
 
   return $field_instances;
 }
