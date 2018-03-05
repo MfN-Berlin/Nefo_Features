@@ -49,6 +49,35 @@ function nefo_struktur_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_event|node|nefo_workshop|form';
+  $field_group->group_name = 'group_event';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'nefo_workshop';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Termin',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_nefo_event_date',
+      1 => 'field_nefo_event_location',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-event field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_event|node|nefo_workshop|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_frontpage_section|node|nefo_product_document|form';
   $field_group->group_name = 'group_frontpage_section';
   $field_group->entity_type = 'node';
@@ -77,6 +106,7 @@ function nefo_struktur_field_group_info() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Dokument');
+  t('Termin');
   t('Titelseite');
 
   return $field_groups;
