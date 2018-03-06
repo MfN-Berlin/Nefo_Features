@@ -130,6 +130,17 @@ function nefo_struktur_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+
+  /* Display: Slider */
+  $handler = $view->new_display('block', 'Slider', 'slider');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_products';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $export['nefo_block_current_products'] = $view;
 
   $view = new view();
@@ -2020,6 +2031,17 @@ function nefo_struktur_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+
+  /* Display: Slider */
+  $handler = $view->new_display('block', 'Slider', 'slider');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'owlcarousel';
+  $handler->display->display_options['style_options']['instance'] = 'owlcarousel_settings_news';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $export['nefo_view_block_news'] = $view;
 
   $view = new view();
