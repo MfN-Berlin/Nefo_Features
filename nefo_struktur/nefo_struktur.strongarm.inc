@@ -2090,7 +2090,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_auto_play_owlcarousel_settings_news';
-  $strongarm->value = '5000';
+  $strongarm->value = '0';
   $export['owlcarousel_auto_play_owlcarousel_settings_news'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2104,7 +2104,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_auto_play_owlcarousel_settings_products';
-  $strongarm->value = '5000';
+  $strongarm->value = '0';
   $export['owlcarousel_auto_play_owlcarousel_settings_products'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2219,7 +2219,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_desktop_owlcarousel_settings_news_items';
-  $strongarm->value = '3';
+  $strongarm->value = '1';
   $export['owlcarousel_items_desktop_owlcarousel_settings_news_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2267,7 +2267,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_desktop_owlcarousel_settings_products_items';
-  $strongarm->value = '6';
+  $strongarm->value = '1';
   $export['owlcarousel_items_desktop_owlcarousel_settings_products_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2319,7 +2319,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_desktop_small_owlcarousel_settings_news_items';
-  $strongarm->value = '3';
+  $strongarm->value = '1';
   $export['owlcarousel_items_desktop_small_owlcarousel_settings_news_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2367,7 +2367,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_desktop_small_owlcarousel_settings_products_items';
-  $strongarm->value = '6';
+  $strongarm->value = '1';
   $export['owlcarousel_items_desktop_small_owlcarousel_settings_products_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2419,7 +2419,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_mobile_owlcarousel_settings_news_items';
-  $strongarm->value = '3';
+  $strongarm->value = '1';
   $export['owlcarousel_items_mobile_owlcarousel_settings_news_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2467,7 +2467,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_mobile_owlcarousel_settings_products_items';
-  $strongarm->value = '6';
+  $strongarm->value = '1';
   $export['owlcarousel_items_mobile_owlcarousel_settings_products_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2495,7 +2495,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_owlcarousel_settings_news';
-  $strongarm->value = '5';
+  $strongarm->value = '1';
   $export['owlcarousel_items_owlcarousel_settings_news'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2509,7 +2509,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_owlcarousel_settings_products';
-  $strongarm->value = '5';
+  $strongarm->value = '1';
   $export['owlcarousel_items_owlcarousel_settings_products'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2589,7 +2589,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_tablet_owlcarousel_settings_news_items';
-  $strongarm->value = '3';
+  $strongarm->value = '1';
   $export['owlcarousel_items_tablet_owlcarousel_settings_news_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2637,7 +2637,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_tablet_owlcarousel_settings_products_items';
-  $strongarm->value = '6';
+  $strongarm->value = '1';
   $export['owlcarousel_items_tablet_owlcarousel_settings_products_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2689,7 +2689,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_tablet_small_owlcarousel_settings_news_items';
-  $strongarm->value = '3';
+  $strongarm->value = '1';
   $export['owlcarousel_items_tablet_small_owlcarousel_settings_news_items'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2737,7 +2737,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'owlcarousel_items_tablet_small_owlcarousel_settings_products_items';
-  $strongarm->value = '6';
+  $strongarm->value = '1';
   $export['owlcarousel_items_tablet_small_owlcarousel_settings_products_items'] = $strongarm;
 
   $strongarm = new stdClass();
