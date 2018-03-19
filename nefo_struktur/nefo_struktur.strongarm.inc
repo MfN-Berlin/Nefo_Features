@@ -1078,10 +1078,10 @@ function nefo_struktur_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
       ),
       'display' => array(),

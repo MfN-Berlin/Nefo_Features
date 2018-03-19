@@ -784,7 +784,7 @@ function nefo_struktur_field_default_field_bases() {
   // Exported field_base: 'field_nefo_workshop_file'.
   $field_bases['field_nefo_workshop_file'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_nefo_workshop_file',

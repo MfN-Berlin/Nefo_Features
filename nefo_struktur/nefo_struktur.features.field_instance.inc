@@ -2664,7 +2664,7 @@ function nefo_struktur_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -2874,7 +2874,7 @@ function nefo_struktur_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2897,12 +2897,12 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-nefo_workshop-field_workshop_announcement'.
-  $field_instances['node-nefo_workshop-field_workshop_announcement'] = array(
+  // Exported field_instance: 'node-nefo_workshop-field_nefo_workshop_file'.
+  $field_instances['node-nefo_workshop-field_nefo_workshop_file'] = array(
     'bundle' => 'nefo_workshop',
     'deleted' => 0,
     'description' => 'PDF-Dokument',
@@ -2912,7 +2912,7 @@ function nefo_struktur_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2922,8 +2922,8 @@ function nefo_struktur_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_workshop_announcement',
-    'label' => 'Ankündigung',
+    'field_name' => 'field_nefo_workshop_file',
+    'label' => 'Abschlussbericht',
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
@@ -2955,6 +2955,63 @@ function nefo_struktur_field_default_field_instances() {
       ),
       'type' => 'media_generic',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-nefo_workshop-field_workshop_announcement'.
+  $field_instances['node-nefo_workshop-field_workshop_announcement'] = array(
+    'bundle' => 'nefo_workshop',
+    'deleted' => 0,
+    'description' => 'PDF-Dokument',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_workshop_announcement',
+    'label' => 'Dokumente',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => 'products/workshops',
+      'file_extensions' => 'pdf',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 'document',
+          'image' => 0,
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
+          'media_default--media_browser_my_files' => 0,
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 4,
     ),
   );
 
@@ -3179,9 +3236,9 @@ function nefo_struktur_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Abschlussbericht');
   t('Alt Text');
   t('Alternative text is used by screen readers, search engines, and when the image cannot be loaded. By adding alt text you improve accessibility and search engine optimization.');
-  t('Ankündigung');
   t('Artikel');
   t('Auf Youtube: Unter dem Video auf Teilen klicken und die URL aus dem angezeigten Feld kopieren. Beispiel: https://youtu.be/zV2S7T6G_sw');
   t('Beschreibung');
@@ -3193,6 +3250,7 @@ function nefo_struktur_field_default_field_instances() {
   t('Dateien');
   t('Datum');
   t('Dokument');
+  t('Dokumente');
   t('Erklärender Text zum Bild.');
   t('Im NeFo-Interview');
   t('Image Credit');

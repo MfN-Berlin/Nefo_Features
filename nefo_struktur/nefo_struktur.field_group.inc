@@ -57,7 +57,7 @@ function nefo_struktur_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Termin',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_nefo_event_date',
       1 => 'field_nefo_event_location',
