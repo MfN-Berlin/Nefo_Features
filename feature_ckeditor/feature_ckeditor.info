@@ -6,6 +6,7 @@ version = 7.x-1.0-beta1
 dependencies[] = features
 dependencies[] = filter
 dependencies[] = media_wysiwyg
+dependencies[] = spamspan
 dependencies[] = wysiwyg
 features[features_api][] = api:2
 features[filter][] = filtered_html
