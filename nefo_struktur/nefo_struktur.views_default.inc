@@ -4097,7 +4097,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_workshop_url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_workshop_url']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_nefo_workshop_url']['type'] = 'link_absolute';
-  /* Field: Beitrag: Abschlussbericht */
+  /* Field: Beitrag: Dokument */
   $handler->display->display_options['fields']['field_nefo_workshop_file']['id'] = 'field_nefo_workshop_file';
   $handler->display->display_options['fields']['field_nefo_workshop_file']['table'] = 'field_data_field_nefo_workshop_file';
   $handler->display->display_options['fields']['field_nefo_workshop_file']['field'] = 'field_nefo_workshop_file';
