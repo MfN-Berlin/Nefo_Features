@@ -10,15 +10,11 @@
 function feature_ckeditor_wysiwyg_default_profiles() {
   $profiles = array();
 
-  // Exported profile: filtered_html
+  // Exported profile: filtered_html.
   $profiles['filtered_html'] = array(
     'format' => 'filtered_html',
     'editor' => 'ckeditor',
     'settings' => array(
-      'default' => 1,
-      'user_choose' => 0,
-      'show_toggle' => 1,
-      'add_to_summaries' => 1,
       'theme' => 'advanced',
       'language' => 'en',
       'buttons' => array(
@@ -53,18 +49,22 @@ function feature_ckeditor_wysiwyg_default_profiles() {
         'stylesheetparser' => 0,
       ),
     ),
+    'preferences' => array(
+      'add_to_summaries' => TRUE,
+      'default' => 1,
+      'show_toggle' => 1,
+      'user_choose' => 0,
+      'version' => '4.9.2.95e5d83',
+    ),
+    'name' => 'formatfiltered_html',
     'rdf_mapping' => array(),
   );
 
-  // Exported profile: full_html
+  // Exported profile: full_html.
   $profiles['full_html'] = array(
     'format' => 'full_html',
     'editor' => 'ckeditor',
     'settings' => array(
-      'default' => 1,
-      'user_choose' => 0,
-      'show_toggle' => 1,
-      'add_to_summaries' => 1,
       'theme' => '',
       'language' => 'de',
       'buttons' => array(
@@ -137,6 +137,14 @@ function feature_ckeditor_wysiwyg_default_profiles() {
         'stylesheetparser' => 0,
       ),
     ),
+    'preferences' => array(
+      'add_to_summaries' => TRUE,
+      'default' => 1,
+      'show_toggle' => 1,
+      'user_choose' => 0,
+      'version' => '4.9.2.95e5d83',
+    ),
+    'name' => 'formatfull_html',
     'rdf_mapping' => array(),
   );
 
