@@ -1030,7 +1030,9 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
   /* Feld: Feld: Titelbild */
   $handler->display->display_options['fields']['field_nefo_cover_photo']['id'] = 'field_nefo_cover_photo';
   $handler->display->display_options['fields']['field_nefo_cover_photo']['table'] = 'field_data_field_nefo_cover_photo';
@@ -1101,27 +1103,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_file_image_credit_text']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_file_image_credit_text']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_file_image_credit_text']['element_default_classes'] = FALSE;
-  /* Feld: Inhalt: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '600',
-  );
-  /* Feld: Inhalt: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'Weiterlesen';
   /* Feld: Wrapper */
   $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
   $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
@@ -1129,11 +1110,6 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['ui_name'] = 'Wrapper';
   $handler->display->display_options['fields']['nothing_2']['label'] = '';
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<article class="nefo-article-teaser-horizontal-layout">
-	<header class="nefo-article-teaser-header-container">
-		<h2 class="nefo-article-teaser-title-smaller">
-			[title]
-		</h2>
-	</header>
 	<div class="nefo-article-teaser-wrapper">
 		<figure class="nefo-article-teaser-image-container">
 			[field_nefo_cover_photo]
@@ -1143,15 +1119,14 @@ function nefo_struktur_views_default_views() {
 			</div>
 		</figure>
 		<div class="nefo-article-teaser-content-container">
-			<div class="nefo-article-teaser-event-date">
+			<header class="nefo-article-teaser-header-container">
+				<h2 class="nefo-article-teaser-title-smaller no-top-margin">
+					[title]
+				</h2>
+			</header>
+			<p>
 				[field_nefo_event_date]
-			</div>                        
-			<div class="nefo-article-teaser-synopsis">
-				[body]
-			</div>
-			<p class="nefo-article-teaser-target-link">
-				[view_node]
-			</p>
+			</p>                        
 		</div>
 	</div>
 </article>';
