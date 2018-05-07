@@ -806,9 +806,6 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['create nefo_product_workshop content'] = array(
     'name' => 'create nefo_product_workshop content',
     'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1016,9 +1013,6 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['delete any nefo_product_workshop content'] = array(
     'name' => 'delete any nefo_product_workshop content',
     'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1221,9 +1215,6 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['delete own nefo_product_workshop content'] = array(
     'name' => 'delete own nefo_product_workshop content',
     'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1588,9 +1579,6 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['edit any nefo_product_workshop content'] = array(
     'name' => 'edit any nefo_product_workshop content',
     'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1815,9 +1803,6 @@ function nefo_berechtigungen_user_default_permissions() {
   $permissions['edit own nefo_product_workshop content'] = array(
     'name' => 'edit own nefo_product_workshop content',
     'roles' => array(
-      'Author' => 'Author',
-      'Editor' => 'Editor',
-      'Site Administrator' => 'Site Administrator',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

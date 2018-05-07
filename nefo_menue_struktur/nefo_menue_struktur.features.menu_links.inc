@@ -36,31 +36,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_europisch:node/49',
   );
-  // Exported menu link: main-menu_aktuelle-aufrufe-zur-beteiligung-im-ipbes--prozess:node/75.
-  $menu_links['main-menu_aktuelle-aufrufe-zur-beteiligung-im-ipbes--prozess:node/75'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/75',
-    'router_path' => 'node/%',
-    'link_title' => 'Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_aktuelle-aufrufe-zur-beteiligung-im-ipbes--prozess:node/75',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_bei-ipbes-aktiv-werden:node/71',
-  );
   // Exported menu link: main-menu_aktuelle-aufrufe:node/888.
   $menu_links['main-menu_aktuelle-aufrufe:node/888'] = array(
     'menu_name' => 'main-menu',
@@ -463,31 +438,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'de',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_forschung:node/25',
-  );
-  // Exported menu link: main-menu_deutsche-ipbes-aktive:node/893.
-  $menu_links['main-menu_deutsche-ipbes-aktive:node/893'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/893',
-    'router_path' => 'node/%',
-    'link_title' => 'Deutsche IPBES-Aktive',
-    'options' => array(
-      'node_type' => 'page',
-      'attributes' => array(
-        'title' => 'Deutsche IPBES-Experten geben Auskunft',
-      ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_deutsche-ipbes-aktive:node/893',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -44,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_ipbes:node/32',
   );
   // Exported menu link: main-menu_deutsche-untersttzungsstruktur:node/4.
   $menu_links['main-menu_deutsche-untersttzungsstruktur:node/4'] = array(
@@ -2318,6 +2268,30 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_nefo:node/33',
   );
+  // Exported menu link: main-menu_workshops-und-fachgesprche:produkte/workshops.
+  $menu_links['main-menu_workshops-und-fachgesprche:produkte/workshops'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'produkte/workshops',
+    'router_path' => 'produkte/workshops',
+    'link_title' => 'Workshops und Fachgespräche',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Workshops und Fachgespräche',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_workshops-und-fachgesprche:produkte/workshops',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'de',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+  );
   // Exported menu link: main-menu_workshops:node/65.
   $menu_links['main-menu_workshops:node/65'] = array(
     'menu_name' => 'main-menu',
@@ -3275,7 +3249,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Abmelden');
   t('Agrarpolitik');
   t('Aktuelle Aufrufe');
-  t('Aktuelle Aufrufe zur Beteiligung im IPBES -Prozess');
   t('Anmelden');
   t('Artikel');
   t('Ausschreibungen');
@@ -3293,7 +3266,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Contact');
   t('Daten beitragen');
   t('Daten und Infrastrukturen');
-  t('Deutsche IPBES-Aktive');
   t('Deutsche Unterstützungsstruktur');
   t('EKLIPSE - Mechanismus');
   t('EU-Mechanismus');
@@ -3373,6 +3345,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Welche Schnittstellen gibt es?');
   t('Wer wir sind');
   t('Workshops');
+  t('Workshops und Fachgespräche');
   t('Zahlen und Fakten');
   t('gti-Kontaktstelle');
   t('weitere Konventionen');
