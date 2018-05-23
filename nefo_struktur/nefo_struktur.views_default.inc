@@ -1253,7 +1253,7 @@ function nefo_struktur_views_default_views() {
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_nefo_slideshow_img']['settings'] = array(
-    'image_style' => 'image_style_nefo_main_slideshow',
+    'image_style' => 'image_style_nefo_cover_photo',
     'image_link' => '',
   );
   /* Field: Global: Custom text */
