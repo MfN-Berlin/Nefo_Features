@@ -392,65 +392,6 @@ function nefo_struktur_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_dateien'.
-  $field_instances['node-article-field_dateien'] = array(
-    'bundle' => 'article',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'file_entity',
-        'settings' => array(
-          'text' => 'Download [file:name]',
-        ),
-        'type' => 'file_download_link',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_dateien',
-    'label' => 'Dateien',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'txt pdf',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'oembed' => 0,
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 'document',
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 0,
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-article-field_internal_link'.
   $field_instances['node-article-field_internal_link'] = array(
     'bundle' => 'article',
@@ -3247,7 +3188,6 @@ function nefo_struktur_field_default_field_instances() {
   t('Bildunterschrift');
   t('Blog');
   t('Body');
-  t('Dateien');
   t('Datum');
   t('Dokument');
   t('Dokumente');
