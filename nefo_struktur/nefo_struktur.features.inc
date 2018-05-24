@@ -186,7 +186,7 @@ function nefo_struktur_node_info() {
     'article' => array(
       'name' => t('Artikel'),
       'base' => 'node_content',
-      'description' => t('Standard Drupal-Inhaltstyp'),
+      'description' => t('Standard Drupal-Inhaltstyp. Neue Felder: Deadline und Ziel-URL für Ausschreibungen.'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',

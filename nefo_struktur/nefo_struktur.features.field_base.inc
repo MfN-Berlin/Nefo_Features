@@ -240,6 +240,36 @@ function nefo_struktur_field_default_field_bases() {
     'type' => 'image',
   );
 
+  // Exported field_base: 'field_nefo_deadline'.
+  $field_bases['field_nefo_deadline'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nefo_deadline',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'date',
+    'settings' => array(
+      'cache_count' => 4,
+      'cache_enabled' => 0,
+      'granularity' => array(
+        'day' => 'day',
+        'hour' => 0,
+        'minute' => 0,
+        'month' => 'month',
+        'second' => 0,
+        'year' => 'year',
+      ),
+      'profile2_private' => FALSE,
+      'timezone_db' => '',
+      'todate' => '',
+      'tz_handling' => 'none',
+    ),
+    'translatable' => 0,
+    'type' => 'datetime',
+  );
+
   // Exported field_base: 'field_nefo_description'.
   $field_bases['field_nefo_description'] = array(
     'active' => 1,
@@ -723,6 +753,34 @@ function nefo_struktur_field_default_field_bases() {
       'allowed_values' => array(
         0 => array(
           'vocabulary' => 'nefo_taxonomy_tags',
+          'parent' => 0,
+        ),
+      ),
+      'options_list_callback' => 'i18n_taxonomy_allowed_values',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_nefo_usage_category'.
+  $field_bases['field_nefo_usage_category'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_nefo_usage_category',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'nefo_taxonomy_usage_category',
           'parent' => 0,
         ),
       ),

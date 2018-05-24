@@ -678,6 +678,25 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Ausschreibungen',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'd8fb1ee6-b59b-454a-8894-b4d0ec38c447',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_usage_category',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'forschung/ausschreibungen',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Landnutzung',
     'description' => '<p style="text-align: justify;">Das Thema Land-Degradation ist seit langem ein Thema der internationalen Politik. Das wird beispielsweise durch das Übereinkommen der UN zur Verhinderung der Wüstenbildung (<a href="http://www.unccd.int" target="_blank">UNCCD</a>) mit seinem Portal zum Wissensaustausch (<a href="http://www.unccd.int/en/programmes/Science/Knowledge-Management/Pages/Scientific-Knowledge-Brokering.aspx" target="_blank">Scientific Knowledge Brokerage SKBP)</a> deutlich. Die CBD hat das Thema u.a. mit ihrem Aichi-Ziel 14 zur Wiederherstellung von 20% degradierter Flächen bis 2020 aufgegriffen. Auch in der EU gibt es ein entsprechendes Ziel, das auch Agrarflächen umfasst und damit eine besondere Herausforderung bietet. IPBES greift das Thema daher in einem eigenen <a href="http://www.biodiversity.de/schnittstellen/ipbes/news/NeFo-PM_IPBES_Landdegradierung" target="_blank">thematischen Assessment zu Landdegradierung und -restaurierung</a> auf, das bei seinem 6. Plenum im März 2018 verabschiedet wurde.</p>',
     'format' => 'full_html',

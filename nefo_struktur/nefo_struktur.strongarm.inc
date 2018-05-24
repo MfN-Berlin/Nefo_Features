@@ -552,6 +552,27 @@ function nefo_struktur_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_article';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_article';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_article';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_file__image';
   $strongarm->value = array(
     'view_modes' => array(
@@ -659,6 +680,9 @@ function nefo_struktur_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'colorbox' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -671,11 +695,14 @@ function nefo_struktur_strongarm() {
         'path' => array(
           'weight' => '7',
         ),
+        'metatags' => array(
+          'weight' => '8',
+        ),
       ),
       'display' => array(
         'language' => array(
           'default' => array(
-            'weight' => '4',
+            'weight' => '6',
             'visible' => FALSE,
           ),
         ),
@@ -1289,6 +1316,43 @@ function nefo_struktur_strongarm() {
     ),
   );
   $export['field_bundle_settings_taxonomy_term__nefo_taxonomy_tags'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_taxonomy_term__nefo_taxonomy_usage_category';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => TRUE,
+      ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(
+        'description' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'full' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['field_bundle_settings_taxonomy_term__nefo_taxonomy_usage_category'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -2317,7 +2381,7 @@ function nefo_struktur_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_article_pattern';
-  $strongarm->value = '';
+  $strongarm->value = '[node:field-nefo-usage-category:url:path]/[node:title]';
   $export['pathauto_node_article_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -2452,6 +2516,13 @@ function nefo_struktur_strongarm() {
   $strongarm->name = 'pathauto_taxonomy_term_nefo_taxonomy_tags_pattern';
   $strongarm->value = '';
   $export['pathauto_taxonomy_term_nefo_taxonomy_tags_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_nefo_taxonomy_usage_category_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_nefo_taxonomy_usage_category_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
