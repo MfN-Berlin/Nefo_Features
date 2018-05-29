@@ -81,7 +81,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_ausschreibungen:node/6.
   $menu_links['main-menu_ausschreibungen:node/6'] = array(
@@ -182,7 +182,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_bestubung:taxonomy/term/32.
   $menu_links['main-menu_bestubung:taxonomy/term/32'] = array(
@@ -605,7 +605,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_forschung:node/25.
   $menu_links['main-menu_forschung:node/25'] = array(
@@ -627,7 +627,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -46,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -979,7 +979,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_invasive-arten:taxonomy/term/37.
   $menu_links['main-menu_invasive-arten:taxonomy/term/37'] = array(
@@ -1027,7 +1027,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1353,7 +1353,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_marine-biologie:taxonomy/term/74.
   $menu_links['main-menu_marine-biologie:taxonomy/term/74'] = array(
@@ -1526,33 +1526,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
-  );
-  // Exported menu link: main-menu_nefo-produkte:node/13.
-  $menu_links['main-menu_nefo-produkte:node/13'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/13',
-    'router_path' => 'node/%',
-    'link_title' => 'NeFo-Produkte',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'NeFo-Produkte',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_nefo-produkte:node/13',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo:node/33',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_nefo-sachstandsberichte:node/656.
   $menu_links['main-menu_nefo-sachstandsberichte:node/656'] = array(
@@ -1599,7 +1573,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -44,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1650,7 +1624,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_pan-european-stakeholder-consultation:node/579.
   $menu_links['main-menu_pan-european-stakeholder-consultation:node/579'] = array(
@@ -1721,7 +1695,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -1772,7 +1746,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_rollen-von-expertinnen-und-experten:node/64.
   $menu_links['main-menu_rollen-von-expertinnen-und-experten:node/64'] = array(
@@ -1944,7 +1918,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_studien:taxonomy/term/78.
   $menu_links['main-menu_studien:taxonomy/term/78'] = array(
@@ -1968,7 +1942,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_synthetische-biologie:taxonomy/term/72.
   $menu_links['main-menu_synthetische-biologie:taxonomy/term/72'] = array(
@@ -2014,10 +1988,11 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_nefo:node/33',
   );
   // Exported menu link: main-menu_urbane-biodiversitt:taxonomy/term/73.
   $menu_links['main-menu_urbane-biodiversitt:taxonomy/term/73'] = array(
@@ -2066,7 +2041,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_was-sind-schnittstellen:node/35.
   $menu_links['main-menu_was-sind-schnittstellen:node/35'] = array(
@@ -2290,7 +2265,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nefo-produkte:node/13',
+    'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
   // Exported menu link: main-menu_workshops:node/65.
   $menu_links['main-menu_workshops:node/65'] = array(
@@ -2335,7 +2310,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -3124,26 +3099,25 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'language' => 'en',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-nefo-top-menu_glossar:node/23.
-  $menu_links['menu-nefo-top-menu_glossar:node/23'] = array(
+  // Exported menu link: menu-nefo-top-menu_datenschutz:node/2173.
+  $menu_links['menu-nefo-top-menu_datenschutz:node/2173'] = array(
     'menu_name' => 'menu-nefo-top-menu',
-    'link_path' => 'node/23',
+    'link_path' => 'node/2173',
     'router_path' => 'node/%',
-    'link_title' => 'Glossar',
+    'link_title' => 'Datenschutz',
     'options' => array(
       'attributes' => array(
-        'title' => 'Glossar',
+        'title' => 'Datenschutz',
       ),
       'alter' => TRUE,
-      'identifier' => 'menu-nefo-top-menu_glossar:node/23',
-      'node_type' => 'page',
+      'identifier' => 'menu-nefo-top-menu_datenschutz:node/2173',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -3167,7 +3141,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -47,
+    'weight' => -48,
     'customized' => 1,
     'language' => 'de',
     'menu_links_customized' => 1,
@@ -3266,6 +3240,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Contact');
   t('Daten beitragen');
   t('Daten und Infrastrukturen');
+  t('Datenschutz');
   t('Deutsche Unterstützungsstruktur');
   t('EKLIPSE - Mechanismus');
   t('EU-Mechanismus');
@@ -3281,7 +3256,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
   t('Future Earth');
   t('GeoBon');
   t('Gesundheit');
-  t('Glossar');
   t('Hintergrund: EU-Politikberatung zur Biodiversität');
   t('IPBES');
   t('IPBES & Co.');
