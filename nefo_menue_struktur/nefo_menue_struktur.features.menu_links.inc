@@ -83,32 +83,6 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_unsere-produkte:node/13',
   );
-  // Exported menu link: main-menu_ausschreibungen:node/6.
-  $menu_links['main-menu_ausschreibungen:node/6'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/6',
-    'router_path' => 'node/%',
-    'link_title' => 'Ausschreibungen',
-    'options' => array(
-      'devel' => TRUE,
-      'attributes' => array(
-        'title' => 'Ausschreibungen',
-      ),
-      'alter' => TRUE,
-      'node_type' => 'page',
-      'identifier' => 'main-menu_ausschreibungen:node/6',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-    'language' => 'de',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_forschung:node/25',
-  );
   // Exported menu link: main-menu_bei-ipbes-aktiv-werden:node/71.
   $menu_links['main-menu_bei-ipbes-aktiv-werden:node/71'] = array(
     'menu_name' => 'main-menu',
@@ -3111,6 +3085,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
       ),
       'alter' => TRUE,
       'identifier' => 'menu-nefo-top-menu_datenschutz:node/2173',
+      'node_type' => 'page',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -3119,7 +3094,7 @@ function nefo_menue_struktur_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-    'language' => 'de',
+    'language' => 'und',
     'menu_links_customized' => 1,
   );
   // Exported menu link: menu-nefo-top-menu_impressum:node/9.
