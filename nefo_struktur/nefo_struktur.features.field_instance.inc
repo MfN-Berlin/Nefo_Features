@@ -1745,7 +1745,7 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_product_document-field_workshop_reference'] = array(
     'bundle' => 'nefo_product_document',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Dokument zu den jeweiligen Workshops taggen.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -2201,7 +2201,7 @@ function nefo_struktur_field_default_field_instances() {
   $field_instances['node-nefo_product_literature_tip-field_workshop_reference'] = array(
     'bundle' => 'nefo_product_literature_tip',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Literaturtipp zu den jeweiligen Workshops taggen.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -3349,11 +3349,13 @@ function nefo_struktur_field_default_field_instances() {
   t('Datum');
   t('Deadline');
   t('Dokument');
+  t('Dokument zu den jeweiligen Workshops taggen.');
   t('Dokumente');
   t('Erklärender Text zum Bild.');
   t('Im NeFo-Interview');
   t('Image Credit');
   t('Kategorie');
+  t('Literaturtipp zu den jeweiligen Workshops taggen.');
   t('Maximal 300 Zeichen.');
   t('Maximal 700 Zeichen.');
   t('Mehrfachauswahl möglich.');

@@ -30,6 +30,22 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'abs',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '0ae0a76e-448a-4d79-aaba-279dbb33d678',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/abs',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'COP',
     'description' => NULL,
     'format' => NULL,
@@ -105,6 +121,38 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'mikrobioologie',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '21bf580d-93dc-49a3-97fc-fbb49412fa74',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/mikrobioologie',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Costa Rica',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '2256a280-e987-4532-8c1c-f599acf4ae45',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/costa-rica',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'SDGs',
     'description' => '<p style="text-align: justify;">Die <a href="http://www.biodiversity.de/ziele-fuer-nachhaltige-entwicklung" target="_blank">Ziele für nachhaltige Entwicklung</a> (Sustainable Development Goals, SDGs) wurden 2015 von den Vereinten Nationen ausgerufen. Insgesamt 17 Ziele sollen für ein gesellschaftliches Gleichgewicht sorgen und die Welt für alle Menschen gleichermaßen nutzbar machen. So behandeln die Ziele 14 und 15 den Schutz und die nachhaltige Nutzung der biologischen Vielfalt in marinen und terrestrischen Ökosystemen.</p>',
     'format' => 'full_html',
@@ -140,6 +188,22 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'themen/gesundheit',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'nagoya',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '2aef1171-c319-4f25-a85b-656cd69df6d6',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/nagoya',
         'language' => 'und',
       ),
     ),
@@ -425,6 +489,22 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Amerika',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '7bbfd829-159f-465b-b6b9-0110f3ccde2c',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/amerika',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Monitoring',
     'description' => '<p style="text-align: justify;">Die Frage, wie Zustände und Trends von Arten, Biotopen und genetischer Vielfalt gut zu erfassen sind, ist ein Dauerthema des Naturschutzes – sowohl in der Praxis als auch in der Forschung. NeFo hatte hier in seiner Arbeit seit 2012 einen Schwerpunkt, der einen Überblick zur Thematik bietet. Bezüglich aktueller Entwicklungen sprechen sie uns bitte an.</p>',
     'format' => 'full_html',
@@ -478,6 +558,22 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'blog/cbd-sbstta-18-montreal-2014',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'sbstta',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '8e01b65d-30f8-434d-b46d-6103fe44ca1d',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/sbstta',
         'language' => 'und',
       ),
     ),
@@ -755,6 +851,41 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'CBD SBSTTA-22 im Juli 2018 in Montreal, Kanada',
+    'description' => '',
+    'format' => 'full_html',
+    'weight' => 0,
+    'uuid' => 'e0caaeea-1909-4e25-8656-f1415f82d17b',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_taxonomy_blogs',
+    'path' => array(
+      'pathauto' => 0,
+    ),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'blog/cbd-sbstta-22-montreal-2018',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'digital sequence information',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'e8272fb5-148b-4f68-9acc-09673d480381',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/digital-sequence-information',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Agrobiodiversität',
     'description' => NULL,
     'format' => NULL,
@@ -804,6 +935,22 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'blog/cbd-cop-11-hyderabad-2012',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'wald',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'fecca725-b494-4427-b3c3-af2fd518f5e2',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/wald',
         'language' => 'und',
       ),
     ),
