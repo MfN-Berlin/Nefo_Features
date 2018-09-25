@@ -6,6 +6,7 @@ version = 7.x-1.0-beta3
 dependencies[] = blog
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = entityreference_view_widget
 dependencies[] = features
 dependencies[] = nefo_calendar_events
 dependencies[] = nefo_struktur

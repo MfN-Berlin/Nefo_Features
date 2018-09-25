@@ -10,6 +10,55 @@
 function nefo_calendar_events_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-nefo_event-field_internal_link'.
+  $field_instances['node-nefo_event-field_internal_link'] = array(
+    'bundle' => 'nefo_event',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_internal_link',
+    'label' => 'Weitere NeFo-Beiträge zum Thema',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference_view_widget',
+      'settings' => array(
+        'allow_duplicates' => 0,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'nefo_entityreference_node_composite_title|entityreference_view_widget_1',
+        'view_mode' => 'full',
+      ),
+      'type' => 'entityreference_view_widget',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-nefo_event-field_nefo_event_date'.
   $field_instances['node-nefo_event-field_nefo_event_date'] = array(
     'bundle' => 'nefo_event',
@@ -76,7 +125,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'year_range' => '-1:+3',
       ),
       'type' => 'date_select',
-      'weight' => 32,
+      'weight' => 4,
     ),
   );
 
@@ -127,7 +176,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 31,
+      'weight' => 3,
     ),
   );
 
@@ -175,7 +224,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 34,
+      'weight' => 6,
     ),
   );
 
@@ -219,7 +268,7 @@ function nefo_calendar_events_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 33,
+      'weight' => 5,
     ),
   );
 
@@ -264,7 +313,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 36,
+      'weight' => 7,
     ),
   );
 
@@ -276,6 +325,7 @@ function nefo_calendar_events_field_default_field_instances() {
   t('Mehrfachauswahl möglich.');
   t('Ort');
   t('Themen');
+  t('Weitere NeFo-Beiträge zum Thema');
 
   return $field_instances;
 }

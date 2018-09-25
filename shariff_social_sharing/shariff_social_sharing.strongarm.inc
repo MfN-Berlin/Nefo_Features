@@ -104,6 +104,15 @@ function shariff_social_sharing_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'colorbox' => array(
+        'custom_settings' => FALSE,
+      ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

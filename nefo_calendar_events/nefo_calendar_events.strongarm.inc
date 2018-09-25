@@ -138,23 +138,29 @@ function nefo_calendar_events_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'colorbox' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'language' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '2',
+        ),
+        'metatags' => array(
+          'weight' => '9',
         ),
       ),
       'display' => array(
         'language' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '6',
             'visible' => FALSE,
           ),
           'ical' => array(

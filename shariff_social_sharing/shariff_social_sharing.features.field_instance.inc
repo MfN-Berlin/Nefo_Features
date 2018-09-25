@@ -18,16 +18,8 @@ function shariff_social_sharing_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'bypass_access' => FALSE,
-          'colorbox_node_classes' => '',
-          'colorbox_node_height' => 600,
-          'colorbox_node_link' => FALSE,
-          'colorbox_node_width' => 600,
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'teaser' => array(

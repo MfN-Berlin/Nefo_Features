@@ -563,6 +563,22 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Bodenökologie',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '8db93e7b-7b5a-4d06-b3cb-a930376e1a34',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/bodenokologie',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'sbstta',
     'description' => NULL,
     'format' => NULL,
@@ -865,6 +881,22 @@ function nefo_struktur_uuid_features_default_terms() {
     'url_alias' => array(
       0 => array(
         'alias' => 'blog/cbd-sbstta-22-montreal-2018',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Wurzeln',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => 'e3a15531-cde7-428c-9925-b6f99993e3e6',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/wurzeln',
         'language' => 'und',
       ),
     ),
