@@ -505,6 +505,22 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'dsfvdsf dfsdf dsf',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '77db2c6b-601f-4bf9-b564-b782e16c4bf1',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/dsfvdsf-dfsdf-dsf',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Amerika',
     'description' => NULL,
     'format' => NULL,

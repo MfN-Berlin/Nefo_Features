@@ -232,9 +232,9 @@ function nefo_struktur_node_info() {
       'help' => '',
     ),
     'nefo_product_workshop' => array(
-      'name' => t('NeFo-Produkt Workshop'),
+      'name' => t('NeFo-Produkt-Workshop-OLD'),
       'base' => 'node_content',
-      'description' => t('NeFo-Workshops'),
+      'description' => t('Dieser Inhaltstyp muss gelöscht werden! Siehe Ticket-Nummer 440.'),
       'has_title' => '1',
       'title_label' => t('Titel'),
       'help' => '',
