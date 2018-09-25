@@ -104,26 +104,17 @@ function shariff_social_sharing_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
-      'colorbox' => array(
-        'custom_settings' => FALSE,
-      ),
-      'ical' => array(
-        'custom_settings' => FALSE,
-      ),
-      'diff_standard' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '3',
         ),
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '4',
         ),
       ),
       'display' => array(),

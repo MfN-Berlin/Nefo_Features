@@ -55,7 +55,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 8,
+      'weight' => 3,
     ),
   );
 
@@ -125,7 +125,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'year_range' => '-1:+3',
       ),
       'type' => 'date_select',
-      'weight' => 4,
+      'weight' => 9,
     ),
   );
 
@@ -176,7 +176,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 8,
     ),
   );
 
@@ -224,7 +224,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 10,
     ),
   );
 
@@ -313,7 +313,7 @@ function nefo_calendar_events_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 2,
     ),
   );
 

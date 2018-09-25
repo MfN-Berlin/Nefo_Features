@@ -50,6 +50,8 @@ function nefo_struktur_field_default_field_bases() {
     'settings' => array(
       'max_length' => 255,
       'profile2_private' => FALSE,
+      'required_summary' => 0,
+      'show_summary' => 0,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -71,6 +73,8 @@ function nefo_struktur_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
+      'required_summary' => 0,
+      'show_summary' => 0,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -92,6 +96,8 @@ function nefo_struktur_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
+      'required_summary' => 0,
+      'show_summary' => 0,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -113,6 +119,8 @@ function nefo_struktur_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
+      'required_summary' => 0,
+      'show_summary' => 0,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -134,6 +142,8 @@ function nefo_struktur_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
+      'required_summary' => 0,
+      'show_summary' => 0,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -155,6 +165,8 @@ function nefo_struktur_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
+      'required_summary' => 0,
+      'show_summary' => 0,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -352,6 +364,8 @@ function nefo_struktur_field_default_field_bases() {
     'settings' => array(
       'max_length' => 255,
       'profile2_private' => FALSE,
+      'required_summary' => 0,
+      'show_summary' => 0,
     ),
     'translatable' => 0,
     'type' => 'text',

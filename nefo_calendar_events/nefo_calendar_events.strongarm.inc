@@ -145,16 +145,16 @@ function nefo_calendar_events_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'language' => array(
-          'weight' => '1',
+          'weight' => '3',
         ),
         'title' => array(
-          'weight' => '0',
+          'weight' => '6',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '7',
         ),
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '4',
         ),
       ),
       'display' => array(

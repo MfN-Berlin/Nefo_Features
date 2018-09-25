@@ -378,6 +378,12 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -395,7 +401,7 @@ function nefo_struktur_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -440,7 +446,7 @@ function nefo_struktur_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -503,7 +509,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -694,7 +700,7 @@ function nefo_struktur_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -728,6 +734,12 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -735,11 +747,17 @@ function nefo_struktur_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_label_summary' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_summary' => '',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 20,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -802,7 +820,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -841,7 +859,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -872,6 +890,12 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -889,7 +913,7 @@ function nefo_struktur_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -932,7 +956,7 @@ function nefo_struktur_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 6,
+      'weight' => 2,
     ),
   );
 
@@ -972,7 +996,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -1035,7 +1059,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -1092,7 +1116,7 @@ function nefo_struktur_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1130,7 +1154,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -1164,6 +1188,12 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1181,7 +1211,7 @@ function nefo_struktur_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -1226,7 +1256,7 @@ function nefo_struktur_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -1290,7 +1320,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -1329,7 +1359,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 2,
     ),
   );
 
@@ -1736,7 +1766,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 9,
+      'weight' => 5,
     ),
   );
 
@@ -1780,7 +1810,7 @@ function nefo_struktur_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -1805,6 +1835,12 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1822,7 +1858,7 @@ function nefo_struktur_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -1861,7 +1897,7 @@ function nefo_struktur_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 9,
+      'weight' => 4,
     ),
   );
 
@@ -1919,7 +1955,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -1958,7 +1994,7 @@ function nefo_struktur_field_default_field_instances() {
         'rows' => 2,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -1995,7 +2031,7 @@ function nefo_struktur_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -2028,7 +2064,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 1,
     ),
   );
 
@@ -2069,7 +2105,7 @@ function nefo_struktur_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -2134,7 +2170,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -2192,7 +2228,7 @@ function nefo_struktur_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -2236,7 +2272,7 @@ function nefo_struktur_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -2675,20 +2711,33 @@ function nefo_struktur_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Body',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_label_summary' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_summary' => '',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 20,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -2747,7 +2796,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -2781,6 +2830,12 @@ function nefo_struktur_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 1,
+      'required_summary' => array(
+        0 => 1,
+      ),
+      'show_summary' => array(
+        0 => 1,
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -2798,7 +2853,7 @@ function nefo_struktur_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -2841,7 +2896,7 @@ function nefo_struktur_field_default_field_instances() {
         'view_mode' => 'full',
       ),
       'type' => 'entityreference_view_widget',
-      'weight' => 7,
+      'weight' => 3,
     ),
   );
 
@@ -2904,7 +2959,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -3039,7 +3094,7 @@ function nefo_struktur_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 2,
     ),
   );
 
@@ -3096,7 +3151,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -3153,7 +3208,7 @@ function nefo_struktur_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 

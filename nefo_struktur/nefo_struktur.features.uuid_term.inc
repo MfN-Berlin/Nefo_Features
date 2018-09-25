@@ -173,6 +173,22 @@ function nefo_struktur_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'sdf dfdsfdsf dsf',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => 0,
+    'uuid' => '24296dd3-f21a-4b0d-93f9-9514e5571d5e',
+    'language' => 'und',
+    'i18n_tsid' => 0,
+    'vocabulary_machine_name' => 'nefo_schlagworte',
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'nefo-schlagworte/sdf-dfdsfdsf-dsf',
+        'language' => 'und',
+      ),
+    ),
+  );
+  $terms[] = array(
     'name' => 'Gesundheit',
     'description' => '<p style="text-align: justify;">Biodiversität und Gesundheit umfasst ein riesiges Feld. Zum einen geht es um die positive Wirkung von Biodiversität auf die Gesundheit von Menschen. Dazu zählen beispielsweise Naturerlebnisräume, die von Kindern genutzt werden können, die Freude an ästhetischen Landschaften, oder auch die Nutzung von Pharmazeutika aus der Apotheke der Natur. Aber es kann auch Konflikte geben, wenn Parasiten oder Viren den menschlichen Körper befallen, wenn Krankheitsüberträger wie bestimmte Mücken sich ausbreiten oder, wie beispielswiese über den Verzehr von Wildfleisch, Menschen von Infektionen befallen werden. Die Forschung befasst sich zunehmend mit den komplexen Interaktionen zwischen einfachen Lebewesen wie beispielsweise Bakterien, die in der Evolution eine wichtige Rolle spielen und einen nicht unwesentlichen Teil der menschlichen Biomasse nicht nur im Darm ausmachen. Zunehmend wird auch von "Ecosystem Health" gesprochen, was aufgrund der normativen Setzungen jedoch nicht ganz einfach ist.</p>',
     'format' => 'full_html',

@@ -687,16 +687,16 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'language' => array(
-          'weight' => '0',
+          'weight' => '4',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '5',
         ),
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '6',
         ),
       ),
       'display' => array(
@@ -745,12 +745,15 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '4',
         ),
         'scheduler_settings' => array(
+          'weight' => '5',
+        ),
+        'metatags' => array(
           'weight' => '5',
         ),
       ),
@@ -793,13 +796,16 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '4',
         ),
         'scheduler_settings' => array(
           'weight' => '3',
+        ),
+        'metatags' => array(
+          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -844,7 +850,10 @@ function nefo_struktur_strongarm() {
           'weight' => '2',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '3',
+        ),
+        'metatags' => array(
+          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -886,10 +895,13 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '2',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '5',
+        ),
+        'metatags' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(),
@@ -931,10 +943,13 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
+        ),
+        'metatags' => array(
+          'weight' => '7',
         ),
       ),
       'display' => array(),
@@ -1054,10 +1069,13 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '3',
+          'weight' => '4',
+        ),
+        'metatags' => array(
+          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -1102,13 +1120,13 @@ function nefo_struktur_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '4',
         ),
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '5',
         ),
       ),
       'display' => array(),
