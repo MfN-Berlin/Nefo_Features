@@ -19,9 +19,12 @@ function nefo_calendar_events_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'event_types',
+    'path' => array(
+      'pathauto' => 0,
+    ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'event-types/politik',
+        'alias' => 'events/politik',
         'language' => 'und',
       ),
     ),
@@ -35,9 +38,12 @@ function nefo_calendar_events_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'event_types',
+    'path' => array(
+      'pathauto' => 0,
+    ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'event-types/presse',
+        'alias' => 'events/presse',
         'language' => 'und',
       ),
     ),
@@ -51,9 +57,12 @@ function nefo_calendar_events_uuid_features_default_terms() {
     'language' => 'und',
     'i18n_tsid' => 0,
     'vocabulary_machine_name' => 'event_types',
+    'path' => array(
+      'pathauto' => 0,
+    ),
     'url_alias' => array(
       0 => array(
-        'alias' => 'event-types/forschung',
+        'alias' => 'events/forschung',
         'language' => 'und',
       ),
     ),
