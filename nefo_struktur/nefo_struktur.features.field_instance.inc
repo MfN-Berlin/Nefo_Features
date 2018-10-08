@@ -891,10 +891,10 @@ function nefo_struktur_field_default_field_instances() {
     'settings' => array(
       'display_summary' => 1,
       'required_summary' => array(
-        0 => 1,
+        0 => 0,
       ),
       'show_summary' => array(
-        0 => 1,
+        0 => 0,
       ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
