@@ -16,12 +16,6 @@ function nefo_berechtigungen_user_default_roles() {
     'weight' => 4,
   );
 
-  // Exported role: Editor.
-  $roles['Editor'] = array(
-    'name' => 'Editor',
-    'weight' => 5,
-  );
-
   // Exported role: NeFo Team Member.
   $roles['NeFo Team Member'] = array(
     'name' => 'NeFo Team Member',
